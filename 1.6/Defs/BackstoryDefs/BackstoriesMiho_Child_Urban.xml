@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef Name="Miho_BaseBackstoryChild_Urban" Abstract="True">
+<disallowedTraitsChance>
+  <li>
+    <defName Degree="-1">Beauty</defName>
+  </li>
+  <li>
+    <defName Degree="-2">Beauty</defName>
+  </li>
+</disallowedTraitsChance>
+<forcedTraitsChance>
+  <li>
+    <options>
+      <li>
+        <defName>Miho_EnergyMeditation_Trait</defName>
+      </li>
+    </options>
+    <count>1</count>
+    <chance>100</chance>
+  </li>
+</forcedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<forcedHediffs>
+			<li>Miho_Tail_Hediff</li>
+		    <li>Miho_Elegans_Hediff</li>
+			<li>Miho_PositiveFlower_Tea_Addiction</li>
+
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban</defName>
+    <title>도시의 여우</title>
+	<titleShort>도시여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 하늘의 도시에서, 여우부모 사이에서 자란 도시여우 였습니다. 도시에서 기본적인 공교육을 받았습니다. 왜 이곳에 왔는지는 알 수 없지만, 아무래도 변방계에 적응하긴 힘들겁니다.</baseDesc>
+	
+	<skillGains>
+      <Intellectual>3</Intellectual>
+      <Artistic>2</Artistic>
+	  <Social>2</Social>
+      <Construction>3</Construction>
+      <Melee>-2</Melee>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_UrbanStudent</defName>
+    <title>공업학교 학생 여우</title>
+	<titleShort>학생여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 수학여행 도중 셔틀을 타지 못해서 실종되었습니다. 다행히 살아는 있습니다만...</baseDesc>
+	
+	<skillGains>
+      <Intellectual>1</Intellectual>
+      <Crafting>5</Crafting>
+      <Construction>5</Construction>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_Rural</defName>
+    <title>변방의 여우</title>
+	<titleShort>변방여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 어릴적 부모를 따라 변방계로 온 개척자 입니다. 작은 총으로 다람쥐를 사냥하는걸 즐겼습니다.</baseDesc>
+	
+	<skillGains>
+
+	  <Social>1</Social>
+      <Construction>2</Construction>
+      <Shooting>5</Shooting>
+      <Animals>2</Animals>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_RuralAnimal</defName>
+    <title>농가의 여우</title>
+	<titleShort>농가여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 우유를 공급하기 위한 플랜테이션의 아이였습니다. 여우 중에서는 가장 서부 같은곳 에서 자랐다고 장담할 수 있습니다.</baseDesc>
+	
+	<skillGains>
+
+	  <Social>-2</Social>
+      <Shooting>2</Shooting>
+      <Animals>12</Animals>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_Farm</defName>
+    <title>농가의 여우</title>
+	<titleShort>농가여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 조상 대대로 이곳에서 달콤한 열매 농사를 지으며 살았습니다. 어느 순간 이 평화로운 삶에 질려 방랑하게 되었습니다.</baseDesc>
+	
+	<skillGains>
+
+	  <Melee>3</Melee>
+      <Plants>6</Plants>
+      <Animals>1</Animals>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_Inari</defName>
+    <title>유부집의 여우</title>
+	<titleShort>유부집여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 어릴적 무슨 사연인지 변방계 유부 가게에서 키워졌습니다. 이 여우는 그 은혜를 갚으려 노력하고 있습니다.</baseDesc>
+	
+	<skillGains>
+
+	  <Cooking>5</Cooking>
+      <Plants>2</Plants>
+      <Social>2</Social>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_Soldier</defName>
+    <title>멋대로 입대한 여우</title>
+	<titleShort>신병여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 사고뭉치였습니다. 부모의 속을 썩이기 위해 나이를 속여 자진 입대후 후회하는 중 입니다.</baseDesc>
+	
+	<skillGains>
+	  <Medicine>3</Medicine>
+	  <Melee>3</Melee>
+      <Shooting>4</Shooting>
+      <Social>-4</Social>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_BadStudent</defName>
+    <title>가출한 여우</title>
+	<titleShort>학생여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 의예과를 목표로 하는 우등생이었으나, 강압적인 부모에 못이겨 변방계로 가출했습니다.</baseDesc>
+	
+	<skillGains>
+      <Intellectual>5</Intellectual>
+	  <Medicine>5</Medicine>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_UrbanPoor</defName>
+    <title>빈민가 여우</title>
+	<titleShort>빈민가여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 흔하디 흔한 가정에서 태어났습니다. 여기서 '흔하다'는 말은, 언제 전기와 수도가 끊길지 모르는 삶을 의미했습니다. 학교 선생님들보다 뒷골목 어른들에게서 더 많은 것을 배웠고, 그 어른들이 결국 퇴물에 불과하다는 걸 깨달을 즈음, [PAWN_nameDef]는 부모의 미약한 도움 없이 스스로 설 수 있게 되었으며, 실제로 그렇게 했습니다.</baseDesc>
+	
+	<skillGains>
+      <Intellectual>-2</Intellectual>
+	  <Melee>2</Melee>
+	  <Cooking>1</Cooking>
+	  <Social>4</Social>
+      <Construction>2</Construction>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild_Urban">
+    <defName>Miho_Child_Urban_EngineerApprentice</defName>
+    <title>도제 정비공 여우</title>
+	<titleShort>도제여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 어린 나이에 자신의 재능을 찾을 수 있었습니다. 제대로 기능하지 않는 사회안전망 대신, 친절하면서도 인건비를 아낄 용기가 있는 정비사에게서 직접 기술을 배웠습니다. 기업 정비소 대신 무허가 정비소를 찾는 사람들에게는 협상의 요령을 익혔고, 자기의 정당한 몫을 요구하는 시정잡배에게는 렌치를 휘두르는 법을 배웠습니다</baseDesc>
+	<skillGains>
+	  <Melee>3</Melee>
+      <Crafting>5</Crafting>
+	  <Social>3</Social>
+      <Artistic>-2</Artistic>
+	</skillGains>
+	<slot>Childhood</slot>
+
+	<spawnCategories>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+
+ </AlienRace.AlienBackstoryDef>
+ 
+</Defs>

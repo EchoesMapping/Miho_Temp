@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef Name="Miho_BaseBackstory" Abstract="True">
+<disallowedTraitsChance>
+  <li>
+    <defName Degree="-1">Beauty</defName>
+  </li>
+  <li>
+    <defName Degree="-2">Beauty</defName>
+  </li>
+</disallowedTraitsChance>
+
+		<forcedHediffs>
+			<li MayRequire="mihotattoo.outremer">Miho_TattooPrepare</li>
+		</forcedHediffs>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_LiaisonOfficer</defName>
+    <title>미호 외부 연락담당자</title>
+    <titleShort>외부 연락담당자</titleShort>
+    <baseDesc>[PAWN_nameDef]는 외부 연락담당자 입니다. 그녀는 외부에서 미호에게 필요한 여러 물자와 정보들을 공급했습니다.</baseDesc>
+	<skillGains>
+			<Social>7</Social>
+      <Intellectual>4</Intellectual>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoUrban</li>
+
+        
+	  <li>MihoColonyBorn</li>
+	  <li>MihoPioneer</li>
+    </spawnCategories>
+    <possessions>
+      <MealSurvivalPack>1</MealSurvivalPack>
+      <Silver>80</Silver>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_PMCInfantry</defName>
+    <title>미호 PMC 병사</title>
+    <titleShort>PMC 병사</titleShort>
+    <baseDesc>[PAWN_nameDef]는 PMC의 말단 병사 입니다. 변방계 임무 수행을 위해 파견되었습니다.</baseDesc>
+	<skillGains>
+			<Shooting>5</Shooting>
+      <Melee>5</Melee>
+			<Construction>2</Construction>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>MihoPioneer</li>
+	  <li>MihoPMC</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Miho_Weapon_RifleDefence>1</Miho_Weapon_RifleDefence>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_PMCSapper</defName>
+    <title>미호 PMC 공병</title>
+    <titleShort>PMC 공병</titleShort>
+    <baseDesc>[PAWN_nameDef]는 PMC의 공병입니다. 초능력으로 진지공사와 폭발물 관리를 당담했습니다. 위험하군요.</baseDesc>
+	<skillGains>
+			<Shooting>1</Shooting>
+      <Melee>1</Melee>
+      <Mining>4</Mining>
+			<Construction>5</Construction>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>MihoPioneer</li>
+	  <li>MihoPMC</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+
+    <possessions>
+      <Weapon_GrenadeFrag>1</Weapon_GrenadeFrag>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_PMCSharpshooter</defName>
+    <title>미호 PMC 특등사수</title>
+    <titleShort>PMC 특등사수</titleShort>
+    <baseDesc>[PAWN_nameDef]는 특유의 좋은 운 때문인지. 미호치곤 시력이 좋은건지. 백발백중의 실력을 자랑했습니다.</baseDesc>
+	<skillGains>
+			<Shooting>8</Shooting>
+      <Melee>5</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>MihoPioneer</li>
+	  <li>MihoPMC</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Miho_Weapon_RifleOld>1</Miho_Weapon_RifleOld>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+  
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_HamburgerCook</defName>
+    <title>미호 버거 조리사</title>
+    <titleShort>버거 조리사</titleShort>
+    <baseDesc>[PAWN_nameDef]는 버거 조리사 였습니다. 인육패티 납품사태 전까지 말이죠.</baseDesc>
+	<skillGains>
+			<Cooking>4</Cooking>
+      <Melee>4</Melee>
+      <Social>1</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoUrban</li>
+
+	  <li>MihoPioneer</li>
+    </spawnCategories>
+    <possessions>
+      <MealFine>1</MealFine>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_SushiCook</defName>
+    <title>미호 초밥 장인</title>
+    <titleShort>초밥 장인</titleShort>
+    <baseDesc>[PAWN_nameDef]는 회전 초밥집에서 초밥을 만들던 요리사였습니다.
+손 안에 쥐여진 밥알의 갯수를 알때까지 밥알을 만져보라는 스승의 말을 따라서 쉴새없이 초밥을 만들던 그녀는 기어코 초밥의 무게를 0.1g 단위로 가늠하는 경지에 이르렀고, 각 행성의 유명인사들이 그녀의 초밥을 맛보고자 하루가 멀다하고 줄을 섰습니다.
+그러던 어느날..[PAWN_nameDef]가 일하던 매장에서 대규모 식중독 사건이 발생했습니다.
+가게는 식중독으로 쓰러진 손님들에게 소송이 걸려서 파산하고, 궁극의 손재주를 가진 [PAWN_nameDef]는 이곳 저곳을 방황하다가 기어코 변방계 개척 사업에 까지 참가하게 되었습니다.</baseDesc>
+	<skillGains>
+			<Cooking>8</Cooking>
+      <Melee>2</Melee>
+      <Social>-3</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoUrban</li>
+
+	  <li>MihoPioneer</li>
+    </spawnCategories>
+    <possessions>
+      <MealLavish>1</MealLavish>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_VirtualIdol</defName>
+    <title>미호 버츄얼 아이돌</title>
+    <titleShort>버츄얼 아이돌</titleShort>
+    <baseDesc>[PAWN_nameDef]는 변방계에 도착하기전 버츄얼 아이돌이었습니다. 일부로 안경을 쓴 돼지 오타쿠 아바타를 사용하던 [PAWN_nameDef]는 아바타와 어울리지않는 이색적인 목소리로
+대중들에게 크게 사랑받았습니다. 게임 패스티벌이 열리기 전날, [PAWN_nameDef]는 자신의 팬들에게 NFT 팬사인회가 열릴것임을 알렸습니다.
+
+결전의 날..들뜬 마음으로 집에서 나온 [PAWN_nameDef]는 그 뒤로 다시는 자신의 집으로 돌아갈수없었습니다.
+평소 [PAWN_nameDef]의 진짜 이미지를 상상하던 악질 팬들이 그녀의 실체를 보자 흡사 짐승으로 돌변하였고,
+[PAWN_nameDef]는 영문도 모른체 그들에게 납치되어 정신을 잃고 쓰러졌습니다.</baseDesc>
+	<skillGains>
+			<Artistic>2</Artistic>
+      <Social>7</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoUrban</li>
+
+	  <li>MihoPioneer</li>
+    </spawnCategories>
+    <possessions>
+      <Beer>6</Beer>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_LowAssassin</defName>
+    <title>미호 하류 암살자</title>
+    <titleShort>하류 암살자</titleShort>
+    <baseDesc>[PAWN_nameDef]는 미인계로 암살 대상을 죽이는 하류 암살자 였습니다. 자신의 특기를 살려 변방계에서의 암살을 실행하려 했지만 타고가던 셔틀이 대공포에 맞아 추락해, 변방계에서 살게 되었습니다.</baseDesc>
+	<skillGains>
+			<Melee>6</Melee>
+			<Shooting>2</Shooting>
+			<Social>4</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_MilitaryCooker</defName>
+    <title>미호 급양원</title>
+    <titleShort>급양원</titleShort>
+    <baseDesc>[PAWN_nameDef]는 군부대에서 맛없는 밥을 해주던 급양원이었습니다.</baseDesc>
+	<skillGains>
+			<Cooking>5</Cooking>
+			<Shooting>1</Shooting>
+      <Social>1</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <MealNutrientPaste>5</MealNutrientPaste>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Surgeon</defName>
+    <title>미호 외과의</title>
+    <titleShort>외과의</titleShort>
+    <baseDesc>[PAWN_nameDef]는 의료사고를 너무 많이낸 나머지, 원한을 지닌 의료사고 피해자들에게 납치되어 변방계로 사출되었습니다.</baseDesc>
+	<skillGains>
+		<Medicine>6</Medicine>
+		<Intellectual>1</Intellectual>
+      <Melee>2</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <MedicineUltratech>2</MedicineUltratech>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_SurrogateSurgeon</defName>
+    <title>미호 대리의</title>
+    <titleShort>대리의</titleShort>
+    <baseDesc>[PAWN_nameDef]는 그저 영업사원 이었지만, 한번 맡아본 대리수술이 자신의 천직임을 깨닫고 지금까지 1382건의 수술을 성공시켰습니다.</baseDesc>
+	<skillGains>
+		<Medicine>8</Medicine>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <MedicineUltratech>2</MedicineUltratech>
+    </possessions>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Nurse</defName>
+    <title>미호 간호사</title>
+    <titleShort>간호사</titleShort>
+    <baseDesc>[PAWN_nameDef]는 간호사 입니다. 간호사 특유의 직업문화 덕분에, 줄타는 법을 잘 배웠습니다.</baseDesc>
+	<skillGains>
+		<Medicine>4</Medicine>
+		<Intellectual>1</Intellectual>
+      <Social>3</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <MedicineUltratech>2</MedicineUltratech>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Massager</defName>
+    <title>미호 마사지사</title>
+    <titleShort>마사지사</titleShort>
+    <baseDesc>"야한거 절대 아님, 야한거 찾으려면 한블록 밑으로 가라구."</baseDesc>
+	<skillGains>
+		<Medicine>4</Medicine>
+		<Social>4</Social>
+      <Artistic>1</Artistic>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <MedicineHerbal>5</MedicineHerbal>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_SpecialMassager</defName>
+    <title>미호 "특별" 마사지사</title>
+    <titleShort>마사지사</titleShort>
+    <baseDesc>[PAWN_nameDef]는 불법 마사지 업체에서 일하던 종사자였습니다.
+말이 마사지 업체였지 사실은 윤락가나 다름없었으나 [PAWN_nameDef]는 여의치않았습니다.
+어김없이 자신의 가슴에 꽂힌 현금에 취해 손님의 전신을 어루만져주던 어느날, 경찰이 업체를 덮쳤고,
+침착하게 여우굴을 통해서 현장에서 빠져나가던 [PAWN_nameDef]는 굴 속에서 손님의 헐렁한 바지 주머니에서 흐른 하얀색 가루 봉투를 주웠습니다.
+[PAWN_nameDef]는 무의식적으로 그것을 훔쳐 자신의 몸속에 숨겼고, 무사히 집으로 빠져나가는줄 알았으나
+경찰과 함께 따라온 마약 탐지견이 그녀의 몸 속에 숨겨진 약의 향기를 쫓는 바람에 검거되었습니다.
+그렇게 [PAWN_nameDef]는 검거되었습니다. 자신이 저지른적도 없는 마약 밀수 사업의 모든 덤터기를 뒤집어 쓴체로.</baseDesc>
+	<skillGains>
+		<Social>6</Social>
+      <Artistic>3</Artistic>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Yayo>2</Yayo>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Academician</defName>
+    <title>미호 대학원생</title>
+    <titleShort>대학원생</titleShort>
+    <baseDesc>[PAWN_nameDef]는 학위를 따기 위해 변방계 인류 연구에 수십년째 호생을 바쳤습니다.</baseDesc>
+	<skillGains>
+		<Intellectual>5</Intellectual>
+      <Artistic>1</Artistic>
+      <Crafting>1</Crafting>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <WakeUp>6</WakeUp>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Forge</defName>
+    <title>미호 용광로 배합자</title>
+    <titleShort>용광로 배합자</titleShort>
+    <baseDesc>[PAWN_nameDef]는 고로의 배합물을 책임지는 관리자 였습니다. 돈을 위해 배합물에 물을 탄 후 고로가 폭발해버려 지금은 실업자 신세입니다.</baseDesc>
+	<skillGains>
+		<Intellectual>1</Intellectual>
+      <Crafting>7</Crafting>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Gunsmith</defName>
+    <title>미호 총기작업자</title>
+    <titleShort>총기작업자</titleShort>
+    <baseDesc>[PAWN_nameDef]는 총기 덕후 였습니다. 총기전문점을 개장 했지만, 오는 손님들의 95퍼센트가 소식이 끊김을 깨달았습니다. 그 후 진정한 총기광들이 있는 변방계로 향했습니다.</baseDesc>
+	<skillGains>
+      <Artistic>1</Artistic>
+      <Crafting>6</Crafting>
+      <Shooting>2</Shooting>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Miho_Weapon_RifleMachinegun>1</Miho_Weapon_RifleMachinegun>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Calligrapher</defName>
+    <title>미호 서예 작가</title>
+    <titleShort>서예 작가</titleShort>
+    <baseDesc>[PAWN_nameDef]는 그저 그런 서예 작가였습니다. 그러니까 변방계에 왔겠죠!</baseDesc>
+	<skillGains>
+      <Artistic>6</Artistic>
+      <Social>2</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+    <possessions>
+      <Miho_Ebony_SilkCloth>10</Miho_Ebony_SilkCloth>
+      <Dye>2</Dye>
+    </possessions>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Miner</defName>
+    <title>미호 광업 관리자</title>
+    <titleShort>광업 관리자</titleShort>
+    <baseDesc>[PAWN_nameDef]는 땅파는걸 좋아해서 광업관리자가 되었습니다. 아니, 진짜로요. 또한 인부들과 회식하는걸 즐깁니다.</baseDesc>
+	<skillGains>
+      <Mining>6</Mining>
+      <Social>2</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Plasteel>10</Plasteel>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Plantation</defName>
+    <title>미호 꽃집 주인</title>
+    <titleShort>꽃집 주인</titleShort>
+    <baseDesc>[PAWN_nameDef]는 꽃을 기르고 판매하다 자아를 가진 꽃들의 반란으로 인해 변방계로 사출되었습니다.</baseDesc>
+	<skillGains>
+      <Social>4</Social>
+      <Plants>5</Plants>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <PlantPot>1</PlantPot>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Privateer</defName>
+    <title>미호 사략선원</title>
+    <titleShort>사략선원</titleShort>
+    <baseDesc>[PAWN_nameDef]는 주로 인신매매를 담당하는 유쾌한 해적단의 선원이었습니다. 별로 유쾌하진 않네요.</baseDesc>
+	<skillGains>
+      <Social>2</Social>
+      <Melee>6</Melee>
+      <Construction>1</Construction>
+	</skillGains>
+    <slot>Adulthood</slot>
+
+    <possessions>
+      <Miho_Weapon_RingedBlade>1</Miho_Weapon_RingedBlade>
+      <Silver>200</Silver>
+    </possessions>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_BrutalPsyker</defName>
+    <title>미호 살인광 사이커</title>
+    <titleShort>사이커</titleShort>
+    <baseDesc>[PAWN_nameDef]는 유명한 마법-살인마 였습니다. 부족민들에게서 신으로 모셔지다가, 명성있는 해수구제 사냥꾼에게 걸려 살기 위해 이곳까지 왔습니다.</baseDesc>
+	<skillGains>
+		<Intellectual>3</Intellectual>
+      <Artistic>3</Artistic>
+      <Melee>4</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoMagi</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+<forcedTraitsChance>
+  <li>
+    <options>
+      <li>
+        <defName>Bloodlust</defName>
+      </li>
+    </options>
+    <count>1</count>
+    <chance>100</chance>
+  </li>
+</forcedTraitsChance>
+    <possessions>
+      <Jade>12</Jade>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Battlemage</defName>
+    <title>미호 전투마법사</title>
+    <titleShort>전투마법사</titleShort>
+    <baseDesc>[PAWN_nameDef]는 특별히 훈련된 전투마법사 입니다. 전술단위 무기로 키워진 탓인지, 사교적 능력이 낮습니다.</baseDesc>
+	<skillGains>
+		<Intellectual>6</Intellectual>
+      <Artistic>3</Artistic>
+      <Melee>3</Melee>
+      <Shooting>2</Shooting>
+      <Social>-6</Social>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoMagi</li>
+    </spawnCategories>
+    <possessions>
+      <Miho_Weapon_EltexA>1</Miho_Weapon_EltexA>
+    </possessions>
+	<forcedTraitsChance>
+	</forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Engi</defName>
+    <title>미호 공돌이</title>
+    <titleShort>공돌이</titleShort>
+    <baseDesc>기계를 좋아합니다. 기계를 좋아하는 만큼 미적 감각이 결여되었습니다.</baseDesc>
+	<skillGains>
+      <Artistic>-12</Artistic>
+      <Crafting>6</Crafting>
+      <Construction>6</Construction>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Mechlink>1</Mechlink>
+    </possessions>
+
+  </AlienRace.AlienBackstoryDef> 
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_EngiTwo</defName>
+    <title>미호 기계 덕후</title>
+    <titleShort>기계 덕후</titleShort>
+    <baseDesc>기계를 좋아합니다. 기계와 결혼까지 불사한 전적이 있습니다.</baseDesc>
+	<skillGains>
+      <Crafting>4</Crafting>
+      <Construction>5</Construction>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Mechlink>1</Mechlink>
+    </possessions>
+
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Ronin</defName>
+    <title>미호 낭인 무사</title>
+    <titleShort>낭인 무사</titleShort>
+    <baseDesc>나름 유명한 낭인 무사 입니다. 이미지 관리 때문인지 원래 말주변이 없는건진 모르겠지만, 말이 별로 없습니다.</baseDesc>
+    <linkedBackstory>Miho_Child_Brave</linkedBackstory>
+
+	<skillGains>
+      <Social>-10</Social>
+      <Melee>10</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+    <possessions>
+      <Miho_Weapon_Tachi>1</Miho_Weapon_Tachi>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Cute</defName>
+    <title>미호 애완 여우</title>
+    <titleShort>애완 여우</titleShort>
+    <baseDesc>더러운 오타쿠에게 팔려버린 불쌍한 여우 입니다. 밥도 해주고, 청소도 해주고, 가슴도... 음.... 하여튼 이런 삶에 지쳐 멀리 떠나버렸습니다.</baseDesc>
+
+	<skillGains>
+      <Social>5</Social>
+      <Cooking>3</Cooking>
+	</skillGains>
+    <slot>Adulthood</slot>
+<forcedTraitsChance>
+  <li>
+    <options>
+      <li>
+        <defName Degree="-1">NaturalMood</defName>
+      </li>
+    </options>
+    <count>1</count>
+    <chance>100</chance>
+  </li>
+</forcedTraitsChance>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoAssault</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Waifu</defName>
+    <title>미호 야마토 나데시코</title>
+    <titleShort>야마토 나데시코</titleShort>
+    <baseDesc>"귀여운 여우 마망한테 안기고 싶다." - 데오스 에피로페 5세 (북극성 방향 A-62성계의 항성군주)</baseDesc>
+
+	<skillGains>
+      <Social>2</Social>
+      <Cooking>5</Cooking>
+      <Artistic>2</Artistic>
+      <Plants>2</Plants>
+      <Melee>-5</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+
+<forcedTraitsChance>
+  <li>
+    <options>
+      <li>
+        <defName Degree="1">NaturalMood</defName>
+      </li>
+      <li>
+        <defName>Kind</defName>
+      </li>
+    </options>
+
+    <count>1</count>
+    <chance>100</chance>
+  </li>
+</forcedTraitsChance>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_CatEater</defName>
+    <title>미호 고양이 국 끓여먹는 자</title>
+    <titleShort>고양이 국 끓여먹는 자</titleShort>
+    <baseDesc>이쁨 받는 고양이가 질투나 온 동네에 있는 고양이를 잡아먹어 변방계로 추방되었습니다.</baseDesc>
+
+	<skillGains>
+      <Cooking>8</Cooking>
+      <Animals>-8</Animals>
+	</skillGains>
+    <slot>Adulthood</slot>
+
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Cop</defName>
+    <title>미호 경찰</title>
+    <titleShort>경찰</titleShort>
+    <baseDesc>[PAWN_nameDef]의 담당구역은 너무 평화로운 나머지. 그저 포르노 중독자들을 체포해 실적을 올리는 일을 하고 있었습니다. 하지만 그로 인해 원한이 너무 많이 쌓였고. 몹쓸 짓을 당한뒤 변방계로 사출되었습니다.</baseDesc>
+
+	<skillGains>
+      <Shooting>4</Shooting>
+	  <Intellectual>2</Intellectual>
+      <Social>1</Social>
+      <Melee>1</Melee>
+
+	</skillGains>
+    <slot>Adulthood</slot>
+
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+    </spawnCategories>
+	
+<forcedTraitsChance>
+  <li>
+    <options>
+      <li>
+        <defName Degree="-1">NaturalMood</defName>
+      </li>
+    </options>
+    <count>1</count>
+    <chance>75</chance>
+  </li>
+</forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef> 
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Archaeologist</defName>
+    <title>미호 고고학자</title>
+    <titleShort>고고학자</titleShort>
+    <baseDesc>[PAWN_nameDef]은 지하 깊숙히 파묻혀있는 고대 유적지에서 자신들의 모습과 비슷한 풍요를 기원하는 작은 플라스틱 조각상들을 발견했습니다. [PAWN_nameDef]는 이 충격적인 발견을 서둘러 학계에 보고하기 위해 조각상들을 챙기고 셔틀을 탔지만. 이 아름다운 조각상에 물욕을 느낀 태닝 스파이크 형광 모히칸 문신 운전수 아저씨에게 셔틀과 통신기기, 조각상들까지 모조리 빼앗겨 버렸습니다. 사람은 좋아보였는데 말이죠...</baseDesc>
+
+	<skillGains>
+      <Mining>5</Mining>
+      <Intellectual>6</Intellectual>
+      <Social>-3</Social>
+
+	</skillGains>
+    <slot>Adulthood</slot>
+
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoUrban</li>
+
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+  
+
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Unique_Shoot</defName>
+    <title>바보같은 미호</title>
+    <titleShort>바보같은 미호</titleShort>
+    <baseDesc>조금 바보입니다.</baseDesc>
+	<skillGains>
+      <Social>-2</Social>
+      <Cooking>3</Cooking>
+      <Artistic>-4</Artistic>
+      <Shooting>4</Shooting>
+      <Melee>4</Melee>
+	</skillGains>
+    <slot>Adulthood</slot>
+
+		<forcedHediffs>
+		    <li>AlcoholAddiction</li>	
+		    <li>Miho_DontShootMe_Hediff</li>		
+		</forcedHediffs>
+	<spawnCategories>
+	  <li>MihoShoot</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef> 
+</Defs>

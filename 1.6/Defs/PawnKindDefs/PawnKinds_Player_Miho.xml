@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseMihoPlayerPawnKind">
+    <race>Alien_Miho</race>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <techHediffsRequired>
+	  <li>PsychicAmplifier</li>
+    </techHediffsRequired>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.7</Xeno_CelestialMiho>
+				<Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.16</Xeno_CelestialMiho_Arctic>
+				<Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+				<Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+
+
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+<useFactionXenotypes>false</useFactionXenotypes>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseMihoPlayerPawnKind">
+    <defName>Miho_PlayerColonist</defName>
+    <label>Miho colonist (Caster)</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>Miho_PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>MihoPioneer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+    <apparelTags>
+	  <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>MihoCommon</tag>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <tag>MihoCommonNecessary</tag>
+            <chance>0.8</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>350</min>
+      <max>850</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<maxGenerationAge>55</maxGenerationAge>
+
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="BaseMihoPlayerPawnKind">
+    <defName>Miho_PlayerColonistNonMagic</defName>
+    <label>Miho colonist</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>Miho_PlayerColonyNonMagic</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>MihoUrban</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+    <apparelTags>
+	  <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>MihoCommon</tag>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <tag>MihoCommonNecessary</tag>
+            <chance>0.8</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>350</min>
+      <max>850</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<maxGenerationAge>55</maxGenerationAge>
+
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseMihoPlayerPawnKind">
+    <defName>Miho_PlayerColonistFeral</defName>
+    <label>야생 미호</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>Miho_PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>MihoPioneer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+    <apparelTags>
+    </apparelTags>
+    <specificApparelRequirements>
+    </specificApparelRequirements>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>-1</min>
+      <max>-1</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<minGenerationAge>8</minGenerationAge>
+	<maxGenerationAge>18</maxGenerationAge>
+
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseMihoPlayerPawnKind">
+    <defName>Miho_PlayerColonistBorn</defName>
+    <label>정착지 미호</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>Miho_PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>MihoColonyBorn</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+    <apparelTags>
+    </apparelTags>
+    <specificApparelRequirements>
+    </specificApparelRequirements>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>-1</min>
+      <max>-1</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+
+  </PawnKindDef>
+  
+</Defs>

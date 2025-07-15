@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef ParentName="FactionBase" >
+	<defName>Miho_Faction_Supremacist</defName>
+	<label>미호 패권주의자</label>
+    <description>나르시즘적 성향을 지닌 여우 군사 단체입니다. 인류는 미개하니 자기들의 애완동물이 되야한다 주장합니다.</description>
+	<colorSpectrum>
+		  <li>(1, 1, 1)</li>
+
+    </colorSpectrum>
+    <melaninRange>0~0.31</melaninRange>
+
+	<pawnSingular>미호</pawnSingular>
+    <pawnsPlural>미호들</pawnsPlural>
+	<autoFlee>true</autoFlee>
+	<categoryTag>Mihoic</categoryTag>
+	<listOrderPriority>30</listOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>대장</leaderTitle>
+	<settlementGenerationWeight>0.5</settlementGenerationWeight>
+
+	<factionNameMaker>NamerFaction_Miho</factionNameMaker>
+	<settlementNameMaker>NamerSettlement_Miho</settlementNameMaker>
+	<allowedCultures><li>MihoCultures</li></allowedCultures> <!--허용하는 문화(CultureDef)지정-->
+
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Miho_MihoicCodeofLaw</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+
+    </requiredMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+
+	<disallowedMemes> <!--포함시키지 않는 meme지정-->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+
+    </disallowedMemes>
+
+	<techLevel>Spacer</techLevel>
+    <!--<minSettlementTemperatureChanceCurve> 
+      <points>
+        <li>(-40.1,  0.00001)</li>
+        <li>(-40,    1)</li>
+        <li>(-20,    0.00001)</li>
+      </points>
+    </minSettlementTemperatureChanceCurve> -->
+		<naturalEnemy>true</naturalEnemy>
+
+ <backstoryFilters>
+      <li>
+        <categories>
+			<li>Tribal</li>
+        </categories>
+      </li>
+ </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Miho_Drone</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_MihoPirate</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-50~55</allowedArrivalTemperatureRange>
+
+	<raidLootMaker>MihoRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<li>(1000, 150)</li>
+				<li>(2000, 500)</li>
+				<li>(2001, 10000)</li>
+			</points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+
+		  <Miho_Soldier_Militia>600</Miho_Soldier_Militia>
+		  <Miho_Soldier_Marksman>900</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>550</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
+		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
+
+
+		  <Miho_Soldier_Firepower>75</Miho_Soldier_Firepower>
+		  <Miho_Soldier_Medic>75</Miho_Soldier_Medic>
+
+
+		  <Miho_Mech_Sapsal>15</Miho_Mech_Sapsal>
+		  <Miho_Mech_BulgasalGrenade>5</Miho_Mech_BulgasalGrenade>
+
+		  <Miho_Mech_CataphractRocket>7</Miho_Mech_CataphractRocket>
+
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+		  <Miho_Soldier_Militia>400</Miho_Soldier_Militia>
+		  <Miho_Soldier_MilitiaMelee>180</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
+
+
+		  <Miho_Soldier_Medic>40</Miho_Soldier_Medic>
+
+		  <Miho_Soldier_Marksman>700</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>400</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
+
+		  <Miho_Soldier_Firepower>80</Miho_Soldier_Firepower>
+
+		  <Miho_Mech_Sapsal>15</Miho_Mech_Sapsal>
+		  <Miho_Mech_Bulgasal>6</Miho_Mech_Bulgasal>
+
+		  <Miho_Mech_CataphractRocket>7</Miho_Mech_CataphractRocket>
+
+
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>15</commonality>
+        <options>
+		  <Miho_Soldier_Militia>400</Miho_Soldier_Militia>
+		  <Miho_Soldier_MilitiaMelee>180</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_Medic>40</Miho_Soldier_Medic>
+		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
+
+		  <Miho_Soldier_Marksman>700</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>400</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
+
+		  <Miho_Soldier_Firepower>80</Miho_Soldier_Firepower>
+
+		  <Miho_Mech_Sapsal>15</Miho_Mech_Sapsal>
+		  <Miho_Mech_Bulgasal>6</Miho_Mech_Bulgasal>
+
+
+
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>30</commonality>
+        <options>
+		  <Miho_Soldier_Marksman>990</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>600</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
+		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
+
+		  <Miho_Soldier_MilitiaMelee>150</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_Medic>40</Miho_Soldier_Medic>
+
+		  <Miho_Soldier_Firepower>90</Miho_Soldier_Firepower>
+		  <Miho_Soldier_Battlemage>2</Miho_Soldier_Battlemage>
+
+		  <Miho_Mech_Sapsal>10</Miho_Mech_Sapsal>
+		  <Miho_Mech_BulgasalGrenade>4</Miho_Mech_BulgasalGrenade>
+		  <Miho_Mech_Bulgasal>3</Miho_Mech_Bulgasal>
+
+
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+		  <Miho_Soldier_PMC_InfantryBasic>65</Miho_Soldier_PMC_InfantryBasic>
+
+		  <Miho_Soldier_MilitiaMelee>130</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_Medic>50</Miho_Soldier_Medic>
+		  <Miho_Soldier_TacticalMagi>20</Miho_Soldier_TacticalMagi>
+
+		  <Miho_Mech_Sapsal>12</Miho_Mech_Sapsal>
+
+
+	
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+		  <Miho_Soldier_PMC_InfantryBasic>65</Miho_Soldier_PMC_InfantryBasic>
+		  <Miho_Mech_BulgasalGrenade>3</Miho_Mech_BulgasalGrenade>
+		  <Miho_Mech_Bulgasal>3</Miho_Mech_Bulgasal>
+		  <Miho_Soldier_MilitiaMelee>80</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_Medic>50</Miho_Soldier_Medic>
+		  <Miho_Soldier_TacticalMagi>20</Miho_Soldier_TacticalMagi>
+
+
+        </options>
+      </li>
+	   <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>0</commonality>
+        <options>
+          <Miho_Leader>1</Miho_Leader>
+        </options>
+      </li>
+           <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Miho_Colonist>10</Miho_Colonist>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+	  <commonality>1</commonality>
+        <traders>
+          <Miho_Trader>1</Miho_Trader>  <!--Miho_Trader-->
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo> <!--Muffalo-->
+        </carriers>
+        <guards>
+		  <Miho_Soldier_PMC_InfantryBasic>5</Miho_Soldier_PMC_InfantryBasic>
+		  <Miho_Soldier_Militia>15</Miho_Soldier_Militia>
+
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Miho_Colonist>100</Miho_Colonist>
+          <Miho_Leader>1</Miho_Leader>
+		  <Miho_Soldier_Militia>300</Miho_Soldier_Militia>
+        </options>
+      </li>
+    </pawnGroupMakers>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(10,  2)</li>
+				<li>(700,  2.5)</li>
+				<li>(2400, 2.5)</li>
+				<li>(3800, 2.1)</li>
+				<li>(5000, 2.2)</li>
+				<li>(6500, 3.4)</li>
+				<li>(8000, 3.8)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Miho_Ebony_SilkCloth</li>
+        <li>Cloth</li>
+        <li>Miho_MilitaryGradeBalisticCeramics</li>
+        <li>Miho_Ceramics</li>
+        <li>WoolSheep</li>
+		<li>DevilstrandCloth</li>
+
+		
+      </thingDefs>
+    </apparelStuffFilter>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <factionIconPath>Icon/Faction/PirateMiho</factionIconPath>
+	<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation> <!--초기설정에서 최대로 넣을 수 있는 팩션의 갯수 -->
+    <configurationListOrderPriority>31</configurationListOrderPriority> <!--초기설정에서 팩션갯수를 정하는 메뉴에서의 정렬순서?인듯	-->
+  </FactionDef>
+  
+  <TraderKindDef>
+    <defName>Base_MihoPirate</defName>
+    <stockGenerators>
+
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>800~3000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>20~70</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>1~8</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~800</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WoodLog</thingDef>
+        <countRange>400~700</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>100~250</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>40~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>400~600</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>300~500</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <countRange>-30~70</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <countRange>-40~100</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineIndustrial</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+      <li Class="StockGenerator_ReinforcedBarrels">
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Miho_PositiveFlower_Pipe</thingDef>
+        <countRange>50~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Miho_Ebony_SilkCloth</thingDef>
+        <countRange>50~450</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PsychicAmplifier</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Miho_HeavyRocketCore</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RawPosFlower_Dust</thingDef>
+        <totalPriceRange>100~1000</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Miho_PositiveFlower_Tea</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>ResourcesRaw</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>400~800</totalPriceRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </excludedThingDefs>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>400~800</totalPriceRange>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodMeals</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>12~50</countRange>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Kibble</li>
+          <li>Pemmican</li>
+        </thingDefs>
+      </li>
+
+      <!-- Drugs -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>700~1500</totalPriceRange>
+      </li>
+
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
+
+      <!-- Books -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Books</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li> <!-- only available in Anomaly, handled seperately -->
+        </excludedThingDefs>
+        <thingDefCountRange>2</thingDefCountRange>
+        <countRange>-2~1</countRange>
+      </li>  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Miho_Schematic</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+	  
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+        <countRange>-2~1</countRange>
+      </li>
+
+      <!-- Weapons -->
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>WeaponRanged</tradeTag>
+        <countRange>3~6</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>WeaponsMelee</categoryDef>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+
+      <!-- Apparel -->
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>8~12</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>2~4</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Armor</tradeTag>
+        <countRange>2~4</countRange>
+      </li>
+
+      <!-- Implants -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <!-- Buildings -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>BuildingsFurniture</categoryDef>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Art</tradeTag>
+        <countRange>5~10</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Television</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Telescope</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+
+      <!-- Exotic -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>ExoticMisc</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+        <excludedThingDefs>
+          <li>Luciferium</li> <!-- already handled by drugs -->
+          <li>ComponentSpacer</li> <!-- already handled by single def -->
+        </excludedThingDefs>
+        <customCountRanges>
+          <MedicineUltratech>2~15</MedicineUltratech>
+          <Hyperweave>50~200</Hyperweave>
+        </customCountRanges>
+      </li>
+
+      <!-- Genepacks -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>0~4</countRange>
+      </li>
+
+      <!-- Serums -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+        <tradeTag>Serum</tradeTag>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <countRange>-3~1</countRange> <!-- 20% chance of appearing -->
+        <excludedThingDefs>
+          <li>VoidsightSerum</li>
+        </excludedThingDefs>
+      </li>
+
+      <!-- Slaves -->
+      <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>-1~2</countRange>
+      </li>
+
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalFarm</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalUncommon</li>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>3~8</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Archite capsule2 -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <!-- Deathrest capacity serum -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>DeathrestCapacitySerum</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+
+      <!-- Cultist apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CeremonialCultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <!-- Pack turret apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_PackTurret</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <!-- Cultist apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CeremonialCultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+      
+
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

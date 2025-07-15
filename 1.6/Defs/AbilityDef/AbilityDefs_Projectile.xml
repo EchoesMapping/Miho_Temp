@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef Name="MihoPsycastBase" Abstract="True">
+    <abilityClass>MihoLib.MihoPsycast</abilityClass>
+    <category>Psychic</category>
+    <statBases>
+      <Ability_Duration>0</Ability_Duration>
+    </statBases>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <verbProperties>
+      <verbClass>MihoLib.Verb_MihoCastPsycast</verbClass>
+      <range>24.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+  <!-- 
+  <ThingDef>
+    <defName>Miho_DummyWeapon_DO_NOT_SPAWN</defName>
+    <thingClass>ThingWithComps</thingClass>
+    <label>psychic abilities</label>
+    <description>Only here so that the battle log doesn't break when someone is hit by a psychic
+      ability.</description>
+  </ThingDef>
+  -->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_StunTalisman</defName>
+    <label>무의식의 부적</label>
+    <description>상대를 단시간동안 기절시기는 부적을 던집니다.</description>
+    <aiCanUse>false</aiCanUse>
+
+    <iconPath>Icon/Abilities/MihoStun</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Talisman</groupDef>
+    <statBases>
+      <Ability_PsyfocusCost>0.4</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.2</warmupTime>
+      <range>8.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetMechs>True</canTargetMechs>
+      </targetParams>
+
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_TalismanStun_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Ensnare</defName>
+    <label>사냥그물</label>
+    <aiCanUse>true</aiCanUse>
+    <description>메카나이트 함정을 설치합니다. 함정의 걸린 적의 이동속도가 낮다면 무력화 시켜버립니다.</description>
+    <iconPath>Icon/Abilities/MihoEnsnare</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Berserk</groupDef>
+    <statBases>
+      <Ability_EntropyGain>100</Ability_EntropyGain>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1.2</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetMechs>True</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_Ensnare_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Fireball_Small</defName>
+    <label>여우잔불</label>
+    <aiCanUse>true</aiCanUse>
+    <description>사람을 죽이기엔 충분한 파괴력을 지닌 작은 여우불을 소환합니다. 소환이라기 보단 무언가를 모은다는게 맞겠군요.</description>
+    <iconPath>Icon/Abilities/MihoSmolFire</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Fireball</groupDef>
+    <statBases>
+      <Ability_EntropyGain>75</Ability_EntropyGain>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.65</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetMechs>True</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_Fireball_Small_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Fireball</defName>
+    <label>여우불</label>
+    <description>강력한 파괴력을 지닌 여우불을 소환합니다. 잔불 보다 구조물 공격에 효과적입니다. 소환이라기 보단 무언가를 모은다는게 맞겠군요.</description>
+    <iconPath>Icon/Abilities/MihoFire</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Fireball</groupDef>
+    <statBases>
+      <Ability_EntropyGain>75</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1.1</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetMechs>True</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_Fireball_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_PredatoryGaze</defName>
+    <label>포식자의 눈빛</label>
+    <description>여우도 포식자이긴 합니다. 무시 못 할 정도로 말이죠.</description>
+    <iconPath>Icon/Abilities/MihoThunder</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Thunder</groupDef>
+    <statBases>
+      <Ability_EntropyGain>75</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1.2</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetMechs>True</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_PredatoryGaze_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>Miho_MagicBomb_Blast</defName>
+    <graphicData>
+      <texPath>Things/Fleck/MagicBomb</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
+  </FleckDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>Miho_HawkInjury_Hediff</defName>
+    <label>매</label>
+    <labelNoun>매</labelNoun>
+    <description>매</description>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>0</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>tended</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0</painPerSeverity>
+      <averagePainPerSeverityPermanent>0</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <bleedRate>0</bleedRate>
+      <destroyedLabel>Destroyed</destroyedLabel>
+      <destroyedOutLabel>Destroyed</destroyedOutLabel>
+    </injuryProps>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+        <minSeverity>0</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Miho_Thunder_Hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>감전</label>
+    <description>메카나이트들을 이용한 특수 전하로 메카노이드든 사람이든 공평하게 감전시킵니다.</description>
+    <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-120</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.12</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Miho_Gaze_Hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>피식자의 마음</label>
+    <description>원초적 공포에 관해서는 몸은 무엇보다도 솔직합니다.</description>
+    <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-12</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <MeleeDamageFactor>0.25</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Miho_Analysis_Hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>나약</label>
+    <description>온 몸이 나약해져 더 아프게 맞습니다.</description>
+    <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-240</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>1.5</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>Miho_Hawk_Hediff</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>인스네어</label>
+    <description>메카나이트 그물로 적을 묶어버립니다.</description>
+    <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-12</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>Miho_Ensnare</stateEffecter>
+        <severityIndices>0~5</severityIndices>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <AimingDelayFactor>0.25</AimingDelayFactor>
+          <MoveSpeed>-1.85</MoveSpeed>
+          <MeleeDodgeChance>-10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Hawk_Proj</defName>
+    <label>Hawk</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MihoHawk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>80</speed>
+      <explosionRadius>0.5</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <preExplosionSpawnThingDef>Miho_Hawk_Portal</preExplosionSpawnThingDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="Monotail.CompProperties_FactionSetter" />
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircle</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Ensnare_Proj</defName>
+    <label>Ensnare</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombHawk</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>99</speed>
+      <explosionRadius>5</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnThingDef>Filth_MihoMechanite</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircle</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Miho_Mote_Ensnare</defName>
+    <graphicData>
+      <texPath>Things/Fleck/Ensnare</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>1.5</fadeInTime>
+      <solidTime>0</solidTime>
+      <fadeOutTime>1</fadeOutTime>
+      <attachedDrawOffset>(0, 0, -0.3)</attachedDrawOffset>
+    </mote>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>Miho_Ensnare</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.9~1.1</scale>
+        <chancePerTick>0.02</chancePerTick>
+        <positionRadius>0.3</positionRadius>
+        <moteDef>Miho_Mote_Ensnare</moteDef>
+        <speed>0.18~0.6</speed>
+        <angle>-45~45</angle>
+      </li>
+    </children>
+  </EffecterDef>
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Fireball_Small_Proj</defName>
+    <label>fireball</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MihoFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.75</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBomb</damageDef>
+      <damageAmountBase>38</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>46</speed>
+      <explosionRadius>1.5</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnThingDef>Filth_MihoMechanite</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircleProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Miho_Fireball_Proj</defName>
+    <label>fireball</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MihoFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.15</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombBig</damageDef>
+      <damageAmountBase>44</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>18</speed>
+      <explosionRadius>3.5</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnThingDef>Filth_MihoMechanite</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircle_BigProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_PredatoryGaze_Proj</defName>
+    <label>predatory gaze</label>
+    <graphicData>
+      <texPath>Things/Projectile/MihoThunderSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombGaze</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>150</speed>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>36</amount>
+          <chance>1</chance>
+        </li>
+        <li>
+          <def>Stun</def>
+          <amount>25</amount>
+          <chance>1</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircleProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_TalismanStun_Proj</defName>
+    <label>Talisman</label>
+    <graphicData>
+      <texPath>Things/Projectile/MihoTalisman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.58</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>33</speed>
+      <extraDamages>
+        <li>
+          <def>Stun</def>
+          <amount>15</amount>
+          <chance>1</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircleProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <![CDATA[ 
+  <ThingDef ParentName="BuildingBase" Name="MihoSpawner">
+    <defName>Miho_Butterfly_Portal_Dummy</defName>
+    <label>칼날나비 포탈 더미</label>
+    <description>칼날나비 포탈 더미.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/MihoPortal/Portal</texPath>
+      <drawSize>(2.1,2.1)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/MihoPortal/Portal</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>15</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>2</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <filthLeaving>Filth_MihoMechanite</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc1</designationHotKey>
+    <comps>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <tradeability>None</tradeability>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MihoSpawner">
+    <defName>Miho_Butterfly_Portal</defName>
+    <label>칼날나비 포탈</label>
+    <description>칼날나비 포탈.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoPortal/Portal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.1,2.1)</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>Miho_Butterfly</li>
+        </spawnablePawnKinds>
+        <spawnSound>Tunnel_End</spawnSound>
+        <initialPawnsPoints>300</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>600</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>600</lifespanTicks>
+        <expireEffect>RaisedRock_Collapse</expireEffect>
+      </li>
+    </comps>
+    <selectable>true</selectable>
+  </ThingDef>
+
+  <ThingDef ParentName="MihoSpawner">
+    <defName>Miho_Hawk_Portal</defName>
+    <label>사냥매 포탈</label>
+    <description>사냥매 포탈.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoPortal/Null</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.1,2.1)</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>Miho_Hawk</li>
+        </spawnablePawnKinds>
+        <spawnSound>Tunnel_End</spawnSound>
+        <initialPawnsPoints>100</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>100</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>600</lifespanTicks>
+        <expireEffect>RaisedRock_Collapse</expireEffect>
+      </li>
+    </comps>
+    <selectable>true</selectable>
+  </ThingDef>
+
+  <ThingDef ParentName="MihoSpawner">
+    <defName>Miho_ButterflyHaze_Portal</defName>    <!-- RW 1.6  Delete it-->
+<label>칼날나비 포탈</label>
+<description>칼날나비 포탈.</description>
+<graphicData>
+<texPath>Things/Building/MihoPortal/Portal</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+<drawSize>(2.1,2.1)</drawSize>
+</graphicData>
+<comps Inherit="False">
+<li Class="CompProperties_SpawnerPawn">
+<spawnablePawnKinds>
+<li>Miho_Butterfly</li>
+</spawnablePawnKinds>
+<spawnSound>Tunnel_End</spawnSound>
+<initialPawnsPoints>100</initialPawnsPoints>
+<maxSpawnedPawnsPoints>200</maxSpawnedPawnsPoints>
+</li>
+<li Class="CompProperties_Lifespan">
+<lifespanTicks>600</lifespanTicks>
+<expireEffect>RaisedRock_Collapse</expireEffect>
+</li>
+</comps>
+<selectable>true</selectable>
+</ThingDef>
+
+<ThingDef ParentName="MihoSpawner">
+<defName>Miho_Fox_Portal</defName>
+<label>운반여우 포탈</label>
+<description>운반여우 포탈.</description>
+<graphicData>
+<texPath>Things/Building/MihoPortal/Portal</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+<drawSize>(2.1,2.1)</drawSize>
+</graphicData>
+<comps Inherit="False">
+<li Class="CompProperties_SpawnerPawn">
+<spawnablePawnKinds>
+<li>Miho_Fox</li>
+</spawnablePawnKinds>
+<spawnSound>Tunnel_End</spawnSound>
+<initialPawnsPoints>300</initialPawnsPoints>
+<maxSpawnedPawnsPoints>300</maxSpawnedPawnsPoints>
+</li>
+<li Class="CompProperties_Lifespan">
+<lifespanTicks>600</lifespanTicks>
+<expireEffect>RaisedRock_Collapse</expireEffect>
+</li>
+</comps>
+<selectable>true</selectable>
+</ThingDef>
+
+<ThingDef ParentName="MihoSpawner">
+<defName>Miho_Abomi_Portal</defName><!-- RW 1.6  Miho_Abomi_Portal-->
+<label>구름트럼보 포탈</label>
+<description>구름트럼보 포탈.</description>
+<graphicData>
+<texPath>Things/Building/MihoPortal/Portal</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+<drawSize>(3.1,3.1)</drawSize>
+</graphicData>
+<comps Inherit="False">
+<li Class="CompProperties_SpawnerPawn">
+<spawnablePawnKinds>
+<li>Miho_Abomi</li>
+</spawnablePawnKinds>
+<spawnSound>Tunnel_End</spawnSound>
+<initialPawnsPoints>10000</initialPawnsPoints>
+<maxSpawnedPawnsPoints>10000</maxSpawnedPawnsPoints>
+</li>
+<li Class="CompProperties_Lifespan">
+<lifespanTicks>600</lifespanTicks>
+<expireEffect>RaisedRock_Collapse</expireEffect>
+</li>
+</comps>
+<selectable>true</selectable>
+</ThingDef>
+
+
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_TurretGun_Flame_Proj</defName>
+    <label>fireball</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MihoFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.75</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBomb</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>46</speed>
+      <explosionRadius>2</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircleProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+  ]]>
+
+  <!--==================================== 전투 지휘 모듈 ====================================-->
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_PreAbomi_Hediff</defName>
+    <label>혐오체</label>
+    <description>혐오스러운 메카나이트 군집입니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.1</painFactor>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_Abomi_Hediff</defName>
+    <label>혐오체 폭주</label>
+    <description>혐오체가 폭주중 입니다! 재생속도가 빨라지고 통제가 불가능 해집니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_CauseMentalState">
+        <animalMentalState>ManhunterPermanent</animalMentalState>
+        <animalMentalStateAlias>Manhunter</animalMentalStateAlias>
+        <humanMentalState>Berserk</humanMentalState>
+        <letterDef>ThreatSmall</letterDef>
+        <mtbDaysToCauseMentalState>0.01</mtbDaysToCauseMentalState>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <InjuryHealingFactor>100</InjuryHealingFactor>
+          <MoveSpeed>4.5</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>2</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_AbomiSeen_Hediff</defName>
+    <label>"그 것" 목격</label>
+    <description>지끔까지 겪어보지 못했던 혐오감이 느껴집니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>9</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+          <MeleeDodgeChance>-3</MeleeDodgeChance>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>1.5</AimingDelayFactor>
+        </statFactors>
+        <vomitMtbDays>0.04</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffGiverSetDef>
+    <defName>MihoSummonAbomi</defName>
+    <hediffGivers>
+
+      <li Class="HediffGiver_Birthday">
+
+        <hediff>Miho_PreAbomi_Hediff</hediff>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 100)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+
+    </hediffGivers>
+  </HediffGiverSetDef>
+
+  <ThoughtDef>
+    <defName>Miho_AbomiSeen_Hediff_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Miho_AbomiSeen_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>"그 것" 목격</label>
+        <description>(오줌을 지림)</description>
+        <baseMoodEffect>-50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_MihoMechanite</defName>
+    <label>메카나이트 결정</label>
+    <graphicData>
+      <texPath>Things/Filth/MechaniteFilth</texPath>
+    </graphicData>
+    <filth>
+      <placementMask>
+        <li>Terrain</li>
+        <li>Unnatural</li>
+      </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
+    </filth>
+  </ThingDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>Miho_BulletShieldPsychic</defName>
+    <label>여우 보호막</label>
+    <thingClass>ThingWithComps</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Ethereal/PsychicShieldRipples</texPath>
+      <shaderType>BulletShieldPsychic</shaderType>
+      <color>(180, 231, 237)</color>
+      <drawSize>11.9</drawSize>
+      <shaderParameters>
+        <_PulseInterval>0.5</_PulseInterval>
+        <_DistortionScale>0.5</_DistortionScale>
+        <_DistortionIntensity>0.15</_DistortionIntensity>
+        <_MinAlpha>0.1</_MinAlpha>
+        <_MaxAlpha>0.3</_MaxAlpha>
+        <_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+      </shaderParameters>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+        <interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+        <hitPoints>550</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
+        <color>(0.4, 0.4, 0.4)</color>
+        <chargeDurationTicks>15000</chargeDurationTicks>
+        <minAlpha>0.2</minAlpha>
+        <interceptEffect>Interceptor_BlockedProjectilePsychic</interceptEffect>
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>15000</delayTicks>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

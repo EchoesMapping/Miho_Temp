@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Average_MihoAM</defName>
+    <graphicPath>Miho/HeadBlank/Average_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Average_MihoAF</defName>
+    <graphicPath>Miho/HeadBlank/Average_Normal</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+</Defs>

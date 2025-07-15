@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Miho_Child_TinkerFox.title>curious fox</Miho_Child_TinkerFox.title>
+	<Miho_Child_TinkerFox.titleShort>curious fox</Miho_Child_TinkerFox.titleShort>
+	<Miho_Child_TinkerFox.baseDesc>[PAWN_nameDef] has always been curious. This curiosity has gotten {PAWN_objective} into many troublesome situations.</Miho_Child_TinkerFox.baseDesc>
+
+	<Miho_Child_TinkerFoxTwo.title>curious fox</Miho_Child_TinkerFoxTwo.title>
+	<Miho_Child_TinkerFoxTwo.titleShort>curious fox</Miho_Child_TinkerFoxTwo.titleShort>
+	<Miho_Child_TinkerFoxTwo.baseDesc>[PAWN_nameDef] has always been curious. This curiosity has gotten {PAWN_objective} into many troublesome situations.</Miho_Child_TinkerFoxTwo.baseDesc>
+
+</LanguageData>

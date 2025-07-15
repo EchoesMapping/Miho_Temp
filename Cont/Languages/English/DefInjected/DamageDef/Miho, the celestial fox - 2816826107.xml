@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_MagicBombHawk.label>mechanite-arcane</Miho_MagicBombHawk.label>
+  <Miho_MagicBombHawk.deathMessage>{0} has died in an explosion.</Miho_MagicBombHawk.deathMessage>
+  <Miho_MagicBomb.label>mechanite-arcane</Miho_MagicBomb.label>
+  <Miho_MagicBomb.deathMessage>{0} has died in an explosion.</Miho_MagicBomb.deathMessage>
+  <Miho_MagicBombBig.label>mechanite-arcane</Miho_MagicBombBig.label>
+  <Miho_MagicBombBig.deathMessage>{0} has died in an explosion.</Miho_MagicBombBig.deathMessage>
+  <Miho_MagicBombEMP.label>mechanite-arcane</Miho_MagicBombEMP.label>
+  <Miho_MagicBombEMP.deathMessage>{0} has died in an explosion.</Miho_MagicBombEMP.deathMessage>
+  <Miho_NeuroSlow.label>mechanite-arcane</Miho_NeuroSlow.label>
+  <Miho_NeuroSlow.deathMessage>{0} has died in an explosion.</Miho_NeuroSlow.deathMessage>
+  <Miho_NeuroKill.label>mechanite-arcane</Miho_NeuroKill.label>
+  <Miho_NeuroKill.deathMessage>{0} has died in an explosion.</Miho_NeuroKill.deathMessage>
+  <Miho_CutPlasma.label>plasma cut</Miho_CutPlasma.label>
+  <PlasmaFlame.label>plasma</PlasmaFlame.label>
+  <PlasmaFlame.deathMessage>{0} has burned to death.</PlasmaFlame.deathMessage>
+  <MihoPlasma.label>plasma</MihoPlasma.label>
+  <MihoPlasma.deathMessage>{0} has been melted.</MihoPlasma.deathMessage>
+  <MihoGunshot.label>gunshot</MihoGunshot.label>
+  <MihoGunshot.deathMessage>{0} has been melted.</MihoGunshot.deathMessage>
+  <MihoGunshotFrag.label>gunshot</MihoGunshotFrag.label>
+  <MihoGunshotFrag.deathMessage>{0} has been melted.</MihoGunshotFrag.deathMessage>
+  <MihoMagicFrag.label>arcane shot</MihoMagicFrag.label>
+  <MihoMagicFrag.deathMessage>{0} has been melted.</MihoMagicFrag.deathMessage>
+  <MihoGunshotDemo.label>gunshot</MihoGunshotDemo.label>
+  <MihoGunshotDemo.deathMessage>{0} has been melted.</MihoGunshotDemo.deathMessage>
+</LanguageData>

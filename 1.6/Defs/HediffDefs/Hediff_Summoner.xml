@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_Start_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (행성 적응중)</label>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>100</maxSeverity>
+
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+		</comps>	
+    <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Nojob</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Torso</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>c</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+        </capMods>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summoner_I_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>d</label>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+        </capMods>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_I_StunTalisman_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>e</label>
+        <minSeverity>0.4</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+        </capMods>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_I_Fox_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>f</label>
+        <minSeverity>0.5</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+        </capMods>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_PositiveFlower_Tea_Addiction</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>g</label>
+        <minSeverity>0.75</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <capMods>
+        </capMods>
+
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_I_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (I)</label>
+    <aptitudes>
+      <Animals>4</Animals>
+    </aptitudes>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.066</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+			<li MayRequire="goudaquiche.MoharFramework" Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Huntress_I_Hediff</li>
+					<li>Miho_Huntress_II_Hediff</li>
+					<li>Miho_Huntress_III_Hediff</li>
+					<li>Miho_Huntress_IV_Hediff</li>
+					<li>Miho_Huntress_V_Hediff</li>
+					<li>Miho_Shamaness_I_Hediff</li>
+					<li>Miho_Shamaness_II_Hediff</li>
+					<li>Miho_Shamaness_III_Hediff</li>
+					<li>Miho_Shamaness_IV_Hediff</li>
+					<li>Miho_Shamaness_V_Hediff</li>
+					<li>Miho_Temptress_I_Hediff</li>
+					<li>Miho_Temptress_II_Hediff</li>
+					<li>Miho_Temptress_III_Hediff</li>
+					<li>Miho_Temptress_IV_Hediff</li>
+					<li>Miho_Temptress_V_Hediff</li>
+
+					<li>Miho_Tinker_I_Hediff</li>
+					<li>Miho_Tinker_II_Hediff</li>
+					<li>Miho_Tinker_III_Hediff</li>
+					<li>Miho_Tinker_IV_Hediff</li>
+					<li>Miho_Tinker_V_Hediff</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+  <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summoner_II_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+        <statOffsets>
+          <PsychicEntropyMax>120</PsychicEntropyMax>         </statOffsets>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.03</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>120</PsychicEntropyMax>         </statOffsets>
+      </li>
+      <li>
+        <label>c</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>120</PsychicEntropyMax>         </statOffsets>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_II_Butterfly_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>d</label>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>120</PsychicEntropyMax>        </statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_II_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (II)</label>
+    <aptitudes>
+      <Animals>5</Animals>
+    </aptitudes>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.033</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+			<li MayRequire="goudaquiche.MoharFramework" Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Huntress_I_Hediff</li>
+					<li>Miho_Huntress_II_Hediff</li>
+					<li>Miho_Huntress_III_Hediff</li>
+					<li>Miho_Huntress_IV_Hediff</li>
+					<li>Miho_Huntress_V_Hediff</li>
+					<li>Miho_Shamaness_I_Hediff</li>
+					<li>Miho_Shamaness_II_Hediff</li>
+					<li>Miho_Shamaness_III_Hediff</li>
+					<li>Miho_Shamaness_IV_Hediff</li>
+					<li>Miho_Shamaness_V_Hediff</li>
+					<li>Miho_Temptress_I_Hediff</li>
+					<li>Miho_Temptress_II_Hediff</li>
+					<li>Miho_Temptress_III_Hediff</li>
+					<li>Miho_Temptress_IV_Hediff</li>
+					<li>Miho_Temptress_V_Hediff</li>
+
+					<li>Miho_Tinker_I_Hediff</li>
+					<li>Miho_Tinker_II_Hediff</li>
+					<li>Miho_Tinker_III_Hediff</li>
+					<li>Miho_Tinker_IV_Hediff</li>
+					<li>Miho_Tinker_V_Hediff</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+  <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summoner_III_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+        <statOffsets>
+          <PsychicEntropyMax>150</PsychicEntropyMax>        </statOffsets>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.03</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>150</PsychicEntropyMax>        </statOffsets>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_IV_Shield_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>c</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>150</PsychicEntropyMax>        </statOffsets>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_III_Inspiration_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>d</label>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>150</PsychicEntropyMax>        </statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_III_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (III)</label>
+    <aptitudes>
+      <Animals>6</Animals>
+    </aptitudes>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.022</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+			<li MayRequire="goudaquiche.MoharFramework" Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Huntress_I_Hediff</li>
+					<li>Miho_Huntress_II_Hediff</li>
+					<li>Miho_Huntress_III_Hediff</li>
+					<li>Miho_Huntress_IV_Hediff</li>
+					<li>Miho_Huntress_V_Hediff</li>
+					<li>Miho_Shamaness_I_Hediff</li>
+					<li>Miho_Shamaness_II_Hediff</li>
+					<li>Miho_Shamaness_III_Hediff</li>
+					<li>Miho_Shamaness_IV_Hediff</li>
+					<li>Miho_Shamaness_V_Hediff</li>
+					<li>Miho_Temptress_I_Hediff</li>
+					<li>Miho_Temptress_II_Hediff</li>
+					<li>Miho_Temptress_III_Hediff</li>
+					<li>Miho_Temptress_IV_Hediff</li>
+					<li>Miho_Temptress_V_Hediff</li>
+
+					<li>Miho_Tinker_I_Hediff</li>
+					<li>Miho_Tinker_II_Hediff</li>
+					<li>Miho_Tinker_III_Hediff</li>
+					<li>Miho_Tinker_IV_Hediff</li>
+					<li>Miho_Tinker_V_Hediff</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+  <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summoner_IV_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+        <statOffsets>
+          <PsychicEntropyMax>180</PsychicEntropyMax>        </statOffsets>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.03</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>180</PsychicEntropyMax>        </statOffsets>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Skill_IV_Turret_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+					<partsToAffect>
+						<li>Brain</li>
+					</partsToAffect>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>c</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>180</PsychicEntropyMax>        </statOffsets>
+      </li>
+      <li>
+        <label>d</label>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>180</PsychicEntropyMax>
+		 </statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_IV_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (IV)</label>
+    <aptitudes>
+      <Animals>7</Animals>
+    </aptitudes>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.022</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+			<li MayRequire="goudaquiche.MoharFramework" Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Huntress_I_Hediff</li>
+					<li>Miho_Huntress_II_Hediff</li>
+					<li>Miho_Huntress_III_Hediff</li>
+					<li>Miho_Huntress_IV_Hediff</li>
+					<li>Miho_Huntress_V_Hediff</li>
+					<li>Miho_Shamaness_I_Hediff</li>
+					<li>Miho_Shamaness_II_Hediff</li>
+					<li>Miho_Shamaness_III_Hediff</li>
+					<li>Miho_Shamaness_IV_Hediff</li>
+					<li>Miho_Shamaness_V_Hediff</li>
+					<li>Miho_Temptress_I_Hediff</li>
+					<li>Miho_Temptress_II_Hediff</li>
+					<li>Miho_Temptress_III_Hediff</li>
+					<li>Miho_Temptress_IV_Hediff</li>
+					<li>Miho_Temptress_V_Hediff</li>
+
+					<li>Miho_Tinker_I_Hediff</li>
+					<li>Miho_Tinker_II_Hediff</li>
+					<li>Miho_Tinker_III_Hediff</li>
+					<li>Miho_Tinker_IV_Hediff</li>
+					<li>Miho_Tinker_V_Hediff</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+    <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summoner_V_Hediff</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+        <statOffsets>
+          <PsychicEntropyMax>210</PsychicEntropyMax>        </statOffsets>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.03</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+
+        <statOffsets>
+          <PsychicEntropyMax>210</PsychicEntropyMax>
+		  </statOffsets>
+      </li>
+      <li>
+        <label>c</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>210</PsychicEntropyMax>
+		  </statOffsets>
+      </li>
+      <li>
+        <label>d</label>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+        </capMods>
+        <statOffsets>
+          <PsychicEntropyMax>210</PsychicEntropyMax>
+		</statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summoner_V_Hediff</defName>
+		<description>소환사</description>
+		<label>소환사 (V)</label> <!-- -->
+    <aptitudes>
+      <Animals>8</Animals>
+    </aptitudes>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Spawn_Abomi</abilityDef>
+      </li>
+			<li MayRequire="goudaquiche.MoharFramework" Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Huntress_I_Hediff</li>
+					<li>Miho_Huntress_II_Hediff</li>
+					<li>Miho_Huntress_III_Hediff</li>
+					<li>Miho_Huntress_IV_Hediff</li>
+					<li>Miho_Huntress_V_Hediff</li>
+					<li>Miho_Shamaness_I_Hediff</li>
+					<li>Miho_Shamaness_II_Hediff</li>
+					<li>Miho_Shamaness_III_Hediff</li>
+					<li>Miho_Shamaness_IV_Hediff</li>
+					<li>Miho_Shamaness_V_Hediff</li>
+					<li>Miho_Temptress_I_Hediff</li>
+					<li>Miho_Temptress_II_Hediff</li>
+					<li>Miho_Temptress_III_Hediff</li>
+					<li>Miho_Temptress_IV_Hediff</li>
+					<li>Miho_Temptress_V_Hediff</li>
+
+					<li>Miho_Tinker_I_Hediff</li>
+					<li>Miho_Tinker_II_Hediff</li>
+					<li>Miho_Tinker_III_Hediff</li>
+					<li>Miho_Tinker_IV_Hediff</li>
+					<li>Miho_Tinker_V_Hediff</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+    <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <statOffsets>
+          <PsychicEntropyMax>240</PsychicEntropyMax>
+        </statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summon_SixHour</defName>
+		<description>남은시간</description>
+		<label>남은시간</label>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+		</comps>
+    <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summon_Dead</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.15</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+
+
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summon_SevenDay</defName>
+		<description>남은시간</description>
+		<label>남은시간</label>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.142</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+		</comps>
+    <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+				<hediffGivers>
+				<li Class="MonoTail.HediffGiver_RandomMiho">
+					<hediff>Miho_Summon_Dead</hediff>
+					<mtbDays>0.01</mtbDays>
+				</li>
+				</hediffGivers>
+      </li>
+      <li>
+        <label>b</label>
+        <minSeverity>0.03</minSeverity>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+
+        </capMods>
+
+
+      </li>
+    </stages>
+	</HediffDef>
+	
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summon_Dead</defName>
+		<description>동적 메카나이트 수명</description>
+		<label>동적 메카나이트 수명</label>
+		<comps>
+		</comps>
+      <stages>
+        <li>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>0.001</deathMtbDays>      
+        </li>
+      </stages>
+	</HediffDef>
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Summon_DeadMech</defName>
+		<description>자원으로 헤체됨</description>
+		<label>자원으로 헤체됨</label>
+		<comps>
+		</comps>
+      <stages>
+        <li>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>0.001</deathMtbDays>      
+        </li>
+      </stages>
+	</HediffDef>
+	
+	<HediffGiverSetDef>
+		<defName>MihoSummonSixhour</defName>
+		<hediffGivers>
+
+			<li Class="HediffGiver_Birthday">
+
+				<hediff>Miho_Summon_SixHour</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 100)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+
+		</hediffGivers>
+	</HediffGiverSetDef>
+	<HediffGiverSetDef>
+		<defName>MihoSummonSevenDay</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+
+				<hediff>Miho_Summon_SevenDay</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 100)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+</Defs>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_FoxTwo</defName>
+		<title>그냥 여우</title>
+		<titleShort>여우</titleShort>
+		<baseDesc>[PAWN_nameDef]는 그냥 여우였습니다. 여우는 어떻게 우는지 아무도 모릅니다.</baseDesc>
+
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Artistic>1</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<slot>Childhood</slot>
+		<forcedHediffs>
+			<li>Miho_Shamaness_II_Hediff</li>
+			<li>Miho_Skill_I_Love_Hediff</li>
+			<li>Miho_Skill_II_FireballSmall_Hediff</li>
+
+		</forcedHediffs>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_RuralTwo</defName>
+		<title>시골여우</title>
+		<titleShort>시골여우</titleShort>
+		<baseDesc>[PAWN_nameDef]은 시골의 여우였습니다. 보통 다람쥐나 고양이를 잡아먹었죠.</baseDesc>
+
+		<skillGains>
+			<Animals>4</Animals>
+			<Plants>3</Plants>
+			<Construction>2</Construction>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Huntress_II_Hediff</li>
+			<li>Miho_Skill_I_Hawk_Hediff</li>
+			<li>Miho_Skill_II_FireballSmall_Hediff</li>
+			<li>Miho_Skill_II_Ensnare_Hediff</li>
+
+
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_HuntFoxTwo</defName>
+		<title>사냥여우</title>
+		<titleShort>사냥여우</titleShort>
+		<baseDesc>[PAWN_nameDef]는 놀라운 사냥꾼 이었습니다. 무엇이 놀라운진 아무도 모릅니다.</baseDesc>
+
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>3</Shooting>
+			<Social>3</Social>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Huntress_II_Hediff</li>
+			<li>Miho_Skill_I_Hawk_Hediff</li>
+			<li>Miho_Skill_II_FireballSmall_Hediff</li>
+			<li>Miho_Skill_II_Ensnare_Hediff</li>
+
+
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_OrphanTwo</defName>
+		<title>버려진 여우</title>
+		<titleShort>버려진 여우</titleShort>
+		<baseDesc>[PAWN_nameDef]는 부모에게서 버려졌거나. 부모를 잃어버린 여우였습니다. 그래도 잘 살아 있네요.</baseDesc>
+
+		<skillGains>
+			<Melee>4</Melee>
+			<Construction>3</Construction>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Temptress_II_Hediff</li>
+			<li>Miho_Skill_I_Powerstrike_Hediff</li>
+			<li>Miho_Skill_II_Jump_Hediff</li>
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoAssault</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_GiftedTwo</defName>
+		<title>영재</title>
+		<titleShort>영재</titleShort>
+		<baseDesc>[PAWN_nameDef]은 높은 지적 능력을 지닌 여우였습니다. 근데 여우가 똑똑하면 뭐합니까.</baseDesc>
+
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Crafting>3</Crafting>
+			<Artistic>4</Artistic>
+			<Social>-4</Social>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Shamaness_II_Hediff</li>
+			<li>Miho_Skill_I_Love_Hediff</li>
+			<li>Miho_Skill_II_FireballSmall_Hediff</li>
+
+
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_DesertTwo</defName>
+		<title>사막여우</title>
+		<titleShort>사막여우</titleShort>
+		<baseDesc>말 그대로 사막여우였습니다. 더위를 잘 버팁니다.</baseDesc>
+
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Social>1</Social>
+			<Melee>3</Melee>
+			<Shooting>1</Shooting>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Celestial_II_Hediff</li>
+			<li>Miho_Skill_II_MakeSteel_Hediff</li>
+			<li>Miho_Skill_II_HotFirespew_Hediff</li>
+			<li>Miho_Skill_I_Sunlamp_Hediff</li>
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_HatihoTwo</defName>
+		<title>숲속의 여우</title>
+		<titleShort>숲속의 여우</titleShort>
+		<baseDesc>숲속의 여우였던 [PAWN_nameDef]은 다른 동물 친구들과 아주 조금 더 친했습니다.</baseDesc>
+
+		<skillGains>
+			<Animals>4</Animals>
+			<Artistic>1</Artistic>
+			<Social>1</Social>
+			<Melee>3</Melee>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Summoner_II_Hediff</li>
+			<li>Miho_Skill_I_Fox_Hediff</li>
+			<li>Miho_Skill_II_Butterfly_Hediff</li>
+
+
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_BraveTwo</defName>
+		<title>용감한 여우</title>
+		<titleShort>용감한 여우</titleShort>
+		<baseDesc>용감한 여우입니다. 너무 용감해서 친구가 없었습니다.</baseDesc>
+
+		<skillGains>
+			<Animals>-3</Animals>
+			<Social>-4</Social>
+			<Melee>10</Melee>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Temptress_II_Hediff</li>
+			<li>Miho_Skill_I_Powerstrike_Hediff</li>
+			<li>Miho_Skill_II_Jump_Hediff</li>
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoPioneer</li>
+			<li>MihoAssault</li>
+			<li>MihoSeasonalSanta</li>
+
+		</spawnCategories>
+
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

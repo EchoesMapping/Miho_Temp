@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_TobaccoProduction</defName>
+		<label>미호 담배 생산기</label>
+		<description>톱밥과 태양화로 담배를 생산하는 기계입니다. 훈연 과정이 좀 깁니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoTobacco/MihoTobacco</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.7,5.7)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>110</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoTobacco/MihoTobacco</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+	  </placeWorkers>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>3800</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>1</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoTobacco/MihoTobacco</buildingOnGraphic>
+				<numberOfInputs>2</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-1)</li>
+					<li>(1,0,-1)</li>
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+			<li>Miho_BasicFactory</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+   		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_TobaccoProduction_Factory_One</defName>
+		<building>MihoVFE_TobaccoProduction</building>
+		<items>
+			<li>RawPosFlower</li>
+		</items>	
+		<secondItems>
+			<li>WoodLog</li>
+		</secondItems>
+		<amount>
+			<li>50</li>
+			<li>10</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_PositiveFlower_Pipe</result>
+		<resultSpecialIcon>Things/Drugs/MihoPipe</resultSpecialIcon>		
+		<yield>16</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+</Defs>

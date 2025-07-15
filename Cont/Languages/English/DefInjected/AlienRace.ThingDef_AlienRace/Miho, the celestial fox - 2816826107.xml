@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Alien_Miho.tools.0.label>Left Punch</Alien_Miho.tools.0.label>
+  <Alien_Miho.tools.1.label>Right Punch</Alien_Miho.tools.1.label>
+  <Alien_Miho.tools.2.label>Teeth</Alien_Miho.tools.2.label>
+  <Alien_Miho.label>Miho</Alien_Miho.label>
+  <Alien_Miho.description>Including the 'Ordinary', the common ancestor of Miho is a "Red Fox", not a human. Of course, this is not due to natural evolution but is presumed to be the result of uplift by an unknown transcendent being. This means they look like humans but are not actually human. They have an "Elegans" linked with mechanites in their bodies, which determines the strength of their psychic powers depending on the amount of sunlight. Because of this organ, these foxes pray to the sun and energy.</Alien_Miho.description>
+  <Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>mask</Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>skin</Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>hair</Alien_Miho.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+</LanguageData>

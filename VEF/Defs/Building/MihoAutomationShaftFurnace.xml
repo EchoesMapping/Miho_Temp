@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Hopper</defName>
+		<label>미호 투입기</label>
+		<description>미호 시설 전용은 아닙니다.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+            <texPath>Things/Building/Production/Hopper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.05,1.05)</drawSize>
+			<damageData>
+
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>42</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<building>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+
+				</filter>
+			</defaultStorageSettings>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<Mass>20</Mass>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<Miho_Ceramics>15</Miho_Ceramics>
+		</costList>
+		<tickerType>Never</tickerType>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+
+		<surfaceType>Item</surfaceType>
+		<!--<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>-->
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Miho_BasicFactory</li>
+		</researchPrerequisites>
+
+		<uiIconScale>0.85</uiIconScale>
+   		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_ShaftFurnace</defName>
+		<label>미호 고로</label>
+		<description>세라믹과 강철을 제조하기 위해 만들어진 커다란 용광로 입니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoShaftFurnace/MihoShaftFurnace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(9.9,9.9)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoShaftFurnaceBlu/MihoShaftFurnace</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+	  </placeWorkers>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>15000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(5,5)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>15</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>800</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoShaftFurnace/MihoShaftFurnace</buildingOnGraphic>
+				<numberOfInputs>2</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-3)</li>
+					<li>(3,0,0)</li>
+					<li>(-3,0,0)</li>
+
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+			<li>Miho_BasicFactory</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+   		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+<!-- 
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_ShaftFurnace_Factory_One</defName>
+		<building>MihoVFE_ShaftFurnace</building>
+		<items>
+			<li>Miho_CeramicsPaste</li>
+		</items>	
+		<secondItems>
+			<li>Steel</li>
+		</secondItems>
+		<amount>
+			<li>10</li>
+			<li>3</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_Ceramics</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.15</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	-->
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_ShaftFurnace_Factory_Two</defName>
+		<building>MihoVFE_ShaftFurnace</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>Steel</li>
+		</secondItems>
+		<amount>
+			<li>5</li>
+			<li>5</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_MilitaryGradeBalisticCeramics</result>	
+		<yield>16</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.15</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_ShaftFurnace_Factory_Three</defName>
+		<building>MihoVFE_ShaftFurnace</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>Gold</li>
+		</secondItems>
+		<amount>
+			<li>5</li>
+			<li>5</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<result>Miho_HeatCeramics</result>	
+		<yield>16</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.3</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<!-- 
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_ShaftFurnace_Factory_Four</defName>
+		<building>MihoVFE_ShaftFurnace</building>
+		<items>
+			<li>Miho_Magma</li>
+		</items>	
+		<secondItems>
+			<li>Miho_CeramicsPaste</li>
+		</secondItems>
+		<amount>
+			<li>50</li>
+			<li>13</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<result>Steel</result>	
+		<yield>13</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.15</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Silk</defName>
+		<label>화현비단누에 둥지</label>
+		<description>인공적으로 만든 둥지입니다. 어둡고 고온인 상태를 유지시켜줘야 집단폐사를 막을 수 있습니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/MihoSilk/MihoSilk</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<WoodLog>200</WoodLog>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>150</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>Miho_Silk</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoSilk/MihoSilk</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertMustOrWhiskeyDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/IP_Begin</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/IP_Begin</chooseIngredientsIcon>
+
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon >
+
+				<cancelIngredientsText>Miho_BringIngredients</cancelIngredientsText> 
+				<cancelIngredientsDesc>Miho_BringIngredientsDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/IP_Begin</cancelIngredientsIcon> 
+				<isLightDependingMachine>true</isLightDependingMachine>
+				<minLight>-1</minLight>
+				<maxLight>0.5</maxLight>
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>22</minTemp>
+				<maxTemp>60</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_RoottoSilk</defName>
+		<building>MihoVFE_Silk</building>
+		<items>
+			<li>MedicineHerbal</li>
+		</items>	
+		<amount>
+			<li>10</li>
+		</amount>
+		<result>Miho_Ebony_SilkCloth</result>	
+		<yield>40</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>MihoVFE_RoottoSilkItem</defName>
+		<building>MihoVFE_Silk</building>
+		<slot>1</slot>
+		<items>			
+			<li>MedicineHerbal</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+</Defs>

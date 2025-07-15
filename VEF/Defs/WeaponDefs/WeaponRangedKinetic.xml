@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>MihoVEF_Weapon_Bolter</defName>
+    <label>미호 속사포</label>
+    <description>47mm탄을 사용하는 고관통 속사포 입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/FastCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.45</drawSize>
+
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>    
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>355000</WorkToMake>
+      <Mass>55</Mass>
+      <AccuracyTouch>0.32</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.7</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ComponentSpacer>21</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MihoVEF_Weapon_Bolter_Proj</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>41.9</range>
+       <minRange>2.9</minRange>
+
+        <burstShotCount>1</burstShotCount>
+		<forcedMissRadius>1</forcedMissRadius> 
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Miho_KineticCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False"> 
+      <li>MihoBulgasal</li>
+    </weaponTags>
+    <tools>
+    </tools>
+
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>MihoVEF_Weapon_Bolter_Proj</defName>
+    <label>shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.8</drawSize>
+
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+	  <explosionRadius>1</explosionRadius>
+	  <flyOverhead>false</flyOverhead>
+      <damageAmountBase>56</damageAmountBase>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>56</speed>
+    </projectile>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>MihoVEF_Weapon_Rocket</defName>
+    <label>플라즈마 캐터펄트</label>
+    <description>중장갑에 효과적인 포입니다.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.55</drawSize>
+
+    </graphicData>
+
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>342000</WorkToMake>
+      <Mass>99.5</Mass>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>120</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <Chemfuel>50</Chemfuel>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>MihoSapsal</li>
+    </weaponTags>
+    <verbs>
+            <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MihoVEF_Weapon_Rocket_Proj</defaultProjectile>
+        <warmupTime>8</warmupTime>
+       <minRange>18</minRange>
+        <soundAiming>Miho_ChargingBig</soundAiming>
+		<forcedMissRadius>0.5</forcedMissRadius> 
+        <range>100</range>
+        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Miho_CannonPlasmaBig</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>30</muzzleFlashScale>
+            </li>
+    </verbs>
+    <tools>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MihoVEF_Weapon_Rocket_Proj</defName>
+		<label>plasma</label>
+    <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+          <texPath>Things/Projectile/MihoPlasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>MihoPlasma</damageDef>
+			<damageAmountBase>42</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<stoppingPower>24</stoppingPower>
+			<speed>53</speed>
+			<explosionRadius>2.8</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>MihoVEF_Weapon_Machinegun</defName>
+    <label>미호 거치 기관총</label>
+    <description>중형 드론에 장착된 6.5mm 탄환을 발사하는 중거리 포탑입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Machinegun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.05</drawSize>
+
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>    
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>355000</WorkToMake>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.63</AccuracyMedium>
+      <AccuracyLong>0.51</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ComponentSpacer>21</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MihoVEF_Weapon_Machinegun_Proj</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False"> 
+      <li>MihoSapsalGun</li>
+    </weaponTags>
+    <tools>
+    </tools>
+
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>MihoVEF_Weapon_Machinegun_Proj</defName>
+    <label>bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>Miho_Weapon_SapperRobot</defName>
+    <label>미호 데몰리셔</label>
+    <description>저 산을 부숴버려라!</description>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags Inherit="False"> 
+      <li>MihoMeleeBulgasal</li>
+    </weaponTags>
+    <costList>
+      <ComponentSpacer>21</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>25</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>45</power>
+        <armorPenetration>0.7</armorPenetration>
+
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+		<equippedStatOffsets>
+      <MiningSpeed>15</MiningSpeed>
+      <MiningYield>0.25</MiningYield>
+		</equippedStatOffsets>
+    <recipeMaker>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>MihoVEF_Weapon_Security</defName>
+    <label>수호 드론 단총</label>
+    <description>8mm구경의 소이 권총탄을 사용하는 다용도 기관단총입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>18500</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.42</AccuracyTouch>
+      <AccuracyShort>0.62</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleCQB_Proj</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Miho_Pistol</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoSecurity</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

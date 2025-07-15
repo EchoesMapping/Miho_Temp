@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Xeno_CelestialMiho.label>Ordinary Miho</Xeno_CelestialMiho.label>
+  <Xeno_CelestialMiho.description>These type Mihos are the most common, especially optimized for survival in temperate climates.</Xeno_CelestialMiho.description>
+  <Xeno_CelestialMiho.descriptionShort>These type Mihos are the most common, especially optimized for survival in temperate climates.</Xeno_CelestialMiho.descriptionShort>
+
+  <Xeno_CelestialMiho_Arctic.label>Artikos Miho</Xeno_CelestialMiho_Arctic.label>
+  <Xeno_CelestialMiho_Arctic.description>Artikos Mihos can endure cold climates thanks to Bergmann's rule and their small ears. They also have a toxic resistance due to industrialization in the Northern Hemisphere. However, they slightly diminished social skills, as they use more energy for warmth instead of brain function. Though it is still comparable to average humans.</Xeno_CelestialMiho_Arctic.description>
+  <Xeno_CelestialMiho_Arctic.descriptionShort>Artikos Mihos can endure cold climates thanks to Bergmann's rule and their small ears. They also have a toxic resistance due to industrialization in the Northern Hemisphere. However, they slightly diminished social skills, as they use more energy for warmth instead of brain function. Though it is still comparable to average humans.</Xeno_CelestialMiho_Arctic.descriptionShort>
+
+  <Xeno_CelestialMiho_Desert.label>Konis Miho</Xeno_CelestialMiho_Desert.label>
+  <Xeno_CelestialMiho_Desert.description>Konis Mihos are exceptional engineers and traders of the desert. They are curious and withstand heat well. However, relying heavily on machines for various tasks has led them to be considered lazier compared to other type of Mihos.</Xeno_CelestialMiho_Desert.description>
+  <Xeno_CelestialMiho_Desert.descriptionShort>Konis Mihos are exceptional engineers and traders of the desert. They are curious and withstand heat well. However, relying heavily on machines for various tasks has led them to be considered lazier compared to other type of Mihos.</Xeno_CelestialMiho_Desert.descriptionShort>
+
+  <Xeno_CelestialMiho_Highland.label>Prodromos Miho</Xeno_CelestialMiho_Highland.label>
+  <Xeno_CelestialMiho_Highland.description>Prodromos Mihos are extremely aggressive and efficient killers, tailored for controlled battlefields. They genetically require Go-juice.</Xeno_CelestialMiho_Highland.description>
+  <Xeno_CelestialMiho_Highland.descriptionShort>Prodromos Mihos are extremely aggressive and efficient killers, tailored for controlled battlefields. They genetically require Go-juice.</Xeno_CelestialMiho_Highland.descriptionShort>
+
+  <Xeno_CelestialMiho_Highmate.label>Porne Miho</Xeno_CelestialMiho_Highmate.label>
+  <Xeno_CelestialMiho_Highmate.description>Porne Mihos are designed for "special" services in Glitterworld. They have exceptional social skills and the ability to fascinate others. They are superior in most hospitality situations, but unfortunately, struggle to perform in other fields.</Xeno_CelestialMiho_Highmate.description>
+  <Xeno_CelestialMiho_Highmate.descriptionShort>Porne Mihos are designed for "special" services in Glitterworld. They have exceptional social skills and the ability to fascinate others. They are superior in most hospitality situations, but unfortunately, struggle to perform in other fields.</Xeno_CelestialMiho_Highmate.descriptionShort>
+
+</LanguageData>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<RulePackDef>
+		<defName>Miho_Standard_Base</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->미호 표준 크리올</li>
+				<li>r_name->여우-인간 통합어</li>
+				<li>r_name->코이네 천상어</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>Miho_Traditional_Base</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->신고전 천상어</li>
+				<li>r_name->신전 천상어</li>
+				<li>r_name->아르카익 천상어</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!---->
+</Defs>

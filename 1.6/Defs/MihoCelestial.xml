@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ThingDef ParentName="BenchBase">
+    <defName>Miho_CelestialForge</defName>
+    <label>미호 천상의 용광로</label>
+    <description>천상비늘을 엮기 위한 인공태양 발생장치 입니다.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+			<texPath>Things/Building/MihoCelestial/MihoCelestial</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(10,10)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+			<Miho_MilitaryGradeBalisticCeramics>1500</Miho_MilitaryGradeBalisticCeramics>
+			<ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>30000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <size>(5,5)</size>
+    <designationCategory>MihoBuilding</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+    <recipes>
+      <li>Miho_CelestialScaleMake</li>
+
+	  
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>10000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>100</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+		  <li>Miho_WorkAI</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Miho_Celestial</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc7</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <WorkGiverDef>
+    <defName>DoBillsMake_Miho_CelestialForge</defName>
+    <label>천상비늘 합성</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+				<li>Miho_CelestialForge</li> 
+    </fixedBillGiverDefs>
+    <verb>제작</verb>
+    <gerund>제작중</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <RecipeDef>
+    <defName>Miho_CelestialScaleMake</defName>
+    <label>천상비늘 합성</label>
+    <description>천상비늘을 제작합니다.</description>
+    <jobString>천상비늘을 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_ExoticMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_MilitaryGradeBalisticCeramics</li>
+            <li>Miho_ExoticMatter</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_CelestialScale>30</Miho_CelestialScale>
+    </products>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+</Defs>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+  <StyleCategoryDef>
+    <defName>Miho_Style_CelestialOrbitale</defName>
+    <label>천상성채 궤도령</label>
+    <iconPath>UI/Cultures/Astropolitan</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Miho_Weapon_RifleCQB</thingDef>
+        <styleDef>Miho_Weapon_RifleCQB_Celestial</styleDef>
+      </li>	
+      <li>
+        <thingDef>Miho_Weapon_RifleDefence</thingDef>
+        <styleDef>Miho_Weapon_RifleDefence_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_RifleDefenceGrenade</thingDef>
+        <styleDef>Miho_Weapon_RifleDefenceGrenade_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_RifleMachinegun</thingDef>
+        <styleDef>Miho_Weapon_RifleMachinegun_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_RifleOld</thingDef>
+        <styleDef>Miho_Weapon_RifleOld_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_RifleGrenade</thingDef>
+        <styleDef>Miho_Weapon_RifleGrenade_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_AutoShotgun</thingDef>
+        <styleDef>Miho_Weapon_AutoShotgun_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_Shotgun</thingDef>
+        <styleDef>Miho_Weapon_Shotgun_Celestial</styleDef>
+      </li>			
+      <li>
+        <thingDef>Miho_Weapon_RifleRecoillessSharp</thingDef>
+        <styleDef>Miho_Weapon_RifleRecoillessSharp_Celestial</styleDef>
+      </li>				  
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef>
+    <defName>Miho_Style_EarthenSatrap</defName>
+    <label>여우굴 태수령</label>
+    <iconPath>World/WorldObjects/Expanding/Town</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Column</thingDef>
+        <styleDef>Rustic_Column</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>Rustic_StandingLamp</styleDef>
+      </li>
+      <li>
+        <thingDef>WallLamp</thingDef>
+        <styleDef>Rustic_WallLamp</styleDef>
+      </li>
+      <li>
+        <thingDef>TorchLamp</thingDef>
+        <styleDef>Rustic_TorchLamp</styleDef>
+      </li>
+      <li>
+        <thingDef>TorchWallLamp</thingDef>
+        <styleDef>Rustic_WallTorch</styleDef>
+      </li>
+      <li>
+        <thingDef>Table1x2c</thingDef>
+        <styleDef>Rustic_Table1x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>Rustic_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x4c</thingDef>
+        <styleDef>Rustic_Table2x4c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table3x3c</thingDef>
+        <styleDef>Rustic_Table3x3c</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleCQB_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleCQB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleDefence_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleDefence</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleDefenceGrenade_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleDefenceGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleMachinegun_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleOld_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleOld</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleGrenade_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_AutoShotgun_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/AutoShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_Shotgun_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+
+	<ThingStyleDef>
+		<defName>Miho_Weapon_RifleRecoillessSharp_Celestial</defName>
+		<graphicData>
+            <texPath>Things/WeaponRangedBiotech_Celestial/RifleRecoillessSharp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+-->
+</Defs>

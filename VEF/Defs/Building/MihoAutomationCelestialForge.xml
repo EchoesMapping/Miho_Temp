@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_CelestialForge</defName>
+		<label>미호 천상의 용광로</label>
+		<description>임시텍스쳐입니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoCelestial/MihoCelestial</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(17.9,17.9)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Miho_HeatCeramics>200</Miho_HeatCeramics>
+			<Miho_MilitaryGradeBalisticCeramics>500</Miho_MilitaryGradeBalisticCeramics>
+
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoShaftFurnaceBlu/MihoShaftFurnace</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>12000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(9,9)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,5)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>10</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>10000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoShaftFurnace/MihoShaftFurnace</buildingOnGraphic>
+				<numberOfInputs>4</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-5)</li>
+					<li>(-5,0,0)</li>
+					<li>(-5,0,1)</li>
+					<li>(-5,0,-1)</li>
+
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+			<li>Miho_Celestial</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+   		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_CelestialForge_One</defName>
+		<building>MihoVFE_CelestialForge</building>
+		<items>
+			<li>Plasteel</li>
+		</items>	
+		<secondItems>
+			<li>Miho_ExoticMatter</li>
+		</secondItems>
+		<thirdItems>
+			<li>Miho_HeatCeramics</li>
+		</thirdItems>
+		<fourthItems>
+			<li>ComponentSpacer</li>
+		</fourthItems>
+		<amount>
+			<li>75</li>
+			<li>1</li>
+			<li>75</li>
+			<li>2</li>
+		</amount>
+		<result>Miho_CelestialScale</result>	
+		<yield>75</yield>	
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>100</maxTotalOutput>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+</Defs>

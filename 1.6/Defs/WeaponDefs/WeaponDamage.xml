@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DamageDef ParentName="CutBase">
+    <defName>Miho_CutPlasma</defName>
+    <label>plasma cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.016</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>Miho_CutPlasma</defName>
+    <requiredCapacity>Miho_CutPlasma</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Miho_CutPlasma</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Scratch_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>Miho_CutPlasma</defName>
+    <label>plasma cut</label>
+  </ToolCapacityDef>
+</Defs>

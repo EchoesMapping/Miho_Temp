@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_Militia</defName>
+    <label>미호 트루퍼 아머</label>
+    <description>전술적인 플레이트 캐리어 입니다. 튼튼하기도 하지만, 무엇보다 장전속도를 감소시켜 줍니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>30</Cloth>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>12900</WorkToMake>
+      <Mass>3.5</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.05</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrier</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_Militia_Tan</defName>
+    <label>미호 트루퍼 아머 (tan)</label>
+    <description>전술적인 플레이트 캐리어 입니다. 튼튼하기도 하지만, 무엇보다 장전속도를 감소시켜 줍니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrierTan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>30</Cloth>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>12900</WorkToMake>
+      <Mass>3.5</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.05</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrierTan</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_MilitiaMedic</defName>
+    <label>미호 메딕 아머</label>
+    <description>전술적인 플레이트 캐리어 입니다. 치유의 손길을 쓸 수 있는 모듈이 있습니다. 이미 배웠을시 한번 더 쓸 수 있습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrierMedic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>40</Cloth>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <MedicineUltratech>1</MedicineUltratech>
+
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>26500</WorkToMake>
+      <Mass>3.75</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddleMilitiaCarrier/MiddleMilitiaCarrierMedic</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoMedic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_Medic_Hediff</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_Medic_Hediff</defName>
+    <label>메딕아머</label>
+    <labelNoun>메딕아머</labelNoun>
+    <description>메딕아머.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+
+		<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_HealMedic</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <AbilityDef ParentName="MihoWordOfBase">
+    <defName>Miho_Ability_HealMedic</defName>
+    <label>치유의 손길 (메딕 아머)</label>
+    <description>병을 낫게하고 상처를 아물게 해주는 치유의 손길을 발산합니다.</description>
+    <iconPath>Icon/Abilities/Mech/MihoHeal</iconPath>
+    <hotKey>Misc12</hotKey>
+    <statBases>
+      <Ability_PsyfocusCost>0.1</Ability_PsyfocusCost>
+      <Ability_Duration>90</Ability_Duration>
+      <Ability_EntropyGain>150</Ability_EntropyGain>
+
+    </statBases>
+        <groupDef>Miho_HealTwo</groupDef>
+
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <onlyTargetColonists>True</onlyTargetColonists>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Miho_Heal_Hediff</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <onlyBrain>True</onlyBrain>
+        <psychic>True</psychic>
+        <applicableToMechs>False</applicableToMechs>
+        <goodwillImpact>5</goodwillImpact>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>WordOfJoy</interactionDef>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.6~0.8</tendQualityRange>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_MilitiaVest</defName>
+    <label>미호 전술조끼</label>
+    <description>전술적인 조끼 입니다. 약간의 방호력을 지니고 있고, 무엇보다 장전속도를 감소시켜 줍니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddleMilitiaVest/MiddleMilitiaVest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costList>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+            <researchPrerequisite>Miho_Weapon</researchPrerequisite> 
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>5600</WorkToMake>
+      <Mass>2.5</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.15</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddleMilitiaVest/MiddleMilitiaVest</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_Powered</defName>
+    <label>미호 외골격 중갑</label>
+    <description>외골격입니다. 여러가지 추가 파츠들을 장착시킬 수 있습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddlePoweredCarrierNew/MiddlePoweredCarrier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>100</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentIndustrial>15</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_PlasmaWeapon</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>450</MaxHitPoints>
+	  <WorkToMake>85500</WorkToMake>
+      <Mass>12</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+      <EquipDelay>15</EquipDelay>
+      <Insulation_Cold>24</Insulation_Cold>
+
+    </statBases>
+    <equippedStatOffsets>
+	  <CarryingCapacity>40</CarryingCapacity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Legs</li>
+
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddlePoweredCarrierNew/MiddlePoweredCarrier</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+
+      </layers>
+      <tags>
+        <li>MihoPMC</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_PoweredMechanitor</defName>
+    <label>미호 메카나이터 외골격</label>
+    <description>메카나이터 장비가 내장된 외골격 입니다. 첨단 부품이 내장되어있어 일반적인 중갑 외골격보다 충격에 약합니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddlePoweredCarrierMechanitor/MiddlePoweredCarrierMechanitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <NanostructuringChip>1</NanostructuringChip>
+      <ComponentSpacer>5</ComponentSpacer>
+
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_HeavyWarDrone</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>330</MaxHitPoints>
+	  <WorkToMake>130000</WorkToMake>
+      <Mass>10</Mass>
+      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <EquipDelay>15</EquipDelay>
+      <Insulation_Cold>24</Insulation_Cold>
+
+    </statBases>
+    <equippedStatOffsets>
+	  <CarryingCapacity>30</CarryingCapacity>
+      <MechBandwidth>4</MechBandwidth>
+      <MechRepairSpeed>0.5</MechRepairSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Legs</li>
+
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddlePoweredCarrierMechanitor/MiddlePoweredCarrierMechanitor</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+
+      </layers>
+      <tags>
+        <li>MihoMechanitor</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Middle_PoweredWorker</defName>
+    <label>미호 안전 외골격</label>
+    <description>외골격입니다. 착용자를 보호해 주진 않지만, 연약한 미호도 무거운 짐을 쉽게 나를 수 있게 만듭니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/MiddlePoweredWorker/MiddlePoweredWorker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Miho_Ceramics>100</Miho_Ceramics>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+            <researchPrerequisite>Miho_BasicFactory</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>	
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>20500</WorkToMake>
+      <Mass>8</Mass>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <EquipDelay>7.5</EquipDelay>
+      <Insulation_Cold>18</Insulation_Cold>
+
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.25</MoveSpeed>
+	  <CarryingCapacity>40</CarryingCapacity>
+	  <MiningSpeed>0.25</MiningSpeed>
+	  <SmoothingSpeed>0.5</SmoothingSpeed>
+	  <ConstructionSpeed>0.25</ConstructionSpeed>
+
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Legs</li>
+
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/MiddlePoweredWorker/MiddlePoweredWorker</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Shell</li>
+
+      </layers>
+      <tags>
+        <li>MihoWorker</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+
+</Defs>

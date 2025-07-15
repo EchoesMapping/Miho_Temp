@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_HuntFoxFive</defName>
+		<title>타고난 여우</title>
+		<titleShort>타고난 여우</titleShort>
+		<baseDesc>이 여우는 다른 여우들과는 조금 달랐습니다. 친구들과 하는 모든 주사위 게임에서 언제나 이겼고, 와본적 없는 장소도 제 집처럼 돌아다닐수 있었으며, 심리 상담가의 가식과 변명하는 부모의 속마음도 단번에 알아챌 수 있었습니다. 자신을 '선택받은 여우'라 믿게 되었을 무렵, 상담가의 추천으로 한 양성소에 도착했고, 그곳에서 자신처럼 조금씩 특별한 여우들을 만나게 되었습니다.</baseDesc>
+
+		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Social>-4</Social>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Huntress_V_Hediff</li>
+			<li>Miho_Skill_I_Hawk_Hediff</li>
+			<li>Miho_Skill_II_FireballSmall_Hediff</li>
+			<li>Miho_Skill_III_Inspiration_Hediff</li>
+			<li>Miho_Skill_II_Ensnare_Hediff</li>
+
+			<li>Miho_Skill_III_Fireball_Hediff</li>
+			<li>Miho_Skill_IV_Thunder_Hediff</li>
+			<li>Miho_Skill_IV_FireballAdept_Hediff</li>
+
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoMagi</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+		<defName>Miho_Child_DesertFive</defName>
+		<title>타고난 여우</title>
+		<titleShort>타고난 여우</titleShort>
+		<baseDesc>이 여우는 다른 여우들과는 조금 달랐습니다. 친구들과 하는 모든 주사위 게임에서 언제나 이겼고, 와본적 없는 장소도 제 집처럼 돌아다닐수 있었으며, 심리 상담가의 가식과 변명하는 부모의 속마음도 단번에 알아챌 수 있었습니다. 자신을 '선택받은 여우'라 믿게 되었을 무렵, 상담가의 추천으로 한 양성소에 도착했고, 그곳에서 자신처럼 조금씩 특별한 여우들을 만나게 되었습니다.</baseDesc>
+
+		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Social>-4</Social>
+		</skillGains>
+
+		<forcedHediffs>
+			<li>Miho_Summoner_V_Hediff</li>
+			<li>Miho_Skill_I_Fox_Hediff</li>
+			<li>Miho_Skill_II_Butterfly_Hediff</li>
+			<li>Miho_Skill_III_Inspiration_Hediff</li>
+			<li>Miho_Skill_IV_Shield_Hediff</li>
+			<li>Miho_Skill_IV_Turret_Hediff</li>
+		</forcedHediffs>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>MihoMagi</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

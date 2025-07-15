@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+    <defName>Miho_Child_TinkerFox</defName>
+    <title>호기심 많은 여우</title>
+	<titleShort>호기심 많은 여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 호기심이 많았습니다. 그 호기심 덕에 죽을 고비를 몇번 겪었습니다.</baseDesc>
+	
+	<skillGains>
+		<Intellectual>3</Intellectual>
+		<Artistic>1</Artistic>
+      <Crafting>4</Crafting>
+	</skillGains>
+	<slot>Childhood</slot>
+		<forcedHediffs>
+			    		<li>Miho_Tinker_I_Hediff</li>
+			    		<li>Miho_Skill_I_Repair_Hediff</li>
+						</forcedHediffs>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+
+    </spawnCategories>
+    <linkedBackstory>Miho_Adult_EngiTwo</linkedBackstory>
+
+ </AlienRace.AlienBackstoryDef>
+
+ <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstoryChild">
+    <defName>Miho_Child_TinkerFoxTwo</defName>
+    <title>호기심 많은 여우</title>
+	<titleShort>호기심 많은 여우</titleShort>
+    <baseDesc>[PAWN_nameDef]는 호기심이 많았습니다. 그 호기심 덕에 죽을 고비를 몇번 겪었습니다.</baseDesc>
+	
+	<skillGains>
+		<Intellectual>3</Intellectual>
+		<Artistic>1</Artistic>
+      <Crafting>4</Crafting>
+	</skillGains>
+	<slot>Childhood</slot>
+		<forcedHediffs>
+			    		<li>Miho_Tinker_II_Hediff</li>
+			    		<li>Miho_Skill_I_Repair_Hediff</li>
+			    		<li>Miho_Skill_II_Accuracy_Hediff</li>
+			    		<li>Miho_Skill_II_Armor_Hediff</li>
+						</forcedHediffs>
+	<spawnCategories>
+	  <li>MihoPioneer</li>
+	  <li>MihoSeasonalSanta</li>
+
+    </spawnCategories>
+    <linkedBackstory>Miho_Adult_Engi</linkedBackstory>
+
+ </AlienRace.AlienBackstoryDef>
+	
+</Defs>

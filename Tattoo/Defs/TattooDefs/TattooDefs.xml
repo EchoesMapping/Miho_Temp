@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>Miho_Tattoo_Focus</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>흐름의 테크위브 문신</label>
+		<description>물방울문양의 테크위브 문신 입니다. 주요 혈을 자극해 초집중을 도와줍니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>
+
+				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+                   <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+	               <MeditationFocusGain>0.25</MeditationFocusGain>
+	               <PsychicSensitivity>-0.15</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+
+	
+	<HediffDef>
+		<defName>Miho_Tattoo_Scale</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>용린 테크위브 문신</label>
+		<description>비늘문양의 테크위브 문신 입니다. 시술 받은 부위는 마치 용의 비늘같이 단단해집니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>
+				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+	
+	
+	<HediffDef>
+		<defName>Miho_Tattoo_ScaleTwo</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>어린 테크위브 문신</label>
+		<description>비늘문양의 테크위브 문신 입니다. 시술 받은 부위는 마치 용의 비늘같이 단단해집니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+	
+	<HediffDef>
+		<defName>Miho_Tattoo_Flame</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>불꽃 테크위브 문신</label>
+		<description>불꽃문양의 테크위브 문신 입니다. 시술 받은 부위에는 열기에 저항이 생깁니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>11</ComfyTemperatureMax>
+	                <ArmorRating_Heat>0.75</ArmorRating_Heat>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+	<HediffDef>
+		<defName>Miho_Tattoo_Heart</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>하트 테크위브 문신</label>
+		<description>하트문양의 테크위브 문신 입니다. 이 문신을 지니면 여러모로 '능숙'해지는 효과가 있습니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+	  <NegotiationAbility>0.05</NegotiationAbility>
+	  <SocialImpact>0.05</SocialImpact>
+	  <TradePriceImprovement>0.05</TradePriceImprovement>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+	
+	<HediffDef>
+		<defName>Miho_Tattoo_Flower</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>장미꽃 테크위브 문신</label>
+		<description>꽃문양의 테크위브 문신 입니다. 장미에는 줄기에 가시가 나있죠.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_FlowerTwo</li>				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+                    <MeleeDamageFactor>0.1</MeleeDamageFactor>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+
+	<HediffDef>
+		<defName>Miho_Tattoo_FlowerTwo</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>연꽃 테크위브 문신</label>
+		<description>꽃문양의 테크위브 문신 입니다. 다시 태어난듯 회복속도가 빨라집니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Miho_Tattootool</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+                    <InjuryHealingFactor>0.25</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.08</ImmunityGainSpeed>
+                    <ToxicResistance>0.25</ToxicResistance>
+                    <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+	                <PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+	
+
+  <RecipeDef>
+    <defName>Miho_MakeTattootool</defName>
+    <label>테크위브 문신 도구 만들기</label>
+    <description>테크위브 문신에 사용되는 바늘과 메카나이트 가닥을 만듭니다.</description>
+    <jobString>테크위빙중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>14900</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPosFlower</li>
+            <li>RawPosFlower_Dust</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawPosFlower</li>
+        <li>RawPosFlower_Dust</li>
+        <li>ComponentIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_Tattootool>1</Miho_Tattootool>
+    </products>
+    <researchPrerequisite>Miho_MechHack</researchPrerequisite>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+  
+    <HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Tattoo_None</defName>
+		<description>Miho_Tattoo</description>
+		<label>Miho_Tattoo</label>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-100</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>		
+		</comps>	
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+	</HediffDef>
+	
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_Tattootool</defName>
+    <label>테크위브 문신 키트</label>
+    <description>테크위브 문신에 사용되는 바늘과 메카나이트 가닥입니다.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>680</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+  
+	<HediffDef>
+		<defName>Miho_Tattoo</defName>
+		<label>Miho_Tattoo</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Miho_Tattoo</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<hediffPool>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>
+				</hediffPool>
+				<weights>
+					<li>3</li>
+					<li>2</li>
+					<li>2</li>
+					<li>3</li>
+					<li>3</li>
+					<li>2</li>
+					<li>2</li>			
+				</weights>
+			</li>
+		</comps>		
+		<stages>
+			<li>			
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Miho_TattooPrepare</defName>
+		<label>Miho_Tattoo</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Miho_Tattoo</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<hediffPool>
+					<li>Miho_Tattoo_Focus</li>
+					<li>Miho_Tattoo_Scale</li>
+					<li>Miho_Tattoo_ScaleTwo</li>
+					<li>Miho_Tattoo_Flame</li>
+					<li>Miho_Tattoo_Heart</li>
+					<li>Miho_Tattoo_Flower</li>
+					<li>Miho_Tattoo_FlowerTwo</li>
+					<li>Miho_Tattoo_None</li>
+
+				</hediffPool>
+				<weights>
+					<li>3</li>
+					<li>2</li>
+					<li>2</li>
+					<li>3</li>
+					<li>3</li>
+					<li>2</li>
+					<li>2</li>	
+					<li>111</li>			
+					
+				</weights>
+			</li>
+		</comps>		
+		<stages>
+			<li>			
+			</li>
+		</stages>
+	</HediffDef>
+	
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Miho_Tattooing</defName>
+    <label>테크위브 문신하기</label>
+    <description>테크위브 문신을 합니다. 무순 문신이 나올지는 시술자의 재량입니다.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Tattootool</ThingDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+      <Medicine>2</Medicine>
+      <Artistic>4</Artistic>
+    </skillRequirements>
+    <jobString>테크위브 문신중.</jobString>
+    <minAllowedAge>10</minAllowedAge>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Tattootool</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Tattootool</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Miho_Tattoo</addsHediff>
+  </RecipeDef>
+</Defs>

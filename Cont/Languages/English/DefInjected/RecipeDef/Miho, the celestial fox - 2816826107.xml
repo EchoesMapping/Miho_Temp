@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_CelestialScaleMake.label>Synthesis Celestial Scale</Miho_CelestialScaleMake.label>
+  <Miho_CelestialScaleMake.description>Synthesis Celestial Scale.</Miho_CelestialScaleMake.description>
+  <Miho_CelestialScaleMake.jobString>Synthesising Celestial Scale.</Miho_CelestialScaleMake.jobString>
+  <Miho_PastetoCeramicShaft.label>Making Miho Ceramic</Miho_PastetoCeramicShaft.label>
+  <Miho_PastetoCeramicShaft.description>Make Miho Ceramic.</Miho_PastetoCeramicShaft.description>
+  <Miho_PastetoCeramicShaft.jobString>Making Miho Ceramic.</Miho_PastetoCeramicShaft.jobString>
+  <Miho_PastetoMCeramicShaft.label>Making Miho Military Ballistic Ceramics</Miho_PastetoMCeramicShaft.label>
+  <Miho_PastetoMCeramicShaft.description>Make Military Ballistic Ceramics.</Miho_PastetoMCeramicShaft.description>
+  <Miho_PastetoMCeramicShaft.jobString>Making Military Ballistic Ceramics.</Miho_PastetoMCeramicShaft.jobString>
+  <Miho_MeattoDust.label>Filtering out the Mechanite crystals</Miho_MeattoDust.label>
+  <Miho_MeattoDust.description>Filter out the Mechanite crystals in flesh with high-tech equipment.</Miho_MeattoDust.description>
+  <Miho_MeattoDust.jobString>Filtering out the Mechanite crystals.</Miho_MeattoDust.jobString>
+  <Miho_PastetoCeramic.label>Making Miho Ceramic</Miho_PastetoCeramic.label>
+  <Miho_PastetoCeramic.description>Make Miho Ceramic.</Miho_PastetoCeramic.description>
+  <Miho_PastetoCeramic.jobString>Making Miho Ceramic.</Miho_PastetoCeramic.jobString>
+  <Miho_TeatoTea.label>Brewing Helianto Tea.</Miho_TeatoTea.label>
+  <Miho_TeatoTea.description>Brew tea.</Miho_TeatoTea.description>
+  <Miho_TeatoTea.jobString>Brewing tea.</Miho_TeatoTea.jobString>
+  <Miho_SmoketoSmoke.label>Making Cigarettes.</Miho_SmoketoSmoke.label>
+  <Miho_SmoketoSmoke.description>Make Cigarettes.</Miho_SmoketoSmoke.description>
+  <Miho_SmoketoSmoke.jobString>Making Cigarettes.</Miho_SmoketoSmoke.jobString>
+  <Miho_ComponentIndustrial.label>Techweaving</Miho_ComponentIndustrial.label>
+  <Miho_ComponentIndustrial.description>Making components by techweaving with Miho's psychic ability.</Miho_ComponentIndustrial.description>
+  <Miho_ComponentIndustrial.jobString>Techweaving.</Miho_ComponentIndustrial.jobString>
+  <Miho_ComponentSpacer.label>Advenced Techweaving</Miho_ComponentSpacer.label>
+  <Miho_ComponentSpacer.description>Making advenced components by techweaving with Miho's psychic ability.</Miho_ComponentSpacer.description>
+  <Miho_ComponentSpacer.jobString>Techweaving.</Miho_ComponentSpacer.jobString>
+  <Miho_CookInari.label>Making Inari Sushi</Miho_CookInari.label>
+  <Miho_CookInari.description>Make Inari Sushi.</Miho_CookInari.description>
+  <Miho_CookInari.jobString>Making Inari Sushi.</Miho_CookInari.jobString>
+  <Miho_CookInarimore.label>Making Inari Sushi x4</Miho_CookInarimore.label>
+  <Miho_CookInarimore.description>Make Inari Sushi.</Miho_CookInarimore.description>
+  <Miho_CookInarimore.jobString>Making Inari Sushi.</Miho_CookInarimore.jobString>
+  <Miho_Mech_HeavyMechCore.label>Making Large Mechanite Core</Miho_Mech_HeavyMechCore.label>
+  <Miho_Mech_HeavyMechCore.description>Make Large Mechanite Core.</Miho_Mech_HeavyMechCore.description>
+  <Miho_Mech_DesertSphex.label>Making Onisopter</Miho_Mech_DesertSphex.label>
+  <Miho_Mech_DesertSphex.description>Make Onisopter.</Miho_Mech_DesertSphex.description>
+  <!--
+  <Miho_Mech_Kampe.label>Making Recycling Bot</Miho_Mech_Kampe.label>
+  <Miho_Mech_Kampe.description>Make Recycling Bot.</Miho_Mech_Kampe.description>
+   -->
+  <Miho_Mech_Bulgasal.label>Making Multi Legged Heavy Tank (Anti-Tank)</Miho_Mech_Bulgasal.label>
+  <Miho_Mech_Bulgasal.description>Make Multi Legged Heavy Tank (Anti-Tank).</Miho_Mech_Bulgasal.description>
+  <Miho_Mech_BulgasalSiege.label>Making Multi Legged Heavy Tank (Siege)</Miho_Mech_BulgasalSiege.label>
+  <Miho_Mech_BulgasalSiege.description>Make Multi Legged Heavy Tank (Siege).</Miho_Mech_BulgasalSiege.description>
+  <Miho_Mech_BulgasalGrenade.label>Making Multi Legged Heavy Tank (Grenade)</Miho_Mech_BulgasalGrenade.label>
+  <Miho_Mech_BulgasalGrenade.description>Multi Legged Heavy Tank (Grenade).</Miho_Mech_BulgasalGrenade.description>
+  <Miho_Mech_Balbari.label>Making Infantry Support Multi Legged Heavy Tank</Miho_Mech_Balbari.label>
+  <Miho_Mech_Balbari.description>Make Infantry Support Multi Legged Heavy Tank.</Miho_Mech_Balbari.description>
+  <Miho_Mech_Sapsal.label>Making Multi Legged Light Tank (Recon)</Miho_Mech_Sapsal.label>
+  <Miho_Mech_Sapsal.description>Make Multi Legged Light Tank (Recon).</Miho_Mech_Sapsal.description>
+  <Miho_Mech_SapsalPsy.label>Making Multi Legged Light Tank (Psychic Support)</Miho_Mech_SapsalPsy.label>
+  <Miho_Mech_SapsalPsy.description>Make Multi Legged Light Tank (Psychic Support).</Miho_Mech_SapsalPsy.description>
+  <Miho_Mech_CataphractRocket.label>Making Multi Legged CEV (Multiple Rocket Launcher)</Miho_Mech_CataphractRocket.label>
+  <Miho_Mech_CataphractRocket.description>Make Multi Legged CEV (Multiple Rocket Launcher).</Miho_Mech_CataphractRocket.description>
+  <Miho_Mech_CataphractCluRocket.label>Making Multi Legged CEV (Cluster Rocket Launcher)</Miho_Mech_CataphractCluRocket.label>
+  <Miho_Mech_CataphractCluRocket.description>Make Multi Legged CEV (Cluster Rocket Launcher).</Miho_Mech_CataphractCluRocket.description>
+</LanguageData>

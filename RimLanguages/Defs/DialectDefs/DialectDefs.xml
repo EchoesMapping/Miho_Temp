@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionLanguages.DialectDef>
+		<defName>Miho_Standard</defName>
+		<label>미호 폴리글로시 체계</label>
+		<description>인간들의 언어와 호환이 잘 되는 미호들의 언어 체계 입니다. 인간들의 언어보다는 몸짓언어가 많고 산만하면서 귀여운 느낌이 듭니다. 공용어를 목적으로 한 언어라 지구에서 기원한 중도지성체라면 배우기 수월한 언어 입니다.</description>
+		<nameMaker>Miho_Standard_Base</nameMaker>
+		<difficultyByTechLevel>
+			<points>
+				<!-- Undefined -->
+				<li>0, 0.75</li>
+				<!-- Animal -->
+				<li>1, 0.75</li>
+				<!-- Neolithic -->
+				<li>2, 0.75</li>
+				<!-- Medieval -->
+				<li>3, 0.75</li>
+				<!-- Industrial -->
+				<li>4, 0.75</li>
+				<!-- Spacer -->
+				<li>5, 0.75</li>
+				<!-- Ultra -->
+				<li>6, 0.75</li>
+				<!-- Archotech -->
+				<li>7, 0.75</li>
+			</points>
+		</difficultyByTechLevel>
+	</FactionLanguages.DialectDef>
+	
+	<FactionLanguages.DialectDef>
+		<defName>Miho_Traditional</defName>
+		<label>미호 헤테로글로시 체계</label>
+		<description>미호들의 보다 격식있고 전통적인 언어 체계 입니다. 의사소통을 위해 짖거나 귀와 꼬리를 적극적으로 활용하고, 냄새를 맡기 위해 코를 킁킁거리는 등, 굉장히 동물적인 모습이 나타납니다. 이는 귀엽지만 때때로는 굉장히 기묘한 인상을 줍니다.</description>
+		<nameMaker>Miho_Traditional_Base</nameMaker>
+		<difficultyByTechLevel>
+			<points>
+				<!-- Undefined -->
+				<li>0, 2</li>
+				<!-- Animal -->
+				<li>1, 2</li>
+				<!-- Neolithic -->
+				<li>2, 2</li>
+				<!-- Medieval -->
+				<li>3, 2</li>
+				<!-- Industrial -->
+				<li>4, 2</li>
+				<!-- Spacer -->
+				<li>5, 2</li>
+				<!-- Ultra -->
+				<li>6, 2</li>
+				<!-- Archotech -->
+				<li>7, 2</li>
+			</points>
+		</difficultyByTechLevel>
+	</FactionLanguages.DialectDef>
+</Defs>

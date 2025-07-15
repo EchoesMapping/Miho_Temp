@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildHuntress</defName>
+    <label>초능력 개화 은단 (사냥꾼)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildHuntress_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>10</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildHuntress_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>사냥꾼 개화</label>
+    <labelNoun>사냥꾼 개화</labelNoun>
+    <description>사냥꾼 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildShamaness</defName>
+    <label>초능력 개화 은단 (무녀)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildShamaness_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>40</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildShamaness_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>무녀 개화</label>
+    <labelNoun>무녀 개화</labelNoun>
+    <description>무녀 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildSummoner</defName>
+    <label>초능력 개화 은단 (소환사)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildSummoner_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>60</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildSummoner_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>소환사 개화</label>
+    <labelNoun>소환사 개화</labelNoun>
+    <description>소환사 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildTemptress</defName>
+    <label>초능력 개화 은단 (무사)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildTemptress_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>40</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildTemptress_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>무사 개화</label>
+    <labelNoun>무사 개화</labelNoun>
+    <description>무사 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildTinker</defName>
+    <label>초능력 개화 은단 (땜장이)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildTinker_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>80</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildTinker_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>땜장이 개화</label>
+    <labelNoun>땜장이 개화</labelNoun>
+    <description>땜장이 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_ChildCelestial</defName>
+    <label>초능력 개화 은단 (천상술사)</label>
+    <description>초능력을 개화해주는 은단입니다. 이미 초능력을 지닌 미호는 먹어도 효과가 없습니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Drugs/MihoPill/MihoPill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <MarketValue>2099</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_ChildCelestial_High</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Silver>40</Silver>
+	  <PsychicAmplifier>1</PsychicAmplifier>
+
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_ChildCelestial_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>천상술사 개화</label>
+    <labelNoun>천상술사 개화</labelNoun>
+    <description>천상술사 개화</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-24</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Miho_Nojob</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>nojobplz</label>
+    <description>nojobplz</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+    <alwaysAllowMothball>true</alwaysAllowMothball>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.1</severityPerDay>
+        <showHoursToRecover>false</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+      <li>
+        <label>a</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      </stages>
+  </HediffDef>
+  
+  
+  
+
+</Defs>

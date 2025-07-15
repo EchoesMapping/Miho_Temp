@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho</defName>
+    <label>오디너리 미호</label>
+    <description>온대 기후에 생존이 최적화 된, 가장 많이 분포하는 미호입니다.</description>
+    <descriptionShort>온대 기후에 생존이 최적화 된, 가장 많이 분포하는 미호입니다.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Normal</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+
+    <genes>
+      <li>Skin_SheerWhite</li>
+
+      <li>Hair_InkBlack</li>
+      <li>Hair_Miho_Pink</li>
+      <li>Hair_Miho_Orange</li>
+      <li>Hair_Miho_Red</li>
+      <li>Hair_Blonde</li>
+      <li>Hair_Grayless</li>
+
+	  
+      <li>Beauty_Pretty</li>
+      <li>Gene_Miho_AdvancedAuditory</li>
+      <li>WoundHealing_Slow</li>
+      <li>Libido_High</li>
+      <li>Aggression_Aggressive</li>
+      <li>Gene_CelestialMiho</li>
+      <li>AptitudeStrong_Social</li>
+      <li>AptitudeTerrible_Animals</li>
+
+	  
+
+
+    </genes>
+  </XenotypeDef>
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho_Arctic</defName>
+    <label>아르티코스 미호</label>
+    <description>아르티코스는 베르그만 법칙과 작은 귀 덕분에 추위를 잘 버티게 되었고, 북반구의 공업화 덕분에 조금의 독성 저항력이 생긴 븍방의 미호입니다. 다만 뇌에 쓸 열량을 보온에 쓴 탓인지 사교능력을 조금 잃었습니다. 그래봤자 보통 인간 수준이지만 말이죠.</description>
+    <descriptionShort>아르티코스는 베르그만 법칙과 작은 귀 덕분에 추위를 잘 버티게 되었고, 북반구의 공업화 덕분에 조금의 독성 저항력이 생긴 븍방의 미호입니다. 다만 뇌에 쓸 열량을 보온에 쓴 탓인지 사교능력을 조금 잃었습니다. 그래봤자 보통 인간 수준이지만 말이죠.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Arctic</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+
+    <genes>
+      <li>Skin_SheerWhite</li>
+
+      <li>Hair_SnowWhite</li>
+      <li>Hair_Grayless</li>
+
+      <li>Beauty_Pretty</li>
+      <li>Gene_Miho_AdvancedAuditory</li>
+      <li>WoundHealing_Slow</li>
+      <li>Libido_High</li>
+      <li>Aggression_Aggressive</li>
+      <li>Gene_CelestialMiho</li>
+	  <li>Ears_Arctic_Miho</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudePoor_Artistic</li>
+
+
+    </genes>
+  </XenotypeDef>
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho_Desert</defName>
+    <label>코니스 미호</label>
+    <description>코니스는 뛰어난 엔지니어이자 상인인 사막의 미호입니다. 호기심이 많고 더위를 잘 버팁니다. 하지만 많은 일들을 기계들에게 맡기다 보니 보통의 미호들보다 게으르다 평가됩니다.</description>
+    <descriptionShort>코니스는 뛰어난 엔지니어이자 상인인 사막의 미호입니다. 호기심이 많고 더위를 잘 버팁니다. 하지만 많은 일들을 기계들에게 맡기다 보니 보통의 미호들보다 게으르다 평가됩니다.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Desert</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+
+    <genes>
+      <li>Skin_SheerWhite</li>
+
+      <li>Beauty_Pretty</li>
+      <li>Hair_SandyBlonde</li>
+      <li>Hair_Blonde</li>
+      <li>Hair_Grayless</li>
+
+      <li>Gene_Miho_AdvancedAuditory</li>
+      <li>WoundHealing_Slow</li>
+      <li>Libido_High</li>
+      <li>Aggression_Aggressive</li>
+      <li>Gene_CelestialMiho</li>
+      <li>Ears_Desert_Miho</li>
+      <li>AptitudeStrong_Intellectual</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudePoor_Plants</li>
+
+
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho_Highland</defName>
+    <label>프로드로모스 미호</label>
+    <description>프로드로모스는 통제된 전장에 맞춰진, 극도로 공격적이고 효율적인 살인귀들 입니다. 유전적으로 고-주스를 필요로 합니다.</description>
+    <descriptionShort>프로드로모스는 통제된 전장에 맞춰진, 극도로 공격적이고 효율적인 살인귀들 입니다. 유전적으로 고-주스를 필요로 합니다.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Highland</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+	<factionlessGenerationWeight>0</factionlessGenerationWeight>
+
+    <genes>
+      <li>Skin_SheerWhite</li>
+
+      <li>Beauty_Pretty</li>
+      <li>Hair_Gray</li>
+      <li>Hair_Miho_Ash</li>
+      <li>Hair_Grayless</li>
+
+      <li>Gene_Miho_AdvancedAuditory</li>
+	  
+      <li>AptitudeRemarkable_Shooting</li>
+      <li>AptitudeRemarkable_Melee</li>
+	  
+      <li>MeleeDamage_Strong</li>
+
+      <li>Libido_High</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>Gene_CelestialMiho</li>
+      <li>Ears_Highland_Miho</li>
+	  
+      <li>AptitudePoor_Intellectual</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Artistic</li>
+
+      <li>ChemicalDependency_GoJuice</li>
+
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho_Highmate</defName>
+    <label>포르네 미호</label>
+    <description>번화계의 "특별한" 서비스 용도로 설계된 포르네들은 굉장한 사회적 능력과 상대를 매혹시키는 초능력을 가지고 있습니다. 대부분의 접대 상황에서는 엄청난 재능을 보여주지만, 안타깝게도 다른 분야에서는 쉽게 활약하지 못합니다.</description>
+    <descriptionShort>번화계의 "특별한" 서비스 용도로 설계된 포르네들은 굉장한 사회적 능력과 상대를 매혹시키는 초능력을 가지고 있습니다. 대부분의 접대 상황에서는 엄청난 재능을 보여주지만, 안타깝게도 다른 분야에서는 쉽게 활약하지 못합니다.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Highmate</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+
+    <genes>
+      <li>Skin_SheerWhite</li>
+
+	
+      <li>Beauty_Beautiful</li>
+      <li>Hair_Miho_Sky</li>
+	  
+      <li>Hair_Miho_Pink</li>
+      <li>Hair_Grayless</li>
+
+      <li>Gene_Miho_AdvancedAuditory</li>
+
+      <li>WoundHealing_Slow</li>
+
+      <li>Libido_High</li>
+      <li>Gene_CelestialMiho</li>
+      <li>Ears_Highmate_Miho</li>
+	 
+      <li>Gene_Miho_Naked</li>
+
+      <li>Mood_Sanguine</li>
+      <li>KindInstinct</li>
+      <li>Delicate</li>
+      <li>AptitudeRemarkable_Social</li>
+      <li>AptitudeStrong_Artistic</li>
+
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudePoor_Construction</li>
+      <li>AptitudeTerrible_Animals</li>
+
+      <li>AptitudeTerrible_Shooting</li>
+      <li>AptitudeTerrible_Melee</li>
+
+    </genes>
+  </XenotypeDef>
+  
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Ash</defName>
+    <label>oros ash hair</label>
+    <hairColorOverride>(126, 112, 101)</hairColorOverride>
+    <displayOrderInCategory>80</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Pink</defName>
+    <label>miho fox pink hair</label>
+    <hairColorOverride>(221, 156, 156)</hairColorOverride>
+    <selectionWeight>0.35</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Orange</defName>
+    <label>miho fox orange hair</label>
+    <hairColorOverride>(197, 146, 78)</hairColorOverride>
+    <selectionWeight>0.75</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Red</defName>
+    <label>miho fox red hair</label>
+    <hairColorOverride>(191, 132, 111)</hairColorOverride>
+    <selectionWeight>0.75</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Sky</defName>
+    <label>miho fox sky blue hair</label>
+    <hairColorOverride>(214, 255, 255)</hairColorOverride>
+    <selectionWeight>0.15</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>Gene_Miho_AdvancedAuditory</defName>
+    <label>발달된 청각</label>
+    <iconPath>Icon/GeneXeno/AdvancedAuditory</iconPath>
+    <description>이 유전자를 지닌 폰은 사교 능력과 단거리 사격 명중률이 상승합니다. 하지만 장거리 사격 능력이 줄어들게 됩니다.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statFactors>
+      <ShootingAccuracyFactor_Long>0.98</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>0.99</ShootingAccuracyFactor_Medium>
+      <ShootingAccuracyFactor_Short>1.01</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Touch>1.01</ShootingAccuracyFactor_Touch>
+    </statFactors>
+    <statOffsets>
+      <NegotiationAbility>0.1</NegotiationAbility>
+	  <TradePriceImprovement>0.1</TradePriceImprovement>
+      <SocialImpact>0.1</SocialImpact>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+	
+    <exclusionTags>
+      <li>ShootingAccuracy</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Gene_Miho_Naked</defName>
+    <label>완벽한 몸</label>
+    <description>이 유전자를 지닌 폰은 옷을 입지 않을시 사교 능력치와 매력이 증가합니다.</description>
+    <iconPath>Icon/GeneXeno/Miho_Naked</iconPath>
+    <displayCategory>Movement</displayCategory>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+        </statOffsets>
+      </li>
+      <li Class="ConditionalStatAffecter_Unclothed">
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+          <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+          <ComfyTemperatureMax>8</ComfyTemperatureMax>
+          <NegotiationAbility>0.3</NegotiationAbility>
+	      <TradePriceImprovement>0.3</TradePriceImprovement>
+          <SocialImpact>0.3</SocialImpact>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <forcedTraits>
+      <li>
+        <def>Nudist</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>Ears_Arctic_Miho</defName>
+    <label>아르티코스</label>
+    <description>아르티코스는 베르그만 법칙과 작은 귀 덕분에 추위를 잘 버티게 되었고, 북방의 공업화 덕분에 조금의 독성 저항력이 생긴 북방의 미호입니다. 다만 뇌에 쓸 열량을 보온에 쓴 탓인지 사교능력을 조금 잃었습니다. 그래봤자 보통 인간 수준이지만 말이죠.</description>
+    <iconPath>Icon/GeneXeno/Arctic_Ears</iconPath>
+    <biostatMet>-1</biostatMet>
+
+    <statOffsets>
+      <ComfyTemperatureMin>-16</ComfyTemperatureMin>
+      <NegotiationAbility>-0.1</NegotiationAbility>
+      <SocialImpact>-0.1</SocialImpact>
+	  <TradePriceImprovement>-0.1</TradePriceImprovement>
+	  <MoveSpeed>-0.24</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <IncomingDamageFactor>0.9</IncomingDamageFactor>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>Ears_Desert_Miho</defName>
+    <label>코니스</label>
+    <description>코니스는 뛰어난 엔지니어이자 상인인 사막의 미호입니다. 호기심이 많고 더위를 잘 버팁니다. 하지만 많은 일들을 기계들에게 맡기다 보니 보통의 미호들보다 게으르다 평가됩니다.</description>
+    <iconPath>Icon/GeneXeno/Desert_Ears</iconPath>
+    <biostatMet>-1</biostatMet>
+
+    <statOffsets>
+      <ComfyTemperatureMax>8</ComfyTemperatureMax>
+      <GlobalLearningFactor>0.25</GlobalLearningFactor>
+      <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+    </statOffsets>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>Ears_Highland_Miho</defName>
+    <label>프로드로모스</label>
+    <description>프로드로모스는 통제된 전장에 맞춰진, 극도로 공격적이고 효율적인 살인귀들 입니다. 유전적으로 고-주스를 필요로 합니다.</description>
+    <biostatMet>-4</biostatMet>
+    <biostatCpx>2</biostatCpx>
+
+    <iconPath>Icon/GeneXeno/ArcticWar_Ears</iconPath>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <statOffsets>
+      <NegotiationAbility>-0.1</NegotiationAbility>
+	  <TradePriceImprovement>-0.1</TradePriceImprovement>
+      <SocialImpact>-0.1</SocialImpact>	
+	  <ForagedNutritionPerDay>-1</ForagedNutritionPerDay>
+	  <MoveSpeed>0.5</MoveSpeed>
+    </statOffsets>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>Ears_Highmate_Miho</defName>
+    <label>포르네</label>
+    <description>번화계의 "특별한" 서비스 용도로 설계된 포르네들은 굉장한 사회적 능력과 상대를 매혹시키는 초능력을 가지고 있습니다. 대부분의 접대 상황에서는 엄청난 재능을 보여주지만, 안타깝게도 다른 분야에서는 쉽게 활약하지 못합니다.</description>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>2</biostatCpx>
+
+    <iconPath>Icon/GeneXeno/Love_Ears</iconPath>
+    <statOffsets>
+    </statOffsets>
+    <abilities>
+      <li>Miho_Ability_HighmateSeduce</li>
+    </abilities>
+  </GeneDef>
+  
+ <AbilityDef ParentName="MihoWordOfBase">
+    <defName>Miho_Ability_HighmateSeduce</defName>
+    <label>애교</label>
+    <description>1분기 동안 작업 효율을 증진시키고, 무드를 올려주는 애교를 떱니다. 무슨 애교인지는 상상에 맡기겠습니다.</description>
+    <iconPath>Icon/Abilities/MihoSeduce</iconPath>
+    <hotKey>Misc12</hotKey>
+    <statBases>
+      <Ability_PsyfocusCost>0.6</Ability_PsyfocusCost>
+      <Ability_Duration>15000</Ability_Duration>
+    </statBases>
+        <groupDef>Miho_Seduce</groupDef>
+
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <onlyTargetColonistsOrPrisonersOrSlaves>True</onlyTargetColonistsOrPrisonersOrSlaves>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Miho_Seduce_Hediff</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <onlyBrain>True</onlyBrain>
+        <psychic>True</psychic>
+        <applicableToMechs>False</applicableToMechs>
+        <goodwillImpact>5</goodwillImpact>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>WordOfJoy</interactionDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef ParentName="PsycastHediffBase">
+    <defName>Miho_Seduce_Hediff</defName>
+    <label>애교받음</label>
+    <description>엄청난 애교를 받았습니다. 살아갈 맛이 납니다.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+          <MoveSpeed>0.2</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Miho_Seduce_Hediff_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Miho_Seduce_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>애교받음</label>
+        <description>!!!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <GeneDef>
+    <defName>Gene_CelestialMiho</defName>
+    <label>천상의 여우</label>
+    <description>이 유전자를 지닌 여우는 이 항성의 가호를 받는 듯 합니다. 검증은 되지 않았지만요.</description>
+    <iconPath>Icon/GeneXeno/Miho_Passive</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <dontMindRawFood>false</dontMindRawFood>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <displayOrderInCategory>40</displayOrderInCategory>
+    <damageFactors>
+      <Miho_MagicBomb>0</Miho_MagicBomb>
+      <Miho_MagicBombEMP>0</Miho_MagicBombEMP>
+    </damageFactors>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <MoveSpeed>1.2</MoveSpeed>
+        </statFactors>
+		<statOffsets>
+          <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <forcedTraits>
+      <li>
+        <def>Miho_EnergyMeditation_Trait</def>
+      </li>
+    </forcedTraits>
+    <suppressedTraits>
+      <li>
+        <def>DrugDesire</def>
+        <degree>-1</degree>
+      </li>
+    </suppressedTraits>
+  </GeneDef>
+
+  <ThoughtDef>
+    <defName>SunlightSensitivity_Miho</defName>
+    <workerClass>ThoughtWorker_InSunlight</workerClass>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <requiredGenes>
+      <li>Gene_CelestialMiho</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>항성의 빛을 받음</label>
+        <description>핡 죠아...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

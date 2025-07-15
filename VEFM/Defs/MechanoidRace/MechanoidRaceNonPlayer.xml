@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FleshTypeDef>
+    <defName>MihoMechanoid</defName>
+    <corpseCategory>CorpsesMechanoid</corpseCategory>
+    <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechC</texture>
+      </li>
+    </genericWounds>
+  </FleshTypeDef>
+  
+  <FleshTypeDef>
+    <defName>MihoPlayerMechanoid</defName>
+    <corpseCategory>CorpsesMihoMech</corpseCategory>
+    <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechC</texture>
+      </li>
+    </genericWounds>
+  </FleshTypeDef>
+  
+	<ThingDef ParentName="BaseMechanoid" Name="BaseVFEMihoMachineNonPlayer" Abstract="True">
+	
+	
+	</ThingDef>
+
+	<ThingDef ParentName="BaseVFEMihoMachineNonPlayer">
+		<defName>MihoVFE_Mechanoids_Bulgasal_NP</defName>
+		<label>중형 전투 드론</label>
+		<description>미호 중공업의 전투형 4족보행 메카노이드 "불가살"은 험지 주행을 쉽게 가능하여. 어디에서나 사랑을 받습니다.</description>
+		<statBases>
+			<MoveSpeed>2.8</MoveSpeed>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<PsychicSensitivity>0.25</PsychicSensitivity>
+			<Mass>250</Mass>
+		</statBases>
+    <fillPercent>0.65</fillPercent>
+
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+      <fleshType>MihoMechanoid</fleshType>
+
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>MechanicalTermite</body>
+			<baseBodySize>8</baseBodySize>
+			<baseHealthScale>4.5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MihoVFE_RidableMechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Melee_MechanoidBash_HitPawn</soundWounded>
+					<soundDeath>Pawn_Melee_MechanoidBash_HitPawn</soundDeath>
+					<soundCall>Pawn_Melee_MechanoidBash_HitPawn</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>3000~8000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Plasteel>250</Plasteel>
+
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</butcherProducts>
+		<comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+				<violent>true</violent>
+				<hoursActive>240</hoursActive>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VFE.Mechanoids.MechanoidExtension">
+				<isCaravanRiddable>true</isCaravanRiddable>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>MihoVFE_Mechanoids_Bulgasal_NP</defName>
+		<label>중형 전투 드론</label>
+		<race>MihoVFE_Mechanoids_Bulgasal_NP</race>
+		<combatPower>450</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Mech/Bulgasal/Bulgasal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.5</drawSize>
+					<shadowData>
+						<volume>(1.0, 0.4, 1.0)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>MihoBulgasal</li>
+    </weaponTags>
+	</PawnKindDef>
+
+	
+	<ThingDef ParentName="BaseVFEMihoMachineNonPlayer">
+		<defName>MihoVFE_Mechanoids_Sapsal_NP</defName>
+		<label>경장갑 전투 드론</label>
+		<description>미호 중공업의 경장갑 4족보행 메카노이드 "삽살"은 높은 에너지 효율과 빠른 이동속도를 자랑합니다.</description>
+	<statBases>
+			<MoveSpeed>4.4</MoveSpeed>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<PsychicSensitivity>0.25</PsychicSensitivity>
+			<Mass>185</Mass>
+		</statBases>
+    <fillPercent>0.55</fillPercent>
+
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+      <fleshType>MihoMechanoid</fleshType>
+
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>MechanicalTermite</body>
+			<baseBodySize>6</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MihoVFE_RidableMechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Melee_MechanoidBash_HitPawn</soundWounded>
+					<soundDeath>Pawn_Melee_MechanoidBash_HitPawn</soundDeath>
+					<soundCall>Pawn_Melee_MechanoidBash_HitPawn</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>3000~8000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Plasteel>250</Plasteel>
+			<Steel>500</Steel>
+
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</butcherProducts>
+		<comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+				<violent>true</violent>
+				<hoursActive>240</hoursActive>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VFE.Mechanoids.MechanoidExtension">
+				<isCaravanRiddable>true</isCaravanRiddable>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>MihoVFE_Mechanoids_Sapsal_NP</defName>
+		<label>경장갑 전투 드론</label>
+		<race>MihoVFE_Mechanoids_Sapsal_NP</race>
+		<combatPower>450</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Mech/Sapsal/Sapsal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.2</drawSize>
+					<shadowData>
+						<volume>(1.0, 0.4, 1.0)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>MihoSapsal</li>
+    </weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>MihoVFE_Mechanoids_Sapsal_LMG_NP</defName>
+		<label>경장갑 전투 드론</label>
+		<race>MihoVFE_Mechanoids_Sapsal_NP</race>
+		<combatPower>400</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Mech/Sapsal/Sapsal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.2</drawSize>
+					<shadowData>
+						<volume>(1.0, 0.4, 1.0)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>MihoSapsalGun</li>
+    </weaponTags>
+	</PawnKindDef>
+</Defs>

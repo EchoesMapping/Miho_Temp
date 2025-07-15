@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <LifeStageDef>
+    <defName>Miho_MechanoidFullyFormed</defName>
+    <label>fully-formed</label>
+    <caravanRideable>true</caravanRideable>
+    <visible>false</visible>
+  </LifeStageDef>
+  
+  <ThingDef Name="MihoOrniMechanoid" ParentName="BaseMechanoid" Abstract="True">
+    <statBases>
+      <MoveSpeed>5.4</MoveSpeed>
+      <ControlTakingTime>18</ControlTakingTime>
+      <MechEnergyLossPerHP>0.4</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+        <body>Mech_Light</body>
+
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <mechWeightClass>Light</mechWeightClass>
+    </race>
+    <butcherProducts>
+      <Steel>10</Steel>
+      <Miho_MilitaryGradeBalisticCeramics>10</Miho_MilitaryGradeBalisticCeramics>
+    </butcherProducts>
+  </ThingDef>
+
+  <!-- Tunneler -->
+  <ThingDef ParentName="MihoOrniMechanoid">
+    <defName>Miho_Mech_DesertSphex</defName>
+    <label>오니솝터 (농업용)</label>
+    <description>농업에 적합한 팔과 커터가 달린 스펙스급 오니솝터 입니다.</description>
+    <statBases>
+      <MoveSpeed>7</MoveSpeed>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+        <PlantWorkSpeed>1.05</PlantWorkSpeed>
+    </statBases>
+    <race>
+      <body>Mech_Agrihand</body>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+            <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+            <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+      </lifeStageAges>
+        <mechEnabledWorkTypes>
+          <li>PlantCutting</li>
+          <li>Growing</li>
+        </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+          <PlantCutting>2</PlantCutting>
+        </mechWorkTypePriorities>
+    </race>
+    <tools>
+        <li>
+          <label>right blade</label>
+          <capacities>
+            <li>Cut</li>
+            <li>Stab</li>
+          </capacities>
+          <power>21</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+          <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+    </tools>
+
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_DesertSphex</defName>
+    <label>오니솝터 (농업용)</label>
+    <race>Miho_Mech_DesertSphex</race>
+    <combatPower>200</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Sphex/Sphex</texPath>
+            <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Sphex/Sphex</texPath>
+            <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+      <li>Miho_MechAbility_High_Jump</li>
+    </abilities>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <AbilityDef ParentName="LongJumpMech">
+    <defName>Miho_MechAbility_High_Jump</defName>
+    <label>고속 고공 비행</label>
+    <description>차체 안에 있는 열을 이용해 증기를 발사하여 고속으로 날아갑니다.</description>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <charges>2</charges>
+    <cooldownTicksRange>60000</cooldownTicksRange><!-- 24h -->
+    <verbProperties>
+      <range>30</range>
+      <minRange>6</minRange>
+      <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
+      <requireLineOfSight>false</requireLineOfSight>
+      <flightEffecterDef>JumpMechFlightEffect</flightEffecterDef>
+      <flyWithCarriedThing>true</flyWithCarriedThing>
+      <soundLanding>JumpMechLand</soundLanding>
+      <soundCast Inherit="False" />
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_DesertSphex</defName>
+    <label>오니솝터 제작</label>
+    <description>오니솝터 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_DesertSphex>1</Miho_Mech_DesertSphex>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_DesertSphex</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_Drone</researchPrerequisite>
+  </RecipeDef>
+  
+
+<!--
+    <ThingDef ParentName="MihoOrniMechanoid">
+      <defName>Miho_Mech_Kampe</defName>
+      <label>재활용 봇</label>
+      <description>재활용을 독려하기 위해 만들어진 재활용 봇 '캄페'는 청소를 하면서 모은 쓰레기를 귀중한 자원으로 바꿔줍니다.</description>
+      <statBases>
+        <CleaningSpeed>0.5</CleaningSpeed>
+      <MoveSpeed>2.4</MoveSpeed>
+
+      </statBases>
+      <race>
+        <mechEnabledWorkTypes>
+          <li>Cleaning</li>
+        </mechEnabledWorkTypes>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+            <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+            <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+          </li>
+        </lifeStageAges>
+        <baseBodySize>1</baseBodySize>
+      </race>
+    <comps>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Steel</thingToSpawn>
+        <spawnCount>25</spawnCount>
+        <spawnIntervalRange>300000</spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+    </comps>
+      <tools>
+        <li>
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>3</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+      <defName>Miho_Mech_Kampe</defName>
+      <label>재활용 봇</label>
+      <race>Miho_Mech_Kampe</race>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+          <texPath>NewMech/Kampe/Kampe</texPath>
+            <maskPath>NewMech/Kampe/Mask/Kampe</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>3</drawSize>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+          <texPath>NewMech/Kampe/Kampe</texPath>
+            <maskPath>NewMech/Kampe/Mask/Kampe</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>3</drawSize>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+    </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_Kampe</defName>
+    <label>재활용 봇 제작</label>
+    <description>재활용 봇 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_Kampe>1</Miho_Mech_Kampe>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_Kampe</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_Drone</researchPrerequisite>
+  </RecipeDef>
+  -->
+</Defs>

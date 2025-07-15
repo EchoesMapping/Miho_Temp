@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>Miho_MagicLaunch</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewMagic/Miho_Launch</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>45</min><max>55</max></volumeRange>
+        <pitchRange>
+          <min>0.9082353</min>        
+          <max>1.145882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Miho_MagicThrowing</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewMagic/Miho_Throwing</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>55</min><max>67</max></volumeRange>
+        <pitchRange>
+          <min>1.1082353</min>        
+          <max>1.445882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_BlastImpact</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewMagic/Miho_Blast</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>27</min><max>35</max></volumeRange>
+        <pitchRange>
+          <min>0.7082353</min>        
+          <max>1.245882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_Pistol</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>9</maxVoices>  
+
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoPistol</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>8</min><max>18</max></volumeRange>
+        <pitchRange>0.72~0.85</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_SilencedPistol</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>9</maxVoices>  
+
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoSilencedPistol</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>8</min><max>18</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_SilencedRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>9</maxVoices>  
+
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoSilencedPistol</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>16</min><max>22</max></volumeRange>
+        <pitchRange>0.4~0.5</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_DefenceRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoDefenceRifle</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>11</min><max>13</max></volumeRange>
+        <pitchRange>0.72~0.85</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_Nailgun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>9</maxVoices>  
+
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoNailgun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>8</min><max>18</max></volumeRange>
+        <pitchRange>0.72~0.85</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_SevenSevenRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoSevenSevenRifle</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>15</min><max>25</max></volumeRange>
+        <pitchRange>0.7~0.82</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_SevenSevenRifleBolt</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoSevenSevenRifleBolt</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>15</min><max>25</max></volumeRange>
+        <pitchRange>0.7~0.82</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_HeavyRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoHeavyRifle</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>30</min><max>50</max></volumeRange>
+        <pitchRange>0.7~0.82</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_Shotgun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoShotgun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>12</min><max>18</max></volumeRange>
+        <pitchRange>0.7~0.82</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_CannonPlasma</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoRiflePlasmaGun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>55</min><max>78</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_BigCannonPlasma</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoRiflePlasmaGun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>86</min><max>96</max></volumeRange>
+        <pitchRange>0.6~0.67</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_CannonPlasmaBig</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoRiflePlasmaGun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>78</min><max>100</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_PlasmaThrower</defName>  
+    <context>MapOnly</context>
+    <eventNames /> 
+    <maxVoices>2</maxVoices>  
+	
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoFlamethrower</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>215</min><max>265</max></volumeRange>
+        <pitchRange>0.78~1.34</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Miho_PlasmaGun</defName>  
+    <context>MapOnly</context>
+    <eventNames /> 
+    <maxVoices>1</maxVoices>  
+	
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoPlasmaGun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>21</min><max>36</max></volumeRange>
+        <pitchRange>0.78~0.85</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_RiflePlasmaGun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoRiflePlasmaGun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>30</min><max>42</max></volumeRange>
+        <pitchRange>0.75~0.8</pitchRange>
+
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Miho_Charging</defName>  
+    <context>MapOnly</context>
+    <sustain>true</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoCharging</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>0.95~1.05</pitchRange>
+        <volumeRange>25~25</volumeRange>
+		</li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_ChargingBig</defName>  
+    <context>MapOnly</context>
+    <sustain>true</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoCharging</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>0.95~1.05</pitchRange>
+        <volumeRange>55~55</volumeRange>
+		</li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_KineticCannon</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoKineticCannon</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>52</min><max>65</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>Miho_KineticCannonSmall</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoKineticCannon</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>32</min><max>44</max></volumeRange>
+				<pitchRange>
+					<min>1.15</min>        
+					<max>1.25</max>
+				</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_PlasmaFlamer</defName>  
+    <context>MapOnly</context>
+    <eventNames /> 
+	
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoFlamer</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>42</min><max>65</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_Mortar</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoMortar</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>35</min><max>55</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_GrenadeLauncher</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoMortar</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>22</min><max>42</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_GrenadeLauncherSmall</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoMortar</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>11</min><max>19</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+	<SoundDef>
+		<defName>MihoRailgun_Impact</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NewGun/MihoRailgun_Impact</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>66.70588</min>        
+					<max>72.05882</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.8516304</min>        
+					<max>1.254348</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+  <SoundDef>
+    <defName>Miho_Rocket</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoRocket</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>45</min><max>60</max></volumeRange>
+				<pitchRange>
+					<min>0.7</min>        
+					<max>0.9</max>
+				</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_ATRocket</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoATRocket</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>66</min><max>77</max></volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_None</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoMortar</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>0</min><max>0</max></volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

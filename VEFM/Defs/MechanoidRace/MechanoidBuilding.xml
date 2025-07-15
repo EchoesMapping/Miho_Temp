@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_BulgasalBase</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 중형전투드론 (플라즈마 데졸레이터) 스테이션</label>
+		<description>미호 중형전투드론 (플라즈마 데졸레이터) 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+	
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+			<Miho_MechItemHeavy>1</Miho_MechItemHeavy>
+			<Steel>250</Steel>
+            <Miho_PlasmaSample>4</Miho_PlasmaSample>
+			<Miho_Weapon_RiflePlasmaSniper>1</Miho_Weapon_RiflePlasmaSniper>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_Bulgasal</pawnToSpawn>
+				<allowedWorkTypes>
+			<li>Hauling</li>
+				</allowedWorkTypes>
+				<extraChargingPower>4800</extraChargingPower>
+				<spawnWithWeapon>MihoVEF_Weapon_Minigun</spawnWithWeapon>
+				<hoursToRecharge>288</hoursToRecharge>
+				<showSetArea>false</showSetArea>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_BulgasalBase_bolter</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 중형전투드론 (속사포) 스테이션</label>
+		<description>미호 중형전투드론 (속사포) 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+			<Miho_MechItemHeavy>1</Miho_MechItemHeavy>
+			<Steel>250</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_Bulgasal_Bolter</pawnToSpawn>
+				<allowedWorkTypes>
+				</allowedWorkTypes>
+				<extraChargingPower>4000</extraChargingPower>
+				<spawnWithWeapon>MihoVEF_Weapon_Bolter</spawnWithWeapon>
+				<hoursToRecharge>288</hoursToRecharge>
+				<showSetArea>false</showSetArea>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_BulgasalBase_Melee</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 중형 데몰리셔 드론 스테이션</label>
+		<description>미호 중형 데몰리셔 드론 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+			<Miho_MechItemHeavy>1</Miho_MechItemHeavy>
+			<Steel>500</Steel>
+			<Miho_DroneArmor>5</Miho_DroneArmor>
+			<Miho_PlasteelDrill>2</Miho_PlasteelDrill>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_Bulgasal_Melee</pawnToSpawn>
+				<allowedWorkTypes>
+			<li>Mining</li>
+				</allowedWorkTypes>
+				<extraChargingPower>4000</extraChargingPower>
+				<spawnWithWeapon>Miho_Weapon_SapperRobot</spawnWithWeapon>
+				<hoursToRecharge>288</hoursToRecharge>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_SapsalBase</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 경장갑전투드론 (플라즈마 캐터펄트) 스테이션</label>
+		<description>미호 경장갑전투드론 (플라즈마 캐터펄트) 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+			<Miho_MechItemLight>1</Miho_MechItemLight>
+			<Steel>250</Steel>
+            <Miho_PlasmaSample>4</Miho_PlasmaSample>
+			<Miho_Weapon_RiflePlasmaSniper>1</Miho_Weapon_RiflePlasmaSniper>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_Sapsal</pawnToSpawn>
+				<allowedWorkTypes>
+				</allowedWorkTypes>
+				<extraChargingPower>5000</extraChargingPower>
+				<spawnWithWeapon>MihoVEF_Weapon_Rocket</spawnWithWeapon>
+				<hoursToRecharge>288</hoursToRecharge>
+				<showSetArea>false</showSetArea>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_SapsalBase_LMG</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 경장갑전투드론 (지원 기관총) 스테이션</label>
+		<description>미호 경장갑전투드론 (지원 기관총) 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+			<Miho_MechItemLight>1</Miho_MechItemLight>
+			<Steel>250</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_Sapsal_LMG</pawnToSpawn>
+				<allowedWorkTypes>
+				</allowedWorkTypes>
+				<extraChargingPower>1500</extraChargingPower>
+				<spawnWithWeapon>MihoVEF_Weapon_Machinegun</spawnWithWeapon>
+				<hoursToRecharge>288</hoursToRecharge>
+				<showSetArea>false</showSetArea>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Mechanoids_MyeongIlBase</defName>
+		<thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+		<label>미호 모함드론 스테이션</label>
+		<description>미호 모함드론 스테이션.</description>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Things/Building/MihoDroneStation/Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,2)</size>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+			<Plasteel>400</Plasteel>
+			<Miho_MilitaryGradeBalisticCeramics>2000</Miho_MilitaryGradeBalisticCeramics>
+			<ComponentIndustrial>75</ComponentIndustrial>
+			<AIPersonaCore>1</AIPersonaCore>
+
+			
+			<ComponentSpacer>25</ComponentSpacer>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+				<pawnToSpawn>MihoVFE_Mechanoids_MyeongIl</pawnToSpawn>
+				<allowedWorkTypes>
+				</allowedWorkTypes>
+				<extraChargingPower>10000</extraChargingPower>
+				<spawnWithWeapon>MihoVEF_Weapon_Machinegun</spawnWithWeapon>
+				<hoursToRecharge>96</hoursToRecharge>
+				<showSetArea>false</showSetArea>
+			</li>
+		</comps>
+		<designationCategory>MihoBuilding</designationCategory>
+		<researchPrerequisites>
+		<li>Miho_CommandDrone</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+  <ThingDef ParentName="BuildingBase">
+    <defName>MihoVFE_Mechanoids_CleanerBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>청소 드론 스테이션</label>
+    <description>청소 드론 스테이션.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoDroneStation/Light</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Miho_Ceramics>100</Miho_Ceramics>
+
+	  
+	  <Miho_MechItemCleaner>1</Miho_MechItemCleaner>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>MihoVFE_Mechanoids_Cleaner</pawnToSpawn>
+		<allowedWorkTypes>
+			<li>Cleaning</li>
+		</allowedWorkTypes>
+		<extraChargingPower>500</extraChargingPower>
+		<hoursToRecharge>8</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>MihoBuilding</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MihoVFE_Mechanoids_LogiBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>로지스틱 드론 스테이션</label>
+    <description>로지스틱 드론 스테이션.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoDroneStation/Light</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+
+      <Miho_Ceramics>100</Miho_Ceramics>
+	  <Miho_MechItemLogi>1</Miho_MechItemLogi>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>MihoVFE_Mechanoids_Logi</pawnToSpawn>
+		<allowedWorkTypes>
+			<li>Hauling</li>
+		</allowedWorkTypes>
+		<extraChargingPower>1000</extraChargingPower>
+		<hoursToRecharge>8</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>MihoBuilding</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MihoVFE_Mechanoids_SecurityBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>수호 드론 스테이션</label>
+    <description>수호 드론 스테이션.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoDroneStation/Light</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Miho_Ceramics>100</Miho_Ceramics>
+	  <Miho_MechItemSecurity>1</Miho_MechItemSecurity>
+
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>MihoVFE_Mechanoids_Security</pawnToSpawn>
+		<allowedWorkTypes>
+		</allowedWorkTypes>
+		<extraChargingPower>1000</extraChargingPower>
+		<spawnWithWeapon>MihoVEF_Weapon_Security</spawnWithWeapon>
+		<hoursToRecharge>24</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>MihoBuilding</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

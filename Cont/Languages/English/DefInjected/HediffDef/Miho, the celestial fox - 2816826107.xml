@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_PositiveFlower_ChildHuntress_High.label>blooming hunter</Miho_PositiveFlower_ChildHuntress_High.label>
+  <Miho_PositiveFlower_ChildHuntress_High.labelNoun>blooming hunter</Miho_PositiveFlower_ChildHuntress_High.labelNoun>
+  <Miho_PositiveFlower_ChildHuntress_High.description>Blooming Hunter</Miho_PositiveFlower_ChildHuntress_High.description>
+  <Miho_PositiveFlower_ChildShamaness_High.label>blooming shaman</Miho_PositiveFlower_ChildShamaness_High.label>
+  <Miho_PositiveFlower_ChildShamaness_High.labelNoun>blooming shaman</Miho_PositiveFlower_ChildShamaness_High.labelNoun>
+  <Miho_PositiveFlower_ChildShamaness_High.description>Blooming Shaman</Miho_PositiveFlower_ChildShamaness_High.description>
+  <Miho_PositiveFlower_ChildSummoner_High.label>blooming summoner</Miho_PositiveFlower_ChildSummoner_High.label>
+  <Miho_PositiveFlower_ChildSummoner_High.labelNoun>blooming summoner</Miho_PositiveFlower_ChildSummoner_High.labelNoun>
+  <Miho_PositiveFlower_ChildSummoner_High.description>Blooming Summoner</Miho_PositiveFlower_ChildSummoner_High.description>
+  <Miho_PositiveFlower_ChildTemptress_High.label>blooming fatale</Miho_PositiveFlower_ChildTemptress_High.label>
+  <Miho_PositiveFlower_ChildTemptress_High.labelNoun>blooming fatale</Miho_PositiveFlower_ChildTemptress_High.labelNoun>
+  <Miho_PositiveFlower_ChildTemptress_High.description>Blooming Fatale</Miho_PositiveFlower_ChildTemptress_High.description>
+  <Miho_PositiveFlower_ChildTinker_High.label>blooming tinker</Miho_PositiveFlower_ChildTinker_High.label>
+  <Miho_PositiveFlower_ChildTinker_High.labelNoun>blooming tinker</Miho_PositiveFlower_ChildTinker_High.labelNoun>
+  <Miho_PositiveFlower_ChildTinker_High.description>Blooming Tinker</Miho_PositiveFlower_ChildTinker_High.description>
+  <Miho_Nojob.label>nojobplz</Miho_Nojob.label>
+  <Miho_Nojob.description>nojobplz</Miho_Nojob.description>
+  <Miho_Nojob.stages.0.label>a</Miho_Nojob.stages.0.label>
+  <Miho_PositiveFlower_Juice_High.label>effect of decoction</Miho_PositiveFlower_Juice_High.label>
+  <Miho_PositiveFlower_Juice_High.labelNoun>effect of decoction</Miho_PositiveFlower_Juice_High.labelNoun>
+  <Miho_PositiveFlower_Juice_High.description>Effect of Decoction: Tastes bad.</Miho_PositiveFlower_Juice_High.description>
+  <Miho_EntropyDump_High.label>transfer neural heat</Miho_EntropyDump_High.label>
+  <Miho_EntropyDump_High.labelNoun>transfer neural heat</Miho_EntropyDump_High.labelNoun>
+  <Miho_EntropyDump_High.description>Transfer Neural Heat</Miho_EntropyDump_High.description>
+  <Miho_PositiveFlower_Juice_Addiction.label>Helianto dangerous drug addiction</Miho_PositiveFlower_Juice_Addiction.label>
+  <Miho_PositiveFlower_Juice_Addiction.description>Has become addicted to Helianto dangerous drug.</Miho_PositiveFlower_Juice_Addiction.description>
+  <Miho_PositiveFlower_Juice_Addiction.stages.1.label>withdrawal</Miho_PositiveFlower_Juice_Addiction.stages.1.label>
+  <Miho_PositiveFlower_Juice_Tolerance.label>Helianto dangerous drug tolerance</Miho_PositiveFlower_Juice_Tolerance.label>
+  <Miho_PositiveFlower_Juice_Tolerance.description>Helianto Dangerous Drug</Miho_PositiveFlower_Juice_Tolerance.description>
+  <Miho_PositiveFlower_Tea_Addiction.label>Helianto light drug addiction</Miho_PositiveFlower_Tea_Addiction.label>
+  <Miho_PositiveFlower_Tea_Addiction.description>There is no particularly dangerous situation due to mild drug made with Helianto. It's just that you'll miss the unique floral scent.</Miho_PositiveFlower_Tea_Addiction.description>
+  <Miho_PositiveFlower_Tea_Addiction.stages.1.label>withdrawal</Miho_PositiveFlower_Tea_Addiction.stages.1.label>
+  <Miho_PositiveFlower_Tea_Tolerance.label>Helianto light drug tolerance</Miho_PositiveFlower_Tea_Tolerance.label>
+  <Miho_PositiveFlower_Tea_Tolerance.description>Helianto light drug</Miho_PositiveFlower_Tea_Tolerance.description>
+  <Miho_Elegans_Hediff.label>elegans irgan potential</Miho_Elegans_Hediff.label>
+  <Miho_Elegans_Hediff.description>The Misty Flower Organ, or Elegans, is an organ that only exists inside Miho's body. It activates the water-soluble mechanites and spreads them throughout the body. One of the reasons it is called the Misty Flower Organ is that the tubes spread throughout the body resemble the stems of misty flowers.\n\nTo maintain the Misty Flower Organ, mechanites must be supplied periodically through the Helianto.</Miho_Elegans_Hediff.description>
+  <Miho_Elegans_Hediff.stages.0.label>disabled</Miho_Elegans_Hediff.stages.0.label>
+  <Miho_Elegans_Hediff.stages.1.label>very degraded</Miho_Elegans_Hediff.stages.1.label>
+  <Miho_Elegans_Hediff.stages.2.label>degraded</Miho_Elegans_Hediff.stages.2.label>
+  <Miho_Elegans_Hediff.stages.3.label>normal</Miho_Elegans_Hediff.stages.3.label>
+  <Miho_PositiveFlower_Pipe_High.label>smoked Helianto Cigarettes</Miho_PositiveFlower_Pipe_High.label>
+  <Miho_PositiveFlower_Pipe_High.labelNoun>smoked Helianto Cigarettes</Miho_PositiveFlower_Pipe_High.labelNoun>
+  <Miho_PositiveFlower_Pipe_High.labelNoun>smoking Helianto cigarette</Miho_PositiveFlower_Pipe_High.labelNoun>
+  <Miho_PositiveFlower_Pipe_High.description>Helianto cigarettes clear the mind. They also have a stimulating effect on the metabolism.</Miho_PositiveFlower_Pipe_High.description>
+  <Miho_PositiveFlower_Tea_High.label>drinked Helianto tea</Miho_PositiveFlower_Tea_High.label>
+  <Miho_PositiveFlower_Tea_High.labelNoun>drinked Helianto tea</Miho_PositiveFlower_Tea_High.labelNoun>
+  <Miho_PositiveFlower_Tea_High.description>Helianto tea recharges Yang energy. It is good to drink before going to bed as it increases sleep efficiency.</Miho_PositiveFlower_Tea_High.description>
+  <Miho_PositiveFlower_High.label>eating Helianto petals</Miho_PositiveFlower_High.label>
+  <Miho_PositiveFlower_High.labelNoun>eating Helianto petals</Miho_PositiveFlower_High.labelNoun>
+  <Miho_PositiveFlower_High.description>Helianto petals recharges Yang energy.</Miho_PositiveFlower_High.description>
+  <Miho_Tail_Hediff.description>tail</Miho_Tail_Hediff.description>
+  <Miho_Tail_Hediff.label>tail</Miho_Tail_Hediff.label>
+  <Miho_Tail_Hediff.stages.0.label>a</Miho_Tail_Hediff.stages.0.label>
+  <Miho_Tail_Hediff.stages.1.label>b</Miho_Tail_Hediff.stages.1.label>
+  <Miho_Tail_Hediff.stages.2.label>c</Miho_Tail_Hediff.stages.2.label>
+  <Miho_Hidden_Hediff.description>hidden</Miho_Hidden_Hediff.description>
+  <Miho_Hidden_Hediff.label>hidden</Miho_Hidden_Hediff.label>
+  <Miho_Ear_Hediff.description>large ears</Miho_Ear_Hediff.description>
+  <Miho_Ear_Hediff.label>large ears</Miho_Ear_Hediff.label>
+  <Miho_DontShootMe_Hediff.description>Don't Shoot Me, Damn it!</Miho_DontShootMe_Hediff.description>
+  <Miho_DontShootMe_Hediff.label>Don't Shoot Me, Damn it!</Miho_DontShootMe_Hediff.label>
+  <Miho_DontShootMe_Hediff.stages.0.label>a</Miho_DontShootMe_Hediff.stages.0.label>
+  <Miho_HawkInjury_Hediff.label>hawk</Miho_HawkInjury_Hediff.label>
+  <Miho_HawkInjury_Hediff.labelNoun>hawk</Miho_HawkInjury_Hediff.labelNoun>
+  <Miho_HawkInjury_Hediff.description>hawk</Miho_HawkInjury_Hediff.description>
+  <Miho_HawkInjury_Hediff.comps.1.labelTendedWell>bandaged</Miho_HawkInjury_Hediff.comps.1.labelTendedWell>
+  <Miho_HawkInjury_Hediff.comps.1.labelTendedWellInner>tended</Miho_HawkInjury_Hediff.comps.1.labelTendedWellInner>
+  <Miho_HawkInjury_Hediff.comps.1.labelSolidTendedWell>tended</Miho_HawkInjury_Hediff.comps.1.labelSolidTendedWell>
+  <Miho_HawkInjury_Hediff.comps.3.permanentLabel>scar</Miho_HawkInjury_Hediff.comps.3.permanentLabel>
+  <Miho_HawkInjury_Hediff.injuryProps.destroyedLabel>destroyed</Miho_HawkInjury_Hediff.injuryProps.destroyedLabel>
+  <Miho_HawkInjury_Hediff.injuryProps.destroyedOutLabel>destroyed</Miho_HawkInjury_Hediff.injuryProps.destroyedOutLabel>
+  <Miho_Thunder_Hediff.label>electric shock</Miho_Thunder_Hediff.label>
+  <Miho_Thunder_Hediff.description>With a special charge using mechanites, both Mechanoids and humans are equally electrocuted.</Miho_Thunder_Hediff.description>
+  <Miho_Hawk_Hediff.label>ensnare</Miho_Hawk_Hediff.label>
+  <Miho_Hawk_Hediff.description>Tangle the enemy with a mechanite net.</Miho_Hawk_Hediff.description>
+  <Miho_Abomi_Hediff.label>abomination</Miho_Abomi_Hediff.label>
+  <Miho_Abomi_Hediff.description>Spread a kind of disgust that words cannot describe.</Miho_Abomi_Hediff.description>
+  <Miho_AbomiSeen_Hediff.label>witnessed "The Thing"</Miho_AbomiSeen_Hediff.label>
+  <Miho_AbomiSeen_Hediff.description>Filled with a feeling of disgust never experienced before.</Miho_AbomiSeen_Hediff.description>
+  <Miho_Heal_Hediff.label>healed</Miho_Heal_Hediff.label>
+  <Miho_Heal_Hediff.description>Receiving healing using mechanite-psychic powers.</Miho_Heal_Hediff.description>
+  <Miho_Defence_Hediff.label>white armor warrior</Miho_Defence_Hediff.label>
+  <Miho_Defence_Hediff.description>A white armored warrior protects you. Wow~~</Miho_Defence_Hediff.description>
+  <Miho_Powerstrike_Hediff.label>single strike</Miho_Powerstrike_Hediff.label>
+  <Miho_Powerstrike_Hediff.description>splits anything.</Miho_Powerstrike_Hediff.description>
+  <Miho_Spiritualize_Hediff.label>spiritualization</Miho_Spiritualize_Hediff.label>
+  <Miho_Spiritualize_Hediff.description>The caster becomes a mechanite-psychic transmitter to relieve the neural heat stress of nearby casters.</Miho_Spiritualize_Hediff.description>
+  <Miho_SpiritualizeCommand_Hediff.label>spiritualization</Miho_SpiritualizeCommand_Hediff.label>
+  <Miho_SpiritualizeCommand_Hediff.description>The caster becomes a mechanite-psychic transmitter to relieve the neural heat stress of nearby casters.</Miho_SpiritualizeCommand_Hediff.description>
+  <Miho_Sandevistan_Hediff.label>cognitive Enhancement</Miho_Sandevistan_Hediff.label>
+  <Miho_Sandevistan_Hediff.description>The world seems to slow down significantly. Not for you, though.</Miho_Sandevistan_Hediff.description>
+  <Miho_Armor_HediffTwo.description>Enhanced defense using mechanite-psychic powers.</Miho_Armor_HediffTwo.description>
+  <Miho_Armor_HediffTwo.label>mechanite hardened armor</Miho_Armor_HediffTwo.label>
+  <Miho_Accuracy_HediffTwo.description>Enhanced accuracy using mechanite-psychic powers.</Miho_Accuracy_HediffTwo.description>
+  <Miho_Accuracy_HediffTwo.label>holographic artillery</Miho_Accuracy_HediffTwo.label>
+  <Miho_Overclock_HediffTwo.description>Enhanced consciousness using mechanite-psychic powers.</Miho_Overclock_HediffTwo.description>
+  <Miho_Overclock_HediffTwo.label>overclock</Miho_Overclock_HediffTwo.label>
+  <Miho_BulletHell_HediffTwo.description>Enhanced reload speed using mechanite-psychic powers.</Miho_BulletHell_HediffTwo.description>
+  <Miho_BulletHell_HediffTwo.label>bullet hell</Miho_BulletHell_HediffTwo.label>
+  <Miho_HackingSlow_Hediff.description>Devours consciousness.</Miho_HackingSlow_Hediff.description>
+  <Miho_HackingSlow_Hediff.label>consciousness devour</Miho_HackingSlow_Hediff.label>
+  <Miho_HackingKill_Hediff.description>All mechanoids that cannot expel heat are dead...</Miho_HackingKill_Hediff.description>
+  <Miho_HackingKill_Hediff.label>waste heat explosion</Miho_HackingKill_Hediff.label>
+  <Miho_HackingKill_Hediff.stages.0.label>a</Miho_HackingKill_Hediff.stages.0.label>
+  <Miho_HackingKill_Hediff.stages.1.label>b</Miho_HackingKill_Hediff.stages.1.label>
+  <Miho_HackingKill_Hediff.stages.2.label>c</Miho_HackingKill_Hediff.stages.2.label>
+  <Miho_HackingKill_Hediff.stages.3.label>d</Miho_HackingKill_Hediff.stages.3.label>
+  <Miho_EltexMask_Hediff.label>masked</Miho_EltexMask_Hediff.label>
+  <Miho_EltexMask_Hediff.labelNoun>masked</Miho_EltexMask_Hediff.labelNoun>
+  <Miho_EltexMask_Hediff.description>masked</Miho_EltexMask_Hediff.description>
+  <Miho_Pariah_Hediff.label>basic implant</Miho_Pariah_Hediff.label>
+  <Miho_Pariah_Hediff.labelNoun>basic implant</Miho_Pariah_Hediff.labelNoun>
+  <Miho_Pariah_Hediff.description>Basic Implant.</Miho_Pariah_Hediff.description>
+  <Miho_Medic_Hediff.label>medic armor</Miho_Medic_Hediff.label>
+  <Miho_Medic_Hediff.labelNoun>medic armor</Miho_Medic_Hediff.labelNoun>
+  <Miho_Medic_Hediff.description>Medic Armor.</Miho_Medic_Hediff.description>
+  <Miho_OrnatedOne_Hediff.label>arm</Miho_OrnatedOne_Hediff.label>
+  <Miho_OrnatedOne_Hediff.labelNoun>arm</Miho_OrnatedOne_Hediff.labelNoun>
+  <Miho_OrnatedOne_Hediff.description>Arm</Miho_OrnatedOne_Hediff.description>
+  <Miho_OrnatedTwo_Hediff.label>arm</Miho_OrnatedTwo_Hediff.label>
+  <Miho_OrnatedTwo_Hediff.labelNoun>arm</Miho_OrnatedTwo_Hediff.labelNoun>
+  <Miho_OrnatedTwo_Hediff.description>Arm</Miho_OrnatedTwo_Hediff.description>
+  <Miho_Magnifier_Hediff.label>wearing magnifier</Miho_Magnifier_Hediff.label>
+  <Miho_Magnifier_Hediff.labelNoun>wearing magnifier</Miho_Magnifier_Hediff.labelNoun>
+  <Miho_Magnifier_Hediff.description>Wearing Magnifier.</Miho_Magnifier_Hediff.description>
+  <Miho_TacticalAssist_Hediff.label>wearing tactical assist computer</Miho_TacticalAssist_Hediff.label>
+  <Miho_TacticalAssist_Hediff.labelNoun>wearing tactical assist computer</Miho_TacticalAssist_Hediff.labelNoun>
+  <Miho_TacticalAssist_Hediff.description>Wearing Tactical Assist Computer.</Miho_TacticalAssist_Hediff.description>
+  <Miho_Glasses_Hediff.label>wearing glasses</Miho_Glasses_Hediff.label>
+  <Miho_Glasses_Hediff.labelNoun>wearing glasses</Miho_Glasses_Hediff.labelNoun>
+  <Miho_Glasses_Hediff.description>Wearing Glasses.</Miho_Glasses_Hediff.description>
+  <Miho_Visor_Hediff.label>wearing visor</Miho_Visor_Hediff.label>
+  <Miho_Visor_Hediff.labelNoun>wearing visor</Miho_Visor_Hediff.labelNoun>
+  <Miho_Visor_Hediff.description>Wearing Visor.</Miho_Visor_Hediff.description>
+  <Miho_Toxmask_Hediff.label>wearing gas mask</Miho_Toxmask_Hediff.label>
+  <Miho_Toxmask_Hediff.labelNoun>wearing gas mask</Miho_Toxmask_Hediff.labelNoun>
+  <Miho_Toxmask_Hediff.description>Wearing Gas Mask.</Miho_Toxmask_Hediff.description>
+  <Miho_Seduce_Hediff.label>charmed</Miho_Seduce_Hediff.label>
+  <Miho_Seduce_Hediff.description>Received a lot of charm. Life feels worth living.</Miho_Seduce_Hediff.description>
+  <Miho_Huntress_Start_Hediff.description>Hunter</Miho_Huntress_Start_Hediff.description>
+  <Miho_Huntress_Start_Hediff.label>hunter (adapting to the planet)</Miho_Huntress_Start_Hediff.label>
+  <Miho_Huntress_Start_Hediff.stages.0.label>a</Miho_Huntress_Start_Hediff.stages.0.label>
+  <Miho_Huntress_Start_Hediff.stages.1.label>c</Miho_Huntress_Start_Hediff.stages.1.label>
+  <Miho_Huntress_Start_Hediff.stages.2.label>d</Miho_Huntress_Start_Hediff.stages.2.label>
+  <Miho_Huntress_Start_Hediff.stages.3.label>e</Miho_Huntress_Start_Hediff.stages.3.label>
+  <Miho_Huntress_Start_Hediff.stages.4.label>f</Miho_Huntress_Start_Hediff.stages.4.label>
+  <Miho_Huntress_Start_Hediff.stages.5.label>g</Miho_Huntress_Start_Hediff.stages.5.label>
+  <Miho_Huntress_I_Hediff.description>Hunter</Miho_Huntress_I_Hediff.description>
+  <Miho_Huntress_I_Hediff.label>hunter (I)</Miho_Huntress_I_Hediff.label>
+  <Miho_Huntress_I_Hediff.stages.0.label>a</Miho_Huntress_I_Hediff.stages.0.label>
+  <Miho_Huntress_I_Hediff.stages.1.label>b</Miho_Huntress_I_Hediff.stages.1.label>
+  <Miho_Huntress_I_Hediff.stages.2.label>c</Miho_Huntress_I_Hediff.stages.2.label>
+  <Miho_Huntress_I_Hediff.stages.3.label>d</Miho_Huntress_I_Hediff.stages.3.label>
+  <Miho_Huntress_II_Hediff.description>Hunter</Miho_Huntress_II_Hediff.description>
+  <Miho_Huntress_II_Hediff.label>hunter (II)</Miho_Huntress_II_Hediff.label>
+  <Miho_Huntress_II_Hediff.stages.0.label>a</Miho_Huntress_II_Hediff.stages.0.label>
+  <Miho_Huntress_II_Hediff.stages.1.label>b</Miho_Huntress_II_Hediff.stages.1.label>
+  <Miho_Huntress_II_Hediff.stages.2.label>c</Miho_Huntress_II_Hediff.stages.2.label>
+  <Miho_Huntress_II_Hediff.stages.3.label>d</Miho_Huntress_II_Hediff.stages.3.label>
+  <Miho_Huntress_III_Hediff.description>Hunter</Miho_Huntress_III_Hediff.description>
+  <Miho_Huntress_III_Hediff.label>hunter (III)</Miho_Huntress_III_Hediff.label>
+  <Miho_Huntress_III_Hediff.stages.0.label>a</Miho_Huntress_III_Hediff.stages.0.label>
+  <Miho_Huntress_III_Hediff.stages.1.label>b</Miho_Huntress_III_Hediff.stages.1.label>
+  <Miho_Huntress_III_Hediff.stages.2.label>c</Miho_Huntress_III_Hediff.stages.2.label>
+  <Miho_Huntress_III_Hediff.stages.3.label>d</Miho_Huntress_III_Hediff.stages.3.label>
+  <Miho_Huntress_IV_Hediff.description>Hunter</Miho_Huntress_IV_Hediff.description>
+  <Miho_Huntress_IV_Hediff.label>hunter (IV)</Miho_Huntress_IV_Hediff.label>
+  <Miho_Huntress_IV_Hediff.stages.0.label>a</Miho_Huntress_IV_Hediff.stages.0.label>
+  <Miho_Huntress_IV_Hediff.stages.1.label>b</Miho_Huntress_IV_Hediff.stages.1.label>
+  <Miho_Huntress_IV_Hediff.stages.2.label>c</Miho_Huntress_IV_Hediff.stages.2.label>
+  <Miho_Huntress_IV_Hediff.stages.3.label>d</Miho_Huntress_IV_Hediff.stages.3.label>
+  <Miho_Huntress_V_Hediff.description>Hunter</Miho_Huntress_V_Hediff.description>
+  <Miho_Huntress_V_Hediff.label>hunter (V)</Miho_Huntress_V_Hediff.label>
+  <Miho_Huntress_V_Hediff.stages.0.label>a</Miho_Huntress_V_Hediff.stages.0.label>
+  <Miho_Shamaness_Start_Hediff.description>Shaman</Miho_Shamaness_Start_Hediff.description>
+  <Miho_Shamaness_Start_Hediff.label>shaman (Adapting to the planet)</Miho_Shamaness_Start_Hediff.label>
+  <Miho_Shamaness_Start_Hediff.stages.0.label>a</Miho_Shamaness_Start_Hediff.stages.0.label>
+  <Miho_Shamaness_Start_Hediff.stages.1.label>c</Miho_Shamaness_Start_Hediff.stages.1.label>
+  <Miho_Shamaness_Start_Hediff.stages.2.label>d</Miho_Shamaness_Start_Hediff.stages.2.label>
+  <Miho_Shamaness_Start_Hediff.stages.3.label>e</Miho_Shamaness_Start_Hediff.stages.3.label>
+  <Miho_Shamaness_Start_Hediff.stages.4.label>f</Miho_Shamaness_Start_Hediff.stages.4.label>
+  <Miho_Shamaness_Start_Hediff.stages.5.label>g</Miho_Shamaness_Start_Hediff.stages.5.label>
+  <Miho_Shamaness_I_Hediff.description>Shaman</Miho_Shamaness_I_Hediff.description>
+  <Miho_Shamaness_I_Hediff.label>shaman (I)</Miho_Shamaness_I_Hediff.label>
+  <Miho_Shamaness_I_Hediff.stages.0.label>a</Miho_Shamaness_I_Hediff.stages.0.label>
+  <Miho_Shamaness_I_Hediff.stages.1.label>b</Miho_Shamaness_I_Hediff.stages.1.label>
+  <Miho_Shamaness_I_Hediff.stages.2.label>c</Miho_Shamaness_I_Hediff.stages.2.label>
+  <Miho_Shamaness_I_Hediff.stages.3.label>d</Miho_Shamaness_I_Hediff.stages.3.label>
+  <Miho_Shamaness_II_Hediff.description>Shaman</Miho_Shamaness_II_Hediff.description>
+  <Miho_Shamaness_II_Hediff.label>shaman (II)</Miho_Shamaness_II_Hediff.label>
+  <Miho_Shamaness_II_Hediff.stages.0.label>a</Miho_Shamaness_II_Hediff.stages.0.label>
+  <Miho_Shamaness_II_Hediff.stages.1.label>b</Miho_Shamaness_II_Hediff.stages.1.label>
+  <Miho_Shamaness_II_Hediff.stages.2.label>c</Miho_Shamaness_II_Hediff.stages.2.label>
+  <Miho_Shamaness_II_Hediff.stages.3.label>d</Miho_Shamaness_II_Hediff.stages.3.label>
+  <Miho_Shamaness_III_Hediff.description>Shaman</Miho_Shamaness_III_Hediff.description>
+  <Miho_Shamaness_III_Hediff.label>shaman (III)</Miho_Shamaness_III_Hediff.label>
+  <Miho_Shamaness_III_Hediff.stages.0.label>a</Miho_Shamaness_III_Hediff.stages.0.label>
+  <Miho_Shamaness_III_Hediff.stages.1.label>b</Miho_Shamaness_III_Hediff.stages.1.label>
+  <Miho_Shamaness_III_Hediff.stages.2.label>c</Miho_Shamaness_III_Hediff.stages.2.label>
+  <Miho_Shamaness_III_Hediff.stages.3.label>d</Miho_Shamaness_III_Hediff.stages.3.label>
+  <Miho_Shamaness_IV_Hediff.description>Shaman</Miho_Shamaness_IV_Hediff.description>
+  <Miho_Shamaness_IV_Hediff.label>shaman (IV)</Miho_Shamaness_IV_Hediff.label>
+  <Miho_Shamaness_IV_Hediff.stages.0.label>a</Miho_Shamaness_IV_Hediff.stages.0.label>
+  <Miho_Shamaness_IV_Hediff.stages.1.label>b</Miho_Shamaness_IV_Hediff.stages.1.label>
+  <Miho_Shamaness_IV_Hediff.stages.2.label>c</Miho_Shamaness_IV_Hediff.stages.2.label>
+  <Miho_Shamaness_IV_Hediff.stages.3.label>d</Miho_Shamaness_IV_Hediff.stages.3.label>
+  <Miho_Shamaness_V_Hediff.description>Shaman</Miho_Shamaness_V_Hediff.description>
+  <Miho_Shamaness_V_Hediff.label>shaman (V)</Miho_Shamaness_V_Hediff.label>
+  <Miho_Shamaness_V_Hediff.stages.0.label>d</Miho_Shamaness_V_Hediff.stages.0.label>
+  <Miho_Skill_I_StunTalisman_Hediff.description>Talisman of Unconsciousness</Miho_Skill_I_StunTalisman_Hediff.description>
+  <Miho_Skill_I_StunTalisman_Hediff.label>talisman of unconsciousness</Miho_Skill_I_StunTalisman_Hediff.label>
+  <Miho_Skill_II_Ensnare_Hediff.description>Ensnare</Miho_Skill_II_Ensnare_Hediff.description>
+  <Miho_Skill_II_Ensnare_Hediff.label>ensnare</Miho_Skill_II_Ensnare_Hediff.label>
+  <Miho_Skill_II_Jump_Hediff.description>Leap</Miho_Skill_II_Jump_Hediff.description>
+  <Miho_Skill_II_Jump_Hediff.label>leap</Miho_Skill_II_Jump_Hediff.label>
+  <Miho_Skill_I_Powerstrike_Hediff.description>Single Strike</Miho_Skill_I_Powerstrike_Hediff.description>
+  <Miho_Skill_I_Powerstrike_Hediff.label>single strike</Miho_Skill_I_Powerstrike_Hediff.label>
+  <Miho_Skill_I_Hawk_Hediff.description>Hunting Hawk</Miho_Skill_I_Hawk_Hediff.description>
+  <Miho_Skill_I_Hawk_Hediff.label>hunting hawk</Miho_Skill_I_Hawk_Hediff.label>
+  <Miho_Skill_II_FireballSmall_Hediff.description>Fox Ember</Miho_Skill_II_FireballSmall_Hediff.description>
+  <Miho_Skill_II_FireballSmall_Hediff.label>fox ember</Miho_Skill_II_FireballSmall_Hediff.label>
+  <Miho_Skill_III_Fireball_Hediff.description>Fox Fire</Miho_Skill_III_Fireball_Hediff.description>
+  <Miho_Skill_III_Fireball_Hediff.label>fox fire</Miho_Skill_III_Fireball_Hediff.label>
+  <Miho_Skill_IV_FireballAdept_Hediff.description>Fox Fire Arrow</Miho_Skill_IV_FireballAdept_Hediff.description>
+  <Miho_Skill_IV_FireballAdept_Hediff.label>fox fire arrow</Miho_Skill_IV_FireballAdept_Hediff.label>
+  <Miho_Skill_IV_Thunder_Hediff.description>Fox Thunder</Miho_Skill_IV_Thunder_Hediff.description>
+  <Miho_Skill_IV_Thunder_Hediff.label>fox thunder</Miho_Skill_IV_Thunder_Hediff.label>
+  <Miho_Skill_IV_Serenity_Hediff.description>Tail of Serenity</Miho_Skill_IV_Serenity_Hediff.description>
+  <Miho_Skill_IV_Serenity_Hediff.label>tail of serenity</Miho_Skill_IV_Serenity_Hediff.label>
+  <Miho_Skill_III_Inspiration_Hediff.description>Tail of Encouragement</Miho_Skill_III_Inspiration_Hediff.description>
+  <Miho_Skill_III_Inspiration_Hediff.label>tail of encouragement</Miho_Skill_III_Inspiration_Hediff.label>
+  <Miho_Skill_I_Love_Hediff.description>Tail of Love</Miho_Skill_I_Love_Hediff.description>
+  <Miho_Skill_I_Love_Hediff.label>Ttail of love</Miho_Skill_I_Love_Hediff.label>
+  <Miho_Skill_III_Defence_Hediff.description>Totem of Protection</Miho_Skill_III_Defence_Hediff.description>
+  <Miho_Skill_III_Defence_Hediff.label>totem of protection</Miho_Skill_III_Defence_Hediff.label>
+  <Miho_Skill_IV_Shield_Hediff.description>Fox Shield</Miho_Skill_IV_Shield_Hediff.description>
+  <Miho_Skill_IV_Shield_Hediff.label>fox shield</Miho_Skill_IV_Shield_Hediff.label>
+  <Miho_Skill_IV_Heal_Hediff.description>Healing Touch</Miho_Skill_IV_Heal_Hediff.description>
+  <Miho_Skill_IV_Heal_Hediff.label>healing touch</Miho_Skill_IV_Heal_Hediff.label>
+  <Miho_Skill_I_Fox_Hediff.description>Carrying Fox</Miho_Skill_I_Fox_Hediff.description>
+  <Miho_Skill_I_Fox_Hediff.label>carrying fox</Miho_Skill_I_Fox_Hediff.label>
+  <Miho_Skill_II_Butterfly_Hediff.description>Blade Butterfly</Miho_Skill_II_Butterfly_Hediff.description>
+  <Miho_Skill_II_Butterfly_Hediff.label>blade butterfly</Miho_Skill_II_Butterfly_Hediff.label>
+  <Miho_Skill_III_Skip_Hediff.description>Reassembly</Miho_Skill_III_Skip_Hediff.description>
+  <Miho_Skill_III_Skip_Hediff.label>reassembly</Miho_Skill_III_Skip_Hediff.label>
+  <Miho_Skill_IV_Turret_Hediff.description>Fox Fire Brazier</Miho_Skill_IV_Turret_Hediff.description>
+  <Miho_Skill_IV_Turret_Hediff.label>fox fire brazier</Miho_Skill_IV_Turret_Hediff.label>
+  <Miho_Summoner_Start_Hediff.description>Summoner</Miho_Summoner_Start_Hediff.description>
+  <Miho_Summoner_Start_Hediff.label>summoner (Adapting to the planet)</Miho_Summoner_Start_Hediff.label>
+  <Miho_Summoner_Start_Hediff.stages.0.label>a</Miho_Summoner_Start_Hediff.stages.0.label>
+  <Miho_Summoner_Start_Hediff.stages.1.label>c</Miho_Summoner_Start_Hediff.stages.1.label>
+  <Miho_Summoner_Start_Hediff.stages.2.label>d</Miho_Summoner_Start_Hediff.stages.2.label>
+  <Miho_Summoner_Start_Hediff.stages.3.label>e</Miho_Summoner_Start_Hediff.stages.3.label>
+  <Miho_Summoner_Start_Hediff.stages.4.label>f</Miho_Summoner_Start_Hediff.stages.4.label>
+  <Miho_Summoner_Start_Hediff.stages.5.label>g</Miho_Summoner_Start_Hediff.stages.5.label>
+  <Miho_Summoner_I_Hediff.description>Summoner</Miho_Summoner_I_Hediff.description>
+  <Miho_Summoner_I_Hediff.label>summoner (I)</Miho_Summoner_I_Hediff.label>
+  <Miho_Summoner_I_Hediff.stages.0.label>a</Miho_Summoner_I_Hediff.stages.0.label>
+  <Miho_Summoner_I_Hediff.stages.1.label>b</Miho_Summoner_I_Hediff.stages.1.label>
+  <Miho_Summoner_I_Hediff.stages.2.label>c</Miho_Summoner_I_Hediff.stages.2.label>
+  <Miho_Summoner_I_Hediff.stages.3.label>d</Miho_Summoner_I_Hediff.stages.3.label>
+  <Miho_Summoner_II_Hediff.description>Summoner</Miho_Summoner_II_Hediff.description>
+  <Miho_Summoner_II_Hediff.label>summoner (II)</Miho_Summoner_II_Hediff.label>
+  <Miho_Summoner_II_Hediff.stages.0.label>a</Miho_Summoner_II_Hediff.stages.0.label>
+  <Miho_Summoner_II_Hediff.stages.1.label>b</Miho_Summoner_II_Hediff.stages.1.label>
+  <Miho_Summoner_II_Hediff.stages.2.label>c</Miho_Summoner_II_Hediff.stages.2.label>
+  <Miho_Summoner_II_Hediff.stages.3.label>d</Miho_Summoner_II_Hediff.stages.3.label>
+  <Miho_Summoner_III_Hediff.description>Summoner</Miho_Summoner_III_Hediff.description>
+  <Miho_Summoner_III_Hediff.label>summoner (III)</Miho_Summoner_III_Hediff.label>
+  <Miho_Summoner_III_Hediff.stages.0.label>a</Miho_Summoner_III_Hediff.stages.0.label>
+  <Miho_Summoner_III_Hediff.stages.1.label>b</Miho_Summoner_III_Hediff.stages.1.label>
+  <Miho_Summoner_III_Hediff.stages.2.label>c</Miho_Summoner_III_Hediff.stages.2.label>
+  <Miho_Summoner_III_Hediff.stages.3.label>d</Miho_Summoner_III_Hediff.stages.3.label>
+  <Miho_Summoner_IV_Hediff.description>Summoner</Miho_Summoner_IV_Hediff.description>
+  <Miho_Summoner_IV_Hediff.label>summoner (IV)</Miho_Summoner_IV_Hediff.label>
+  <Miho_Summoner_IV_Hediff.stages.0.label>a</Miho_Summoner_IV_Hediff.stages.0.label>
+  <Miho_Summoner_IV_Hediff.stages.1.label>b</Miho_Summoner_IV_Hediff.stages.1.label>
+  <Miho_Summoner_IV_Hediff.stages.2.label>c</Miho_Summoner_IV_Hediff.stages.2.label>
+  <Miho_Summoner_IV_Hediff.stages.3.label>d</Miho_Summoner_IV_Hediff.stages.3.label>
+  <Miho_Summoner_V_Hediff.description>Summoner</Miho_Summoner_V_Hediff.description>
+  <Miho_Summoner_V_Hediff.label>summoner (V)</Miho_Summoner_V_Hediff.label>
+  <Miho_Summoner_V_Hediff.stages.0.label>a</Miho_Summoner_V_Hediff.stages.0.label>
+  <Miho_Summon_SixHour.description>Remaining Time</Miho_Summon_SixHour.description>
+  <Miho_Summon_SixHour.label>remaining Time</Miho_Summon_SixHour.label>
+  <Miho_Summon_SixHour.stages.0.label>a</Miho_Summon_SixHour.stages.0.label>
+  <Miho_Summon_SixHour.stages.1.label>b</Miho_Summon_SixHour.stages.1.label>
+  <Miho_Summon_SevenDay.description>Remaining Time</Miho_Summon_SevenDay.description>
+  <Miho_Summon_SevenDay.label>remaining Time</Miho_Summon_SevenDay.label>
+  <Miho_Summon_SevenDay.stages.0.label>a</Miho_Summon_SevenDay.stages.0.label>
+  <Miho_Summon_SevenDay.stages.1.label>b</Miho_Summon_SevenDay.stages.1.label>
+  <Miho_Summon_Dead.description>Dynamic Mechanite Lifespan</Miho_Summon_Dead.description>
+  <Miho_Summon_Dead.label>dynamic mechanite lifespan</Miho_Summon_Dead.label>
+  <Miho_Summon_DeadMech.description>Dismantled for Resources</Miho_Summon_DeadMech.description>
+  <Miho_Summon_DeadMech.label>dismantled for resources</Miho_Summon_DeadMech.label>
+  <Miho_Temptress_Start_Hediff.description>Warrior</Miho_Temptress_Start_Hediff.description>
+  <Miho_Temptress_Start_Hediff.label>warrior (adapting to the planet)</Miho_Temptress_Start_Hediff.label>
+  <Miho_Temptress_Start_Hediff.stages.0.label>a</Miho_Temptress_Start_Hediff.stages.0.label>
+  <Miho_Temptress_Start_Hediff.stages.1.label>c</Miho_Temptress_Start_Hediff.stages.1.label>
+  <Miho_Temptress_Start_Hediff.stages.2.label>d</Miho_Temptress_Start_Hediff.stages.2.label>
+  <Miho_Temptress_Start_Hediff.stages.3.label>e</Miho_Temptress_Start_Hediff.stages.3.label>
+  <Miho_Temptress_Start_Hediff.stages.4.label>f</Miho_Temptress_Start_Hediff.stages.4.label>
+  <Miho_Temptress_Start_Hediff.stages.5.label>g</Miho_Temptress_Start_Hediff.stages.5.label>
+  <Miho_Temptress_I_Hediff.description>Warrior</Miho_Temptress_I_Hediff.description>
+  <Miho_Temptress_I_Hediff.label>warrior (I)</Miho_Temptress_I_Hediff.label>
+  <Miho_Temptress_I_Hediff.stages.0.label>a</Miho_Temptress_I_Hediff.stages.0.label>
+  <Miho_Temptress_I_Hediff.stages.1.label>b</Miho_Temptress_I_Hediff.stages.1.label>
+  <Miho_Temptress_I_Hediff.stages.2.label>c</Miho_Temptress_I_Hediff.stages.2.label>
+  <Miho_Temptress_I_Hediff.stages.3.label>d</Miho_Temptress_I_Hediff.stages.3.label>
+  <Miho_Temptress_II_Hediff.description>Warrior</Miho_Temptress_II_Hediff.description>
+  <Miho_Temptress_II_Hediff.label>warrior (II)</Miho_Temptress_II_Hediff.label>
+  <Miho_Temptress_II_Hediff.stages.0.label>a</Miho_Temptress_II_Hediff.stages.0.label>
+  <Miho_Temptress_II_Hediff.stages.1.label>b</Miho_Temptress_II_Hediff.stages.1.label>
+  <Miho_Temptress_II_Hediff.stages.2.label>c</Miho_Temptress_II_Hediff.stages.2.label>
+  <Miho_Temptress_II_Hediff.stages.3.label>d</Miho_Temptress_II_Hediff.stages.3.label>
+  <Miho_Temptress_III_Hediff.description>Warrior</Miho_Temptress_III_Hediff.description>
+  <Miho_Temptress_III_Hediff.label>warrior (III)</Miho_Temptress_III_Hediff.label>
+  <Miho_Temptress_III_Hediff.stages.0.label>a</Miho_Temptress_III_Hediff.stages.0.label>
+  <Miho_Temptress_III_Hediff.stages.1.label>b</Miho_Temptress_III_Hediff.stages.1.label>
+  <Miho_Temptress_III_Hediff.stages.2.label>c</Miho_Temptress_III_Hediff.stages.2.label>
+  <Miho_Temptress_III_Hediff.stages.3.label>d</Miho_Temptress_III_Hediff.stages.3.label>
+  <Miho_Temptress_IV_Hediff.description>Warrior</Miho_Temptress_IV_Hediff.description>
+  <Miho_Temptress_IV_Hediff.label>warrior (IV)</Miho_Temptress_IV_Hediff.label>
+  <Miho_Temptress_IV_Hediff.stages.0.label>a</Miho_Temptress_IV_Hediff.stages.0.label>
+  <Miho_Temptress_IV_Hediff.stages.1.label>b</Miho_Temptress_IV_Hediff.stages.1.label>
+  <Miho_Temptress_IV_Hediff.stages.2.label>c</Miho_Temptress_IV_Hediff.stages.2.label>
+  <Miho_Temptress_IV_Hediff.stages.3.label>d</Miho_Temptress_IV_Hediff.stages.3.label>
+  <Miho_Temptress_V_Hediff.description>Warrior</Miho_Temptress_V_Hediff.description>
+  <Miho_Temptress_V_Hediff.label>warrior (V)</Miho_Temptress_V_Hediff.label>
+  <Miho_Temptress_V_Hediff.stages.0.label>a</Miho_Temptress_V_Hediff.stages.0.label>
+  <Miho_Tinker_Start_Hediff.description>Tinker</Miho_Tinker_Start_Hediff.description>
+  <Miho_Tinker_Start_Hediff.label>tinker (adapting to the planet)</Miho_Tinker_Start_Hediff.label>
+  <Miho_Tinker_Start_Hediff.stages.0.label>a</Miho_Tinker_Start_Hediff.stages.0.label>
+  <Miho_Tinker_Start_Hediff.stages.1.label>c</Miho_Tinker_Start_Hediff.stages.1.label>
+  <Miho_Tinker_Start_Hediff.stages.2.label>d</Miho_Tinker_Start_Hediff.stages.2.label>
+  <Miho_Tinker_Start_Hediff.stages.3.label>e</Miho_Tinker_Start_Hediff.stages.3.label>
+  <Miho_Tinker_Start_Hediff.stages.4.label>f</Miho_Tinker_Start_Hediff.stages.4.label>
+  <Miho_Tinker_Start_Hediff.stages.5.label>g</Miho_Tinker_Start_Hediff.stages.5.label>
+  <Miho_Tinker_I_Hediff.description>Tinker</Miho_Tinker_I_Hediff.description>
+  <Miho_Tinker_I_Hediff.label>tinker (I)</Miho_Tinker_I_Hediff.label>
+  <Miho_Tinker_I_Hediff.stages.0.label>a</Miho_Tinker_I_Hediff.stages.0.label>
+  <Miho_Tinker_I_Hediff.stages.1.label>b</Miho_Tinker_I_Hediff.stages.1.label>
+  <Miho_Tinker_I_Hediff.stages.2.label>c</Miho_Tinker_I_Hediff.stages.2.label>
+  <Miho_Tinker_I_Hediff.stages.3.label>d</Miho_Tinker_I_Hediff.stages.3.label>
+  <Miho_Tinker_II_Hediff.description>Tinker</Miho_Tinker_II_Hediff.description>
+  <Miho_Tinker_II_Hediff.label>tinker (II)</Miho_Tinker_II_Hediff.label>
+  <Miho_Tinker_II_Hediff.stages.0.label>a</Miho_Tinker_II_Hediff.stages.0.label>
+  <Miho_Tinker_II_Hediff.stages.1.label>b</Miho_Tinker_II_Hediff.stages.1.label>
+  <Miho_Tinker_II_Hediff.stages.2.label>c</Miho_Tinker_II_Hediff.stages.2.label>
+  <Miho_Tinker_II_Hediff.stages.3.label>d</Miho_Tinker_II_Hediff.stages.3.label>
+  <Miho_Tinker_III_Hediff.description>Tinker</Miho_Tinker_III_Hediff.description>
+  <Miho_Tinker_III_Hediff.label>tinker (III)</Miho_Tinker_III_Hediff.label>
+  <Miho_Tinker_III_Hediff.stages.0.label>a</Miho_Tinker_III_Hediff.stages.0.label>
+  <Miho_Tinker_III_Hediff.stages.1.label>b</Miho_Tinker_III_Hediff.stages.1.label>
+  <Miho_Tinker_III_Hediff.stages.2.label>c</Miho_Tinker_III_Hediff.stages.2.label>
+  <Miho_Tinker_III_Hediff.stages.3.label>d</Miho_Tinker_III_Hediff.stages.3.label>
+  <Miho_Tinker_IV_Hediff.description>Tinker</Miho_Tinker_IV_Hediff.description>
+  <Miho_Tinker_IV_Hediff.label>tinker (IV)</Miho_Tinker_IV_Hediff.label>
+  <Miho_Tinker_IV_Hediff.stages.0.label>a</Miho_Tinker_IV_Hediff.stages.0.label>
+  <Miho_Tinker_IV_Hediff.stages.1.label>b</Miho_Tinker_IV_Hediff.stages.1.label>
+  <Miho_Tinker_IV_Hediff.stages.2.label>c</Miho_Tinker_IV_Hediff.stages.2.label>
+  <Miho_Tinker_IV_Hediff.stages.3.label>d</Miho_Tinker_IV_Hediff.stages.3.label>
+  <Miho_Tinker_V_Hediff.description>Tinker</Miho_Tinker_V_Hediff.description>
+  <Miho_Tinker_V_Hediff.label>tinker (V)</Miho_Tinker_V_Hediff.label>
+  <Miho_Tinker_V_Hediff.stages.0.label>a</Miho_Tinker_V_Hediff.stages.0.label>
+  <Miho_Skill_I_Repair_Hediff.description>Repair</Miho_Skill_I_Repair_Hediff.description>
+  <Miho_Skill_I_Repair_Hediff.label>repair</Miho_Skill_I_Repair_Hediff.label>
+  <Miho_Skill_II_Armor_Hediff.description>Armor</Miho_Skill_II_Armor_Hediff.description>
+  <Miho_Skill_II_Armor_Hediff.label>armor</Miho_Skill_II_Armor_Hediff.label>
+  <Miho_Skill_II_Accuracy_Hediff.description>Artillery</Miho_Skill_II_Accuracy_Hediff.description>
+  <Miho_Skill_II_Accuracy_Hediff.label>artillery</Miho_Skill_II_Accuracy_Hediff.label>
+  <Miho_Skill_III_Overclock_Hediff.description>Overclock</Miho_Skill_III_Overclock_Hediff.description>
+  <Miho_Skill_III_Overclock_Hediff.label>overclock</Miho_Skill_III_Overclock_Hediff.label>
+  <Miho_Skill_IV_BulletHell_Hediff.description>Bullet Hell</Miho_Skill_IV_BulletHell_Hediff.description>
+  <Miho_Skill_IV_BulletHell_Hediff.label>bullet hell</Miho_Skill_IV_BulletHell_Hediff.label>
+  <Miho_Skill_III_HackingSlow_Hediff.description>Consciousness Devour</Miho_Skill_III_HackingSlow_Hediff.description>
+  <Miho_Skill_III_HackingSlow_Hediff.label>consciousness devour</Miho_Skill_III_HackingSlow_Hediff.label>
+  <Miho_Skill_IV_SpawnGenerator_Hediff.description>Energy Support</Miho_Skill_IV_SpawnGenerator_Hediff.description>
+  <Miho_Skill_IV_SpawnGenerator_Hediff.label>energy support</Miho_Skill_IV_SpawnGenerator_Hediff.label>
+  <Miho_Plasma_Hediff.label>armor melting</Miho_Plasma_Hediff.label>
+  <Miho_Plasma_Hediff.description>Armor partially liquefied by heat.</Miho_Plasma_Hediff.description>
+  <Miho_Plasma_Hediff.stages.0.label>initial</Miho_Plasma_Hediff.stages.0.label>
+  <Miho_Plasma_Hediff.stages.1.label>initial</Miho_Plasma_Hediff.stages.1.label>
+  <Miho_Plasma_Hediff.stages.2.label>minor melted</Miho_Plasma_Hediff.stages.2.label>
+  <Miho_Plasma_Hediff.stages.3.label>moderate melted</Miho_Plasma_Hediff.stages.3.label>
+  <Miho_Plasma_Hediff.stages.4.label>severe melted</Miho_Plasma_Hediff.stages.4.label>
+  <Miho_Plasma_Hediff.stages.5.label>totally melted</Miho_Plasma_Hediff.stages.5.label>
+  
+  <Miho_Ability_HeatArmor_Hediff.description>Heatarmor</Miho_Ability_HeatArmor_Hediff.description>
+  <Miho_Ability_HeatArmor_Hediff.label>Enhanced defense and heat adaptability by utilizing high-temperature barriers.</Miho_Ability_HeatArmor_Hediff.label>
+  
+  <Miho_Celestial_I_Hediff.description>Celestial</Miho_Celestial_I_Hediff.description>
+  <Miho_Celestial_I_Hediff.label>celestial (I)</Miho_Celestial_I_Hediff.label>
+  <Miho_Celestial_I_Hediff.stages.0.label>a</Miho_Celestial_I_Hediff.stages.0.label>
+  <Miho_Celestial_I_Hediff.stages.1.label>b</Miho_Celestial_I_Hediff.stages.1.label>
+  <Miho_Celestial_I_Hediff.stages.2.label>c</Miho_Celestial_I_Hediff.stages.2.label>
+  <Miho_Celestial_I_Hediff.stages.3.label>d</Miho_Celestial_I_Hediff.stages.3.label>
+  <Miho_Celestial_II_Hediff.description>Celestial</Miho_Celestial_II_Hediff.description>
+  <Miho_Celestial_II_Hediff.label>celestial (II)</Miho_Celestial_II_Hediff.label>
+  <Miho_Celestial_II_Hediff.stages.0.label>a</Miho_Celestial_II_Hediff.stages.0.label>
+  <Miho_Celestial_II_Hediff.stages.1.label>b</Miho_Celestial_II_Hediff.stages.1.label>
+  <Miho_Celestial_II_Hediff.stages.2.label>c</Miho_Celestial_II_Hediff.stages.2.label>
+  <Miho_Celestial_II_Hediff.stages.3.label>d</Miho_Celestial_II_Hediff.stages.3.label>
+  <Miho_Celestial_III_Hediff.description>Celestial</Miho_Celestial_III_Hediff.description>
+  <Miho_Celestial_III_Hediff.label>celestial (III)</Miho_Celestial_III_Hediff.label>
+  <Miho_Celestial_III_Hediff.stages.0.label>a</Miho_Celestial_III_Hediff.stages.0.label>
+  <Miho_Celestial_III_Hediff.stages.1.label>b</Miho_Celestial_III_Hediff.stages.1.label>
+  <Miho_Celestial_III_Hediff.stages.2.label>c</Miho_Celestial_III_Hediff.stages.2.label>
+  <Miho_Celestial_III_Hediff.stages.3.label>d</Miho_Celestial_III_Hediff.stages.3.label>
+  <Miho_Celestial_IV_Hediff.description>Celestial</Miho_Celestial_IV_Hediff.description>
+  <Miho_Celestial_IV_Hediff.label>celestial (IV)</Miho_Celestial_IV_Hediff.label>
+  <Miho_Celestial_IV_Hediff.stages.0.label>a</Miho_Celestial_IV_Hediff.stages.0.label>
+  <Miho_Celestial_IV_Hediff.stages.1.label>b</Miho_Celestial_IV_Hediff.stages.1.label>
+  <Miho_Celestial_IV_Hediff.stages.2.label>c</Miho_Celestial_IV_Hediff.stages.2.label>
+  <Miho_Celestial_IV_Hediff.stages.3.label>d</Miho_Celestial_IV_Hediff.stages.3.label>
+  <Miho_Celestial_V_Hediff.description>Celestial</Miho_Celestial_V_Hediff.description>
+  <Miho_Celestial_V_Hediff.label>celestial (V)</Miho_Celestial_V_Hediff.label>
+  <Miho_Celestial_V_Hediff.stages.0.label>a</Miho_Celestial_V_Hediff.stages.0.label>
+  
+  <Miho_Restraint_Hediff.label>Sealed</Miho_Restraint_Hediff.label>
+  <Miho_Restraint_Hediff.description>The psychic power was sealed by some force.</Miho_Restraint_Hediff.description>
+  <Miho_Restraint_Hediff.stages.0.label>sealed (deny)</Miho_Restraint_Hediff.stages.0.label>
+  <Miho_Restraint_Hediff.stages.1.label>sealed (partial)</Miho_Restraint_Hediff.stages.1.label>
+  <Miho_Restraint_Hediff.stages.2.label>sealed (completed)</Miho_Restraint_Hediff.stages.2.label>
+</LanguageData>

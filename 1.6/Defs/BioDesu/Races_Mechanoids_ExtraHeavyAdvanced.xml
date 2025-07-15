@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef Name="MihoHeavyAdvancedMechanoid" ParentName="BaseMechanoid" Abstract="True">
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <ControlTakingTime>18</ControlTakingTime>
+      <MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Miho_Reload_Mechanoid</thinkTreeMain>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <mechWeightClass>Heavy</mechWeightClass>
+    </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+      <Miho_MilitaryGradeBalisticCeramics>40</Miho_MilitaryGradeBalisticCeramics>
+    </butcherProducts>
+  </ThingDef>
+
+  <!-- Tunneler -->
+  <ThingDef ParentName="MihoHeavyAdvancedMechanoid">
+    <defName>Miho_Mech_Balbari</defName>
+    <label>보병지원 다각 중전차</label>
+    <description>전투에 쓰이는 발발이급 다각 중전차 입니다.</description>
+    <fillPercent>0.8</fillPercent>
+
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <BandwidthCost>5</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+
+    </statBases>
+    <race>
+      <body>Pikeman</body>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>2.8</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0.2</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+      <mechEnabledWorkTypes>
+          <li>Hauling</li>
+      </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+          <Hauling>2</Hauling>
+        </mechWorkTypePriorities>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>3</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.4, 0.4, 0.4)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>200</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>3600</chargeDurationTicks><!-- 60s -->
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+    </comps>
+
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_Balbari</defName>
+    <label>보병지원 다각 중전차</label>
+    <race>Miho_Mech_Balbari</race>
+    <combatPower>550</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Balbari/Balbari</texPath>
+            <maskPath>NewMech/Balbari/Mask/Balbari</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.05</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Balbari/Balbari</texPath>
+            <maskPath>NewMech/Balbari/Mask/Balbari</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.05</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+      <li>SmokepopMech</li>
+
+	  
+    </abilities>
+      <weaponTags>
+        <li>MihoBalbari</li>
+      </weaponTags>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <ThingDef ParentName="LightMechanoidGunRanged">
+    <defName>Miho_MechWeapon_HeavyAutoCannon</defName>
+    <label>미호 다각전차용 기관포</label>
+    <description>13.7mm탄 호치키스 탄을 사용하는 기관포를 감싼 포탑입니다. 포탑 상부에 중-MAT도 장착되어 있습니다.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>NewMech/Balbari/BalbariGun/BalbariHeavyGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawOffset>(0,1,0)</drawOffset>
+
+      <drawSize>2.15</drawSize>
+    </graphicData>
+    <altitudeLayer>Pawn</altitudeLayer>
+	<equippedAngleOffset>45</equippedAngleOffset>
+
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>75</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MihoBalbari</li>
+    </weaponTags>
+    <verbs>
+
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_MechWeapon_HeavyAutoCannon_Proj</defaultProjectile>
+        <warmupTime>2.8</warmupTime>
+        <range>42.9</range>
+       <minRange>1.9</minRange>
+
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Miho_KineticCannonSmall</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+		
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>Miho_MechATMissileReloadable</abilityDef>
+        <maxCharges>4</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>missile charges</chargeNoun>
+        <ammoDef>Miho_MissilePlasma</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>600</baseReloadTicks>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_MechWeapon_HeavyAutoCannon_Proj</defName>
+    <label>HMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash_Smoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  
+
+	
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_Balbari</defName>
+    <label>보병지원 다각 중전차 제작</label>
+    <description>보병지원 다각 중전차 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MissilePlasma</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_HeavyMechCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_Balbari>1</Miho_Mech_Balbari>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_Balbari</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_HeavyPlasma</researchPrerequisite>
+    <gestationCycles>5</gestationCycles>
+
+  </RecipeDef>
+
+  
+  <AbilityDef>
+    <defName>Miho_MechATMissile</defName>
+    <label>플라즈마 대메카유도탄</label>
+    <description>대메카노이드 미사일을 발사합니다.</description>
+    <iconPath>Things/Projectile/MihoRocket</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>false</aiCanUse>
+    <cooldownTicksRange>900000</cooldownTicksRange>
+
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55</range>
+      <warmupTime>5</warmupTime>
+       <minRange>9.9</minRange>
+
+      <soundCast>Miho_ATRocket</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_MechATMissile_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>Miho_MechATMissileReloadable</defName>
+    <label>플라즈마 대메카유도탄</label>
+    <description>대메카노이드 미사일을 발사합니다.</description>
+    <iconPath>Things/Projectile/MihoRocket</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>false</aiCanUse>
+
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55</range>
+      <warmupTime>5</warmupTime>
+       <minRange>9.9</minRange>
+
+      <soundCast>Miho_ATRocket</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_MechATMissile_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_MechATMissile_Proj</defName>
+    <label>plasma AM missile</label>
+		<thingClass>TorgueMiho.Projectile_Torgue_Rocket</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/MihoRocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>3</drawSize>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+		<projectile>
+			<damageDef>MihoPlasma</damageDef>
+			<damageAmountBase>102</damageAmountBase>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>20</stoppingPower>
+			<speed>16</speed>
+			<explosionRadius>1.5</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+      <screenShakeFactor>1.5</screenShakeFactor>
+		</projectile>
+    <comps>
+      <li Class="Monotail.CompProperties_HomingMissileMiho">
+        <destinationOffsetRadius>0.1</destinationOffsetRadius>
+        <initialOffsetRadius>1</initialOffsetRadius>
+        <inertiaFactor>0.6</inertiaFactor>
+      </li>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_BigMuzzleFlash_RocketSmoke</effecterDef>
+			</li>
+    </comps>
+  </ThingDef>
+ 
+
+
+	
+</Defs>

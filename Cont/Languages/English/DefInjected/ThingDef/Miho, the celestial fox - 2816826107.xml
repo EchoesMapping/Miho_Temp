@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Miho_Schematic.label>Miho Schematic</Miho_Schematic.label>
+  <Miho_Schematic.description>This is Schematic for mihos.</Miho_Schematic.description>
+  
+  <Miho_Tatami.label>Miho Tatami</Miho_Tatami.label>
+  <Miho_Tatami.description>This is Tatami.</Miho_Tatami.description>
+  <Miho_TableMachining.label>Miho General Workbench</Miho_TableMachining.label>
+  <Miho_TableMachining.description>This comprehensive workbench imitates 3D printers of human.</Miho_TableMachining.description>
+  <Miho_WorkAI.label>Miho Work Assistance AI</Miho_WorkAI.label>
+  <Miho_WorkAI.description>A work assistance AI comes with four personalities and a hologram projector. It can be connected to the Blast Furnace, Celestial Furnace, and General Workbench.</Miho_WorkAI.description>
+  <Plant_Ebony_Silk.label>Ebony Mulberry Tree</Plant_Ebony_Silk.label>
+  <Plant_Ebony_Silk.description>A giant mulberry tree inhabited by ebony silkworms. Mulberries are grow all year round fro this tree.</Plant_Ebony_Silk.description>
+  <Miho_Ebony_SilkCloth.label>Ebonsilk</Miho_Ebony_SilkCloth.label>
+  <Miho_Ebony_SilkCloth.description>silk is a beautiful, highly insulating silk made from burning the cocoons of medicinal herb-fed silkworms.</Miho_Ebony_SilkCloth.description>
+  <Miho_Ebony_Mulberry.label>Ebony Mulberry</Miho_Ebony_Mulberry.label>
+  <Miho_Ebony_Mulberry.description>The fruit of the Ebony mulberry tree. It is used as a medicinal ingredient and is delicious when eaten fresh. However, it has a short shelf life, so be cautious.</Miho_Ebony_Mulberry.description>
+  <Miho_PositiveFlower_ChildHuntress.label>Psychic Power Pill (Hunter)</Miho_PositiveFlower_ChildHuntress.label>
+  <Miho_PositiveFlower_ChildHuntress.description>A pill for children that blooms psychic powers. Has no effect on Miho already owning psychic powers.</Miho_PositiveFlower_ChildHuntress.description>
+  <Miho_PositiveFlower_ChildHuntress.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_ChildHuntress.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_ChildHuntress.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_ChildHuntress.ingestible.ingestReportString>
+  <Miho_PositiveFlower_ChildShamaness.label>Psychic Power Pill (Shaman)</Miho_PositiveFlower_ChildShamaness.label>
+  <Miho_PositiveFlower_ChildShamaness.description>A pill for children that blooms psychic powers. Has no effect on Miho already owning psychic powers.</Miho_PositiveFlower_ChildShamaness.description>
+  <Miho_PositiveFlower_ChildShamaness.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_ChildShamaness.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_ChildShamaness.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_ChildShamaness.ingestible.ingestReportString>
+  <Miho_PositiveFlower_ChildSummoner.label>Psychic Power Pill (Summoner)</Miho_PositiveFlower_ChildSummoner.label>
+  <Miho_PositiveFlower_ChildSummoner.description>A pill for children that blooms psychic powers. Has no effect on Miho already owning psychic powers.</Miho_PositiveFlower_ChildSummoner.description>
+  <Miho_PositiveFlower_ChildSummoner.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_ChildSummoner.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_ChildSummoner.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_ChildSummoner.ingestible.ingestReportString>
+  <Miho_PositiveFlower_ChildTemptress.label>Psychic Power Pill (Fatale)</Miho_PositiveFlower_ChildTemptress.label>
+  <Miho_PositiveFlower_ChildTemptress.description>A pill for children that blooms psychic powers. Has no effect on Miho already owning psychic powers.</Miho_PositiveFlower_ChildTemptress.description>
+  <Miho_PositiveFlower_ChildTemptress.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_ChildTemptress.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_ChildTemptress.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_ChildTemptress.ingestible.ingestReportString>
+  <Miho_PositiveFlower_ChildTinker.label>Psychic Power Pill (Tinker)</Miho_PositiveFlower_ChildTinker.label>
+  <Miho_PositiveFlower_ChildTinker.description>A pill for children that blooms psychic powers. Has no effect on Miho already owning psychic powers.</Miho_PositiveFlower_ChildTinker.description>
+  <Miho_PositiveFlower_ChildTinker.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_ChildTinker.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_ChildTinker.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_ChildTinker.ingestible.ingestReportString>
+  <Miho_PositiveFlower_Juice.label>Helianto decoction</Miho_PositiveFlower_Juice.label>
+  <Miho_PositiveFlower_Juice.description>A decoction containing high concentrations of mechanite components. Drinking it quickly calms nerve heat.</Miho_PositiveFlower_Juice.description>
+  <Miho_PositiveFlower_Juice.ingestible.ingestCommandString>Inject {0}</Miho_PositiveFlower_Juice.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_Juice.ingestible.ingestReportString>Injecting {0}.</Miho_PositiveFlower_Juice.ingestible.ingestReportString>
+  <Miho_PositiveFlower_Pipe.label>Helianto cigarettes</Miho_PositiveFlower_Pipe.label>
+  <Miho_PositiveFlower_Pipe.description>Sunflower-dried cigarettes. Smoking it quickly replenishes Yang energy and improves mood.</Miho_PositiveFlower_Pipe.description>
+  <Miho_PositiveFlower_Pipe.ingestible.ingestCommandString>Smoke {0}</Miho_PositiveFlower_Pipe.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_Pipe.ingestible.ingestReportString>Smoking {0}.</Miho_PositiveFlower_Pipe.ingestible.ingestReportString>
+  <Miho_PositiveFlower_Pipe.ingestible.ingestReportStringEat>Consuming {0}.</Miho_PositiveFlower_Pipe.ingestible.ingestReportStringEat>
+  <Miho_PositiveFlower_Tea.label>Helianto tea</Miho_PositiveFlower_Tea.label>
+  <Miho_PositiveFlower_Tea.description>Tea brewed from sunflower petals. It has a pleasant aroma and can make you feel somewhat drowsy when drunk.</Miho_PositiveFlower_Tea.description>
+  <Miho_PositiveFlower_Tea.ingestible.ingestCommandString>Drink {0}</Miho_PositiveFlower_Tea.ingestible.ingestCommandString>
+  <Miho_PositiveFlower_Tea.ingestible.ingestReportString>Drinking {0}.</Miho_PositiveFlower_Tea.ingestible.ingestReportString>
+  <Miho_CelestialForge.label>Miho Celestial Forge</Miho_CelestialForge.label>
+  <Miho_CelestialForge.description>An artificial sun generator for weaving celestial scales.</Miho_CelestialForge.description>
+  <Miho_ShaftFurnace.label>Miho Blast Furnace</Miho_ShaftFurnace.label>
+  <Miho_ShaftFurnace.description>A large furnace for producing ceramics and steel.</Miho_ShaftFurnace.description>
+  <Plant_PosFlower.label>Helianto</Plant_PosFlower.label>
+  <Plant_PosFlower.description>A genetically modified plant. It mainly acts as a signal beacon to collect substances that enhance Miho's psychic abilities.</Plant_PosFlower.description>
+  <RawPosFlower.label>Helianto Petals</RawPosFlower.label>
+  <RawPosFlower.description>Petals containing substances that help Miho manifest psychic abilities.</RawPosFlower.description>
+  <RawPosFlower_Dust.label>Helianto Powder</RawPosFlower_Dust.label>
+  <RawPosFlower_Dust.description>Pure powder made from concentrated mechanites in sunflower petals. Easier to store.</RawPosFlower_Dust.description>
+  <Miho_Hair_Filth.label>Miho fur</Miho_Hair_Filth.label>
+  <!-- 
+  <Miho_CeramicsPaste.label>Miho Ceramic Dough</Miho_CeramicsPaste.label>
+  <Miho_CeramicsPaste.description>Raw material for ceramics, well mixed with various elements.</Miho_CeramicsPaste.description>
+  -->
+  <Miho_Ceramics.label>Miho Ceramic</Miho_Ceramics.label>
+  <Miho_Ceramics.description>Durable pottery.</Miho_Ceramics.description>
+  <Miho_MilitaryGradeBalisticCeramics.label>Miho Military Ballistic Ceramics</Miho_MilitaryGradeBalisticCeramics.label>
+  <Miho_MilitaryGradeBalisticCeramics.description>Reinforced material combining steel and ceramics.</Miho_MilitaryGradeBalisticCeramics.description>
+  <Miho_CelestialScale.label>Celestial Scale</Miho_CelestialScale.label>
+  <Miho_CelestialScale.description>The most powerful alloy in human history, made of highly compressed plasteel and exotic matter with negative mass... as explained by the Miho.</Miho_CelestialScale.description>
+  <Miho_ExoticMatter.label>Exotic Matter</Miho_ExoticMatter.label>
+  <Miho_ExoticMatter.description>A rare substance with negative mass, scarcely found in the rimworld.</Miho_ExoticMatter.description>
+  <Miho_HeavyMechCore.label>Miho Heavy Mechanite Core</Miho_HeavyMechCore.label>
+  <Miho_HeavyMechCore.description>A Heavy mechanite engine used in Miho's large mechanoids.</Miho_HeavyMechCore.description>
+  <Miho_InariZushi.label>Miho Inari Sushi</Miho_InariZushi.label>
+  <Miho_InariZushi.description>Sushi lunchbox favored by foxes. Made using alternative tofu.</Miho_InariZushi.description>
+  <Miho_DummyWeapon_DO_NOT_SPAWN.label>psychic abilities</Miho_DummyWeapon_DO_NOT_SPAWN.label>
+  <Miho_DummyWeapon_DO_NOT_SPAWN.description>Only here so that the battle log doesn't break when someone is hit by a psychic ability.</Miho_DummyWeapon_DO_NOT_SPAWN.description>
+  <Miho_Ability_Starfall_Proj.label>Knife</Miho_Ability_Starfall_Proj.label>
+  <Miho_Ability_Starfall_Proj.label>Knife</Miho_Ability_Starfall_Proj.label>
+  <Miho_Hawk_Proj.label>Hawk</Miho_Hawk_Proj.label>
+  <Miho_Ensnare_Proj.label>Ensnare</Miho_Ensnare_Proj.label>
+  <Miho_Fireball_Small_Proj.label>fireball</Miho_Fireball_Small_Proj.label>
+  <Miho_Fireball_Proj.label>fireball</Miho_Fireball_Proj.label>
+  <Miho_Fireball_Adept_Proj.label>fire arrow</Miho_Fireball_Adept_Proj.label>
+  <Miho_Fireball_Adept_Proj.label>javelin</Miho_Fireball_Adept_Proj.label>
+  <Miho_PredatoryGaze_Proj.label>javelin</Miho_PredatoryGaze_Proj.label>
+  <Miho_TalismanStun_Proj.label>Talisman</Miho_TalismanStun_Proj.label>
+  <Miho_FanofKnives_Proj.label>knife</Miho_FanofKnives_Proj.label>
+  <Miho_Butterfly_Portal_Dummy.label>Blade Butterfly Portal Dummy</Miho_Butterfly_Portal_Dummy.label>
+  <Miho_Butterfly_Portal_Dummy.description>Blade Butterfly Portal Dummy.</Miho_Butterfly_Portal_Dummy.description>
+  <Miho_Butterfly_Portal.label>Blade Butterfly Portal</Miho_Butterfly_Portal.label>
+  <Miho_Butterfly_Portal.description>Blade Butterfly Portal.</Miho_Butterfly_Portal.description>
+  <Miho_Hawk_Portal.label>Hawk Portal</Miho_Hawk_Portal.label>
+  <Miho_Hawk_Portal.description>Hawk Portal.</Miho_Hawk_Portal.description>
+  <Miho_ButterflyHaze_Portal.label>Blade Butterfly Portal</Miho_ButterflyHaze_Portal.label>
+  <Miho_ButterflyHaze_Portal.description>Blade Butterfly Portal.</Miho_ButterflyHaze_Portal.description>
+  <Miho_Fox_Portal.label>Carrying Fox Portal</Miho_Fox_Portal.label>
+  <Miho_Fox_Portal.description>Carrying Fox Portal.</Miho_Fox_Portal.description>
+  <Miho_Abomi_Portal.label>Mechanite Abomination Portal</Miho_Abomi_Portal.label>
+  <Miho_Abomi_Portal.description>Mechanite Abomination Portal.</Miho_Abomi_Portal.description>
+  <Miho_Turret_Flame.label>Foxfire Furnace</Miho_Turret_Flame.label>
+  <Miho_Turret_Flame.description>A turret that looks like a furnace.</Miho_Turret_Flame.description>
+  <Miho_TurretGun_Flame_Proj.label>fireball</Miho_TurretGun_Flame_Proj.label>
+  <Miho_TurretGun_Flame.label>turret gun</Miho_TurretGun_Flame.label>
+  <Miho_TurretGun_Flame.description>.</Miho_TurretGun_Flame.description>
+  <Miho_Butterfly.label>Blade Butterfly</Miho_Butterfly.label>
+  <Miho_Butterfly.description>A mechanite lifeform with sharp wings.</Miho_Butterfly.description>
+  <Miho_Butterfly.tools.0.label>blades</Miho_Butterfly.tools.0.label>
+  <Miho_Hawk.label>Hunting Hawk</Miho_Hawk.label>
+  <Miho_Hawk.description>A mechanite lifeform with a sharp beak.</Miho_Hawk.description>
+  <Miho_Hawk.tools.0.label>Beak</Miho_Hawk.tools.0.label>
+  <Miho_Fox.label>Miho Carrying Fox</Miho_Fox.label>
+  <Miho_Fox.description>A mechanite lifeform skilled in transport.</Miho_Fox.description>
+  <Miho_Fox.tools.0.label>left claw</Miho_Fox.tools.0.label>
+  <Miho_Fox.tools.1.label>right claw</Miho_Fox.tools.1.label>
+  <Miho_Fox.tools.3.label>head</Miho_Fox.tools.3.label>
+  <Miho_Abomi.label>Mechanite Abomination</Miho_Abomi.label>
+  <Miho_Abomi.description>A hideously mutated secret weapon. Take a good look at it...</Miho_Abomi.description>
+  <Miho_Abomi.tools.0.label>tentacles</Miho_Abomi.tools.0.label>
+  <Miho_Abomi.tools.1.label>head</Miho_Abomi.tools.1.label>
+  <Filth_MihoMechanite.label>Mechanite Crystal</Filth_MihoMechanite.label>
+  <Miho_BulletShieldPsychic.label>Fox Shield</Miho_BulletShieldPsychic.label>
+  <Miho_Butterfly_Spawn_Proj.label>MihoSpawner</Miho_Butterfly_Spawn_Proj.label>
+  <Miho_Fox_Spawn_Proj.label>MihoSpawner</Miho_Fox_Spawn_Proj.label>
+  <Miho_Abomi_Spawn_Proj.label>MihoSpawner</Miho_Abomi_Spawn_Proj.label>
+  <Miho_Turret_Spawn_Proj.label>MihoSpawner</Miho_Turret_Spawn_Proj.label>
+  <Miho_NeuroSlow_Proj.label>NeuroSlow</Miho_NeuroSlow_Proj.label>
+  <Miho_NeuroKill_Proj.label>NeuroKill</Miho_NeuroKill_Proj.label>
+  <Miho_Power_Spawn_Proj.label>MihoSpawner</Miho_Power_Spawn_Proj.label>
+  <Miho_UnstablePowerCell.label>Borrowed Generator</Miho_UnstablePowerCell.label>
+  <Miho_UnstablePowerCell.description>A high-performance generator stolen from somewhere. It returns to its original place after a certain period due to its instability.</Miho_UnstablePowerCell.description>
+  <Miho_Apparel_Hat_Winter.label>Miho Beanie</Miho_Apparel_Hat_Winter.label>
+  <Miho_Apparel_Hat_Winter.description>Thick and warm hat.</Miho_Apparel_Hat_Winter.description>
+  <Miho_Apparel_Mask_Eltex.label>Miho Eltex Mask</Miho_Apparel_Mask_Eltex.label>
+  <Miho_Apparel_Mask_Eltex.description>A psychic-enhancing mask made of ebony wood.</Miho_Apparel_Mask_Eltex.description>
+  <Miho_Apparel_Hat_ShooterCap.label>Miho Tactical Cap</Miho_Apparel_Hat_ShooterCap.label>
+  <Miho_Apparel_Hat_ShooterCap.description>A sturdy cap with a tactical look. Although the headset has been completely dismantled, it's useless anyway due to Miho's ear structure.</Miho_Apparel_Hat_ShooterCap.description>
+  <Miho_Apparel_Hat_Militia.label>Miho Trooper Helmet</Miho_Apparel_Hat_Militia.label>
+  <Miho_Apparel_Hat_Militia.description>A helmet issued to soldiers, focused on quick aiming.</Miho_Apparel_Hat_Militia.description>
+  <Miho_Apparel_Hat_MilitiaEar.label>Miho Trooper Helmet (Ear)</Miho_Apparel_Hat_MilitiaEar.label>
+  <Miho_Apparel_Hat_MilitiaEar.description>A helmet issued to soldiers. It provides ear protection and thus offers better defense.</Miho_Apparel_Hat_MilitiaEar.description>
+  <Miho_Apparel_Hat_MilitiaMedic.label>Miho Medic Helmet</Miho_Apparel_Hat_MilitiaMedic.label>
+  <Miho_Apparel_Hat_MilitiaMedic.description>A helmet issued to military medics, focused on survivability.</Miho_Apparel_Hat_MilitiaMedic.description>
+  <Miho_Apparel_Hat_MilitiaShoot.label>Miho Trooper Helmet</Miho_Apparel_Hat_MilitiaShoot.label>
+  <Miho_Apparel_Hat_MilitiaShoot.description>A helmet issued to soldiers, focused on quick aiming. There are some strange inscriptions on it.</Miho_Apparel_Hat_MilitiaShoot.description>
+  <Miho_Apparel_Hat_Worker.label>Miho Safety Helmet</Miho_Apparel_Hat_Worker.label>
+  <Miho_Apparel_Hat_Worker.description>A safety helmet essential for working in hazardous areas. Of course, it's cheaper than Miho's life.</Miho_Apparel_Hat_Worker.description>
+  <Miho_Apparel_Hat_PMC.label>Miho Elite Trooper Helmet</Miho_Apparel_Hat_PMC.label>
+  <Miho_Apparel_Hat_PMC.description>An old helmet issued to PMC soldiers. Reliable in the battlefield due to its age.</Miho_Apparel_Hat_PMC.description>
+  <Miho_Apparel_Hat_Pariah.label>Miho Pariah Battle Helmet</Miho_Apparel_Hat_Pariah.label>
+  <Miho_Apparel_Hat_Pariah.description>An anti-psychic helmet operated by the user's mechanites. It aims to improve long-range combat abilities and perfect user protection.</Miho_Apparel_Hat_Pariah.description>
+  <Miho_Apparel_Middle_Militia.label>Miho Trooper Armor</Miho_Apparel_Middle_Militia.label>
+  <Miho_Apparel_Middle_Militia.description>A tactical plate carrier. It's sturdy and significantly reduces reload speed.</Miho_Apparel_Middle_Militia.description>
+  <Miho_Apparel_Middle_Militia_Tan.label>Miho Trooper Armor (Tan)</Miho_Apparel_Middle_Militia_Tan.label>
+  <Miho_Apparel_Middle_Militia_Tan.description>A tactical plate carrier. It's sturdy and significantly reduces reload speed.</Miho_Apparel_Middle_Militia_Tan.description>
+  <Miho_Apparel_Middle_MilitiaMedic.label>Miho Medic Armor</Miho_Apparel_Middle_MilitiaMedic.label>
+  <Miho_Apparel_Middle_MilitiaMedic.description>A tactical plate carrier. It has a module for the touch of healing, allowing an extra use if already learned.</Miho_Apparel_Middle_MilitiaMedic.description>
+  <Miho_Apparel_Middle_MilitiaVest.label>Miho Tactical Vest</Miho_Apparel_Middle_MilitiaVest.label>
+  <Miho_Apparel_Middle_MilitiaVest.description>A tactical vest providing some defense and significantly reducing reload speed.</Miho_Apparel_Middle_MilitiaVest.description>
+  <Miho_Apparel_Middle_Powered.label>Miho Exoskeleton Heavy Armor</Miho_Apparel_Middle_Powered.label>
+  <Miho_Apparel_Middle_Powered.description>An exoskeleton with several additional parts attachable.</Miho_Apparel_Middle_Powered.description>
+  <Miho_Apparel_Middle_PoweredMechanitor.label>Miho Mechanitor Exoskeleton</Miho_Apparel_Middle_PoweredMechanitor.label>
+  <Miho_Apparel_Middle_PoweredMechanitor.description>An exoskeleton with built-in mechanitor equipment. It's less shock-resistant due to its advanced components.</Miho_Apparel_Middle_PoweredMechanitor.description>
+  <Miho_Apparel_Middle_PoweredWorker.label>Miho Safety Exoskeleton</Miho_Apparel_Middle_PoweredWorker.label>
+  <Miho_Apparel_Middle_PoweredWorker.description>An exoskeleton. It doesn't protect the wearer but allows weak Miho to carry heavy loads easily.</Miho_Apparel_Middle_PoweredWorker.description>
+  <Miho_Apparel_OnSkin_OrnatedOne.label>Miho Eltex Garment (Entropy Storage)</Miho_Apparel_OnSkin_OrnatedOne.label>
+  <Miho_Apparel_OnSkin_OrnatedOne.description>A high-quality traditional garment made of Devilstrand and Ebonsilk.</Miho_Apparel_OnSkin_OrnatedOne.description>
+  <Miho_Apparel_OnSkin_OrnatedTwo.label>Miho Eltex Garment (Arcane Shield)</Miho_Apparel_OnSkin_OrnatedTwo.label>
+  <Miho_Apparel_OnSkin_OrnatedTwo.description>A high-quality traditional garment made of gold thread and Ebonsilk.</Miho_Apparel_OnSkin_OrnatedTwo.description>
+  <Miho_Apparel_OnSkin_Militia.label>Miho Security Suit</Miho_Apparel_OnSkin_Militia.label>
+  <Miho_Apparel_OnSkin_Militia.description>A suit issued to soldiers, providing decent protection.</Miho_Apparel_OnSkin_Militia.description>
+  <Miho_Apparel_OnSkin_PMC.label>Miho Trooper Suit</Miho_Apparel_OnSkin_PMC.label>
+  <Miho_Apparel_OnSkin_PMC.description>A suit issued to PMC soldiers, dispersing impact to some extent.</Miho_Apparel_OnSkin_PMC.description>
+  <Miho_Apparel_OnSkin_Pariah.label>Miho Pariah Battle Suit</Miho_Apparel_OnSkin_Pariah.label>
+  <Miho_Apparel_OnSkin_Pariah.description>An anti-psychic power suit operated by the user's mechanites. It aims to improve close combat abilities and perfect user protection.</Miho_Apparel_OnSkin_Pariah.description>
+  <Miho_Apparel_OnSkin_Simple.label>Miho Casual Wear</Miho_Apparel_OnSkin_Simple.label>
+  <Miho_Apparel_OnSkin_Simple.description>Traditional attire of the Miho, resembling women's clothing from an ancient peninsula nation on Earth. It can also be worn as children's clothing.</Miho_Apparel_OnSkin_Simple.description>
+  <Miho_Apparel_OnSkin_Hoodie.label>Miho Hoodie</Miho_Apparel_OnSkin_Hoodie.label>
+  <Miho_Apparel_OnSkin_Hoodie.description>A warm hoodie. Where are the bottoms? No idea...</Miho_Apparel_OnSkin_Hoodie.description>
+  <Miho_Apparel_OnSkin_Shirt.label>Miho Shirt</Miho_Apparel_OnSkin_Shirt.label>
+  <Miho_Apparel_OnSkin_Shirt.description>A warm hoodie. Where are the bottoms? No idea...</Miho_Apparel_OnSkin_Shirt.description>
+  <Miho_Apparel_OnSkin_Regular.label>Miho Standard Suit</Miho_Apparel_OnSkin_Regular.label>
+  <Miho_Apparel_OnSkin_Regular.description>Miho's standard suit, comfortable to wear in both informal and formal settings.</Miho_Apparel_OnSkin_Regular.description>
+  
+  <Miho_Apparel_OnSkin_Maid.label>Miho French Maid Suit</Miho_Apparel_OnSkin_Maid.label>
+  <Miho_Apparel_OnSkin_Maid.description>Maybe the Gauls of the ancient earth called it Maid Suit, but let it go because it's cute.</Miho_Apparel_OnSkin_Maid.description>
+  <Miho_Apparel_Special_Maid.label>Miho French Maid Cossage</Miho_Apparel_Special_Maid.label>
+  <Miho_Apparel_Special_Maid.description>Maybe the Gauls of the ancient earth called it Maid Cossage, but let it go because it's cute.</Miho_Apparel_Special_Maid.description>
+  
+  <Miho_Apparel_OnSkin_Celestial.label>Miho Celestial Eltex Suit</Miho_Apparel_OnSkin_Celestial.label>
+  <Miho_Apparel_OnSkin_Celestial.description>This is the perfect Eltex wear for foxes.</Miho_Apparel_OnSkin_Celestial.description>
+  
+  <Miho_Apparel_Shell_Winter.label>Miho Winter Poncho</Miho_Apparel_Shell_Winter.label>
+  <Miho_Apparel_Shell_Winter.description>Traditional Miho attire, unquestionably warm design.</Miho_Apparel_Shell_Winter.description>
+  <Miho_Apparel_Shell_Padding.label>Miho Padding</Miho_Apparel_Shell_Padding.label>
+  <Miho_Apparel_Shell_Padding.description>A popular padding from thousands of years ago on Earth. Extremely warm.</Miho_Apparel_Shell_Padding.description>
+  <Miho_Apparel_Shell_PMC.label>Miho Military Coat</Miho_Apparel_Shell_PMC.label>
+  <Miho_Apparel_Shell_PMC.description>A sturdy coat with shielding functions.</Miho_Apparel_Shell_PMC.description>
+  <Miho_Apparel_Shell_Sorceress.label>Miho Sorceress Cloak</Miho_Apparel_Shell_Sorceress.label>
+  <Miho_Apparel_Shell_Sorceress.description>A high-quality cloak that activates mechanites in the body.</Miho_Apparel_Shell_Sorceress.description>
+  <Miho_Apparel_Special_Magnifier.label>Miho Magnifier</Miho_Apparel_Special_Magnifier.label>
+  <Miho_Apparel_Special_Magnifier.description>A device that allows more accurate long-range aiming. Good for Miho with poor eyesight.</Miho_Apparel_Special_Magnifier.description>
+  <Miho_Apparel_Special_TacticalAssist.label>Miho Tactical Assist Computer</Miho_Apparel_Special_TacticalAssist.label>
+  <Miho_Apparel_Special_TacticalAssist.description>A shooting assist device equipped with ballistic calculation, friend-or-foe identification, and zoom functions.</Miho_Apparel_Special_TacticalAssist.description>
+  <Miho_Apparel_Special_Glasses.label>Miho Glasses</Miho_Apparel_Special_Glasses.label>
+  <Miho_Apparel_Special_Glasses.description>"Perfect" glasses. You can also call this as "shitty."</Miho_Apparel_Special_Glasses.description>
+  <Miho_Apparel_Special_Visor.label>Miho Visor</Miho_Apparel_Special_Visor.label>
+  <Miho_Apparel_Special_Visor.description>A translucent visor made of bulletproof material.</Miho_Apparel_Special_Visor.description>
+  <Miho_Apparel_Special_Toxmask.label>Miho Gas Mask</Miho_Apparel_Special_Toxmask.label>
+  <Miho_Apparel_Special_Toxmask.description>A gas mask with excellent toxin filtration due to its Ebonsilk filter, featuring a boring cyberpunk design.</Miho_Apparel_Special_Toxmask.description>
+  <Miho_Apparel_Under_EltexOne.label>Miho Eltex Underwear</Miho_Apparel_Under_EltexOne.label>
+  <Miho_Apparel_Under_EltexOne.description>High-quality underwear made of Ebonsilk.</Miho_Apparel_Under_EltexOne.description>
+  <Miho_Apparel_Under_TribalEltex.label>Miho Tribal Eltex Underwear</Miho_Apparel_Under_TribalEltex.label>
+  <Miho_Apparel_Under_TribalEltex.description>High-quality underwear made of Ebonsilk.</Miho_Apparel_Under_TribalEltex.description>
+  <Miho_Apparel_Under_Armor.label>Miho Protective Underwear</Miho_Apparel_Under_Armor.label>
+  <Miho_Apparel_Under_Armor.description>Protective underwear made of Ebonsilk, excellent at shock absorption.</Miho_Apparel_Under_Armor.description>
+  
+  <Miho_Apparel_Under_TribalTwo.label>Miho Tribal Underwear (B)</Miho_Apparel_Under_TribalTwo.label>
+  <Miho_Apparel_Under_TribalTwo.description>Crude but beautiful underwear.</Miho_Apparel_Under_TribalTwo.description>
+  <Miho_Apparel_Under_Industrial.label>Miho Underwear</Miho_Apparel_Under_Industrial.label>
+  <Miho_Apparel_Under_Industrial.description>Durable, easily mass-produced underwear.</Miho_Apparel_Under_Industrial.description>
+  <Miho_Apparel_Under_IndustrialStripe.label>Miho Striped Underwear</Miho_Apparel_Under_IndustrialStripe.label>
+  <Miho_Apparel_Under_IndustrialStripe.description>Durable, easily mass-produced underwear, good for summer.</Miho_Apparel_Under_IndustrialStripe.description>
+  <Miho_Apparel_Under_IndustrialBlack.label>Miho Black Underwear</Miho_Apparel_Under_IndustrialBlack.label>
+  <Miho_Apparel_Under_IndustrialBlack.description>Durable, easily mass-produced underwear. Protects Miho's fragile legs from the cold.</Miho_Apparel_Under_IndustrialBlack.description>
+
+  <Miho_Apparel_Hat_MilitiaVegi.label>Miho Trooper Helmet (Veggie)</Miho_Apparel_Hat_MilitiaVegi.label>
+  <Miho_Apparel_Hat_MilitiaVegi.description>A helmet issued to soldiers. The one that looks like a camouflage is not for camouflage, but for decoration or snacks.</Miho_Apparel_Hat_MilitiaVegi.description>
+  
+  <Miho_Apparel_Hat_EltexCaptain.label>Miho Eltex Officer's Hat</Miho_Apparel_Hat_EltexCaptain.label>
+  <Miho_Apparel_Hat_EltexCaptain.description>This is an officer's hat worn by high-ranking officers of the Miho Empire. You can use the assault command skill. Used officer uniforms that are occasionally released on the market are popular due to their fetishistic elements.</Miho_Apparel_Hat_EltexCaptain.description>
+  <Miho_Apparel_OnSkin_OrnatedCaptain.label>Miho Eltex Officer's Uniform</Miho_Apparel_OnSkin_OrnatedCaptain.label>
+  <Miho_Apparel_OnSkin_OrnatedCaptain.description>This is an officer's uniform worn by high-ranking officers of the Miho Empire. You can use the Encouragement skill. Used officer's uniforms that are occasionally released on the market are popular due to their fetishistic elements.</Miho_Apparel_OnSkin_OrnatedCaptain.description>
+  <Miho_Apparel_OnSkin_OrnatedMiho.label>Miho Eltex Garment (Work Augmentation)</Miho_Apparel_OnSkin_OrnatedMiho.label>
+  <Miho_Apparel_OnSkin_OrnatedMiho.description>A high-quality traditional garment made of gold thread and Ebonsilk.</Miho_Apparel_OnSkin_OrnatedMiho.description>
+    
+  <Miho_MechFactory.label>Miho Machine Factory</Miho_MechFactory.label>
+  <Miho_MechFactory.description>Giant Machine factory, capable of producing various mechanoids.</Miho_MechFactory.description>
+  <Miho_Mech_HeavyMechCore.label>Miho Heavy Mechanite Core</Miho_Mech_HeavyMechCore.label>
+  <Miho_Mech_HeavyMechCore.description>A Heavy mechanite engine used in Miho's large mechanoids.</Miho_Mech_HeavyMechCore.description>
+  <Miho_Mech_HeavyMechCore.tools.0.label>front left leg</Miho_Mech_HeavyMechCore.tools.0.label>
+  <Miho_Mech_HeavyMechCore.tools.1.label>front right leg</Miho_Mech_HeavyMechCore.tools.1.label>
+  <Miho_Mech_HeavyMechCore.tools.2.label>blade</Miho_Mech_HeavyMechCore.tools.2.label>
+  <Miho_Mech_DesertSphex.label>Ornithopter (Agricultural)</Miho_Mech_DesertSphex.label>
+  <Miho_Mech_DesertSphex.description>Sphex-class Onisopter, with arms and cutters suitable for agriculture.</Miho_Mech_DesertSphex.description>
+  <Miho_Mech_DesertSphex.tools.0.label>right blade</Miho_Mech_DesertSphex.tools.0.label>
+  <!-- 
+  <Miho_Mech_Kampe.label>Recycle Bot</Miho_Mech_Kampe.label>
+  <Miho_Mech_Kampe.description>A recycling bot named 'Kampe' made to encourage recycling. It collects trash while cleaning and turns it into valuable resources.</Miho_Mech_Kampe.description>
+  <Miho_Mech_Kampe.tools.0.label>head</Miho_Mech_Kampe.tools.0.label>
+  -->
+  <Miho_Mech_Bulgasal.label>Multi Legged Heavy Tank</Miho_Mech_Bulgasal.label>
+  <Miho_Mech_Bulgasal.description>Bulgasahl-class Multi Legged Heavy Tank for combat.</Miho_Mech_Bulgasal.description>
+  <Miho_Mech_Bulgasal.tools.0.label>front left leg</Miho_Mech_Bulgasal.tools.0.label>
+  <Miho_Mech_Bulgasal.tools.1.label>front right leg</Miho_Mech_Bulgasal.tools.1.label>
+  <Miho_Mech_BulgasalSiege.label>Multi Legged Heavy Tank (Siege)</Miho_Mech_BulgasalSiege.label>
+  <Miho_Mech_BulgasalSiege.description>Bulgasahl-class Multi Legged Heavy Tank for combat.</Miho_Mech_BulgasalSiege.description>
+  <Miho_Mech_BulgasalSiege.tools.0.label>front left leg</Miho_Mech_BulgasalSiege.tools.0.label>
+  <Miho_Mech_BulgasalSiege.tools.1.label>front right leg</Miho_Mech_BulgasalSiege.tools.1.label>
+  <Miho_Mech_BulgasalGrenade.label>Multi Legged Heavy Tank (Grenade)</Miho_Mech_BulgasalGrenade.label>
+  <Miho_Mech_BulgasalGrenade.description>Bulgasahl-class Multi Legged Heavy Tank for combat.</Miho_Mech_BulgasalGrenade.description>
+  <Miho_Mech_BulgasalGrenade.tools.0.label>front left leg</Miho_Mech_BulgasalGrenade.tools.0.label>
+  <Miho_Mech_BulgasalGrenade.tools.1.label>front right leg</Miho_Mech_BulgasalGrenade.tools.1.label>
+  <Miho_MechWeapon_Heavygun.label>Miho AT Cannon (Multi Legged Tank)</Miho_MechWeapon_Heavygun.label>
+  <Miho_MechWeapon_Heavygun.description>A turret-mounted rapid-fire anti-tank gun using 47mm shells. Although small, it's considered overpowered in the outskirts.</Miho_MechWeapon_Heavygun.description>
+  <Miho_MechWeapon_Heavygun_Proj.label>shell</Miho_MechWeapon_Heavygun_Proj.label>
+  <Miho_MechWeapon_PlasmaHowitzer.label>Miho Plasma Howitzer (Multi Legged Tank)</Miho_MechWeapon_PlasmaHowitzer.label>
+  <Miho_MechWeapon_PlasmaHowitzer.description>A siege howitzer using 80mm plasma shells. Though it has a long cooling process, it boasts firepower commensurate with it.</Miho_MechWeapon_PlasmaHowitzer.description>
+  <Miho_MechWeapon_PlasmaHowitzer_Proj.label>plasma</Miho_MechWeapon_PlasmaHowitzer_Proj.label>
+  <Miho_MechWeapon_PlasmaHowitzer_Proj.label>plasma</Miho_MechWeapon_PlasmaHowitzer_Proj.label>
+  <Miho_MechWeapon_Heavygrenade.label>Miho Grenade Cannon (Multi Legged Tank)</Miho_MechWeapon_Heavygrenade.label>
+  <Miho_MechWeapon_Heavygrenade.description>A turret-mounted rapid-fire grenade launcher using 57mm grenades. It can deal with anything except heavy armor.</Miho_MechWeapon_Heavygrenade.description>
+  <Miho_MechWeapon_Heavygrenade_Proj.label>grenade</Miho_MechWeapon_Heavygrenade_Proj.label>
+  <Miho_MechSmoke_Proj.label>smoke launcher shell</Miho_MechSmoke_Proj.label>
+  <Miho_MechSmokeGrenade_Proj.label>smoke launcher shell</Miho_MechSmokeGrenade_Proj.label>
+  <Miho_MechThermobaricGrenade_Proj.label>thermobaric shell</Miho_MechThermobaricGrenade_Proj.label>
+  <Miho_MechPlasmaSpray_Proj.label>plasma</Miho_MechPlasmaSpray_Proj.label>
+  <Miho_MechWeapon_MachinegunTurret.label>Miho Coaxial Machine gun (Multi Legged Tank)</Miho_MechWeapon_MachinegunTurret.label>
+  <Miho_MechWeapon_MachinegunTurret.description>A coaxial machine gun for Multi Legged Tank using 6.5mm bullets.</Miho_MechWeapon_MachinegunTurret.description>
+  <Miho_Mech_Balbari.label>Infantry Support Multi Legged Heavy Tank</Miho_Mech_Balbari.label>
+  <Miho_Mech_Balbari.description>Balbari-class Multi Legged Heavy Tank for combat.</Miho_Mech_Balbari.description>
+  <Miho_Mech_Balbari.tools.0.label>front left leg</Miho_Mech_Balbari.tools.0.label>
+  <Miho_Mech_Balbari.tools.1.label>front right leg</Miho_Mech_Balbari.tools.1.label>
+  <Miho_MechWeapon_HeavyAutoCannon.label>Miho Autocannon (Multi Legged Tank)</Miho_MechWeapon_HeavyAutoCannon.label>
+  <Miho_MechWeapon_HeavyAutoCannon.description>A turret-mounted autocannon using 13.7mm Hotchkiss bullets. It also has a MAT mounted on the top of the turret.</Miho_MechWeapon_HeavyAutoCannon.description>
+  <Miho_MechWeapon_HeavyAutoCannon_Proj.label>HMG bullet</Miho_MechWeapon_HeavyAutoCannon_Proj.label>
+  <Miho_MechATMissile_Proj.label>plasma AM missile</Miho_MechATMissile_Proj.label>
+  <Miho_Mech_Sapsal.label>Multi Legged Light Tank (Recon)</Miho_Mech_Sapsal.label>
+  <Miho_Mech_Sapsal.description>Sapsal-class Multi Legged Light Tank for reconnaissance mission, base construction and hazardous environment removal.</Miho_Mech_Sapsal.description>
+  <Miho_Mech_Sapsal.tools.0.label>front left leg</Miho_Mech_Sapsal.tools.0.label>
+  <Miho_Mech_Sapsal.tools.1.label>front right leg</Miho_Mech_Sapsal.tools.1.label>
+  <Miho_Mech_Sapsal.tools.2.label>blade</Miho_Mech_Sapsal.tools.2.label>
+  <Miho_Mech_SapsalPsy.label>Multi Legged Light Tank (Psychic Support)</Miho_Mech_SapsalPsy.label>
+  <Miho_Mech_SapsalPsy.description>Sapsal-class Multi Legged Light Tank for reconnaissance mission, base construction and hazardous environment removal.</Miho_Mech_SapsalPsy.description>
+  <Miho_Mech_SapsalPsy.tools.0.label>front left leg</Miho_Mech_SapsalPsy.tools.0.label>
+  <Miho_Mech_SapsalPsy.tools.1.label>front right leg</Miho_Mech_SapsalPsy.tools.1.label>
+  <Miho_Mech_SapsalPsy.tools.2.label>blade</Miho_Mech_SapsalPsy.tools.2.label>
+  <Miho_MechWeapon_Machinegun.label>Miho Heavy Machine Gun (Multi Legged Tank)</Miho_MechWeapon_Machinegun.label>
+  <Miho_MechWeapon_Machinegun.description>A machine gun for Multi Legged Tanks using 7.7mm bullets.</Miho_MechWeapon_Machinegun.description>
+  <Miho_Mech_CataphractRocket.label>Multi Legged CEV (Thermobaric Rocket Launcher)</Miho_Mech_CataphractRocket.label>
+  <Miho_Mech_CataphractRocket.description>Geama-class Multi Legged CEV equipped with a multiple rocket launcher system.</Miho_Mech_CataphractRocket.description>
+  <Miho_Mech_CataphractRocket.tools.0.label>front left leg</Miho_Mech_CataphractRocket.tools.0.label>
+  <Miho_Mech_CataphractRocket.tools.1.label>front right leg</Miho_Mech_CataphractRocket.tools.1.label>
+  <Miho_Mech_CataphractCluRocket.label>Multi Legged CEV (Cluster Rocket Launcher)</Miho_Mech_CataphractCluRocket.label>
+  <Miho_Mech_CataphractCluRocket.description>Geama-class Multi Legged CEV equipped with a multiple rocket launcher system.</Miho_Mech_CataphractCluRocket.description>
+  <Miho_Mech_CataphractCluRocket.tools.0.label>front left leg</Miho_Mech_CataphractCluRocket.tools.0.label>
+  <Miho_Mech_CataphractCluRocket.tools.1.label>front right leg</Miho_Mech_CataphractCluRocket.tools.1.label>
+  <Miho_MechWeapon_Rocket.label>Miho Multiple Rocket Launcher (Multi Legged Tank/Thermobaric)</Miho_MechWeapon_Rocket.label>
+  <Miho_MechWeapon_Rocket.description>A multiple launch system using 100mm rockets. It can fire in a curved trajectory, creating a sea of fire over a large area. Has a range of 75 tiles.</Miho_MechWeapon_Rocket.description>
+  <Miho_MechWeapon_Rocket_Proj.label>thermobaric rocket</Miho_MechWeapon_Rocket_Proj.label>
+  <Miho_MechWeapon_CluRocket.label>Miho Multiple Rocket Launcher (Multi Legged Tank/Cluster)</Miho_MechWeapon_CluRocket.label>
+  <Miho_MechWeapon_CluRocket.description>A multiple launch system using 57mm rockets. It spreads clusters capable of penetrating light armor. Has a range of 200 tiles.</Miho_MechWeapon_CluRocket.description>
+  <Miho_MechWeapon_CluRocket_Proj.label>cluster rocket</Miho_MechWeapon_CluRocket_Proj.label>
+  <Miho_MechWeapon_CluRocket_Proj.label>fragment</Miho_MechWeapon_CluRocket_Proj.label>
+  <Miho_MechSatchel_Proj.label>satchel</Miho_MechSatchel_Proj.label>
+
+  <Miho_Turret_Machinegun.label>Miho Heavy Machine Gun</Miho_Turret_Machinegun.label>
+  <Miho_Turret_Machinegun.description>A heavy machine gun turret using 7.7mm bullets. Equipped with adequate optical equipment, it boasts better performance than a machine gun on Multi Legged Tanks.</Miho_Turret_Machinegun.description>
+  <Miho_BuildingWeapon_Machinegun.label>Miho Heavy Machine Gun</Miho_BuildingWeapon_Machinegun.label>
+  <Miho_BuildingWeapon_Machinegun.description>7.7mm Heavy Machine Gun</Miho_BuildingWeapon_Machinegun.description>
+  <Miho_Turret_Missile.label>Miho Heavy-MAT</Miho_Turret_Missile.label>
+  <Miho_Turret_Missile.description>SACLOS guided missile launcher.</Miho_Turret_Missile.description>
+  <Miho_BuildingWeapon_Missile.label>Heavy-MAT</Miho_BuildingWeapon_Missile.label>
+  <Miho_BuildingWeapon_Missile.description>Heavy-MAT.</Miho_BuildingWeapon_Missile.description>
+  <Miho_Missile_Proj.label>missile</Miho_Missile_Proj.label>
+  <Miho_Missile.label>Miho Armor-Piercing Incendiary Missile</Miho_Missile.label>
+  <Miho_Missile.description>An all-purpose guided missile. It has an additional fragment effect.</Miho_Missile.description>
+  <Miho_MissilePlasma.label>Miho Plasma Anti-Mechanoid Missile</Miho_MissilePlasma.label>
+  <Miho_MissilePlasma.description>A guided missile effective against mechanoids. Slower due to its heavy plasma warhead, but boasts impressive anti-mech firepower.</Miho_MissilePlasma.description>
+  <Miho_Weapon_PowerClaw.label>Miho power claw</Miho_Weapon_PowerClaw.label>
+  <Miho_Weapon_PowerClaw.description>This Power Claw for Miho has three blades and one spike.</Miho_Weapon_PowerClaw.description>
+  <Miho_Weapon_PowerClaw.tools.0.label>blade</Miho_Weapon_PowerClaw.tools.0.label>
+  <Miho_Weapon_PowerClaw.tools.1.label>point</Miho_Weapon_PowerClaw.tools.1.label>
+  
+  <Miho_Weapon_PowerHammer.label>Miho power hammer</Miho_Weapon_PowerHammer.label>
+  <Miho_Weapon_PowerHammer.description>This is a modified drill used by Mihos. It is good for demolishing buildings or mining.</Miho_Weapon_PowerHammer.description>
+  <Miho_Weapon_PowerHammer.tools.0.label>point</Miho_Weapon_PowerHammer.tools.0.label>
+  
+  <Miho_Weapon_RingedBlade.label>Miho blade</Miho_Weapon_RingedBlade.label>
+  <Miho_Weapon_RingedBlade.description>Huge blade good for chopping the enemies.</Miho_Weapon_RingedBlade.description>
+  <Miho_Weapon_RingedBlade.tools.0.label>handle</Miho_Weapon_RingedBlade.tools.0.label>
+  <Miho_Weapon_RingedBlade.tools.1.label>blade</Miho_Weapon_RingedBlade.tools.1.label>
+  <Miho_Weapon_RingedBlade.tools.2.label>point</Miho_Weapon_RingedBlade.tools.2.label>
+  <Miho_Weapon_Tachi.label>Miho tachi</Miho_Weapon_Tachi.label>
+  <Miho_Weapon_Tachi.description>Giant single-edged sword that the warriors of ancient earth use often.</Miho_Weapon_Tachi.description>
+  <Miho_Weapon_Tachi.tools.0.label>handle</Miho_Weapon_Tachi.tools.0.label>
+  <Miho_Weapon_Tachi.tools.1.label>blade</Miho_Weapon_Tachi.tools.1.label>
+  <Miho_Weapon_Tachi.tools.2.label>point</Miho_Weapon_Tachi.tools.2.label>
+  <Miho_Weapon_Sappertool.label>Miho sasumata</Miho_Weapon_Sappertool.label>
+  <Miho_Weapon_Sappertool.description>This polearm, commonly known as 'sasumata', designed to efficiently subdue humans by relatively weak Miho.</Miho_Weapon_Sappertool.description>
+  <Miho_Weapon_Sappertool.tools.0.label>head</Miho_Weapon_Sappertool.tools.0.label>
+  <Miho_Weapon_PlasmaTachi.label>Miho plasma tachi</Miho_Weapon_PlasmaTachi.label>
+  <Miho_Weapon_PlasmaTachi.description>A modified giant single-edged sword emitting plasma. Its cutting power rivals that of the Jetstream warrior's sword of ancient Earth.</Miho_Weapon_PlasmaTachi.description>
+  <Miho_Weapon_PlasmaTachi.tools.0.label>handle</Miho_Weapon_PlasmaTachi.tools.0.label>
+  <Miho_Weapon_PlasmaTachi.tools.1.label>blade</Miho_Weapon_PlasmaTachi.tools.1.label>
+  <Miho_Weapon_PlasmaTachi.tools.2.label>point</Miho_Weapon_PlasmaTachi.tools.2.label>
+  <Miho_Weapon_EltexB.label>Eltex Baton (B)</Miho_Weapon_EltexB.label>
+  <Miho_Weapon_EltexB.description>A psychic baton optimized for neural heat recovery.</Miho_Weapon_EltexB.description>
+  <Miho_Weapon_EltexB.tools.0.label>head</Miho_Weapon_EltexB.tools.0.label>
+  <Miho_Weapon_EltexA.label>Eltex Baton (A)</Miho_Weapon_EltexA.label>
+  <Miho_Weapon_EltexA.description>A psychic baton optimized for neural heat recovery.</Miho_Weapon_EltexA.description>
+  <Miho_Weapon_EltexA.tools.0.label>head</Miho_Weapon_EltexA.tools.0.label>
+  <Miho_Weapon_EltexAxe.label>Eltex Axe</Miho_Weapon_EltexAxe.label>
+  <Miho_Weapon_EltexAxe.description>An Eltex weapon with excellent melee performance.</Miho_Weapon_EltexAxe.description>
+  <Miho_Weapon_EltexAxe.tools.0.label>blade</Miho_Weapon_EltexAxe.tools.0.label>
+  <Miho_Weapon_EltexAxe.tools.1.label>point</Miho_Weapon_EltexAxe.tools.1.label>
+  <Miho_Weapon_RifleCQB.label>Miho Submachinegun</Miho_Weapon_RifleCQB.label>
+  <Miho_Weapon_RifleCQB.description>A multirole submachine gun using 8mm incendiary pistol rounds. Although ergonomically unsound and somewhat off in performance, it's highly valued in close combat according to Miho consensus.</Miho_Weapon_RifleCQB.description>
+  <Miho_Weapon_RifleCQB.tools.0.label>stock</Miho_Weapon_RifleCQB.tools.0.label>
+  <Miho_Weapon_RifleCQB.tools.1.label>barrel</Miho_Weapon_RifleCQB.tools.1.label>
+  <Miho_Weapon_RifleCQB_Proj.label>smg bullet</Miho_Weapon_RifleCQB_Proj.label>
+  <Miho_Weapon_Pistol.label>Miho Nailer</Miho_Weapon_Pistol.label>
+  <Miho_Weapon_Pistol.description>A nail gun modified for lethal purposes. It has much greater recoil and power than a regular nail gun. It can also be used as an ordinary tool for its intended purpose.</Miho_Weapon_Pistol.description>
+  <Miho_Weapon_Pistol.tools.0.label>nail</Miho_Weapon_Pistol.tools.0.label>
+  <Miho_Weapon_Pistol.tools.1.label>barrel</Miho_Weapon_Pistol.tools.1.label>
+  <Miho_Weapon_Pistol_Proj.label>nail</Miho_Weapon_Pistol_Proj.label>
+  <Miho_Weapon_RifleDefence.label>Miho Assault Rifle</Miho_Weapon_RifleDefence.label>
+  <Miho_Weapon_RifleDefence.description>An automatic assault rifle using 6.5mm incendiary rounds. It can be easily produced even in small, underdeveloped factories.</Miho_Weapon_RifleDefence.description>
+  <Miho_Weapon_RifleDefence.tools.0.label>stock</Miho_Weapon_RifleDefence.tools.0.label>
+  <Miho_Weapon_RifleDefence.tools.1.label>barrel</Miho_Weapon_RifleDefence.tools.1.label>
+  <Miho_Weapon_RifleMachinegun.label>Miho Light Machine Gun</Miho_Weapon_RifleMachinegun.label>
+  <Miho_Weapon_RifleMachinegun.description>A light machine gun using 6.5mm incendiary rounds. Ideal for creating a barrage at mid-range.</Miho_Weapon_RifleMachinegun.description>
+  <Miho_Weapon_RifleMachinegun.tools.0.label>stock</Miho_Weapon_RifleMachinegun.tools.0.label>
+  <Miho_Weapon_RifleMachinegun.tools.1.label>barrel</Miho_Weapon_RifleMachinegun.tools.1.label>
+  <Miho_Weapon_RifleDefence_Proj.label>assault rifle bullet</Miho_Weapon_RifleDefence_Proj.label>
+  <Miho_Weapon_RifleOld.label>Miho Old Infantry Rifle</Miho_Weapon_RifleOld.label>
+  <Miho_Weapon_RifleOld.description>A rifle for infantry, using 7.7mm incendiary rounds. Though outdated, it still possesses good accuracy and is often used as a designated marksman's rifle. Its unique scope is optimized for Miho eyes, causing severe dizziness if other species try to aim with it.</Miho_Weapon_RifleOld.description>
+  <Miho_Weapon_RifleOld.tools.0.label>stock</Miho_Weapon_RifleOld.tools.0.label>
+  <Miho_Weapon_RifleOld.tools.1.label>barrel</Miho_Weapon_RifleOld.tools.1.label>
+  <Miho_Weapon_RiflePrecision_Proj.label>rifle bullet</Miho_Weapon_RiflePrecision_Proj.label>
+  <Miho_Weapon_RifleGrenade.label>Miho Infantry Grenade Launcher</Miho_Weapon_RifleGrenade.label>
+  <Miho_Weapon_RifleGrenade.description>A heavy weapon firing 20mm fragmentation grenades.</Miho_Weapon_RifleGrenade.description>
+  <Miho_Weapon_RifleGrenade.tools.0.label>stock</Miho_Weapon_RifleGrenade.tools.0.label>
+  <Miho_Weapon_RifleGrenade.tools.1.label>barrel</Miho_Weapon_RifleGrenade.tools.1.label>
+  <Miho_Weapon_RifleGrenade_Proj.label>grenade</Miho_Weapon_RifleGrenade_Proj.label>
+  <Miho_Weapon_RifleGrenade_Proj.label>fragment</Miho_Weapon_RifleGrenade_Proj.label>
+  <Miho_Weapon_Shotgun.label>Miho Hunting Shotgun</Miho_Weapon_Shotgun.label>
+  <Miho_Weapon_Shotgun.description>A precise shotgun suitable for hunting. As always, it's illegal to hunt a specific kind (well-dressed, relatively civilized) of Homo sapiens without permission.</Miho_Weapon_Shotgun.description>
+  <Miho_Weapon_Shotgun.tools.0.label>stock</Miho_Weapon_Shotgun.tools.0.label>
+  <Miho_Weapon_Shotgun.tools.1.label>barrel</Miho_Weapon_Shotgun.tools.1.label>
+  <Miho_Weapon_AutoShotgun.label>Miho Autoshotgun</Miho_Weapon_AutoShotgun.label>
+  <Miho_Weapon_AutoShotgun.description>It's a classic but threatening automatic shotgun.</Miho_Weapon_AutoShotgun.description>
+  <Miho_Weapon_AutoShotgun.tools.0.label>stock</Miho_Weapon_AutoShotgun.tools.0.label>
+  <Miho_Weapon_AutoShotgun.tools.1.label>barrel</Miho_Weapon_AutoShotgun.tools.1.label>
+  <Miho_Weapon_Shotgun_Proj.label>pellet</Miho_Weapon_Shotgun_Proj.label>
+  <Miho_Weapon_RiflePlasma.label>Miho Plasma Rifle</Miho_Weapon_RiflePlasma.label>
+  <Miho_Weapon_RiflePlasma.description>A rifle projecting plasma with a high temperature comparable to the core of the sun in an instant.</Miho_Weapon_RiflePlasma.description>
+  <Miho_Weapon_RiflePlasma.tools.0.label>stock</Miho_Weapon_RiflePlasma.tools.0.label>
+  <Miho_Weapon_RiflePlasma.tools.1.label>barrel</Miho_Weapon_RiflePlasma.tools.1.label>
+  <Miho_Weapon_RiflePlasma_Proj.label>plasma bullet</Miho_Weapon_RiflePlasma_Proj.label>
+  <Miho_Weapon_SniperPlasma.label>Miho Plasma Heavy Rifle</Miho_Weapon_SniperPlasma.label>
+  <Miho_Weapon_SniperPlasma.description>A heavy rifle projecting plasma with a high temperature comparable to the core of the sun in an instant. Though heavy firepower projection is typically the job of Multi Legged Tanks, it's sometimes adopted for tactical diversity among elite heavy infantry.</Miho_Weapon_SniperPlasma.description>
+  <Miho_Weapon_SniperPlasma.tools.0.label>stock</Miho_Weapon_SniperPlasma.tools.0.label>
+  <Miho_Weapon_SniperPlasma.tools.1.label>barrel</Miho_Weapon_SniperPlasma.tools.1.label>
+  <Miho_Weapon_SniperPlasma_Proj.label>plasma</Miho_Weapon_SniperPlasma_Proj.label>
+  <Miho_Weapon_ShotgunPsychic.label>Miho Acceleration Rifle</Miho_Weapon_ShotgunPsychic.label>
+  <Miho_Weapon_ShotgunPsychic.description>A rifle that accelerates particle bullets using the caster's psychic power. It's among the simplest of particle acceleration weapons.</Miho_Weapon_ShotgunPsychic.description>
+  <Miho_Weapon_ShotgunPsychic.tools.0.label>stock</Miho_Weapon_ShotgunPsychic.tools.0.label>
+  <Miho_Weapon_ShotgunPsychic.tools.1.label>barrel</Miho_Weapon_ShotgunPsychic.tools.1.label>
+  <Miho_Weapon_ShotgunPsychic_Proj.label>accelerated pellet</Miho_Weapon_ShotgunPsychic_Proj.label>
+  <Miho_Weapon_RiflePsychic.label>Miho High-Energy Particle Rifle</Miho_Weapon_RiflePsychic.label>
+  <Miho_Weapon_RiflePsychic.description>A miniature particle accelerator. It operates through the caster's psychic power, and the fired high-energy particles literally tear apart the enemy from the inside.</Miho_Weapon_RiflePsychic.description>
+  <Miho_Weapon_RiflePsychic.tools.0.label>stock</Miho_Weapon_RiflePsychic.tools.0.label>
+  <Miho_Weapon_RiflePsychic.tools.1.label>barrel</Miho_Weapon_RiflePsychic.tools.1.label>
+  <Miho_Weapon_RiflePsychic_Proj.label>accelerated pellet</Miho_Weapon_RiflePsychic_Proj.label>
+  <Miho_Weapon_RifleRecoillessSharp.label>Miho Recoilless Rifle</Miho_Weapon_RifleRecoillessSharp.label>
+  <Miho_Weapon_RifleRecoillessSharp.description>It is a recoilless rifle that can fire Miho missiles without guidance. Also, it cannot fire plasma missiles due to its old firing method.</Miho_Weapon_RifleRecoillessSharp.description>
+  <Miho_Weapon_RifleRecoillessSharp.tools.0.label>stock</Miho_Weapon_RifleRecoillessSharp.tools.0.label>
+  <Miho_Weapon_RifleRecoillessSharp.tools.1.label>barrel</Miho_Weapon_RifleRecoillessSharp.tools.1.label>
+  <Miho_Weapon_RifleDefenceGrenade.label>Miho Assault Rifle (Grenade Launcher)</Miho_Weapon_RifleDefenceGrenade.label>
+  <Miho_Weapon_RifleDefenceGrenade.description>An automatic assault rifle using 6.5mm incendiary rounds. It can be easily produced even in small, underdeveloped factories.</Miho_Weapon_RifleDefenceGrenade.description>
+  <Miho_Weapon_RifleDefenceGrenade.tools.0.label>stock</Miho_Weapon_RifleDefenceGrenade.tools.0.label>
+  <Miho_Weapon_RifleDefenceGrenade.tools.1.label>barrel</Miho_Weapon_RifleDefenceGrenade.tools.1.label>
+
+</LanguageData>

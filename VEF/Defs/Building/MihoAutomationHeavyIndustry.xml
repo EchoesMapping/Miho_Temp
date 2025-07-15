@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_DroneIndustry</defName>
+		<label>미호 드론 공장</label>
+		<description>하늘을 뚫는 생산률의 드론부품 자동 제조 공장 입니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoDroneFactory/MihoDroneFactory</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(9.8,9.8)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>300</Miho_MilitaryGradeBalisticCeramics>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoShaftFurnaceBlu/MihoShaftFurnace</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(5,5)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoShaftFurnace/MihoShaftFurnace</buildingOnGraphic>
+				<numberOfInputs>3</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-3)</li>
+					<li>(2,0,-3)</li>
+					<li>(-2,0,-3)</li>
+
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+		<li>Miho_LightWarDrone</li>
+			<li>Miho_HeavyFactory</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+   		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_DroneIndustry_Factory_One</defName>
+		<building>MihoVFE_DroneIndustry</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>Miho_MilitaryGradeBalisticCeramics</li>
+		</secondItems>
+		<thirdItems>
+			<li>ComponentIndustrial</li>
+		</thirdItems>
+		<amount>
+			<li>20</li>
+			<li>50</li>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_DroneLeg</result>	
+		<yield>1</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.25</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_DroneIndustry_Factory_Two</defName>
+		<building>MihoVFE_DroneIndustry</building>
+		<items>
+			<li>Steel</li>
+		</items>	
+		<secondItems>
+			<li>ComponentIndustrial</li>
+		</secondItems>
+		<thirdItems>
+			<li>ComponentSpacer</li>
+		</thirdItems>
+		<amount>
+			<li>250</li>
+			<li>10</li>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_DroneChassis</result>	
+		<yield>1</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_DroneIndustry_Factory_Three</defName>
+		<building>MihoVFE_DroneIndustry</building>
+		<items>
+			<li>Steel</li>
+		</items>	
+		<secondItems>
+			<li>Miho_MilitaryGradeBalisticCeramics</li>
+		</secondItems>
+		<thirdItems>
+			<li>Plasteel</li>
+		</thirdItems>
+		<amount>
+			<li>10</li>
+			<li>50</li>
+			<li>3</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_DroneArmor</result>	
+		<yield>2</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.25</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_DroneIndustry_Factory_Four</defName>
+		<building>MihoVFE_DroneIndustry</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>RawPosFlower</li>
+		</secondItems>
+		<thirdItems>
+			<li>ComponentIndustrial</li>
+		</thirdItems>
+		<amount>
+			<li>5</li>
+			<li>50</li>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_MechCore</result>	
+		<yield>2</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.25</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+</Defs>

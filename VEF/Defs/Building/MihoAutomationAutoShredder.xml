@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_Shredder</defName>
+		<label>미호 자동분쇄기</label>
+		<description>임시텍스쳐입니다</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoShaftFurnace/MihoShaftFurnace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoShaftFurnaceBlu/MihoShaftFurnace</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(3,3)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>1</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoShaftFurnace/MihoShaftFurnace</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-2)</li>
+					<li>(2,0,0)</li>
+					<li>(-2,0,0)</li>
+
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+			<li>Miho_BasicFactory</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<![CDATA[
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_One</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>Miho_Magma</li>
+		</items>	
+		<amount>
+			<li>20</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+
+		<yield>100</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_Two</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>ChunkSandstone</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+
+		<yield>20</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.33</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_Three</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>ChunkLimestone</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+
+		<yield>20</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.33</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_Four</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>ChunkMarble</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+
+		<yield>20</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.33</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_Five</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>ChunkGranite</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+
+		<yield>20</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.33</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_Shredder_Factory_Six</defName>
+		<building>MihoVFE_Shredder</building>
+		<items>
+			<li>ChunkSlate</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>1000</maxTotalOutput>
+		<result>Miho_CeramicsPaste</result>	
+		<resultSpecialIcon>Things/Items/MihoPasteCeramic/MihoPasteCeramic</resultSpecialIcon>
+		<yield>20</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.33</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	]]>
+</Defs>

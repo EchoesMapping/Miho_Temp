@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Seasonal_SantaTrader</defName>
+    <label>산타의 작은 도우미</label>
+	<combatPower>10</combatPower>
+    <apparelTags Inherit="false">
+
+          <li>MihoSeasonalSanta</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>3000</min>
+      <max>6000</max>
+    </apparelMoney>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.1</Xeno_CelestialMiho>
+				<Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.6</Xeno_CelestialMiho_Arctic>
+				<Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Desert>
+				<Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.03</Xeno_CelestialMiho_Highland>
+				<Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.25</Xeno_CelestialMiho_Highmate>
+
+
+
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+	<apparelRequired>
+          <li>Miho_Apparel_Hat_Winter</li>
+
+          <li>Miho_Apparel_Shell_Padding</li>
+      <li>Miho_Apparel_Under_SeasonalSanta</li>
+    </apparelRequired>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoSeasonalSanta</li>
+        </categories>
+      </li>
+	</backstoryFiltersOverride>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>DevilstrandCloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <stuff>DevilstrandCloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>DevilstrandCloth</stuff>
+      </li>
+    </specificApparelRequirements>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+</Defs>

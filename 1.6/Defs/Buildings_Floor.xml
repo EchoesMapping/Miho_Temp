@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignationCategoryDef>
+		<defName>MihoBuilding</defName>
+		<label>미호</label>
+		<order>401</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+	
+	<ThingDef>
+		<defName>Miho_Tatami</defName>
+		<label>미호 다다미</label>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Floor/Tatami</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>10</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+		<size>(1,2)</size>
+    <costList>
+      <Hay>10</Hay>
+    </costList>
+		<description>다다미 입니다.</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<saveCompressible>false</saveCompressible>
+		<designationHotKey>Misc7</designationHotKey>
+		<designationCategory>MihoBuilding</designationCategory>
+
+	</ThingDef>
+
+
+  <ThingDef ParentName="BenchBase">
+    <defName>Miho_TableMachining</defName>
+    <label>미호 종합작업대</label>
+    <description>인간들의 3D 프린터를 따라한 종합작업대 입니다.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/MihoCommonProd/MihoCommonProd</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+      <Miho_Ceramics>100</Miho_Ceramics>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>MihoBuilding</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>ButcherCorpseMechanoid</li>
+      <li>Miho_ComponentIndustrial</li>
+      <li>Miho_ComponentSpacer</li>
+      <li>Miho_MeattoDust</li>
+
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+		  <li>Miho_WorkAI</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc7</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Miho_CraftingSpot</defName>
+    <label>미호 간이 제작 장소</label>
+    <description>간이 제작 장소 입니다. 원시적인 미호 물건을 만들 수 있습니다.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>MihoBuilding</designationCategory>
+    <uiOrder>2000</uiOrder>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>SmashCorpseMechanoid</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_ReportWorkSpeed">
+        <workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+      </li>
+    </comps>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  
+  <WorkGiverDef>
+    <defName>DoBillsMakeApparel_Miho_TableMachining</defName>
+    <label>장비 만들기</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+				<li>Miho_TableMachining</li> 
+				<li>Miho_CraftingSpot</li> 
+
+    </fixedBillGiverDefs>
+    <verb>제작</verb>
+    <gerund>제작중</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Miho_WorkAI</defName>
+    <label>미호 작업 보조 인공지능</label>
+    <description>4가지 인격이 내장되어있는 작업 보조 AI와 홀로그램 투사기 입니다. 고로, 천상의 용광로, 종합작업대에 연결이 가능합니다.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoSilk/MihoSilk</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>42</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>24000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <JoyGainFactor>1.4</JoyGainFactor>
+      <Beauty>100</Beauty>
+
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Miho_Ceramics>60</Miho_Ceramics>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+
+	</costList>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected><!-- 000 -->
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <joyKind>Miho_WatchWorkAI</joyKind><!-- 000 -->
+		<watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange><!-- 000 -->
+			<watchBuildingStandRectWidth>5</watchBuildingStandRectWidth><!-- 000 -->
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom><!-- 000 -->
+    </building>
+    <researchPrerequisites>
+    </researchPrerequisites>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Art">
+
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.48</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(242,219,255,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+		<li>PlaceWorker_WatchArea</li><!-- 000 -->
+    </placeWorkers>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <JoyKindDef><!-- 000 -->
+		<defName>Miho_WatchWorkAI</defName>
+		<label>Miho_WatchWorkAI</label>
+	</JoyKindDef><!-- 000 -->
+  
+  <JoyGiverDef>
+    <defName>Miho_WatchWorkAI</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass><!-- 000 -->
+    <baseChance>3.5</baseChance>
+    <canDoWhileInBed>false</canDoWhileInBed>
+    <thingDefs>
+      <li>Miho_WorkAI</li>
+    </thingDefs>
+    <jobDef>Miho_WatchWorkAI</jobDef>
+    <joyKind>Miho_WatchWorkAI</joyKind><!-- 000 -->
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+	<desireSit>false</desireSit><!-- 000 -->
+  </JoyGiverDef>
+  
+
+  <JobDef>
+    <defName>Miho_WatchWorkAI</defName>
+    <driverClass>JobDriver_WatchBuilding</driverClass><!-- 000 -->
+    <reportString>AI랑 노는 중.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joyKind>Miho_WatchWorkAI</joyKind><!-- 000 -->
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

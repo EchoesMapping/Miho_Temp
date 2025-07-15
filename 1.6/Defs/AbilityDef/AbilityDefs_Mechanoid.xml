@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_Defence_Hediff</defName>
+    <label>하얀 갑옷의 무사</label>
+    <description>하얀 갑옷의 무사가 당신을 지켜줍니다. 캬~~</description>
+    <hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-48</severityPerDay>
+			</li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Miho_Defence</stateEffecter>
+				<severityIndices>0~5</severityIndices>
+			</li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>0</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <ArmorRating_Sharp>2</ArmorRating_Sharp>
+          <ArmorRating_Blunt>2</ArmorRating_Blunt>
+        </statOffsets>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Miho_Mote_Defence</defName>
+		<graphicData>
+			<texPath>Things/Fleck/Defence</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1.5</fadeInTime>
+			<solidTime>0</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+	
+	<EffecterDef>
+		<defName>Miho_Defence</defName>
+			<children>
+				<li>
+					<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+					<scale>1.6~1.6</scale>
+					<chancePerTick>0.02</chancePerTick>
+					<positionRadius>0.0</positionRadius>
+					<moteDef>Miho_Mote_Defence</moteDef>
+					<speed>0.01~0.01</speed>
+					<angle>0</angle>
+				</li>
+			</children>
+	</EffecterDef>
+	
+ <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_Powerstrike_Hediff</defName>
+    <label>일도 양단</label>
+    <description>무엇이든 갈라드립니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-24</severityPerDay>
+			</li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Miho_Powerstrike</stateEffecter>
+				<severityIndices>0~5</severityIndices>
+			</li>
+    </comps>
+    <stages>
+      <li>
+    <statFactors>
+      <MeleeDamageFactor>2</MeleeDamageFactor>
+    </statFactors>
+        <statOffsets>
+	  <MeleeHitChance>5</MeleeHitChance>    
+        </statOffsets>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Miho_Mote_Powerstrike</defName>
+		<graphicData>
+			<texPath>Things/Fleck/Powerstrike</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1.5</fadeInTime>
+			<solidTime>0</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+
+	
+	<EffecterDef>
+		<defName>Miho_Powerstrike</defName>
+			<children>
+				<li>
+					<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+					<scale>1.25~1.25</scale>
+					<chancePerTick>0.02</chancePerTick>
+					<positionRadius>0.0</positionRadius>
+					<moteDef>Miho_Mote_Powerstrike</moteDef>
+					<speed>0.01~0.01</speed>
+					<angle>0</angle>
+				</li>
+			</children>
+	</EffecterDef>
+	
+ <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_Spiritualize_Hediff</defName>
+    <label>영성화</label>
+    <description>시전자 본인이 메카나이트-초능력 전달체가 되어 주변 시전자들의 신경열 스트레스를 해소시켜 줍니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4</severityPerDay>
+			</li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>9.9</range>
+        <mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>true</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>Miho_SpiritualizeCommand_Hediff</hediff>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicEntropyRecoveryRate>-50</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_SpiritualizeCommand_Hediff</defName>
+    <label>영성화</label>
+    <description>시전자 본인이 메카나이트-초능력 전달체가 되어 주변 시전자들의 신경열 스트레스를 해소시켜 줍니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>9</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicEntropyRecoveryRate>8</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyMax>180</PsychicEntropyMax>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+        <capMods>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+
+ <HediffDef ParentName="RoleStatBuff">
+    <defName>Miho_Sandevistan_Hediff</defName>
+    <label>의식 증진</label>
+    <description>세상이 굉장히 느려보이게 변합니다. 너는 아니지만.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-24</severityPerDay>
+			</li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <stages>
+      <li>
+    <statFactors>
+    </statFactors>
+        <statOffsets>
+	  <MeleeHitChance>5</MeleeHitChance>   
+          <RangedWeapon_Cooldown>-2</RangedWeapon_Cooldown>
+          <AimingDelayFactor>-1</AimingDelayFactor>	  
+        </statOffsets>
+ <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+</Defs>

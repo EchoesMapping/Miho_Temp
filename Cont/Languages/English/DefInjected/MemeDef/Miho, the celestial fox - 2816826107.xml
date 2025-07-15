@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_MihoicCodeofLaw.label>Miho Code of Law</Miho_MihoicCodeofLaw.label>
+  <Miho_MihoicCodeofLaw.description>The most common legal system of the Miho.</Miho_MihoicCodeofLaw.description>
+  <Miho_MihoicCodeofLaw.generalRules.rulesStrings.0>memeLeaderNoun->President</Miho_MihoicCodeofLaw.generalRules.rulesStrings.0>
+  <Miho_MihoicCodeofLaw.generalRules.rulesStrings.1>memeMoralist->Solar Priest</Miho_MihoicCodeofLaw.generalRules.rulesStrings.1>
+  <Miho_MihoicCodeofLaw.generalRules.rulesStrings.2>memeMoralist->Yuta</Miho_MihoicCodeofLaw.generalRules.rulesStrings.2>
+  <Miho_MihoicCodeofLaw.generalRules.rulesStrings.3>memeMoralist->Shimbang</Miho_MihoicCodeofLaw.generalRules.rulesStrings.3>
+  <Miho_MihoicCodeofLaw.generalRules.rulesStrings.4>memeMoralist->Possessed One</Miho_MihoicCodeofLaw.generalRules.rulesStrings.4>
+  <Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.0>episode(tag=meme_Miho_MihoicCodeofLaw)  ->Those bitchs aren't xenohumans? That's even worse to saying those filthy penguins are actually humans.\n\n...\n\nThe interstellar feudal empire of foxes blessed by the star, the Mihos embark on an endless exploration to repay the grace...</Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.0>
+  <Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.1>episode(tag=meme_Miho_MihoicCodeofLaw)  ->I think it's better to make humans as pets. I-It's not about revenge! It's just that you're cute.\n\n...\n\nThe interstellar feudal empire of foxes blessed by the star, the Mihos embark on an endless exploration to repay the grace...</Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.1>
+  <Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.2>episode(tag=meme_Miho_MihoicCodeofLaw)  ->Their hardware is human, but the software is completely fox.\n\n...\n\nThe interstellar feudal empire of foxes blessed by the star, the Mihos embark on an endless exploration to repay the grace...</Miho_MihoicCodeofLaw.descriptionMaker.rules.rulesStrings.2>
+  <Miho_MihoicCodeofLaw.symbolPacks.0.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.0.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.1.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.1.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.2.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.2.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.3.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.3.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.4.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.4.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.5.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.5.adjective>
+  <Miho_MihoicCodeofLaw.symbolPacks.6.adjective>Miho</Miho_MihoicCodeofLaw.symbolPacks.6.adjective>
+</LanguageData>

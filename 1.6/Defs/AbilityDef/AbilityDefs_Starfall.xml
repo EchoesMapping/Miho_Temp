@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_Starfall</defName>		
+		<label>별떨구기</label>
+		<description>하늘에서 운석이 떨어져 다친 경험이 있으신가요? 이번에는 반드시 실패하지 않을겁니다.</description>
+		<iconPath>Icon/Abilities/MihoStarfall</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<groupDef>Miho_Thunder</groupDef>
+		<statBases>
+			<Ability_EntropyGain>450</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.25</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+			<warmupTime>7.5</warmupTime>
+			<range>49.9</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetMechs>True</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Miho_Ability_Starfall_Proj</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Ability_Starfall_Proj</defName>		
+		<label>starfall</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<drawSize>1.3</drawSize>
+
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
+		<projectile Class="MihoLib.ProjectileProperties_fragment">
+			<speed>150</speed>
+			<damageDef>MihoGunshot</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<explosionRadius>0.5</explosionRadius>
+			<preExplosionSpawnThingDef>Miho_SKYIncoming</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<fragmentDef>Miho_Ability_Starfall_ProjSub</fragmentDef>
+			<fragmentCount>8</fragmentCount>
+			<fragmentRange>
+				<max>5</max>
+				<min>1</min>
+			</fragmentRange>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCircle_Big</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Ability_Starfall_ProjSub</defName>		
+		<label>starfall</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>150</speed>
+			<damageDef>MihoGunshotFrag</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<explosionRadius>0.5</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<screenShakeFactor>0</screenShakeFactor>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingSmall</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+		<comps>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>Miho_SKYIncoming</defName>
+		<label>starfall</label>
+		<size>(1, 1)</size>
+		<graphicData>
+			<texPath>Things/Projectile/MihoStarfall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(1, 1)</shadowSize>
+			<explosionRadius>5.5</explosionRadius>
+			<explosionDamage>Miho_MagicBombBig</explosionDamage>
+			<explosionDamageFactor>2</explosionDamageFactor>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<anticipationSound>Shuttle_CrashLanding</anticipationSound>
+			<anticipationSoundTicks>360</anticipationSoundTicks>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>Miho_SKYIncomingSmall</defName>
+		<label>starfall</label>
+		<size>(1, 1)</size>
+		<graphicData>
+			<texPath>Things/Projectile/MihoStarfall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3.75, 3.75)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(1, 1)</shadowSize>
+			<explosionRadius>3.9</explosionRadius>
+			<explosionDamage>Miho_MagicBombBig</explosionDamage>
+			<explosionDamageFactor>0.5</explosionDamageFactor>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<anticipationSound>Shuttle_CrashLanding</anticipationSound>
+			<anticipationSoundTicks>360</anticipationSoundTicks>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef Name="Miho_MeteorBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>1</stackLimit>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+	</ThingDef>
+
+	<ThingDef ParentName="Miho_MeteorBase">
+		<defName>Miho_SKYIncoming_Ready</defName>
+		<label>Miho_SKYIncoming_Ready</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(0.6, 0.2, 0.2)</color>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>Miho_Mote_SKYIncoming_Ready</mote>
+				<maintain>True</maintain>
+				<saveKeysPrefix>glow</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>75</lifespanTicks>
+			</li>
+		</comps>
+		<killedLeavings Inherit="false">
+			<Miho_SKYIncoming>1</Miho_SKYIncoming>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Miho_MeteorBase">
+		<defName>Miho_SKYIncomingSmall_Ready</defName>
+		<label>Miho_SKYIncomingSmall_Ready</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(0.6, 0.2, 0.2)</color>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>Miho_Mote_SKYIncoming_Ready</mote>
+				<maintain>True</maintain>
+				<saveKeysPrefix>glow</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>450</lifespanTicks>
+			</li>
+		</comps>
+		<killedLeavings Inherit="false">
+			<Miho_SKYIncomingSmall>1</Miho_SKYIncomingSmall>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Miho_Mote_SKYIncoming_Ready</defName>
+		<mote>
+			<fadeInTime>1.5</fadeInTime>
+			<solidTime>2</solidTime>
+			<fadeOutTime>1.5</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<growthRate>3</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Things/Fleck/Starfall</texPath>
+			<shaderType>MoteProximityScannerRadius</shaderType>
+			<color>(0, 0, 0, 0.8)</color>
+			<drawSize>0.8</drawSize>
+			<shaderParameters>
+				<_smokeScrollSpeed>0.1</_smokeScrollSpeed>
+				<_rotationSpeed>0.15</_rotationSpeed>
+				<_smokeAmount>0.1</_smokeAmount>
+				<_MainTex>/Things/Fleck/Starfall</_MainTex>
+				<_ScanTex>/Things/Fleck/Starfall</_ScanTex>
+				<_SmokeTex>/Things/Fleck/Starfall</_SmokeTex>
+			</shaderParameters>
+		</graphicData>
+	</ThingDef>
+
+
+	<AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_Fireball_Adept</defName>
+		<label>여우불 화살</label>
+		<description>수십개의 여우불 화살을 하늘로 날려 적에게 내리꽃습니다.</description>
+		<iconPath>Icon/Abilities/MihoFireArrows</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<groupDef>Miho_Fireball</groupDef>
+		<statBases>
+			<Ability_EntropyGain>150</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+			<warmupTime>2.5</warmupTime>
+			<range>39.9</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetMechs>True</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Miho_Fireball_Adept_Proj</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Fireball_Adept_Proj</defName>
+		<label>fire arrow</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<drawSize>1.3</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
+		<projectile Class="MihoLib.ProjectileProperties_fragment">
+			<speed>150</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<explosionRadius>0.5</explosionRadius>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingSmallArrow</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<fragmentDef>Miho_Fireball_Adept_ProjSub</fragmentDef>
+			<fragmentCount>21</fragmentCount>
+			<fragmentRange>
+				<max>5</max>
+				<min>1</min>
+			</fragmentRange>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCircle_Big</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Fireball_Adept_ProjSub</defName>
+		<label>fire arrow</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>150</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<explosionRadius>0.5</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<screenShakeFactor>0</screenShakeFactor>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingSmallArrow</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+		<comps>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>Miho_SKYIncomingSmallArrow</defName>
+		<label>fire arrow</label>
+		<size>(1, 1)</size>
+		<graphicData>
+			<texPath>Things/Projectile/MihoArrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(1, 1)</shadowSize>
+			<explosionRadius>1.1</explosionRadius>
+			<explosionDamage>Miho_MagicBomb</explosionDamage>
+			<explosionDamageFactor>0.12</explosionDamageFactor>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<anticipationSound>Bow_Large</anticipationSound>
+			<anticipationSoundTicks>360</anticipationSoundTicks>
+		</skyfaller>
+	</ThingDef>
+
+	<AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_Polaris</defName>
+		<label>으뜸별</label>
+		<aiCanUse>true</aiCanUse>
+		<description>다루기 힘든 플라즈마화 메카나이트를 발사합니다. 중장갑 개체에 효과적입니다.</description>
+		<iconPath>Icon/Abilities/MihoPolaris</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<groupDef>Miho_Fireball</groupDef>
+		<statBases>
+			<Ability_EntropyGain>225</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.1</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+			<warmupTime>7.5</warmupTime>
+			<range>49.9</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetMechs>True</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MihoPolaris_Proj</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<DamageDef ParentName="Bomb">
+		<defName>Miho_MagicBombPolaris</defName>
+		<label>polaris mechanite-arcane</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<additionalHediffs>
+			<li>
+				<hediff>Miho_Plasma_Hediff</hediff>
+				<severityPerDamageDealt>0.028</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>100</minDamageToFragment>
+		<defaultDamage>128</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.9</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>0.5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+		<explosionCellFleck>Miho_MagicBomb_Blast</explosionCellFleck>
+		<explosionColorCenter>(1, 0.8, 0.8)</explosionColorCenter>
+		<explosionColorEdge>(1, 0.8, 0.8)</explosionColorEdge>
+		<soundExplosion>Miho_BlastImpact</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>MihoPolaris_Proj</defName>
+		<label>polaris fireball</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Miho_MagicBombPolaris</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationBase>0.92</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>150</speed>
+			<explosionRadius>0.5</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingPolaris</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCirclePolarisProj</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>Miho_SKYIncomingPolaris</defName>
+		<label>starfall</label>
+		<size>(1, 1)</size>
+		<graphicData>
+			<texPath>Things/Projectile/MihoPolaris</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(1, 1)</shadowSize>
+			<explosionRadius>2.1</explosionRadius>
+			<explosionDamage>Miho_MagicBombPolaris</explosionDamage>
+			<explosionDamageFactor>1</explosionDamageFactor>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<anticipationSound>Shuttle_CrashLanding</anticipationSound>
+			<anticipationSoundTicks>360</anticipationSoundTicks>
+		</skyfaller>
+	</ThingDef>
+
+</Defs>

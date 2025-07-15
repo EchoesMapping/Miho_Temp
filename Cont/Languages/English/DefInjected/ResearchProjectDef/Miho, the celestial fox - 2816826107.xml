@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_BasicFactory.label>Miho Basic Industry</Miho_BasicFactory.label>
+  <Miho_BasicFactory.description>Basic technology to produce the ceramic.</Miho_BasicFactory.description>
+  <Miho_HeavyFactory.label>Miho Heavy Industry</Miho_HeavyFactory.label>
+  <Miho_HeavyFactory.description>Weapons, Armors, Drones... we can mass produce anything.</Miho_HeavyFactory.description>
+  <Miho_MechHack.label>Mechanite Hacking</Miho_MechHack.label>
+  <Miho_MechHack.description>Learn the technology to hack tiny mechanoids, almost invisible to the eye. Viruses can also be considered biological mechanites. The main purpose of this technology is to modify Miho's psychic serum.</Miho_MechHack.description>
+  <Miho_MechCore.label>Heavy Mechanite Core</Miho_MechCore.label>
+  <Miho_MechCore.description>Develop technology to create a core that allows perfect mechanite circulation.</Miho_MechCore.description>
+  <Miho_Persona.label>Orchestrated objective reduction Theory</Miho_Persona.label>
+  <Miho_Persona.description>Learn the technology to embed a quantum soul into a mechanical device.</Miho_Persona.description>
+  <Miho_Celestial.label>Transcendental Mass Weaving</Miho_Celestial.label>
+  <Miho_Celestial.description>Huge alloy production plant supported with persona AI. Huge alloy production plant supported with persona AI. Allows the creation of Celestial Scales by alloying the core of a neutron star with exotic materials.</Miho_Celestial.description>
+  <Miho_Drone.label>Miho Basic Mechanoid</Miho_Drone.label>
+  <Miho_Drone.description>Technology to develop basic mechanoids.</Miho_Drone.description>
+  <Miho_GuardDrone.label>Miho Turret Mechanoid</Miho_GuardDrone.label>
+  <Miho_GuardDrone.description>Technology to connect mechanoids and turrets.</Miho_GuardDrone.description>
+  <Miho_LightWarDrone.label>Miho War Mechanoid</Miho_LightWarDrone.label>
+  <Miho_LightWarDrone.description>Technology to develop mechanoids used in full-scale warfare.</Miho_LightWarDrone.description>
+  <Miho_CommandDrone.label>Psybase Drone</Miho_CommandDrone.label>
+  <Miho_CommandDrone.description>Technology to develop mechanoids integrated with psychic abilities.</Miho_CommandDrone.description>
+  <Miho_HeavyWarDrone.label>Miho Heavy War Mechanoid</Miho_HeavyWarDrone.label>
+  <Miho_HeavyWarDrone.description>Develop mechanoids that can serve as light tanks.</Miho_HeavyWarDrone.description>
+  <Miho_HeavyWarBattery.label>Mechanoid Artillery Battery</Miho_HeavyWarBattery.label>
+  <Miho_HeavyWarBattery.description>Develop mechanoids equipped with cluster artillery batteries.</Miho_HeavyWarBattery.description>
+  <Miho_HeavyPlasma.label>Infantry Joint Operations</Miho_HeavyPlasma.label>
+  <Miho_HeavyPlasma.description>Develop effective tactical systems.</Miho_HeavyPlasma.description>
+  <Miho_Weapon.label>Miho Weapon</Miho_Weapon.label>
+  <Miho_Weapon.description>Can produce simple weapons for the Miho.</Miho_Weapon.description>
+  <Miho_HeavyWeapon.label>Miho Precision Weapon</Miho_HeavyWeapon.label>
+  <Miho_HeavyWeapon.description>Can produce precision weapons for the Miho.</Miho_HeavyWeapon.description>
+  <Miho_PlasmaWeapon.label>Miho Plasma Weapon</Miho_PlasmaWeapon.label>
+  <Miho_PlasmaWeapon.description>Can produce weapons for the Miho that utilize plasma state elements.</Miho_PlasmaWeapon.description>
+  <Miho_ApparelBasic.label>Miho Culture</Miho_ApparelBasic.label>
+  <Miho_ApparelBasic.description>Learn about Miho culture.</Miho_ApparelBasic.description>
+  <Miho_ApparelAdvanced.label>Miho Advanced Clothing</Miho_ApparelAdvanced.label>
+  <Miho_ApparelAdvanced.description>Can produce complex clothing for the Miho.</Miho_ApparelAdvanced.description>
+  <Miho_Silk.label>Ebonsilk</Miho_Silk.label>
+  <Miho_Silk.description>Can produce silk that is soft and heat-resistant.</Miho_Silk.description>
+  <Miho_ApparelEltex.label>Miho Eltex Clothing</Miho_ApparelEltex.label>
+  <Miho_ApparelEltex.description>Can produce Eltex clothing that enhances psychic abilities.</Miho_ApparelEltex.description>
+  <Miho_ApparelAssassin.label>Miho Assassin Clothing</Miho_ApparelAssassin.label>
+  <Miho_ApparelAssassin.description>Can produce assassin clothing that enhances physical abilities.</Miho_ApparelAssassin.description>
+  <Miho_ApparelSorcerees.label>Miho Sorcerees Clothing</Miho_ApparelSorcerees.label>
+  <Miho_ApparelSorcerees.description>Can produce sorcerees clothing that enhances mechanite-magic abilities.</Miho_ApparelSorcerees.description>
+  <Miho_VerminControlWeapon.label>Vermin Control</Miho_VerminControlWeapon.label>
+  <Miho_VerminControlWeapon.description>As always, the ugly and useless animals were Vermin. There is a good weapon to kill such friends.</Miho_VerminControlWeapon.description>
+</LanguageData>

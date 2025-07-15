@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef  ParentName="TileMetalBase">
+    <defName>Miho_Ceramics_Floor</defName>
+    <label>미호 세라믹 타일</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>청결하고 무던한 세라믹 타일 입니다.</description>
+    <texturePath>Surface/MihoCeramics</texturePath>
+    <color>(0.84, 0.84, 0.84)</color>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.15</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+
+    </statBases>
+    <costList>
+      <Miho_Ceramics>6</Miho_Ceramics>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="TileMetalBase">
+    <defName>Miho_CeramicsBlue_Floor</defName>
+    <label>미호 세라믹 타일 (청)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>청결하고 무던한 세라믹 타일 입니다.</description>
+    <texturePath>Surface/MihoCeramics</texturePath>
+    <color>(0.26, 0.43, 0.48)</color>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.15</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+
+    </statBases>
+    <costList>
+      <Miho_Ceramics>6</Miho_Ceramics>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="TileMetalBase">
+    <defName>Miho_CeramicsGood_Floor</defName>
+    <label>고급 미호 세라믹 바닥</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>마치 최고급 대리석 같은 아름다운 세라믹 타일 입니다.</description>
+    <texturePath>Surface/MihoCeramicsSmooth</texturePath>
+    <color>(0.88, 0.88, 0.88)</color>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>4</Beauty>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+	  </statBases>
+    <costList>
+      <Miho_Ceramics>8</Miho_Ceramics>
+      <Silver>10</Silver>
+
+    </costList>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Miho_HeavyFactory</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>
+</Defs>

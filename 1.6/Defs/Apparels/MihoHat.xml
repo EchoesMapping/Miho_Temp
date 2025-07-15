@@ -1,0 +1,1463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartGroupDef>
+		<defName>MihoEars</defName>
+		<label>MihoEars</label>
+		<listOrder>203</listOrder>
+	</BodyPartGroupDef>
+
+	<ThingCategoryDef>
+		<defName>Miho_Headgear</defName>
+		<label>Miho Headgear</label>
+		<parent>Miho_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_Winter</defName>
+		<label>미호 비니</label>
+		<description>두껍고 따뜻한 모자입니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatWinterNew/HeadHatWinter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<generateCommonality>0.1</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>Miho_ApparelBasic</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>Miho_CraftingSpot</li>
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>MihoEars</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatWinterNew/HeadHatWinter</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MihoCommonNecessaryHat</li>
+				<li>MihoEars</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Mask_Eltex</defName>
+		<label>미호 엘텍스 마스크</label>
+		<description>흑단 목재로 만들어진 초능력 증진 마스크 입니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadMaskEltexOne/HeadMaskEltexOne</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costList>
+			<WoodLog>60</WoodLog>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.10</NegotiationAbility>
+			<SocialImpact>0.10</SocialImpact>
+			<PsychicEntropyRecoveryRate>0.9</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>30</PsychicEntropyMax>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<layers>
+				<li>Miho_Special</li>
+			</layers>
+			<wornGraphicPath>Miho/Apparel/HeadMaskEltexOne/HeadMaskEltexOne</wornGraphicPath>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups Inherit="False">
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>Gunlink</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>Miho_ApparelEltex</researchPrerequisite>
+
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Miho_EltexMask_Hediff</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+	</ThingDef>
+	<HediffDef>
+		<defName>Miho_EltexMask_Hediff</defName>
+		<label>Masked</label>
+		<labelNoun>Masked</labelNoun>
+		<description>Masked</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_Sorceress</defName>
+		<label>미호 소서리스모</label>
+		<description>체내 메카나이트들을 활발하게 만들어주는 고급 모자입니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatEltex/HeadHatEltex</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Miho_Ebony_SilkCloth>75</Miho_Ebony_SilkCloth>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.0</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<SocialImpact>0.05</SocialImpact>
+			<PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>120</PsychicEntropyMax>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatEltex/HeadHatEltex</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoRoyal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_ApparelSorcerees</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_EltexCaptain</defName>
+		<label>미호 엘텍스 장교모</label>
+		<description>미호 제국의 고위 장교들이 입는 장교모 입니다. 돌격 지휘 스킬을 사용 할 수 있습니다. 가끔 시장에 풀리는 중고 장교복들은 페티시적인 요소 때문에 인기가 많습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatCaptain/HeadHatCaptain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costList>
+			<Gold>1</Gold>
+			<Miho_Ebony_SilkCloth>60</Miho_Ebony_SilkCloth>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>0.25</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.10</NegotiationAbility>
+			<SocialImpact>0.10</SocialImpact>
+			<PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>15</PsychicEntropyMax>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoRoyal</li>
+				<li>Royal</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>Miho_ApparelEltex</researchPrerequisite>
+
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Miho_EltexCaptain_Hediff</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>Miho_EltexCaptain_Hediff</defName>
+		<label>Masked</label>
+		<labelNoun>Masked</labelNoun>
+		<description>Masked</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>Miho_Ability_Command_Charge</abilityDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>Miho_EltexCaptain_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Miho_EltexCaptain_Hediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingHediffs>
+			<li>Miho_OrnatedCaptain_Hediff</li>
+		</nullifyingHediffs>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+			<li>Kind</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>오만해짐</label>
+				<description>이 옷이 안보여? 난 더 많은 특권이 필요해!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+	<AbilityDef ParentName="MihoWordOfBase">
+		<defName>Miho_Ability_Command_Charge</defName>
+		<label>돌격 지휘</label>
+		<description>초능력을 통한 텔레파시로 효율적인 돌격 명령을 내립니다.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<iconPath>Icon/Abilities/Command_Charge</iconPath>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+			<Ability_PsyfocusCost>0.25</Ability_PsyfocusCost>			<!-- Minimum cost -->
+			<Ability_Duration>1000</Ability_Duration>
+		</statBases>
+		<groupDef>Miho_Word</groupDef>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Miho_Command_Charge_Hediff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>Miho_Command_Charge_Hediff</defName>
+		<label>돌격 지휘</label>
+		<description>"아무튼 꼬라박아! 그리고 이겨!"</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>true</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>Miho_Command_ChargeCommand_Hediff</hediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>1</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>Miho_Command_ChargeCommand_Hediff</defName>
+		<label>돌격 지휘 받음</label>
+		<description>돌격 지휘를 받았습니다.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>9</maxDistance>
+				<customMote>Mote_CombatCommandLinkLine</customMote>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>1</MoveSpeed>
+					<MeleeHitChance>3</MeleeHitChance>
+				</statOffsets>
+				<statFactors>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+				</statFactors>
+				<capMods>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<AbilityDef ParentName="MihoWordOfBase">
+		<defName>Miho_Ability_Command_Mental</defName>
+		<label>격려 지휘</label>
+		<description>초능력을 통한 텔레파시로 주변 인물들을 격려합니다.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<iconPath>Icon/Abilities/Command_Mental</iconPath>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+			<Ability_PsyfocusCost>0.4</Ability_PsyfocusCost>			<!-- Minimum cost -->
+			<Ability_Duration>1000</Ability_Duration>
+		</statBases>
+		<groupDef>Miho_Word</groupDef>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Miho_Command_Mental_Hediff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>Miho_Command_Mental_Hediff</defName>
+		<label>격려</label>
+		<description>"아무튼 열심히 해봐!"</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>Mote_WorkCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>Miho_Command_MentalCommand_Hediff</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef ParentName="WorkRoleAuraBuffHediffBase">
+		<defName>Miho_Command_MentalCommand_Hediff</defName>
+		<label>격려 받음</label>
+		<description>초능력으로 격려를 받아 무드 보너스를 받았습니다.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<stages>
+			<li>
+				<statOffsets>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>Miho_Command_MentalCommand_Hediff_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Miho_Command_MentalCommand_Hediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>격려 받음</label>
+				<description>완장을 찬 정착민이 이렇게 말해주니까 난 힘낼 수 있어.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_ShooterCap</defName>
+		<label>미호 택티컬 캡</label>
+		<description>전술적으로 보이는 단단한 캡모자 입니다. 헤드셋은 누가 내용물을 다 뜯어갔지만. 어짜피 귀 구조상 쓸모가 없으니 상관이 없습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatShooterCap/HeadHatShooterCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>15</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.0</Mass>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			<RangedWeapon_Cooldown>-0.05</RangedWeapon_Cooldown>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatShooterCap/HeadHatShooterCap</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_Militia</defName>
+		<label>미호 트루퍼 헬멧</label>
+		<description>병사들에게 지급되는 헬멧입니다. 빠른 조준에 중점이 맞춰져 있습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitia</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>5</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedWeapon_Cooldown>-0.05</RangedWeapon_Cooldown>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitia</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_MilitiaEar</defName>
+		<label>미호 트루퍼 헬멧 (귀)</label>
+		<description>병사들에게 지급되는 헬멧입니다. 귀를 보호 할 수 있어서 방호력만큼은 더 좋다고 할 수 있습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaEared</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>65</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>10</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>1.8</Mass>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>MihoEars</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaEared</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+				<li>MihoEars</li>
+
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_MilitiaVegi</defName>
+		<label>미호 트루퍼 헬멧 (야채)</label>
+		<description>병사들에게 지급되는 헬멧입니다. 귀를 보호 할 수 있어서 방호력만큼은 더 좋다고 할 수 있습니다. 위장포처럼 생긴거는 위장용이 아니라 장식이나 간식용인것 같습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaVegi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>65</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>5</Miho_MilitaryGradeBalisticCeramics>
+			<Hay>10</Hay>
+
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>1.8</Mass>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>MihoEars</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaVegi</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+				<li>MihoEars</li>
+
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_MilitiaMedic</defName>
+		<label>미호 메딕 헬멧</label>
+		<description>군의관들에게 지급되는 헬멧입니다. 생존성에 중점이 맞춰져 있습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaMedic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>10</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaMedic</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMedic</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_MilitiaShoot</defName>
+		<label>미호 트루퍼 헬멧</label>
+		<description>병사들에게 지급되는 헬멧입니다. 빠른 조준에 중점이 맞춰져 있습니다. 뭔가 이상한 언어가 쓰여있습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaShoot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Miho_MilitaryGradeBalisticCeramics>5</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedWeapon_Cooldown>-0.05</RangedWeapon_Cooldown>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatMilitia/HeadHatMilitiaShoot</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_Weapon</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_Worker</defName>
+		<label>미호 안전모</label>
+		<description>위험한 곳에서 근무할때 필수인 안전모 입니다. 당연하지만, 미호의 목숨값보단 저렴합니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatWorker/HeadHatWorker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<Miho_Ceramics>30</Miho_Ceramics>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1.25</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>MihoEars</li>
+
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatWorker/HeadHatWorker</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoMilitia</li>
+				<li>MihoEars</li>
+
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_BasicFactory</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_PMC</defName>
+		<label>미호 정예 트루퍼 헬멧</label>
+		<description>PMC 병사들에게 지급되는 구형 헬멧입니다. 오래된만큼 전장에서의 신뢰성이 높습니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatPMCNew/HeadHatPMC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
+			<Plasteel>25</Plasteel>
+
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+
+			<StuffEffectMultiplierArmor>1.12</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.14</MoveSpeed>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Eyes</li>
+				<li>MihoEars</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatPMCNew/HeadHatPMC</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoPMC</li>
+				<li>MihoEars</li>
+
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Miho_Apparel_Hat_Pariah</defName>
+		<label>미호 퍼라이어 배틀 헬멧</label>
+		<description>사용자의 체내 메카나이트로 작동되는 안티-싸이킥 헬멧입니다. 원거리 전투능력 상승과 완벽한 사용자 보호를 추구합니다.</description>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatPariahHelmNew/HeadHatPariah</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
+			<Plasteel>25</Plasteel>
+
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>1</Mass>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.6</MoveSpeed>
+			<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.25</PsychicSensitivity>
+			<ToxicEnvironmentResistance>1.8</ToxicEnvironmentResistance>
+
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatPariahHelmNew/HeadHatPariah</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>MihoPMC</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Miho_ApparelAssassin</researchPrerequisite>
+
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="false">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Miho_Pariah_Hediff</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>Miho_Pariah_Hediff</defName>
+		<label>아주 기초적인 임플란트</label>
+		<labelNoun>아주 기초적인 임플란트</labelNoun>
+		<description>아주 기초적인 임플란트.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>Miho_Ability_Sandevistan</abilityDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<AbilityDef ParentName="MihoWordOfBase">
+		<defName>Miho_Ability_Sandevistan</defName>
+		<label>뷸릿 타임</label>
+		<description>사이버펑크 스러운 의식 증진 장치입니다. 별로 기초적인 기술은 아닌거 같습니다.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<iconPath>Icon/Abilities/MihoPowerstrike</iconPath>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+			<Ability_EntropyGain>75</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.15</Ability_PsyfocusCost>			<!-- Minimum cost -->
+		</statBases>
+		<groupDef>Miho_Sandevistan</groupDef>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Miho_Sandevistan_Hediff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

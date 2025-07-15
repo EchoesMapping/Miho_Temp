@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobHediff.JobHediffDef>
+		<defName>Miho_Mech_HeavyMechCore</defName>
+		<targetRace>Miho_Mech_HeavyMechCore</targetRace>
+		<jobDefs>
+			<li>Goto</li>
+			<li>Follow</li>
+			<li>FollowClose</li>
+			<li>FollowRoper</li>
+			<li>GotoSafeTemperature</li>
+			<li>GotoWander</li>
+			<li>HaulToTransporter</li>
+			<li>Flee</li>
+			<li>FleeAndCower</li>
+			<li>HaulToCell</li>
+			<li>HaulToContainer</li>
+
+
+		</jobDefs>
+		<hediffDefs>
+			<li>Miho_Summon_DeadMech</li>
+		</hediffDefs>
+		<tickMultiflier>60</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+		<!--
+		번역에 쓸 수 있는것들
+		{0} : pawn.def.LabelCap,
+        {1} : pawn.LabelShort,
+        {2} : hediffDefs[j].label
+		{3} : pawnHediff.Severity
+		
+		<maxHediffSevertyMessage>BBBBBB</maxHediffSevertyMessage>-->
+	</JobHediff.JobHediffDef>
+
+	<JobHediff.JobHediffDef>
+		<defName>Miho_Mech_HeavyRocketCore</defName>
+		<targetRace>Miho_Mech_HeavyRocketCore</targetRace>
+		<jobDefs>
+			<li>Goto</li>
+			<li>Follow</li>
+			<li>FollowClose</li>
+			<li>FollowRoper</li>
+			<li>GotoSafeTemperature</li>
+			<li>GotoWander</li>
+			<li>HaulToTransporter</li>
+			<li>Flee</li>
+			<li>FleeAndCower</li>
+			<li>HaulToCell</li>
+			<li>HaulToContainer</li>
+
+
+		</jobDefs>
+		<hediffDefs>
+			<li>Miho_Summon_DeadMech</li>
+		</hediffDefs>
+		<tickMultiflier>60</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+		<!--
+		번역에 쓸 수 있는것들
+		{0} : pawn.def.LabelCap,
+        {1} : pawn.LabelShort,
+        {2} : hediffDefs[j].label
+		{3} : pawnHediff.Severity
+		
+		<maxHediffSevertyMessage>BBBBBB</maxHediffSevertyMessage>-->
+	</JobHediff.JobHediffDef>
+  <!-- Tunneler -->
+  <ThingDef ParentName="MihoLightMechanoid">
+    <defName>Miho_Mech_HeavyMechCore</defName>
+    <label>미호 대형 메카나이트 코어</label>
+    <description>미호들의 대형 메카노이드에 쓰이는 거대한 메카나이트 엔진 입니다.</description>
+    <fillPercent>0.55</fillPercent>
+
+    <statBases>
+      <MoveSpeed>0.4</MoveSpeed>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <killedLeavings>
+      <Miho_HeavyMechCore>1</Miho_HeavyMechCore>
+    </killedLeavings>
+    <race>
+      <body>Pikeman</body>
+      <baseBodySize>2.4</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0.2</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+      <mechEnabledWorkTypes>
+      </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+        </mechWorkTypePriorities>
+	  <hasCorpse>false</hasCorpse>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.6</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_HeavyMechCore</defName>
+    <label>미호 대형 메카나이트 코어</label>
+    <race>Miho_Mech_HeavyMechCore</race>
+    <combatPower>999</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.1</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.1</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+    </abilities>
+      <weaponTags>
+      </weaponTags>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_HeavyMechCore</defName>
+    <label>대형 메카나이트 코어 제작</label>
+    <description>대형 메카나이트 코어 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_HeavyMechCore>1</Miho_Mech_HeavyMechCore>
+    </products>
+    <researchPrerequisite>Miho_MechCore</researchPrerequisite>
+  </RecipeDef>
+
+  <ThingDef ParentName="MihoLightMechanoid">
+    <defName>Miho_Mech_HeavyRocketCore</defName>
+    <label>미호 포병 컴퓨터</label>
+    <description>다연장 로켓 메카노이드의 장전과 방열, 포격을 관장하는 컴퓨터칩 입니다.</description>
+    <fillPercent>0.55</fillPercent>
+
+    <statBases>
+      <MoveSpeed>0.4</MoveSpeed>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <killedLeavings>
+      <Miho_HeavyRocketCore>1</Miho_HeavyRocketCore>
+    </killedLeavings>
+    <race>
+      <body>Pikeman</body>
+      <baseBodySize>2.4</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0.2</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+      <mechEnabledWorkTypes>
+      </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+        </mechWorkTypePriorities>
+	  <hasCorpse>false</hasCorpse>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.6</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_HeavyRocketCore</defName>
+    <label>미호 포병 컴퓨터</label>
+    <race>Miho_Mech_HeavyRocketCore</race>
+    <combatPower>999</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.1</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.1</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+    </abilities>
+      <weaponTags>
+      </weaponTags>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_HeavyRocketCore</defName>
+    <label>미호 포병 컴퓨터 제작</label>
+    <description>미호 포병 컴퓨터 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_HeavyRocketCore>1</Miho_Mech_HeavyRocketCore>
+    </products>
+    <researchPrerequisite>Miho_Persona</researchPrerequisite>
+  </RecipeDef>
+  
+</Defs>

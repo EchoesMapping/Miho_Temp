@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_I_StunTalisman_Hediff</defName>
+		<description>무의식의 부적</description>
+		<label>무의식의 부적</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_StunTalisman</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_II_Ensnare_Hediff</defName>
+		<description>인스네어</description>
+		<label>인스네어</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Ensnare</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_II_Jump_Hediff</defName>
+		<description>도약</description>
+		<label>도약</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Jump</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_I_Powerstrike_Hediff</defName>
+		<description>반갈죽</description>
+		<label>반갈죽</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Powerstrike</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_I_Hawk_Hediff</defName>
+		<description>사냥매</description>
+		<label>사냥매</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Hawk</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_II_FireballSmall_Hediff</defName>
+		<description>여우잔불</description>
+		<label>여우잔불</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Fireball_Small</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_III_Fireball_Hediff</defName>
+		<description>여우불</description>
+		<label>여우불</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Fireball</abilityDef>
+      </li>
+
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_FireballAdept_Hediff</defName>
+		<description>여우불 화살</description>
+		<label>여우불 화살</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Fireball_Adept</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Thunder_Hediff</defName>
+		<description>여우번개</description>
+		<label>여우번개</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_PredatoryGaze</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Serenity_Hediff</defName>
+		<description>평온의 꼬리침</description>
+		<label>평온의 꼬리침</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Serenity</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_III_Inspiration_Hediff</defName>
+		<description>응원의 꼬리침</description>
+		<label>응원의 꼬리침</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Inspiration</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_I_Love_Hediff</defName>
+		<description>유혹의 꼬리침</description>
+		<label>유혹의 꼬리침</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Love</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_III_Defence_Hediff</defName>
+		<description>보호의 토템</description>
+		<label>보호의 토템</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Defence</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Shield_Hediff</defName>
+		<description>여우 보호막</description>
+		<label>여우 보호막</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Shield</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Heal_Hediff</defName>
+		<description>치유의 손길</description>
+		<label>치유의 손길</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Heal</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_I_Fox_Hediff</defName>
+		<description>운반여우</description>
+		<label>운반여우</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Spawn_Fox</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_II_Butterfly_Hediff</defName>
+		<description>칼날나비</description>
+		<label>칼날나비</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Spawn_Butterfly</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_III_Skip_Hediff</defName>
+		<description>재조립</description>
+		<label>재조립</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Skip</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Turret_Hediff</defName>
+		<description>여우 비콘</description>
+		<label>여우 비콘</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Spawn_Turret</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Skill_IV_Batto_Hediff</defName>
+		<description>인스네어</description>
+		<label>인스네어</label>
+		<comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Batto</abilityDef>
+      </li>
+		</comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+</HediffDef>
+</Defs>

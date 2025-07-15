@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Miho_FlowertoHive</defName>
+    <label>메카나이트 반사군체 제작 x4</label>
+    <description>메카나이트 반사군체을 제작합니다.</description>
+    <jobString>메카나이트 반사군체 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+
+	
+    <workAmount>18800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPosFlower</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>RawPosFlower</li>
+        <li>ComponentSpacer</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechCore>4</Miho_MechCore>
+    </products>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Miho_FlowertoHiveTwo</defName>
+    <label>메카나이트 반사군체 제작</label>
+    <description>메카나이트 반사군체을 제작합니다.</description>
+    <jobString>메카나이트 반사군체 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+
+	
+    <workAmount>8800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPosFlower</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>RawPosFlower</li>
+        <li>ComponentIndustrial</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechCore>1</Miho_MechCore>
+    </products>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  
+  <RecipeDef>
+    <defName>Miho_DroneLeg</defName>
+    <label>드론 다리 제작</label>
+    <description>드론 다리를 제작합니다.</description>
+    <jobString>드론 다리 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+
+	
+    <workAmount>16800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>Miho_MilitaryGradeBalisticCeramics</li>
+        <li>ComponentIndustrial</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_DroneLeg>1</Miho_DroneLeg>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Miho_DroneChassis</defName>
+    <label>드론 차대 제작</label>
+    <description>드론 차대를 제작합니다.</description>
+    <jobString>드론 차대 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+
+	
+    <workAmount>65500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>ComponentSpacer</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_DroneChassis>1</Miho_DroneChassis>
+    </products>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Miho_DroneArmor</defName>
+    <label>드론 장갑판 제작</label>
+    <description>드론 장갑판을 제작합니다.</description>
+    <jobString>드론 장갑판 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+
+	
+    <workAmount>18500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Miho_MilitaryGradeBalisticCeramics</li>
+        <li>Plasteel</li>
+
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_DroneArmor>2</Miho_DroneArmor>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Miho_CeramictoDrill</defName>
+    <label>세라믹 드릴 제작</label>
+    <description>세라믹 드릴을 제작합니다.</description>
+    <jobString>세라믹 드릴 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>4000</workAmount>
+    <recipeUsers>
+      <li>Miho_TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_CeramicDrill>5</Miho_CeramicDrill>
+    </products>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  <!--=============== Pure stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_Magma</defName>
+    <label>식은 마그마</label>
+    <description>식은 마그마 입니다. 세라믹의 재료로 쓰거나 철을 정제할수 있습니다</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMagma/MihoMagma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>750</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>0.01</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_CeramicDrill</defName>
+    <label>세라믹 드릴</label>
+    <description>세라믹 드릴 입니다. 플라스틸 드릴보다 약합니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMagma/MihoMagma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>4</MarketValue>
+      <Mass>8</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_PlasteelDrill</defName>
+    <label>플라스틸 드릴</label>
+    <description>플라스틸 드릴 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMagma/MihoMagma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>21</MarketValue>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechCore</defName>
+    <label>메카나이트 반사군체</label>
+    <description>메카나이트 군집으로, 인공지능이 없는 미호의 드론이 명령을 수행할 수 있는 원천입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechCore/MihoMechCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>148</MarketValue>
+      <Mass>2.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_DroneLeg</defName>
+    <label>중대형 드론 다리</label>
+    <description>중대형 드론 다리 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechLeg/MihoMechLeg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>214</MarketValue>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_DroneChassis</defName>
+    <label>중대형 드론 차대</label>
+    <description>중대형 드론 차대 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMagma/MihoMagma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1250</MarketValue>
+      <Mass>50</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_DroneArmor</defName>
+    <label>중대형 드론 장갑판</label>
+    <description>중대형 드론 장갑판 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechArmor/MihoMechArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>125</MarketValue>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

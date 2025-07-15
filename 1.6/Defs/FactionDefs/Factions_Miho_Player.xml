@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+  <FactionDef Abstract="True" Name="MihoFactionBase" Parent="FactionBase">
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+		  <li>(1, 1, 1)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="MihoFactionBase">
+    <defName>Miho_PlayerColony</defName>
+    <label>미호 마법사</label>
+    <description>Your own Miho Settlement.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Miho_PlayerColonist</basicMemberKind>
+	<pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedCultures><li>MihoCultures</li></allowedCultures>
+    <melaninRange>0~0.31</melaninRange>
+
+	<backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icon/Faction/PlayerMiho</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+	<!--1.3에서 삭제됨-->
+	
+	<!--	<hairTags>
+			<li>Rural</li>
+		</hairTags> -->
+	
+	
+	
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Miho_Ebony_SilkCloth</li>
+        <li>Cloth</li>
+
+      </thingDefs>
+    </apparelStuffFilter>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <settlementNameMaker>NamerSettlement_Miho</settlementNameMaker>
+	<colorSpectrum>
+		  <li>(1, 1, 1)</li>
+    </colorSpectrum>
+	    <raidLootValueFromPointsCurve><!-- 1.3에선 지정해주지 않으면 경고메세지가 뜸-->
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+	
+  </FactionDef>
+  
+
+  
+  <FactionDef Parent="MihoFactionBase">
+    <defName>Miho_PlayerColonyNonMagic</defName>
+    <label>미호 개척단</label>
+    <description>Your own Miho Settlement.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Miho_PlayerColonistNonMagic</basicMemberKind>
+	<pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedCultures><li>MihoCultures</li></allowedCultures>
+    <melaninRange>0~0.31</melaninRange>
+
+	<backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icon/Faction/PlayerMiho</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+	<!--1.3에서 삭제됨-->
+	
+	<!--	<hairTags>
+			<li>Rural</li>
+		</hairTags> -->
+	
+	
+	
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Miho_Ebony_SilkCloth</li>
+        <li>Cloth</li>
+
+      </thingDefs>
+    </apparelStuffFilter>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <settlementNameMaker>NamerSettlement_Miho</settlementNameMaker>
+	<colorSpectrum>
+		  <li>(1, 1, 1)</li>
+    </colorSpectrum>
+	    <raidLootValueFromPointsCurve><!-- 1.3에선 지정해주지 않으면 경고메세지가 뜸-->
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+	
+  </FactionDef>
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Miho_Start.label>For the Single tailed Comet</Miho_Start.label>
+	<Miho_Start.description>How will the story of this solitary psycaster unfold?</Miho_Start.description>
+	<Miho_Start.scenario.name>For the Single tailed Comet</Miho_Start.scenario.name>
+	<Miho_Start.scenario.description>How will the story of this solitary psycaster unfold?</Miho_Start.scenario.description>
+	<Miho_Start.scenario.summary>This is the turning point in the life of a fox.</Miho_Start.scenario.summary>
+	<Miho_Start.scenario.parts.ConfigurePawnsXenotypes.customSummary>Start with 1 Ordinary Miho.</Miho_Start.scenario.parts.ConfigurePawnsXenotypes.customSummary>
+
+	<Miho_Start_Three.label>Miho Explorers</Miho_Start_Three.label>
+	<Miho_Start_Three.description>A group of 3 cute foxes explore the rimworld. Let's kick some ass!</Miho_Start_Three.description>
+	<Miho_Start_Three.scenario.name>Miho Explorers</Miho_Start_Three.scenario.name>
+	<Miho_Start_Three.scenario.description>A group of 3 cute foxes explore the rimworld. Let's kick some ass!</Miho_Start_Three.scenario.description>
+	<Miho_Start_Three.scenario.summary>This is the turning point in the lives of 3 foxes.</Miho_Start_Three.scenario.summary>
+	<Miho_Start_Three.scenario.parts.ConfigurePawnsXenotypes.customSummary>Start with 3 Ordinary Miho.</Miho_Start_Three.scenario.parts.ConfigurePawnsXenotypes.customSummary>
+</LanguageData>

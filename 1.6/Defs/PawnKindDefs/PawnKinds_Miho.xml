@@ -1,0 +1,1499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================ Epona Base ========================== -->
+
+  <PawnKindDef Name="MihoBase" Abstract="True">
+    <defaultFactionType>Miho_Faction_Megacorp</defaultFactionType>
+    <race>Alien_Miho</race>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+    <invNutrition>2.55</invNutrition>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <apparelTags Inherit="false">
+    </apparelTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.18</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highland>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+
+    <styleItemTags>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <weaponTags>
+    </weaponTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <minGenerationAge>14</minGenerationAge>
+    <techHediffsRequired>
+      <li>PsychicAmplifier</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+  <!-- ============================ Epona Civilian Base ========================== -->
+
+  <PawnKindDef Name="MihoCivBase" ParentName="MihoBase" Abstract="True">
+    <combatPower>60</combatPower>
+    <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+    <race>Alien_Miho</race>
+    <itemQuality>Poor</itemQuality>
+    <factionLeader>false</factionLeader>
+    <isFighter>false</isFighter>
+
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>350</min>
+      <max>1400</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>400</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>95</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>5</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>100</min>
+            <max>500</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <!-- ============================ Epona Civilians ========================== -->
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Colonist</defName>
+    <label>미호 모험가</label>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.16</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highmate>
+
+
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>MihoCommon</tag>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <tag>MihoCommonNecessary</tag>
+            <chance>0.8</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Leader</defName>
+    <label>미호 리더</label>
+    <labelPlural>leaders</labelPlural>
+    <isFighter>true</isFighter>
+    <factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>5000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoRoyal</requiredTag>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoRoyal</requiredTag>
+      </li>
+    </specificApparelRequirements>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>21</minGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Trader</defName>
+    <label>미호 캐러밴장</label>
+    <combatPower>10</combatPower>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>3000</min>
+      <max>6000</max>
+    </apparelMoney>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.16</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highmate>
+
+
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoRoyal</requiredTag>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoRoyal</requiredTag>
+      </li>
+    </specificApparelRequirements>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+
+    <trader>true</trader>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Slave</defName>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.16</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highmate>
+
+
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>MihoCommon</tag>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <tag>MihoCommonNecessary</tag>
+            <chance>0.8</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <label>미호 노예</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoCivBase">
+    <defName>Miho_Refugee</defName>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.16</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highmate>
+
+
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>MihoCommon</tag>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <tag>MihoCommonNecessary</tag>
+            <chance>0.8</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <label>미호 난민</label>
+  </PawnKindDef>
+
+
+  <!-- ============================ Epona Military Base ========================== -->
+  <PawnKindDef Name="MihoMilBase" ParentName="MihoCivBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <factionLeader>false</factionLeader>
+    <isFighter>true</isFighter>
+    <race>Alien_Miho</race>
+
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <minGenerationAge>19</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>5800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1400</min>
+      <max>20000</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>15000</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.18</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highland>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  <!-- ============================ 케른========================== -->
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Adventurer</defName>
+    <label>미호 여행자</label>
+    <combatPower>75</combatPower>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.6</min>
+      <max>1.4</max>
+    </gearHealthRange>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MihoCommonNecessary</li>
+      <li>MihoCombatant</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>350</min>
+      <max>600</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoLight</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Hunter</defName>
+    <label>미호 사냥꾼</label>
+    <combatPower>75</combatPower>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.6</min>
+      <max>1.4</max>
+    </gearHealthRange>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags Inherit="false">
+      <li>MihoHunter</li>
+    </apparelTags>
+    <apparelRequired>
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1400</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>600</min>
+      <max>1200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoLight</li>
+      <li>MihoHunter</li>
+      <li>MihoPike</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Militia</defName>
+    <label>미호 자경대원</label>
+    <combatPower>80</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.4</max>
+    </gearHealthRange>    
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoCommon</li>
+      <li>MihoCommonNecessaryHat</li>
+    </apparelTags>
+    <specificApparelRequirements>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>1500</min>
+      <max>4000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>280</min>
+      <max>1400</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMilitia</li>
+      <li>MihoMilitiaLight</li>
+
+
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_MilitiaMelee</defName>
+    <label>미호 보안대 돌격병</label>
+    <combatPower>180</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>  
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoAssault</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_MilitiaEar</li>
+      <li>Miho_Apparel_Middle_Militia</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+      <li>Apparel_ShieldBelt</li>
+      <li>Miho_Apparel_Special_Visor</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+
+
+      <li>Miho_Apparel_Under_Armor</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2200</min>
+      <max>4500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoLargeBlade</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_MilitiaCaptain</defName>
+    <label>미호 보안대 장교</label>
+    <combatPower>250</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>  
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_EltexCaptain</li>
+      <li>Miho_Apparel_OnSkin_OrnatedCaptain</li>
+      <li>Apparel_ShieldBelt</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+
+
+      <li>Miho_Apparel_Under_Armor</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2200</min>
+      <max>4500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoLargeBlade</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Medic</defName>
+    <label>미호 보안대 군의관</label>
+    <combatPower>150</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_MilitiaMedic</li>
+      <li>Miho_Apparel_Middle_MilitiaMedic</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+      <li>Miho_Apparel_Under_Armor</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2200</min>
+      <max>4500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMilitiaMedic</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Medicine</skill>
+        <range>5~15</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Marksman</defName>
+    <label>미호 보안대원</label>
+    <combatPower>200</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_Militia</li>
+      <li>Miho_Apparel_Middle_Militia</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoMagnifier</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>WoolSheep</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>1200</min>
+      <max>3500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMilitia</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_MarksmanEar</defName>
+    <label>미호 보안대원</label>
+    <combatPower>220</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_MilitiaEar</li>
+      <li>Miho_Apparel_Middle_Militia</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoMagnifier</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>WoolSheep</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>1200</min>
+      <max>3500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMilitiaHeavy</li>
+      <li>MihoMilitia</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_TacticalMagi</defName>
+    <label>미호 전술 마법사</label>
+    <combatPower>250</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_MilitiaEar</li>
+      <li>Miho_Apparel_Middle_Militia</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+      <li>Miho_Apparel_Shell_PMC</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoMagnifier</li>
+      <li>MihoCommon</li>
+    </apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>WoolSheep</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelMoney>
+      <min>1200</min>
+      <max>3500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMilitiaHeavy</li>
+      <li>MihoMilitia</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Firepower</defName>
+    <label>미호 화력지원병</label>
+    <combatPower>220</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>16</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_Militia</li>
+      <li>Miho_Apparel_OnSkin_Militia</li>
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>WoolSheep</stuff>
+      </li>
+    </specificApparelRequirements>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1200</min>
+      <max>4500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>2400</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoFirepower</li>
+      <li>MihoPMCInfantry</li>
+      <li>MihoRecoiless</li>
+
+      <li>MihoMilitiaGrenade</li>
+
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_Battlemage</defName>
+    <label>미호 전략 마법사</label>
+    <combatPower>400</combatPower>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>MihoMagi</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_OnSkin_OrnatedTwo</li>
+      <li>Miho_Apparel_Under_TribalEltex</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>4000</min>
+      <max>7500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>2500</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoMagi</li>
+
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_PMC_InfantryBasic</defName>
+    <label>미호 중보병</label>
+    <combatPower>500</combatPower>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange> 
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.4</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.15</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.05</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.4</Xeno_CelestialMiho_Highland>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_PMC</li>
+      <li>Miho_Apparel_Middle_Powered</li>
+      <li>Miho_Apparel_OnSkin_PMC</li>
+      <li>Miho_Apparel_Under_Armor</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoMagnifier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>7500</min>
+      <max>10500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>2400</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoPMCInfantry</li>
+      <li>MihoPMCInfantrySniper</li>
+
+
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_PMC_Breacher</defName>
+    <label>미호 육전대</label>
+    <combatPower>525</combatPower>
+    <isGoodBreacher>true</isGoodBreacher>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange> 
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.45</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.1</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.05</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.4</Xeno_CelestialMiho_Highland>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoUrban</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_PMC</li>
+      <li>Miho_Apparel_Middle_Powered</li>
+      <li>Miho_Apparel_OnSkin_PMC</li>
+      <li>Miho_Apparel_Under_Armor</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+      <li>MihoMagnifier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>5500</min>
+      <max>7500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoPMCBreacher</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Soldier_AssassinRanged</defName>
+    <label>미호 특작병</label>
+    <combatPower>400</combatPower>
+    <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+    <minGenerationAge>21</minGenerationAge>
+    <gearHealthRange>
+      <min>1</min>
+      <max>1.9</max>
+    </gearHealthRange>
+    <itemQuality>Good</itemQuality>
+
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoPioneer</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_OnSkin_Pariah</li>
+      <li>Miho_Apparel_Hat_Pariah</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>5000</min>
+      <max>10000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoAssassinRanged</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>6000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>1</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.8</techHediffsChance>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>7~20</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>14~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MihoMilBase">
+    <defName>Miho_Unique_DontShootMe</defName>
+    <label>쏘지마시발</label>
+    <combatPower>999</combatPower>
+    <isGoodBreacher>true</isGoodBreacher>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <minGenerationAge>21</minGenerationAge>
+    <gearHealthRange>
+      <min>0.9</min>
+      <max>1.4</max>
+    </gearHealthRange>     
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MihoShoot</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelRequired>
+      <li>Miho_Apparel_Hat_MilitiaShoot</li>
+      <li>Miho_Apparel_Middle_Militia</li>
+      <li>Miho_Apparel_OnSkin_PMC</li>
+      <li>Miho_Apparel_Under_Industrial</li>
+      <li>Miho_Apparel_Special_TacticalAssist</li>
+    </apparelRequired>
+    <apparelTags Inherit="false">
+      <li>MihoMilitia</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>4500</min>
+      <max>5500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>20000</min>
+      <max>20000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MihoShoot</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>10</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+</Defs>

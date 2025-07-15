@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>Miho_ResearchTab</defName>
+		<label>미호</label>
+	</ResearchTabDef>
+</Defs>

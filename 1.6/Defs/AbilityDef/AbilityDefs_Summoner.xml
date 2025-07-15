@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>Miho_SummonPsycastPsychicEffect</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <solidTime>2</solidTime>
+    <growthRate>1.5</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.024</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>5</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <!--Miho_Ability_Spawn_Butterfly-->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Spawn_Butterfly</defName>
+    <label>칼날나비때 소환</label>
+    <aiCanUse>true</aiCanUse>
+    <description>굉장히 날카로운 날개를 지닌 나비때를 소환합니다.</description>
+    <iconPath>Icon/Abilities/SummonButterfly</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Butterfly</groupDef>
+    <statBases>
+      <Ability_EntropyGain>150</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>7.5</warmupTime>
+      <range>16.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetMechs>False</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MihoLib.CompProperties_AbilitySummonPawn">
+        <summonSoundDef>Explosion_Bomb</summonSoundDef>
+        <screenShakeIntensity>1</screenShakeIntensity>
+        <spawnKindDef>Miho_Butterfly</spawnKindDef>
+        <spawnCount>3</spawnCount>
+        <spawnPosRange>
+          <max>2</max>
+          <min>0</min>
+        </spawnPosRange>
+        <summonFleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </summonFleckDefs>
+        <fleckScale>0.5</fleckScale>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <li>Miho_SummonPsycastPsychicEffect</li>
+        </fleckDefs>
+        <scale>1.55</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+  <!-- 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Butterfly_Spawn_Proj</defName>
+    <label>MihoSpawner</label>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <explosionRadius>0.1</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <preExplosionSpawnThingDef>Miho_Butterfly_Portal</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+    <comps>
+      <li Class="Monotail.CompProperties_FactionSetter"/>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircle</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+  -->
+  <!--Miho_Ability_Hawk-->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Hawk</defName>
+    <label>사냥매 날리기</label>
+    <aiCanUse>false</aiCanUse>
+    <description>사냥매를 날립니다. 사냥매가 적을 끈질기게 괴롭힐것 입니다.</description>
+    <iconPath>Icon/Abilities/Mihoawk</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_WordPowerstrike</groupDef>
+    <statBases>
+      <Ability_EntropyGain>75</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.25</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1.5</warmupTime>
+      <range>39.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetMechs>False</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MihoLib.CompProperties_AbilitySummonPawn">
+        <summonSoundDef>Explosion_Bomb</summonSoundDef>
+        <screenShakeIntensity>1</screenShakeIntensity>
+        <spawnKindDef>Miho_Hawk</spawnKindDef>
+        <spawnCount>1</spawnCount>
+        <spawnPosRange>
+          <max>1</max>
+          <min>0</min>
+        </spawnPosRange>
+        <summonFleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </summonFleckDefs>
+        <fleckScale>0.5</fleckScale>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <li>Miho_SummonPsycastPsychicEffect</li>
+        </fleckDefs>
+        <scale>1.55</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--Miho_Ability_Spawn_Fox-->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Spawn_Fox</defName>
+    <label>운반여우 소환</label>
+    <description>정착지의 짐들을 운반하는 작은 도우미를 소환합니다.</description>
+    <iconPath>Icon/Abilities/SummonFox</iconPath>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Fox</groupDef>
+    <statBases>
+      <Ability_PsyfocusCost>0.4</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>5</warmupTime>
+      <range>10.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetMechs>False</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MihoLib.CompProperties_AbilitySummonPawn">
+        <summonSoundDef>Explosion_Bomb</summonSoundDef>
+        <screenShakeIntensity>1</screenShakeIntensity>
+        <spawnKindDef>Miho_Fox</spawnKindDef>
+        <spawnCount>1</spawnCount>
+        <spawnPosRange>
+          <max>1</max>
+          <min>0</min>
+        </spawnPosRange>
+        <summonFleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </summonFleckDefs>
+        <fleckScale>0.5</fleckScale>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <li>Miho_SummonPsycastPsychicEffect</li>
+        </fleckDefs>
+        <scale>1.55</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--Miho_Ability_Spawn_Turret-->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Spawn_Turret</defName>
+    <label>나약의 창 소환</label>
+    <aiCanUse>true</aiCanUse>
+    <description>적을 약화시키는 자동포탑을 소환합니다.</description>
+    <iconPath>Icon/Abilities/MihoTurret</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Turret</groupDef>
+    <statBases>
+      <Ability_EntropyGain>180</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.08</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>7.5</warmupTime>
+      <range>16.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>false</canTargetBuildings>
+
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetMechs>False</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MihoLib.CompProperties_AbilitySummonPawn">
+        <summonSoundDef>Explosion_Bomb</summonSoundDef>
+        <screenShakeIntensity>1</screenShakeIntensity>
+        <spawnThingDef>Miho_Turret_Flame</spawnThingDef>
+        <spawnCount>1</spawnCount>
+        <spawnPosRange>
+          <max>0</max>
+          <min>0</min>
+        </spawnPosRange>
+        <summonFleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </summonFleckDefs>
+        <fleckScale>0.5</fleckScale>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <li>Miho_SummonPsycastPsychicEffect</li>
+        </fleckDefs>
+        <scale>1.55</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Miho_Turret_Flame</defName>
+    <label>나약의 창</label>
+    <description>적을 약화시켜주는 자동포탑입니다.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/WeaponSpecial/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>8</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>15000</lifespanTicks>
+        <expireEffect>RaisedRock_Collapse</expireEffect>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <combatPower>999</combatPower>      <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Miho_TurretGun_Flame</turretGunDef>
+      <turretTopDrawSize>1.95</turretTopDrawSize>
+      <turretTopOffset>(0, 0)</turretTopOffset>
+      <turretBurstCooldownTime>0.1</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Miho_TurretGun_Flame</defName>
+    <label>Lance</label>
+    <description>.</description>
+    <graphicData>
+      <texPath>Things/Building/MihoTurret/MihoTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.77</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.24</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultCooldownTime>15</defaultCooldownTime>
+        <range>32.9</range>
+        <beamFullWidthRange>1000</beamFullWidthRange>
+        <burstShotCount>15</burstShotCount>
+        <beamWidth>-1</beamWidth>
+        <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+        <beamDamageDef>Miho_MagicBombAnalysis</beamDamageDef>
+        <!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+        <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+        <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+        <beamMaxDeviation>0</beamMaxDeviation>
+        <beamCurvature>0</beamCurvature>
+        <beamMoteDef>Miho_Mote_GraserBeamBase</beamMoteDef>
+        <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+        <beamChanceToStartFire>0</beamChanceToStartFire>
+        <beamChanceToAttachFire>0</beamChanceToAttachFire>
+        <beamFireSizeRange>0</beamFireSizeRange>
+        <beamStartOffset>-0.1</beamStartOffset>
+        <beamLineFleckChanceCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.65, 0.4)</li>
+            <li>(1, 0.75)</li>
+          </points>
+        </beamLineFleckChanceCurve>
+        <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </verbs>
+  </ThingDef>
+  <!--Miho_Ability_Spawn_Abomi-->
+  <AbilityDef ParentName="MihoPsycastBase">
+    <defName>Miho_Ability_Spawn_Abomi</defName>
+    <label>메카나이트 혐오체 소환</label>
+    <aiCanUse>true</aiCanUse>
+
+    <description>여우들이 상상 할 수 있는 가장 끔찍한 전쟁병기를 소환합니다.</description>
+    <iconPath>Icon/Abilities/SummonThrumbo</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <groupDef>Miho_Abomi</groupDef>
+    <statBases>
+      <Ability_EntropyGain>600</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.5</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>15</warmupTime>
+      <range>16.9</range>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetMechs>False</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MihoLib.CompProperties_AbilitySummonPawn">
+        <summonSoundDef>Explosion_Bomb</summonSoundDef>
+        <screenShakeIntensity>1</screenShakeIntensity>
+        <spawnKindDef>Miho_Abomi</spawnKindDef>
+        <spawnCount>1</spawnCount>
+        <spawnPosRange>
+          <max>1</max>
+          <min>0</min>
+        </spawnPosRange>
+        <summonFleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </summonFleckDefs>
+        <fleckScale>0.5</fleckScale>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <li>Miho_SummonPsycastPsychicEffect</li>
+        </fleckDefs>
+        <scale>1.55</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>PlasmaFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <label>plasma</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.035</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <buildingDamageFactor>5</buildingDamageFactor>
+    <plantDamageFactor>11</plantDamageFactor>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionHeatEnergyPerCell>35</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MihoPlasma</defName>
+    <label>plasma</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.028</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>4</buildingDamageFactor>
+    <plantDamageFactor>3</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MihoGunshot</defName>
+    <label>gunshot</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+
+  <DamageDef>
+    <defName>MihoGunshotFrag</defName>
+    <label>gunshot</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>Miho_Fragment_Blast</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Miho_None</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MihoMagicFrag</defName>
+    <label>arcane shot</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>Miho_Fragment_Blast</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Miho_None</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MihoGunshotDemo</defName>
+    <label>gunshot</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>6</buildingDamageFactor>
+    <plantDamageFactor>16</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>35</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+  <HediffDef>
+    <defName>Miho_Plasma_Hediff</defName>
+    <label>갑옷 융해</label>
+    <description>갑옷이 열에 의해 부분적으로 액체화 되었습니다.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-48</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Miho_Melt</stateEffecter>
+	  </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.04</minSeverity>
+        <statOffsets>
+         <ArmorRating_Sharp>-0.2</ArmorRating_Sharp>
+	     <ArmorRating_Blunt>-0.1</ArmorRating_Blunt>
+     	</statOffsets>
+      </li>
+      <li>
+        <label>minor melted</label>
+        <minSeverity>0.2</minSeverity>
+        <statOffsets>
+         <ArmorRating_Sharp>-0.3</ArmorRating_Sharp>
+	     <ArmorRating_Blunt>-0.2</ArmorRating_Blunt>
+     	</statOffsets>
+      </li>
+      <li>
+        <label>moderate melted</label>
+        <minSeverity>0.40</minSeverity>
+        <statOffsets>
+         <ArmorRating_Sharp>-0.4</ArmorRating_Sharp>
+	     <ArmorRating_Blunt>-0.3</ArmorRating_Blunt>
+
+     	</statOffsets>
+      </li>
+      <li>
+        <label>severe melted</label>
+        <minSeverity>0.60</minSeverity>
+        <statOffsets>
+         <ArmorRating_Sharp>-0.5</ArmorRating_Sharp>
+	     <ArmorRating_Blunt>-0.4</ArmorRating_Blunt>
+     	</statOffsets>
+      </li>
+      <li>
+        <label>totally melted</label>
+        <minSeverity>0.95</minSeverity>
+        <statOffsets>
+         <ArmorRating_Sharp>-0.75</ArmorRating_Sharp>
+	     <ArmorRating_Blunt>-0.5</ArmorRating_Blunt>
+         <IncomingDamageFactor>1</IncomingDamageFactor>
+     	</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleCQB</defName>
+    <label>미호 단총</label>
+    <description>8mm구경의 소이 권총탄을 사용하는 다용도 기관단총입니다. 인체공학적이지 않고 뭔가 나사빠진 성능을 자랑하지만. 근접교전시 이만한 무기가 없다는게 미호들의 중론입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRanged/RifleCQB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18500</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.44</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <WoodLog>30</WoodLog>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleCQB_Proj</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>15</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Miho_Pistol</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoMilitia</li>
+      <li>MihoMilitiaMedic</li>
+
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RifleCQB_Proj</defName>
+    <label>smg bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_Pistol</defName>
+    <label>미호 타정총</label>
+    <description>살인을 목적으로 개조된 타정총입니다. 평범한 타정총보다 훨씬 반동이 크고 위력이 강합니다.  원래 목적대로, 평범한 공구로 사용할 수 도 있습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Miho_Ceramics>20</Miho_Ceramics>
+
+    </costList>
+	<equippedStatOffsets>
+	   <ConstructionSpeed>0.15</ConstructionSpeed>
+	</equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_Pistol_Proj</defaultProjectile>
+        <warmupTime>0.22</warmupTime>
+        <range>9.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Miho_Nailgun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoMilitiaLight</li>
+      <li>MihoMilitiaMedic</li>
+
+    </weaponTags>
+    <tools>
+      <li>
+        <label>nail</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_Pistol_Proj</defName>
+    <label>nail</label>
+    <graphicData>
+      <texPath>Things/Projectile/Needle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <stoppingPower>0.25</stoppingPower>
+
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleDefence</defName>
+    <label>미호 보총</label>
+    <description>6.5mm구경의 소이 소총탄을 사용하는 보병용 자동소총입니다. 소규모의 저개발 공장에서도 쉽게 생산 가능한 이점이 있습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RifleDefence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <WoodLog>60</WoodLog>
+      <Steel>90</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleDefence_Proj</defaultProjectile>
+        <warmupTime>0.91</warmupTime>
+        <range>28.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Miho_DefenceRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoMilitia</li>
+      <li>MihoShoot</li>
+
+
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleDefenceGrenade</defName>
+    <label>미호 보총 (유탄발사기)</label>
+    <description>6.5mm구경의 소이 소총탄을 사용하는 보병용 자동소총입니다. 소규모의 저개발 공장에서도 쉽게 생산 가능한 이점이 있습니다. 또한 언더바렐 유탄발사기가 달려 있습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RifleDefenceGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>50</Chemfuel>
+      <WoodLog>60</WoodLog>
+      <Steel>95</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleDefence_Proj</defaultProjectile>
+        <warmupTime>0.91</warmupTime>
+        <range>28.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Miho_DefenceRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoMilitiaGrenade</li>
+      <li>MihoPMCInfantry</li>
+
+
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>Miho_Weapon_RifleDefenceGrenade</abilityDef>
+        <maxCharges>2</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>grenade charges</chargeNoun>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>120</baseReloadTicks>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <AbilityDef>
+    <defName>Miho_Weapon_RifleDefenceGrenade</defName>
+    <label>유탄 발사</label>
+    <description>20mm 유탄을 발사합니다.</description>
+    <iconPath>Things/Projectile/MihoSatchel</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>31.9</range>
+       <minRange>3.9</minRange>
+
+      <warmupTime>1.35</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_Weapon_RifleGrenade_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleMachinegun</defName>
+    <label>미호 경기관총</label>
+    <description>6.5mm구경의 소이 소총탄을 사용하는 경기관총입니다. 중거리에서 탄막을 펼치기 좋습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RifleMachinegun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.16</AccuracyTouch>
+      <AccuracyShort>0.22</AccuracyShort>
+      <AccuracyMedium>0.56</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <WoodLog>80</WoodLog>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleDefence_Proj</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>31.9</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Miho_DefenceRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+	  <li>MihoMilitiaHeavy</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RifleDefence_Proj</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.11</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleOld</defName>
+    <label>미호 구식 보총</label>
+    <description>7.7mm구경의 소이 소총탄을 사용하는 보병용 소총입니다. 구식이지만 여전히 괜찮은 집탄률를 지녀 주로 지정사수 소총으로 사용됩니다. 특유의 조준기는 미호의 안구에 최적화 되어있어 다른 종족들이 조준하게 된다면 심하게 어지러울겁니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RifleOld</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <WoodLog>75</WoodLog>
+      <Steel>75</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RiflePrecision_Proj</defaultProjectile>
+        <warmupTime>2.35</warmupTime>
+        <range>39.9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <soundCast>Miho_SevenSevenRifleBolt</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<equippedStatOffsets>
+
+	</equippedStatOffsets>
+    <weaponTags>
+      <li>MihoMilitia</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RiflePrecision_Proj</defName>
+    <label>rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <armorPenetrationBase>0.21</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RifleGrenade</defName>
+    <label>미호 보병 유탄발사기</label>
+    <description>20mm 파편 유탄을 발사하는 중화기 입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RifleGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>51000</WorkToMake>
+      <Mass>7.8</Mass>
+      <AccuracyTouch>0.13</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <Steel>170</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <Chemfuel>140</Chemfuel>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>MihoRecoiless</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forcedMissRadius>1</forcedMissRadius>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleGrenade_Proj</defaultProjectile>
+        <warmupTime>2.4</warmupTime>
+        <range>39.9</range>
+        <minRange>3.9</minRange>
+        <ticksBetweenBurstShots>33</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Miho_GrenadeLauncherSmall</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Weapon_RifleGrenade_Proj</defName>
+		<label>grenade</label>
+		<graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+	    <drawSize>1.3</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
+		<projectile Class="MihoLib.ProjectileProperties_fragment">
+			<speed>38</speed>
+			<damageDef>MihoGunshot</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<explosionRadius>1</explosionRadius>
+
+      <fragmentDef>Miho_Weapon_RifleGrenade_ProjSub</fragmentDef>
+			<fragmentCount>13</fragmentCount>
+			<fragmentRange>
+				<max>3</max>
+				<min>1</min>
+			</fragmentRange>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash_Smoke</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Weapon_RifleGrenade_ProjSub</defName>
+		<label>fragment</label>
+		<graphicData>
+              <texPath>Things/Projectile/Bullet_Small</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+	             <drawSize>1.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>30</speed>
+			<damageDef>MihoGunshotFrag</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<armorPenetrationBase>0.02</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<explosionRadius>1</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <screenShakeFactor>0</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_Shotgun</defName>
+    <label>미호 사냥총</label>
+    <description>사냥용으로 적합한 정밀한 산탄총 입니다. 늘 그랬듯이. 특정한 부류(잘 차려입고,비교적 문명화된)의 호모 사피엔스들을 허가없이 사냥하는건 불법입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>2.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>30</Chemfuel>
+      <WoodLog>50</WoodLog>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+			<li Class="MihoLib.VerbProperties_ShotGun">
+				<verbClass>MihoLib.Verb_Shoot_ShootGun</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Miho_Weapon_Shotgun_Proj</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>19.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+				<soundCast>Miho_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<pelletCount>7</pelletCount>
+			</li>
+    </verbs>
+    <weaponTags>
+      <li>MihoMilitia</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_AutoShotgun</defName>
+    <label>미호 중산탄총</label>
+    <description>클래식하지만 위협적인 자동산탄총 입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/AutoShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_VerminControlWeapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>50</Chemfuel>
+      <WoodLog>50</WoodLog>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+
+    </costList>
+    <verbs>
+			<li Class="MihoLib.VerbProperties_ShotGun">
+				<verbClass>MihoLib.Verb_Shoot_ShootGun</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Miho_Weapon_Shotgun_Proj</defaultProjectile>
+				<warmupTime>0.7</warmupTime>
+				<range>14</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Miho_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<pelletCount>7</pelletCount>
+			</li>
+    </verbs>
+    <weaponTags>
+      <li>MihoPMCInfantry</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_Shotgun_Proj</defName>
+    <label>pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>0.75</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <stoppingPower>3</stoppingPower>
+      <speed>50</speed>
+			<extraDamages>
+					<li>
+						<def>Stun</def>
+						<amount>2</amount>
+						<chance>0.08</chance>
+					</li>
+			</extraDamages>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>Miho_Weapon_RiflePlasma</defName>
+    <label>미호 플라즈마 소총</label>
+    <description>순간적으로 태양 내부의 온도에 필적하는 플라즈마를 투사시킬 수 있는 소총입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RiflePlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_PlasmaWeapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+	 <li MayRequire="mihoaddon.fortifiedoutremer">Miho_Factory</li>
+
+      </recipeUsers>    
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>85000</WorkToMake>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+
+    </statBases>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <Uranium>30</Uranium>
+
+      <Miho_MilitaryGradeBalisticCeramics>60</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RiflePlasma_Proj</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <soundAiming>Miho_Charging</soundAiming>
+
+        <range>31.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Miho_RiflePlasmaGun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoPMCInfantry</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RiflePlasma_Proj</defName>
+    <label>plasma bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/MihoSmolPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoPlasma</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMihoicGun">
+    <defName>Miho_Weapon_SniperPlasma</defName>
+    <label>미호 플라즈마 중형 소총</label>
+    <description>순간적으로 태양 내부의 온도에 필적하는 플라즈마를 투사시킬 수 있는 중형 소총입니다. 보통 화력 투사는 다각전차들의 몫이지만. 정예 중보병들의 전술적 다양성을 위해 가끔 채택됩니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/SniperPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyPlasma</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+	 <li MayRequire="mihoaddon.fortifiedoutremer">Miho_Factory</li>
+
+      </recipeUsers>    
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>125000</WorkToMake>
+      <Mass>7.5</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+
+    </statBases>
+    <costList>
+      <WoodLog>40</WoodLog>
+     <Uranium>60</Uranium>
+
+      <Miho_MilitaryGradeBalisticCeramics>120</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_SniperPlasma_Proj</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <soundAiming>Miho_Charging</soundAiming>
+        <forcedMissRadius>0.9</forcedMissRadius>
+
+        <range>42.9</range>
+       <minRange>1.9</minRange>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <soundCast>Miho_CannonPlasma</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MihoPMCInfantrySniper</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_SniperPlasma_Proj</defName>
+    <label>plasma</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/MihoSmolPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.5</drawSize>
+    </graphicData>
+		<projectile>
+			<damageDef>MihoPlasma</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>70</speed>
+			<explosionRadius>1.5</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash_Smoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_ShotgunPsychic</defName>
+    <label>미호 가속소총</label>
+    <description>시전자의 사이킥 능력을 이용해 입자 탄환을 가속시켜 발사하는 소총입니다. 입자가속 무기들중 가장 단순한 편 입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/ShotgunPsychic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_MechHack</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>125000</WorkToMake>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+			<li Class="MihoLib.VerbProperties_ShotGun">
+				<verbClass>MihoLib.Verb_Shoot_ShootGun</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Miho_Weapon_ShotgunPsychic_Proj</defaultProjectile>
+				<warmupTime>0.65</warmupTime>
+				<range>28.9</range>
+				<burstShotCount>7</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<soundCast>Miho_SilencedPistol</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<pelletCount>1</pelletCount>
+			</li>
+    </verbs>
+	<equippedStatOffsets>
+
+	</equippedStatOffsets>
+    <weaponTags>
+      <li>MihoAssassinRanged</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_ShotgunPsychic_Proj</defName>
+    <label>accelerated pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/MihoThunderSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>0.75</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombEMP</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+	  <stoppingPower>0.1</stoppingPower>
+      <speed>110</speed>
+			<extraDamages>
+					<li>
+						<def>EMP</def>
+						<amount>1</amount>
+						<chance>0.01</chance>
+					</li>
+					<li>
+						<def>Stun</def>
+						<amount>1</amount>
+						<chance>0.01</chance>
+					</li>
+			</extraDamages>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicMuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Miho_Weapon_RiflePsychic</defName>
+    <label>미호 강입자 소총</label>
+    <description>초소형 입자가속기 입니다. 시전자의 사이킥 능력을 통해 작동하며, 발사된 강입자로 적의 내부를 말 그대로 찢어버립니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedBiotech/RiflePsychic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.13</drawSize>
+
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Persona</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>    
+	  <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>202000</WorkToMake>
+      <Mass>5.8</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+			<li Class="MihoLib.VerbProperties_ShotGun">
+				<verbClass>MihoLib.Verb_Shoot_ShootGun</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Miho_Weapon_RiflePsychic_Proj</defaultProjectile>
+        <warmupTime>2.75</warmupTime>
+        <range>42.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Miho_SilencedRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<pelletCount>3</pelletCount>
+			</li>
+    </verbs>
+	<equippedStatOffsets>
+
+	</equippedStatOffsets>
+    <weaponTags>
+      <li>MihoAssassinRanged</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RiflePsychic_Proj</defName>
+    <label>accelerated pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/MihoThunderSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>0.9</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombEMP</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+	  <stoppingPower>0.1</stoppingPower>
+      <speed>150</speed>
+			<extraDamages>
+					<li>
+						<def>EMP</def>
+						<amount>3</amount>
+						<chance>0.1</chance>
+					</li>
+					<li>
+						<def>Stun</def>
+						<amount>3</amount>
+						<chance>0.15</chance>
+					</li>
+			</extraDamages>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicMuzzleFlash</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>Miho_Fragment_Blast</defName>
+    <graphicData>
+      <texPath>Things/Fleck/Fragment</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
+  </FleckDef>
+  
+</Defs>

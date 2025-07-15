@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<FactionLanguages.LanguageFamilyDef>
+		<defName>Miho</defName>
+		<forcedLanguage>MihoLanguages</forcedLanguage>
+		<linkedRace>Alien_Miho</linkedRace>
+		<factionDialects>
+			<li>
+				<dialectDef>Miho_Standard</dialectDef>
+				<factions>
+					<li>Miho_PlayerColonyNonMagic</li>
+
+					<li>Miho_Faction_Megacorp</li>
+				</factions>
+			</li>
+			<li>
+				<dialectDef>Miho_Traditional</dialectDef>
+				<factions>
+					<li>Miho_PlayerColony</li>
+					
+					<li>Miho_Faction_Supremacist</li>
+				</factions>
+			</li>
+		</factionDialects>
+	</FactionLanguages.LanguageFamilyDef>
+	<!---->
+</Defs>

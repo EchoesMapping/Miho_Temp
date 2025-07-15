@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Miho_Child_Fox.title>ordinary fox</Miho_Child_Fox.title>
+	<Miho_Child_Fox.titleShort>ordinary fox</Miho_Child_Fox.titleShort>
+	<Miho_Child_Fox.baseDesc>[PAWN_nameDef]	was just a normal fox in the city of Miho. {PAWN_pronoun} attended a mediocre school and acquired mediocre knowledge.</Miho_Child_Fox.baseDesc>
+
+	<Miho_Child_FoxTwo.title>ordinary fox</Miho_Child_FoxTwo.title>
+	<Miho_Child_FoxTwo.titleShort>ordinary fox</Miho_Child_FoxTwo.titleShort>
+	<Miho_Child_FoxTwo.baseDesc>[PAWN_nameDef] was just a normal fox in the city of Miho. {PAWN_pronoun} attended a mediocre school and acquired mediocre knowledge.</Miho_Child_FoxTwo.baseDesc>
+
+	<Miho_Child_FoxThree.title>ordinary fox</Miho_Child_FoxThree.title>
+	<Miho_Child_FoxThree.titleShort>ordinary fox</Miho_Child_FoxThree.titleShort>
+	<Miho_Child_FoxThree.baseDesc>[PAWN_nameDef] was just a normal fox in the city of Miho. {PAWN_pronoun} attended a mediocre school and acquired mediocre knowledge.</Miho_Child_FoxThree.baseDesc>
+
+
+	<Miho_Child_Rural.title>country fox</Miho_Child_Rural.title>
+	<Miho_Child_Rural.titleShort>Country fox</Miho_Child_Rural.titleShort>
+	<Miho_Child_Rural.baseDesc>[PAWN_nameDef] was a fox living happy days in the countryside. {PAWN_pronoun} took care of animals, grew plants, walked in the forest and had happy days.</Miho_Child_Rural.baseDesc>
+
+	<Miho_Child_RuralTwo.title>country fox</Miho_Child_RuralTwo.title>
+	<Miho_Child_RuralTwo.titleShort>country fox</Miho_Child_RuralTwo.titleShort>
+	<Miho_Child_RuralTwo.baseDesc>[PAWN_nameDef] was a fox living happy days in the countryside. {PAWN_pronoun} took care of animals, grew plants, walked in the forest and had happy days.</Miho_Child_RuralTwo.baseDesc>
+
+	<Miho_Child_RuralThree.title>country fox</Miho_Child_RuralThree.title>
+	<Miho_Child_RuralThree.titleShort>country fox</Miho_Child_RuralThree.titleShort>
+	<Miho_Child_RuralThree.baseDesc>[PAWN_nameDef] was a fox living happy days in the countryside. {PAWN_pronoun} took care of animals, grew plants, walked in the forest and had happy days.</Miho_Child_RuralThree.baseDesc>
+
+
+	<Miho_Child_HuntFox.title>hunting fox</Miho_Child_HuntFox.title>
+	<Miho_Child_HuntFox.titleShort>hunting fox</Miho_Child_HuntFox.titleShort>
+	<Miho_Child_HuntFox.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFox.baseDesc>
+
+	<Miho_Child_HuntFoxTwo.title>hunting fox</Miho_Child_HuntFoxTwo.title>
+	<Miho_Child_HuntFoxTwo.titleShort>hunting fox</Miho_Child_HuntFoxTwo.titleShort>
+	<Miho_Child_HuntFoxTwo.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFoxTwo.baseDesc>
+
+	<Miho_Child_HuntFoxThree.title>hunting fox</Miho_Child_HuntFoxThree.title>
+	<Miho_Child_HuntFoxThree.titleShort>hunting fox</Miho_Child_HuntFoxThree.titleShort>
+	<Miho_Child_HuntFoxThree.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFoxThree.baseDesc>
+
+	<Miho_Child_HuntFoxFive.title>hunting fox</Miho_Child_HuntFoxFive.title>
+	<Miho_Child_HuntFoxFive.titleShort>hunting fox</Miho_Child_HuntFoxFive.titleShort>
+	<Miho_Child_HuntFoxFive.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFoxFive.baseDesc>
+
+
+	<Miho_Child_Orphan.title>abandoned fox</Miho_Child_Orphan.title>
+	<Miho_Child_Orphan.titleShort>abandoned fox</Miho_Child_Orphan.titleShort>
+	<Miho_Child_Orphan.baseDesc>[PAWN_nameDef] has been abandoned by {PAWN_possessive} parents or lost them. Even though {PAWN_pronoun} went through a lot of hardships {PAWN_pronoun} is still alive and well.</Miho_Child_Orphan.baseDesc>
+
+	<Miho_Child_OrphanTwo.title>abandoned fox</Miho_Child_OrphanTwo.title>
+	<Miho_Child_OrphanTwo.titleShort>abandoned fox</Miho_Child_OrphanTwo.titleShort>
+	<Miho_Child_OrphanTwo.baseDesc>[PAWN_nameDef] has been abandoned by {PAWN_possessive} parents or lost them. Even though {PAWN_pronoun} went through a lot of hardships {PAWN_pronoun} is still alive and well.</Miho_Child_OrphanTwo.baseDesc>
+
+	<Miho_Child_OrphanThree.title>abandoned fox</Miho_Child_OrphanThree.title>
+	<Miho_Child_OrphanThree.titleShort>abandoned fox</Miho_Child_OrphanThree.titleShort>
+	<Miho_Child_OrphanThree.baseDesc>[PAWN_nameDef] has been abandoned by {PAWN_possessive} parents or lost them. Even though {PAWN_pronoun} went through a lot of hardships {PAWN_pronoun} is still alive and well.</Miho_Child_OrphanThree.baseDesc>
+
+
+	<Miho_Child_Gifted.title>genius</Miho_Child_Gifted.title>
+	<Miho_Child_Gifted.titleShort>genius</Miho_Child_Gifted.titleShort>
+	<Miho_Child_Gifted.baseDesc>[PAWN_nameDef] was a fox with high intellectual abilities. {PAWN_pronoun} often looked for adult company because {PAWN_pronoun} couldn't properly talk to her friends.</Miho_Child_Gifted.baseDesc>
+
+	<Miho_Child_GiftedTwo.title>genius</Miho_Child_GiftedTwo.title>
+	<Miho_Child_GiftedTwo.titleShort>genius</Miho_Child_GiftedTwo.titleShort>
+	<Miho_Child_GiftedTwo.baseDesc>[PAWN_nameDef] was a fox with high intellectual abilities. {PAWN_pronoun} often looked for adult company because {PAWN_pronoun} couldn't properly talk to her friends.</Miho_Child_GiftedTwo.baseDesc>
+
+	<Miho_Child_GiftedThree.title>genius</Miho_Child_GiftedThree.title>
+	<Miho_Child_GiftedThree.titleShort>genius</Miho_Child_GiftedThree.titleShort>
+	<Miho_Child_GiftedThree.baseDesc>[PAWN_nameDef] was a fox with high intellectual abilities. {PAWN_pronoun} often looked for adult company because {PAWN_pronoun} couldn't properly talk to her friends.</Miho_Child_GiftedThree.baseDesc>
+
+
+	<Miho_Child_Desert.title>desert fox</Miho_Child_Desert.title>
+	<Miho_Child_Desert.titleShort>desert fox</Miho_Child_Desert.titleShort>
+	<Miho_Child_Desert.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_Desert.baseDesc>
+
+	<Miho_Child_DesertTwo.title>desert fox</Miho_Child_DesertTwo.title>
+	<Miho_Child_DesertTwo.titleShort>desert fox</Miho_Child_DesertTwo.titleShort>
+	<Miho_Child_DesertTwo.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_DesertTwo.baseDesc>
+
+	<Miho_Child_DesertThree.title>desert fox</Miho_Child_DesertThree.title>
+	<Miho_Child_DesertThree.titleShort>desert fox</Miho_Child_DesertThree.titleShort>
+	<Miho_Child_DesertThree.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_DesertThree.baseDesc>
+
+	<Miho_Child_DesertFive.title>desert fox</Miho_Child_DesertFive.title>
+	<Miho_Child_DesertFive.titleShort>desert fox</Miho_Child_DesertFive.titleShort>
+	<Miho_Child_DesertFive.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_DesertFive.baseDesc>
+
+
+	<Miho_Child_Brave.title>brave fox</Miho_Child_Brave.title>
+	<Miho_Child_Brave.titleShort>brave fox</Miho_Child_Brave.titleShort>
+	<Miho_Child_Brave.baseDesc>[PAWN_nameDef] was a brave fox. {PAWN_pronoun} was so brave that {PAWN_pronoun} had no friends.</Miho_Child_Brave.baseDesc>
+
+	<Miho_Child_BraveTwo.title>brave fox</Miho_Child_BraveTwo.title>
+	<Miho_Child_BraveTwo.titleShort>brave fox</Miho_Child_BraveTwo.titleShort>
+	<Miho_Child_BraveTwo.baseDesc>[PAWN_nameDef] was a brave fox. {PAWN_pronoun} was so brave that {PAWN_pronoun} had no friends.</Miho_Child_BraveTwo.baseDesc>
+
+	<Miho_Child_BraveThree.title>brave fox</Miho_Child_BraveThree.title>
+	<Miho_Child_BraveThree.titleShort>brave fox</Miho_Child_BraveThree.titleShort>
+	<Miho_Child_BraveThree.baseDesc>[PAWN_nameDef] was a brave fox. {PAWN_pronoun} was so brave that {PAWN_pronoun} had no friends.</Miho_Child_BraveThree.baseDesc>
+
+
+	<Miho_Child_TinkerFox.title>curious fox</Miho_Child_TinkerFox.title>
+	<Miho_Child_TinkerFox.titleShort>curious fox</Miho_Child_TinkerFox.titleShort>
+	<Miho_Child_TinkerFox.baseDesc>[PAWN_nameDef] has always been curious. This curiosity has gotten {PAWN_objective} into many troublesome situations.</Miho_Child_TinkerFox.baseDesc>
+
+	<Miho_Child_Urban.title>urban fox</Miho_Child_Urban.title>
+	<Miho_Child_Urban.titleShort>urban fox</Miho_Child_Urban.titleShort>
+	<Miho_Child_Urban.baseDesc>[PAWN_nameDef] was an urban fox who grew up in the celestial city, with fox parents. Basic public education in the city. It don't know why It came here, but it's going to be hard to adjust to the periphery.</Miho_Child_Urban.baseDesc>
+
+	<Miho_Child_UrbanStudent.title>student fox</Miho_Child_UrbanStudent.title>
+	<Miho_Child_UrbanStudent.titleShort>student fox</Miho_Child_UrbanStudent.titleShort>
+	<Miho_Child_UrbanStudent.baseDesc>[PAWN_nameDef] went missing because it couldn't take the shuttle during school trip. Fortunately, it's alive...</Miho_Child_UrbanStudent.baseDesc>
+	
+	<Miho_Child_Urban_Rural.title>rural fox</Miho_Child_Urban_Rural.title>
+	<Miho_Child_Urban_Rural.titleShort>rural fox</Miho_Child_Urban_Rural.titleShort>
+	<Miho_Child_Urban_Rural.baseDesc>[PAWN_nameDef] is a pioneer who came to the periphery with parents as a child. It enjoyed hunting squirrels with small guns.</Miho_Child_Urban_Rural.baseDesc>
+	
+	<Miho_Child_Urban_RuralAnimal.title>herder fox</Miho_Child_Urban_RuralAnimal.title>
+	<Miho_Child_Urban_RuralAnimal.titleShort>herder fox</Miho_Child_Urban_RuralAnimal.titleShort>
+	<Miho_Child_Urban_RuralAnimal.baseDesc>[PAWN_nameDef] was a plantation kid to get milk to the city. I can bet it grew up in the western movie kind of place among foxes.</Miho_Child_Urban_RuralAnimal.baseDesc>
+	
+	<Miho_Child_Urban_Farm.title>farm fox</Miho_Child_Urban_Farm.title>
+	<Miho_Child_Urban_Farm.titleShort>farm fox</Miho_Child_Urban_Farm.titleShort>
+	<Miho_Child_Urban_Farm.baseDesc>[PAWN_nameDef] lived here for generations, sweet-fruit farming. At one point, it got bored of this peaceful life and wandered away.</Miho_Child_Urban_Farm.baseDesc>
+	
+
+	<Miho_Child_Urban_Inari.title>fried tofu fox</Miho_Child_Urban_Inari.title>
+	<Miho_Child_Urban_Inari.titleShort>fried tofu fox</Miho_Child_Urban_Inari.titleShort>
+	<Miho_Child_Urban_Inari.baseDesc>[PAWN_nameDef] was raised by a married couple in a remote area for some reason when it was young. This fox is trying to repay that favor.</Miho_Child_Urban_Inari.baseDesc>
+	
+	<Miho_Child_Urban_Soldier.title>rookie fox</Miho_Child_Urban_Soldier.title>
+	<Miho_Child_Urban_Soldier.titleShort>rookie fox</Miho_Child_Urban_Soldier.titleShort>
+	<Miho_Child_Urban_Soldier.baseDesc>[PAWN_nameDef] was a troublemaker. it lied about his age to enlist in the military to upset its parents, and it regrets it.</Miho_Child_Urban_Soldier.baseDesc>
+	
+
+	<Miho_Child_Urban_BadStudent.title>runaway fox</Miho_Child_Urban_BadStudent.title>
+	<Miho_Child_Urban_BadStudent.titleShort>student fox</Miho_Child_Urban_BadStudent.titleShort>
+	<Miho_Child_Urban_BadStudent.baseDesc>[PAWN_nameDef] was a top student who aimed to go to medical school, but ran away to the countryside due to its overbearing parents.</Miho_Child_Urban_BadStudent.baseDesc>
+</LanguageData>

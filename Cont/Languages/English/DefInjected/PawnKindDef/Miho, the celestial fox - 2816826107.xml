@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_Butterfly.label>blade butterfly</Miho_Butterfly.label>
+  <Miho_Hawk.label>hawk</Miho_Hawk.label>
+  <Miho_Fox.label>miho carrying fox</Miho_Fox.label>
+  <Miho_Fox.lifeStages.0.label>red fox puppy</Miho_Fox.lifeStages.0.label>
+  <Miho_Fox.lifeStages.0.labelPlural>red fox puppies</Miho_Fox.lifeStages.0.labelPlural>
+  <Miho_Abomi.label>Mechanite abomination</Miho_Abomi.label>
+  <Miho_Mech_HeavyMechCore.label>miho large mechanite core</Miho_Mech_HeavyMechCore.label>
+  <Miho_Mech_DesertSphex.label>Irnithopter (Agricultural)</Miho_Mech_DesertSphex.label>
+  <!--
+  <Miho_Mech_Kampe.label>Recycle Bot</Miho_Mech_Kampe.label>
+  -->
+  <Miho_Mech_Bulgasal.label>Multi Legged Heavy Tank (Anti-Tank)</Miho_Mech_Bulgasal.label>
+  <Miho_Mech_BulgasalSiege.label>Multi Legged Heavy Tank (Siege)</Miho_Mech_BulgasalSiege.label>
+  <Miho_Mech_BulgasalGrenade.label>Multi Legged Heavy Tank (Grenade)</Miho_Mech_BulgasalGrenade.label>
+  <Miho_Mech_Balbari.label>Infantry Support Multi Legged Heavy Tank</Miho_Mech_Balbari.label>
+  <Miho_Mech_Sapsal.label>Multi Legged Light Tank (Recon)</Miho_Mech_Sapsal.label>
+  <Miho_Mech_SapsalPsy.label>Multi Legged Light Tank (Psychic Support)</Miho_Mech_SapsalPsy.label>
+  <Miho_Mech_CataphractRocket.label>Multi Legged CEV (Thermobaric Rocket)</Miho_Mech_CataphractRocket.label>
+  <Miho_Mech_CataphractCluRocket.label>Multi Legged CEV (Cluster Rocket)</Miho_Mech_CataphractCluRocket.label>
+  <Miho_Colonist.label>miho adventurer</Miho_Colonist.label>
+  <Miho_Leader.label>miho leader</Miho_Leader.label>
+  <Miho_Leader.labelPlural>leaders</Miho_Leader.labelPlural>
+  <Miho_Trader.label>miho caravan leader</Miho_Trader.label>
+  <Miho_Slave.label>miho slave</Miho_Slave.label>
+  <Miho_Refugee.label>miho refugee</Miho_Refugee.label>
+  <Miho_Soldier_Adventurer.label>miho traveler</Miho_Soldier_Adventurer.label>
+  <Miho_Soldier_Hunter.label>miho hunter</Miho_Soldier_Hunter.label>
+  <Miho_Soldier_Militia.label>Miho Vigilant</Miho_Soldier_Militia.label>
+  <Miho_Soldier_MilitiaMelee.label>Miho Colonial Guard Assault</Miho_Soldier_MilitiaMelee.label>
+  <Miho_Soldier_Medic.label>Miho Colonial Guard Medic</Miho_Soldier_Medic.label>
+  <Miho_Soldier_Marksman.label>Miho Colonial Guard</Miho_Soldier_Marksman.label>
+  <Miho_Soldier_MarksmanEar.label>Miho Colonial Guard</Miho_Soldier_MarksmanEar.label>
+  <Miho_Soldier_MilitiaCaptain.label>Miho Colonial Guard Officer</Miho_Soldier_MilitiaCaptain.label>
+
+  <Miho_Soldier_TacticalMagi.label>>Miho Tactical Mage</Miho_Soldier_TacticalMagi.label>
+	<Miho_Soldier_Battlemage.label>Miho Battle Mage</Miho_Soldier_Battlemage.label>
+
+  <Miho_Soldier_Firepower.label>Miho Heavy Weapon Guard</Miho_Soldier_Firepower.label>
+  <Miho_Soldier_PMC_InfantryBasic.label>Miho Armored Infantry</Miho_Soldier_PMC_InfantryBasic.label>
+  <Miho_Soldier_PMC_Breacher.label>Miho Armored Infantry</Miho_Soldier_PMC_Breacher.label>
+  <Miho_Soldier_AssassinRanged.label>miho special warfare soldier</Miho_Soldier_AssassinRanged.label>
+  <Miho_Unique_DontShootMe.label>Don't Shoot Me, Damn it!</Miho_Unique_DontShootMe.label>
+	<Miho_PlayerColonist.label>Miho colonist (Caster)</Miho_PlayerColonist.label>
+	<Miho_PlayerColonistNonMagic.label>Miho colonist</Miho_PlayerColonistNonMagic.label>
+	<Miho_PlayerColonistFeral.label>Feral Miho</Miho_PlayerColonistFeral.label>
+	<Miho_PlayerColonistBorn.label>Miho colonist</Miho_PlayerColonistBorn.label>
+</LanguageData>

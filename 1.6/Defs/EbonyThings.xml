@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_Ebony_Silk</defName>
+    <label>화현 뽕나무</label>
+    <description>화현 누에나방이 서식하는 거대한 뽕나무 입니다. 1년 내내 오디가 수확되는 풍요로운 나무이기도 합니다.</description>
+    <graphicData>
+      <texPath>Things/Plants/EbonyMulberry</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <statBases>
+      <Beauty>6</Beauty>
+      <BeautyOutdoors>6</BeautyOutdoors>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <minifiedDef IsNull="True" />
+    <ingestible />
+    <plant>
+			<growDays>16</growDays>
+			<sowWork>8000</sowWork>
+      <dieIfLeafless>false</dieIfLeafless>
+      <visualSizeRange>1.2~2.5</visualSizeRange>
+      <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites Inherit="False">
+        <li>Miho_Silk</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.15</topWindExposure>
+      <mustBeWildToSow>false</mustBeWildToSow>
+	  <harvestAfterGrowth>0.9</harvestAfterGrowth>
+	  <harvestMinGrowth>0.95</harvestMinGrowth>
+      <immatureGraphicPath>Things/Plants/EbonyMulberry</immatureGraphicPath>
+      <harvestWork>310</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <forceIsTree>true</forceIsTree>
+      <harvestYield>3</harvestYield>
+      <harvestedThingDef>Miho_Ebony_SilkCloth</harvestedThingDef>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>Miho_Ebony_Mulberry</thingToSpawn>
+				<spawnCount>15</spawnCount>
+				<spawnIntervalRange>1200000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+				<spawnMaxAdjacent>25</spawnMaxAdjacent>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_Ebony_SilkCloth</defName>
+    <label>화현 비단</label>
+    <description>화현 비단은 약초를 먹는 누에의 고치를 태워 만든 아름답고 단열성이 강한 비단입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/EbonyLog/EbonySilk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5.5</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>3</DeteriorationRate>
+      <StuffPower_Armor_Sharp>1.40</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>4.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <color>(72,72,72)</color>
+      <statFactors>
+        <Flammability>0.4</Flammability>
+        <MaxHitPoints>1.1</MaxHitPoints>
+        <Beauty>4</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Miho_Ebony_Mulberry</defName>
+    <label>화현 오디</label>
+    <description>화현 뽕나무의 열매입니다. 약물의 재료로 쓰이고, 생으로 먹으면 극상의 맛을 자랑합니다. 다만 보관 기간이 짧으니 주의해 주세요.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Items/MihoMulberry</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought>Ate_Miho_Ebony_Mulberry</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <ThoughtDef>
+    <defName>Ate_Miho_Ebony_Mulberry</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>화연 오디를 섭취함</label>
+        <description>정말 맛있는 열매야.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

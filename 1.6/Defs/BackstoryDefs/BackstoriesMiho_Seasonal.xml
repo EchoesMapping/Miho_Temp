@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
+    <defName>Miho_Adult_Seasonal_Santa</defName>
+    <title>산타의 작은 도우미</title>
+    <titleShort>산타의 작은 도우미</titleShort>
+    <baseDesc>본래는 산타의 작은 도우미지만, 어떨때는 본인이 크리스마스 선물이 되기도 합니다.</baseDesc>
+	<skillGains>
+			<Social>4</Social>
+      <Medicine>2</Medicine>
+      <Cooking>2</Cooking>
+
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>MihoSeasonalSanta</li>
+    </spawnCategories>
+    <possessions>
+      <MealSurvivalPack>1</MealSurvivalPack>
+      <Silver>80</Silver>
+    </possessions>
+  </AlienRace.AlienBackstoryDef> 
+	
+</Defs>

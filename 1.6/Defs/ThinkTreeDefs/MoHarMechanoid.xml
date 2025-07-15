@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+  <ThinkTreeDef>
+    <defName>Miho_Animal_Main</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>MentalStateNonCritical</treeDef>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+		
+		<!-- Do a queued job if possible -->
+
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+          </subNodes>
+        </li>
+          
+        <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+  	<ThinkTreeDef>
+		<defName>Miho_Animal_Constant</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+					<subNodes>
+                        <!-- Fight enemies -->
+						<li Class="JobGiver_AIFightEnemies" />
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+
+  <ThinkTreeDef>
+    <defName>Miho_AnimalHaul_AI</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+
+		<li Class="JobGiver_RescueNearby">
+		  <radius>30</radius>
+		</li>
+		
+
+		<li Class="ThinkNode_Tagger">
+			<tagToGive>Misc</tagToGive>
+			<subNodes>
+				<li Class="JobGiver_Haul" />
+			</subNodes>
+		</li>
+
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+          </subNodes>
+        </li>		
+		
+		<li Class="ThinkNode_Subtree">
+          <treeDef>SatisfyBasicNeeds</treeDef>
+        </li>	
+
+        <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+  	<ThinkTreeDef>
+		<defName>Miho_AnimalHaul_Constant</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+					<subNodes>
+            <!-- Lord directives -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>LordDutyConstant</treeDef>
+            </li>
+			</subNodes>
+				
+				</li>
+
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

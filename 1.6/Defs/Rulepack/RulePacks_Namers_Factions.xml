@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+ 
+
+  <RulePackDef>
+    <defName>NamerPersonMiho</defName>
+    <include>
+      <li>MihoWordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MihoName] [MihoSurname]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>MihoWordUtility</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>MihoName->모마릿지</li>
+        <li>MihoName->소벌도리</li>
+        <li>MihoName->시미</li>
+        <li>MihoName->밝아뉘</li>
+        <li>MihoName->밝아누리</li>
+        <li>MihoName->사달</li>
+        <li>MihoName->적덕</li>
+        <li>MihoName->풍</li>
+        <li>MihoName->시미</li>
+        <li>MihoName->개금</li>
+        <li>MihoName->평강</li>
+        <li>MihoName->도라</li>
+        <li>MihoName->마로</li>
+        <li>MihoName->고은</li>
+        <li>MihoName->고운</li>
+        <li>MihoName->기쁨</li>
+        <li>MihoName->꽃님</li>
+        <li>MihoName->가람</li>
+        <li>MihoName->가온</li>
+        <li>MihoName->가을</li>
+        <li>MihoName->겨운</li>
+        <li>MihoName->겨레</li>
+        <li>MihoName->나루</li>
+        <li>MihoName->나라</li>
+        <li>MihoName->나래</li>
+        <li>MihoName->나리</li>
+        <li>MihoName->나무</li>
+        <li>MihoName->나은</li>
+        <li>MihoName->노을</li>
+        <li>MihoName->누리</li>
+        <li>MihoName->다래</li>
+        <li>MihoName->다미</li>
+        <li>MihoName->다솔</li>
+        <li>MihoName->다솜</li>
+        <li>MihoName->다온</li>
+        <li>MihoName->다운</li>
+        <li>MihoName->다해</li>
+        <li>MihoName->다희</li>
+        <li>MihoName->다흰</li>
+        <li>MihoName->단비</li>
+        <li>MihoName->달</li>
+        <li>MihoName->달래</li>
+        <li>MihoName->닻별</li>
+        <li>MihoName->대솔</li>
+        <li>MihoName->동녘</li>
+        <li>MihoName->단미</li>
+        <li>MihoName->라온</li>
+        <li>MihoName->루다</li>
+        <li>MihoName->루마</li>
+        <li>MihoName->마루</li>
+        <li>MihoName->마음</li>
+        <li>MihoName->맑음</li>
+        <li>MihoName->무늬</li>
+        <li>MihoName->미리내</li>
+        <li>MihoName->미르</li>
+        <li>MihoName->믿음</li>
+        <li>MihoName->바다</li>
+        <li>MihoName->바람</li>
+        <li>MihoName->바름</li>
+        <li>MihoName->바우</li>
+        <li>MihoName->반디</li>
+        <li>MihoName->밝음</li>
+        <li>MihoName->밤비</li>
+        <li>MihoName->버들</li>
+        <li>MihoName->벼리</li>
+        <li>MihoName->별</li>
+        <li>MihoName->별님</li>
+        <li>MihoName->별비</li>
+        <li>MihoName->보라</li>
+        <li>MihoName->보름</li>
+        <li>MihoName->보람</li>
+        <li>MihoName->봄</li>
+        <li>MihoName->봄소리</li>
+        <li>MihoName->봄이</li>
+        <li>MihoName->빛</li>
+        <li>MihoName->빛나</li>
+        <li>MihoName->빛가람</li>
+        <li>MihoName->빛내리</li>
+        <li>MihoName->산들</li>
+        <li>MihoName->새결</li>
+        <li>MihoName->새난슬</li>
+        <li>MihoName->사랑</li>
+        <li>MihoName->새록</li>
+        <li>MihoName->새론</li>
+        <li>MihoName->새벽</li>
+        <li>MihoName->새미</li>
+        <li>MihoName->새라</li>
+        <li>MihoName->새이</li>
+        <li>MihoName->샛별</li>
+        <li>MihoName->소라</li>
+        <li>MihoName->소리</li>
+        <li>MihoName->소미</li>
+        <li>MihoName->솔비</li>
+        <li>MihoName->슬기</li>
+        <li>MihoName->슬미</li>
+        <li>MihoName->슬비</li>
+        <li>MihoName->아담</li>
+        <li>MihoName->아라</li>
+        <li>MihoName->아람</li>
+        <li>MihoName->아름</li>
+        <li>MihoName->아름송이</li>
+        <li>MihoName->아리</li>
+        <li>MihoName->엄지</li>
+        <li>MihoName->여름</li>
+        <li>MihoName->여울</li>
+        <li>MihoName->예님</li>
+        <li>MihoName->예슬</li>
+        <li>MihoName->우리</li>
+        <li>MihoName->유리</li>
+        <li>MihoName->으뜸</li>
+        <li>MihoName->윤슬</li>
+        <li>MihoName->은누리</li>
+        <li>MihoName->이슬</li>
+        <li>MihoName->잎새</li>
+        <li>MihoName->이삭</li>
+        <li>MihoName->잔디</li>
+        <li>MihoName->조은</li>
+        <li>MihoName->제나</li>
+        <li>MihoName->초롱</li>
+        <li>MihoName->초롬</li>
+        <li>MihoName->포근</li>
+        <li>MihoName->푸름</li>
+        <li>MihoName->풀잎</li>
+        <li>MihoName->파랑</li>
+        <li>MihoName->하나</li>
+        <li>MihoName->이슬</li>
+        <li>MihoName->하늘</li>
+        <li>MihoName->하늬</li>
+        <li>MihoName->하루</li>
+        <li>MihoName->하얀</li>
+        <li>MihoName->하양</li>
+        <li>MihoName->하은</li>
+        <li>MihoName->한결</li>
+        <li>MihoName->한별</li>
+        <li>MihoName->한누리</li>
+        <li>MihoName->한빛</li>
+        <li>MihoName->한샘</li>
+        <li>MihoName->한솔</li>
+        <li>MihoName->한울</li>
+        <li>MihoName->해리</li>
+        <li>MihoName->해솔</li>
+        <li>MihoName->햇님</li>
+        <li>MihoName->햇살</li>
+        <li>MihoName->혜윰</li>
+        <li>MihoName->미호</li>
+        <li>MihoName->미야</li>
+        <li>MihoName->호야</li>
+        <li>MihoName->다야</li>
+
+  <!--         
+        <li>MihoSurname->Lagopus</li>
+        <li>MihoSurname->Vulpes</li>
+        <li>MihoSurname->Velox</li>
+        <li>MihoSurname->Macrotis</li>
+        <li>MihoSurname->Corsac</li>
+        <li>MihoSurname->Chama</li>
+
+        <li>MihoSurname->Pallida</li>
+        <li>MihoSurname->Bengalensis</li>
+        <li>MihoSurname->Ferrilata</li>
+        <li>MihoSurname->Cana</li>
+        <li>MihoSurname->Rueppelli</li>
+        <li>MihoSurname->Zerda</li>
+		
+        <li>MihoSurname->Iittoralis</li>
+        <li>MihoSurname->Sechurae</li>
+        <li>MihoSurname->Vetulus</li>
+        <li>MihoSurname->Griseus</li>
+        <li>MihoSurname->Fulvipes</li>
+        <li>MihoSurname->Culpaeus</li>-->
+		
+        <li>MihoSurname->라고푸스</li>
+        <li>MihoSurname->불페스</li>
+        <li>MihoSurname->벨록스</li>
+        <li>MihoSurname->마크로티스</li>
+        <li>MihoSurname->코르삭</li>
+        <li>MihoSurname->차마</li>
+
+        <li>MihoSurname->팔리다</li>
+        <li>MihoSurname->벵갈렌시스</li>
+        <li>MihoSurname->페리라타</li>
+        <li>MihoSurname->카나</li>
+        <li>MihoSurname->루페리</li>
+        <li>MihoSurname->제르다</li>
+		
+        <li>MihoSurname->리토랄리스</li>
+        <li>MihoSurname->세츄레</li>
+        <li>MihoSurname->베투루스</li>
+        <li>MihoSurname->그리세우스</li>
+        <li>MihoSurname->풀비페스</li>
+        <li>MihoSurname->쿨페루스</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+
+  <RulePackDef>
+    <defName>NamerPersonMihoUniqueShoot</defName>
+    <include>
+      <li>MihoWordUtilityUniqueShoot</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MihoName] [MihoSurname]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>MihoWordUtilityUniqueShoot</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>MihoName->호야</li>
+
+
+  <!--         
+        <li>MihoSurname->Lagopus</li>
+        <li>MihoSurname->Vulpes</li>
+        <li>MihoSurname->Velox</li>
+        <li>MihoSurname->Macrotis</li>
+        <li>MihoSurname->Corsac</li>
+        <li>MihoSurname->Chama</li>
+
+        <li>MihoSurname->Pallida</li>
+        <li>MihoSurname->Bengalensis</li>
+        <li>MihoSurname->Ferrilata</li>
+        <li>MihoSurname->Cana</li>
+        <li>MihoSurname->Rueppelli</li>
+        <li>MihoSurname->Zerda</li>
+		
+        <li>MihoSurname->Iittoralis</li>
+        <li>MihoSurname->Sechurae</li>
+        <li>MihoSurname->Vetulus</li>
+        <li>MihoSurname->Griseus</li>
+        <li>MihoSurname->Fulvipes</li>
+        <li>MihoSurname->Culpaeus</li>-->
+		
+
+		
+        <li>MihoSurname->리토랄리스</li>
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  
+  
+  
+</Defs>

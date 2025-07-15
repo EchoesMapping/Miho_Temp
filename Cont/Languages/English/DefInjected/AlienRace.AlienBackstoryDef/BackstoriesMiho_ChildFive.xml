@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Miho_Child_HuntFoxFive.title>hunting fox</Miho_Child_HuntFoxFive.title>
+	<Miho_Child_HuntFoxFive.titleShort>hunting fox</Miho_Child_HuntFoxFive.titleShort>
+	<Miho_Child_HuntFoxFive.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFoxFive.baseDesc>
+
+	<Miho_Child_DesertFive.title>desert fox</Miho_Child_DesertFive.title>
+	<Miho_Child_DesertFive.titleShort>desert fox</Miho_Child_DesertFive.titleShort>
+	<Miho_Child_DesertFive.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_DesertFive.baseDesc>
+
+</LanguageData>

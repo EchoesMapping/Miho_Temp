@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<RulePackDef>
+		<defName>MihoLanguage</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->천상어</li>
+				<li>r_name->햇님어</li>
+				<li>r_name->미호어</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!---->
+</Defs>

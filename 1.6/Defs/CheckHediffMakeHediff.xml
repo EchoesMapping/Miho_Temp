@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Human_CheckHediffMakeHediff</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Hediff_Semen</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Plus_Hediff</li>
+		</makeHediffDefs>
+		<tickMultiflier>100</tickMultiflier>
+		<hediffSeverity>0.002</hediffSeverity>
+
+		<maxHediffSevertyMessage>BBBBBB</maxHediffSevertyMessage>
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>-->
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Tea</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_Tea_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Elegans_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>30000</tickMultiflier>
+		<hediffSeverity>0.05</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+
+	    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Pipe</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_Pipe_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Elegans_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>30000</tickMultiflier>
+		<hediffSeverity>0.1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Restraint</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_EltexTalisman_Hediff</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Restraint_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>30000</tickMultiflier>
+		<hediffSeverity>0.1</hediffSeverity>
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Huntress</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildHuntress_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Huntress_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Shamaness</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildShamaness_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Shamaness_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Summoner</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildSummoner_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Summoner_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Temptress</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildTemptress_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Temptress_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Tinker</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildTinker_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Tinker_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Celestial</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_PositiveFlower_ChildCelestial_High</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Celestial_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>1000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Nojob</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li>Miho_Nojob</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Tinker_Start_Hediff</li>
+			<li>Miho_Temptress_Start_Hediff</li>
+			<li>Miho_Summoner_Start_Hediff</li>
+			<li>Miho_Shamaness_Start_Hediff</li>
+			<li>Miho_Huntress_Start_Hediff</li>
+			<li>Miho_Celestial_Start_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>6000</tickMultiflier>
+		<hediffSeverity>100</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Abomi_CheckHediffMakeHediff_PreAbomi</defName>
+		<targetRace>Miho_Abomi</targetRace>
+		<hediffDefs>
+			<li>Miho_PreAbomi_Hediff</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Abomi_Hediff</li>
+
+		</makeHediffDefs>
+		<tickMultiflier>5000</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+	
+<!--
+    <CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+		<defName>Miho_CheckHediffMakeHediff_Cool</defName>
+		<targetRace>Alien_Miho</targetRace>
+		<hediffDefs>
+			<li MayRequire="Dubwise.DubsBadHygiene">Washing</li>
+		</hediffDefs>
+		<makeHediffDefs>
+			<li>Miho_Wash_Hediff</li>
+		</makeHediffDefs>
+		<tickMultiflier>150</tickMultiflier>
+		<hediffSeverity>1</hediffSeverity>
+	</CheckHediffMakeHediff.CheckHediffMakeHediffDef>
+-->
+
+		<!--
+		번역에 쓸 수 있는것들
+		{0} : pawn.def.LabelCap,
+        {1} : pawn.LabelShort,
+        {2} : hediffDefs[j].label
+		{3} : pawnHediff.Severity
+		-->
+</Defs>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MechGestatorBase">
+    <defName>Miho_MechFactory</defName>
+    <label>미호 메카닉 공장</label>
+    <description>거대한 메카닉 공장입니다. 여러가지 메카노이드들을 생산 가능합니다.</description>
+    <graphicData>
+			<texPath>Things/Building/MihoDroneFactory/MihoDroneFactory</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(9.9,9.9)</drawSize>
+      <shadowData>
+        <volume>(5, 5, 5)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Icon/MihoDroneFactory</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <recipes>
+      <li>Miho_Mech_Sapsal</li>
+	 <li>Miho_Mech_SapsalPsy</li>
+      <li>Miho_Mech_DesertSphex</li>
+      <li>Miho_Mech_Bulgasal</li>
+      <li>Miho_Mech_BulgasalGrenade</li>
+      <li>Miho_Mech_CataphractRocket</li>
+      <li>Miho_Mech_CataphractCluRocket</li>
+      <li>Miho_Mech_Clibanar</li>
+	  
+      <li>Miho_Mech_Balbari</li>
+
+	  <li>Miho_Mech_HeavyMechCore</li>
+	  <li>Miho_Mech_HeavyRocketCore</li>
+
+    </recipes>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(5,5)</size>
+    <designationCategory>MihoBuilding</designationCategory>
+
+    <costList>
+      <Miho_Ceramics>300</Miho_Ceramics>
+      <Steel>75</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+
+    </costList>
+    <researchPrerequisites>
+      <li>Miho_HeavyFactory</li>
+    </researchPrerequisites>
+    <building>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(-1.135, 0.894)</preRotationOffset>
+          <size>(0.691, 0.1)</size>
+        </north>
+        <south>
+          <preRotationOffset>(-1.133, 0.83)</preRotationOffset>
+          <size>(0.736, 0.0863)</size>
+        </south>
+        <east>
+          <preRotationOffset>(1.068, -0.971)</preRotationOffset>
+          <size>(0.812, 0.09)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-1.11, -0.93)</preRotationOffset>
+          <size>(0.812, 0.09)</size>
+        </west>
+      </barDrawData>
+      <formingGraphicData>
+        <texPath>Mech/Sapsal/SapsalMake</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1,1)</drawSize>
+      </formingGraphicData>
+      <formingMechPerRotationOffset>
+        <li>(0, 0, 0.45)</li>
+        <li>(0, 0, 0.45)</li>
+        <li>(0, 0, 0.45)</li>
+        <li>(0, 0, 0.45)</li>
+      </formingMechPerRotationOffset>
+      <mechGestatorCylinderGraphic>
+        <texPath>Miho/Blank</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(5.6,4)</drawSize>
+        <shaderType>Transparent</shaderType>
+      </mechGestatorCylinderGraphic>
+      <mechGestatorTopGraphic>
+        <texPath>Miho/Blank</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(5.6,4)</drawSize>
+      </mechGestatorTopGraphic>
+      <gestatorFormingMote>
+        <north>MechGestatorForming_North</north>
+        <east>MechGestatorForming_East</east>
+        <west>MechGestatorForming_East</west>
+        <south>MechGestatorForming_South</south>
+      </gestatorFormingMote>
+      <gestatorCycleCompleteMote>
+        <north>MechGestatorCycleComplete_North</north>
+        <east>MechGestatorCycleComplete_East</east>
+        <west>MechGestatorCycleComplete_East</west>
+        <south>MechGestatorCycleComplete_South</south>
+      </gestatorCycleCompleteMote>
+      <gestatorFormedMote>
+        <north>MechGestatorFormed_North</north>
+        <east>MechGestatorFormed_East</east>
+        <west>MechGestatorFormed_East</west>
+        <south>MechGestatorFormed_South</south>
+      </gestatorFormedMote>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  <WorkGiverDef>
+    <defName>DoBillsMake_Miho_MechFactory</defName>
+    <label>미호 메카노이드 제작</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>210</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Miho_MechFactory</li>
+    </fixedBillGiverDefs>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Under_SeasonalSanta</defName>
+    <label>미호 산타복</label>
+    <description>산타클로스는 존재하지 않아요! 하지만, 앏은 산타복을 입고 궤도에 떠도는 미친 여우들은 존재하죠.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/UnderwearSeasonalSanta/UnderwearSeasonalSanta</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Miho_Ebony_SilkCloth>75</Miho_Ebony_SilkCloth>
+      <DevilstrandCloth>25</DevilstrandCloth>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>220</MaxHitPoints>
+	  <WorkToMake>26000</WorkToMake>
+      <Mass>0.2</Mass>
+      <StuffEffectMultiplierArmor>0.06</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>34</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>50</PsychicEntropyMax>
+	  <MeditationFocusGain>0.15</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/UnderwearSeasonalSanta/UnderwearSeasonalSanta</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Miho_Under</li>
+      </layers>
+      <tags>
+        <li>MihoSeasonalSanta</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator> 
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>Miho_Fireball</defName>
+        <cooldownTicks>60</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Thunder</defName>
+        <cooldownTicks>2500</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Talisman</defName>
+        <cooldownTicks>7500</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_FanofKnives</defName>
+        <cooldownTicks>15000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Word</defName>
+        <cooldownTicks>60</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_WordPowerstrike</defName>
+        <cooldownTicks>2500</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Shield</defName>
+        <cooldownTicks>1250</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Berserk</defName>
+        <cooldownTicks>5000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Butterfly</defName>
+        <cooldownTicks>625</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Abomi</defName>
+        <cooldownTicks>3125</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Fox</defName>
+        <cooldownTicks>420000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Turret</defName>
+        <cooldownTicks>2500</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Heal</defName>
+        <cooldownTicks>5000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_HealTwo</defName>
+        <cooldownTicks>5000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Seduce</defName>
+        <cooldownTicks>300000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Spiritualize</defName>
+        <cooldownTicks>300000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Sandevistan</defName>
+        <cooldownTicks>420000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_Metalweave</defName>
+        <cooldownTicks>420000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_TinkerAdvanced</defName>
+        <cooldownTicks>420000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>Miho_SuperGun</defName>
+        <cooldownTicks>3600000</cooldownTicks>
+    </AbilityGroupDef>
+</Defs>

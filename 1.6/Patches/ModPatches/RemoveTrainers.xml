@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
+        <value>
+          <Plant_PosFlower>0.075</Plant_PosFlower>
+
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+        <value>
+          <Plant_PosFlower>0.05</Plant_PosFlower>
+
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+        <value>
+          <Plant_PosFlower>0.06</Plant_PosFlower>
+
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+        <value>
+          <Plant_PosFlower>0.02</Plant_PosFlower>
+
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
+        <value>
+          <Plant_PosFlower>0.025</Plant_PosFlower>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+  
+</Patch>

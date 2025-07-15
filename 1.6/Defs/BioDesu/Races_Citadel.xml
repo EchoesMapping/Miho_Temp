@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Miho_AbomiWeapon_MissileTurret</defName>
+    <label>미호 혐오체 로켓</label>
+    <description>매우 탄속이 빠른 광역제압 로켓입니다.</description>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <graphicData>
+      <texPath>NewMech/SapsalRecon/SapsalReconGun/SapsalReconGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>125</Mass>
+      <AccuracyTouch>0.01</AccuracyTouch>
+      <AccuracyShort>0.01</AccuracyShort>
+      <AccuracyMedium>0.01</AccuracyMedium>
+      <AccuracyLong>0.01</AccuracyLong>
+    </statBases>
+    <verbs>
+      <li Class="MihoLib.VerbProperties_ShotGun">
+        <verbClass>MihoLib.Verb_Shoot_ShootGun</verbClass>
+        <defaultProjectile>Miho_MechWeapon_CluRocket_Proj</defaultProjectile>
+        <range>55</range>
+        <minRange>18</minRange>
+        <forcedMissRadius>0.9</forcedMissRadius>
+
+        <soundCast>Miho_Rocket</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>50</ticksBetweenBurstShots>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <defaultCooldownTime>1200</defaultCooldownTime>
+        <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <pelletCount>8</pelletCount>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Miho_AbomiWeapon_DeathBlink</defName>
+    <label>죽음의 눈</label>
+    <description>이런 괴물이 마법소녀마냥 윙크를 하면 눈에서 별모양 투사체가 날아가 눈 앞에 있던 적이 잿더미가 됩니다. 배덕감 미쳤어.</description>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <graphicData>
+      <texPath>NewMech/SapsalRecon/SapsalReconGun/SapsalReconGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>60</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Miho_AbomiWeapon_DeathBlink_Proj</defaultProjectile>
+        <range>28.9</range>
+        <minRange>1.9</minRange>
+        <forcedMissRadius>0.5</forcedMissRadius>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <defaultCooldownTime>6.7</defaultCooldownTime>
+        <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Miho_Mote_GraserBeamBase</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Projectile/MihoGraserBeam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Projectile/MihoGraserBeamNoiseA</_ExtraTexA>
+        <_ExtraTexB>/Things/Projectile/MihoGraserBeamNoiseB</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_AbomiWeapon_DeathBlink_Proj</defName>
+    <label>Blink</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/MihoThunderSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+
+    </graphicData>
+    <projectile>
+      <damageDef>Miho_MagicBombEMP</damageDef>
+      <explosionRadius>1.5</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <damageAmountBase>32</damageAmountBase>
+      <armorPenetrationBase>0.95</armorPenetrationBase>
+      <speed>110</speed>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_ProjectileEffecter">
+        <effecterDef>Miho_MagicCircleProj</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+</Defs>

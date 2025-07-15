@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MihoVFE_SmallIndustry</defName>
+		<label>미호 공업 공장</label>
+		<description>산업수준의 자동 공장 입니다.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/MihoIndustry/MihoIndustry</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.8,5.8)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>150</Steel>
+			<Miho_Ceramics>150</Miho_Ceramics>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Building/MihoIndustry/MihoIndustry</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>100</Mass>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(3,3)</size>
+		<designationCategory>MihoBuilding</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/MihoIndustry/MihoIndustry</buildingOnGraphic>
+				<numberOfInputs>2</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>Miho_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>Miho_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+
+				<inputSlots>
+					<li>(0,0,-2)</li>
+					<li>(2,0,0)</li>
+					<li>(-2,0,0)</li>
+
+				</inputSlots>
+
+
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+			<li>Miho_HeavyFactory</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+   		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_SmallIndustry_Factory_One</defName>
+		<building>MihoVFE_SmallIndustry</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>Steel</li>
+		</secondItems>
+		<amount>
+			<li>25</li>
+			<li>3</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_CeramicDrill</result>	
+		<yield>5</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.125</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_SmallIndustry_Factory_Two</defName>
+		<building>MihoVFE_SmallIndustry</building>
+		<items>
+			<li>Miho_Ceramics</li>
+		</items>	
+		<secondItems>
+			<li>Plasteel</li>
+		</secondItems>
+		<amount>
+			<li>25</li>
+			<li>3</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_PlasteelDrill</result>	
+		<yield>5</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.125</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_SmallIndustry_Factory_Three</defName>
+		<building>MihoVFE_SmallIndustry</building>
+		<items>
+			<li>Miho_Weapon_RifleCQB</li>
+		</items>	
+		<secondItems>
+			<li>ComponentSpacer</li>
+		</secondItems>
+		<amount>
+			<li>1</li>
+			<li>1</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_Weapon_RifleCQBGap</result>	
+		<yield>1</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_SmallIndustry_Factory_Four</defName>
+		<building>MihoVFE_SmallIndustry</building>
+		<items>
+			<li>Miho_Weapon_RifleDefence</li>
+		</items>	
+		<secondItems>
+			<li>ComponentSpacer</li>
+		</secondItems>
+		<amount>
+			<li>1</li>
+			<li>2</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_Weapon_RifleDefenceGap</result>	
+		<yield>1</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MihoVFE_SmallIndustry_Factory_Five</defName>
+		<building>MihoVFE_SmallIndustry</building>
+		<items>
+			<li>Miho_Weapon_RifleMarksman</li>
+		</items>	
+		<secondItems>
+			<li>ComponentSpacer</li>
+		</secondItems>
+		<amount>
+			<li>1</li>
+			<li>3</li>
+		</amount>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>500</maxTotalOutput>
+		<result>Miho_Weapon_RifleMarksmanGap</result>	
+		<yield>1</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2.5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+</Defs>

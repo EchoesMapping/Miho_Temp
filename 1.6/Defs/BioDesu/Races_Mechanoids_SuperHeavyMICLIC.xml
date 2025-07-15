@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MihoSuperHeavyMechanoid">
+    <defName>Miho_Mech_Clibanar</defName>
+    <label>다각 개척공병전차</label>
+    <description>중무장한 개마급 다각 공병전차에 엔진을 개량하고, 험지개척탄을 장착한 모델입니다.</description>
+    <fillPercent>0.9</fillPercent>
+
+    <statBases>
+      <MoveSpeed>2.25</MoveSpeed>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <BandwidthCost>8</BandwidthCost>
+      <WorkSpeedGlobal>3.2</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+
+    </statBases>
+    <race>
+      <thinkTreeMain>Miho_Reload_Mechanoid</thinkTreeMain>
+      <mechEnabledWorkTypes>
+          <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <body>Pikeman</body>
+      <baseBodySize>6</baseBodySize>
+      <baseHealthScale>6.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>Miho_MechWeapon_MachinegunTurret</turretDef>
+        <angleOffset>-0</angleOffset>
+      </li>
+    </comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>MihoGunshotMiclic</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_Clibanar</defName>
+    <label>다각 개척공병전차</label>
+    <race>Miho_Mech_Clibanar</race>
+    <combatPower>800</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Gaema/GaemaTwo</texPath>
+            <maskPath>NewMech/Gaema/Mask/Gaema</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Gaema/GaemaTwo</texPath>
+            <maskPath>NewMech/Gaema/Mask/Gaema</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <weaponTags>
+      <li>MihoClibanar</li>
+    </weaponTags>
+    <isGoodBreacher>false</isGoodBreacher>
+
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <ThingDef ParentName="LightMechanoidGunRanged">
+    <defName>Miho_MechWeapon_Miclic</defName>
+    <label>미호 다각 개척공병전차용 포탑</label>
+    <description>13.7mm탄 호치키스 탄을 사용하는 기관포를 감싼 포탑입니다. 기존 기관포보다 조금 더 정밀하며, 포탑 상부에 험지개척탄도 장착되어 있습니다.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>NewMech/Gaema/GaemaGun/GaemaHeavyGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawOffset>(0,1,0)</drawOffset>
+
+      <drawSize>2.15</drawSize>
+    </graphicData>
+    <altitudeLayer>Pawn</altitudeLayer>
+	<equippedAngleOffset>45</equippedAngleOffset>
+
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>75</Mass>
+      <AccuracyTouch>0.42</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.84</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MihoClibanar</li>
+    </weaponTags>
+    <verbs>
+
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_MechWeapon_HeavyAutoCannon_Proj</defaultProjectile>
+        <warmupTime>2.05</warmupTime>
+        <range>42.9</range>
+        <minRange>1.9</minRange>
+
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Miho_KineticCannonSmall</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+		
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>Miho_MechMiclicReloadable</abilityDef>
+        <maxCharges>1</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>missile charges</chargeNoun>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>75</ammoCountPerCharge>
+        <baseReloadTicks>1200</baseReloadTicks>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+  
+  <AbilityDef>
+    <defName>Miho_MechMiclicReloadable</defName>
+    <label>험지개척탄</label>
+    <description>험지개척탄을 발사합니다. 정면에 존재하는 모든 것들이 파괴됩니다.</description>
+    <iconPath>Things/Projectile/MihoRocket</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>false</aiCanUse>
+
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>42.9</range>
+      <warmupTime>2.5</warmupTime>
+       <minRange>9.9</minRange>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+      <soundCast>Miho_ATRocket</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_MechWeapon_Miclic_Proj</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+
+  <DamageDef>
+    <defName>MihoGunshotMiclic</defName>
+    <label>gunshot</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Miho_Plasma_Hediff</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <buildingDamageFactor>32</buildingDamageFactor>
+    <plantDamageFactor>24</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>35</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_MechWeapon_Miclic_Proj</defName>
+		<label>meow</label>
+		<graphicData>
+            <texPath>Things/Projectile/MihoCluRocket</texPath>
+			<drawSize>4</drawSize>
+			<shaderType>TransparentPostLight</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>Miho_MiclicReady</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>12</min><max>12</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+		</comps>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile Inherit="false">
+			<speed>34</speed>
+			<damageDef>MihoGunshotMiclic</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<explosionRadius>5</explosionRadius>
+			<!-- <explosionDelay>100</explosionDelay> -->
+			<!-- <postExplosionGasType>BlindSmoke</postExplosionGasType> -->
+			</projectile>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Miho_MiclicReady</defName>
+		<label>험지개척탄</label>
+		<description>펑</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/NullDraw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<uiIconPath>Things/NullDraw</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>15</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-10</Beauty>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationHotKey>Misc1</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>11</lifespanTicks>
+			</li>
+		</comps>
+		<killedLeavings Inherit="false">
+			<Miho_Miclic>1</Miho_Miclic>
+		</killedLeavings>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Miho_Miclic</defName>
+		<label>험지개척탄</label>
+		<description>펑</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/NullDraw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<uiIconPath>Things/NullDraw</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>15</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-10</Beauty>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationHotKey>Misc1</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5</explosiveRadius>
+				<explosiveDamageType>MihoGunshotMiclic</explosiveDamageType>
+				<damageAmountBase>12</damageAmountBase>
+				<startWickHitPointsPercent>0.99</startWickHitPointsPercent>
+				<wickTicks>1</wickTicks>
+			</li>
+			<li Class="CompProperties_ProximityFuseMiho">
+				<target>Miho_Miclic</target>
+				<radius>0.1</radius>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_Clibanar</defName>
+    <label>다각 개척공병전차 제작</label>
+    <description>다각 개척공병전차 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_HeavyMechCore</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_Clibanar>1</Miho_Mech_Clibanar>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_Clibanar</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_HeavyWarBattery</researchPrerequisite>
+    <gestationCycles>6</gestationCycles>
+
+  </RecipeDef>
+</Defs>

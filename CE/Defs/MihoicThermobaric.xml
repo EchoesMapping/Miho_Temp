@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  	<ThingCategoryDef>
+		<defName>AmmoMiho75x300mm</defName>
+		<label>75x300mm Mihoic plasmanized thermobaric cartridge</label>
+		<parent>AmmoShells</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberAutocannonLarge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Miho75x300mm</defName>
+		<label>75x300mm plasmanized thermobaric</label>
+		<ammoTypes>
+			<Ammo_75x300mmMiho_Thermobaric>Bullet_75x300mmMiho_Thermobaric</Ammo_75x300mmMiho_Thermobaric>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="AmmoMiho75x300mmBase" ParentName="HeavyAmmoBase" Abstract="True">
+		<description>Large caliber cartridge used by autocannons and anti-aircraft cannons.</description>
+		<statBases>
+			<Mass>4.0</Mass>
+			<Bulk>7.5</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoMiho75x300mm</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoMiho75x300mmBase">
+		<defName>Ammo_75x300mmMiho_Thermobaric</defName>
+		<label>75x300mm Mihoic plasmanized thermobaric cartridge</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Bofors/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40.99</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_75x300mmMiho_Thermobaric</cookOffProjectile>
+	</ThingDef>
+
+
+			<ThingDef ParentName="BaseBullet">
+				<defName>Bullet_75x300mmMiho_Thermobaric</defName>
+				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+				<label>75x300mm plasmanized thermobaric shell</label>
+				<graphicData>
+					<texPath>Things/Projectile/LauncherShot</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>TransparentPostLight</shaderType>
+				</graphicData>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageDef>MihoPlasma</damageDef>
+					<damageAmountBase>280</damageAmountBase>
+					<armorPenetrationSharp>0</armorPenetrationSharp>
+					<armorPenetrationBlunt>1000</armorPenetrationBlunt>
+					<speed>60</speed>
+					<flyOverhead>false</flyOverhead>
+					<explosionRadius>3.5</explosionRadius>
+					<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+					<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+					<soundExplode>MortarIncendiary_Explode</soundExplode>
+					<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+					<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+					<soundAmbient>MortarRound_Ambient</soundAmbient>
+					<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+					<ai_IsIncendiary>true</ai_IsIncendiary>
+				</projectile>
+			</ThingDef>
+			
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75x300mmMiho_Thermobaric</defName>
+		<label>make 75x300mm Miho plasmanized thermobaric cartridge 5</label>
+		<description>Craft 5 75x300mm Miho plasmanized thermobaric cartridges.</description>
+		<jobString>Making 75x300mm Miho plasmanized thermobaric cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>108</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>66</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Miho_PlasmaSample</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>Miho_PlasmaSample</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75x300mmMiho_Thermobaric>5</Ammo_75x300mmMiho_Thermobaric>
+		</products>
+		<workAmount>24000</workAmount>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Tribal -->
+
+  <TattooDef>
+    <defName>Miho_Tear_Head</defName>
+    <label>miho tear head</label>
+    <texPath>Miho/Tattoo/Miho_HeadTear</texPath>
+    <tattooType>Face</tattooType>
+    <category>Tribal</category>
+    <styleTags>
+      <li>NaturalMiho</li>
+    </styleTags>
+  </TattooDef>
+
+  <TattooDef>
+    <defName>Miho_Tear</defName>
+    <label>miho tear</label>
+    <texPath>Miho/Tattoo/Miho_Tear</texPath>
+    <tattooType>Body</tattooType>
+    <category>Misc</category>
+    <styleTags>
+      <li>NaturalMiho</li>
+    </styleTags>
+  </TattooDef>
+
+</Defs>

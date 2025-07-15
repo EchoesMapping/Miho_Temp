@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Hair_Miho_Ash.label>oros ash hair</Hair_Miho_Ash.label>
+  <Hair_Miho_Pink.label>miho fox pink hair</Hair_Miho_Pink.label>
+  <Hair_Miho_Orange.label>miho fox orange hair</Hair_Miho_Orange.label>
+  <Hair_Miho_Red.label>miho fox red hair</Hair_Miho_Red.label>
+  <Hair_Miho_Sky.label>miho fox sky blue hair</Hair_Miho_Sky.label>
+  <Gene_Miho_AdvancedAuditory.label>Advanced Hearing</Gene_Miho_AdvancedAuditory.label>
+  <Gene_Miho_AdvancedAuditory.description>Carriers of this gene have increased social skills and short-ranged shooting hit rates. However their long-range shooting ability is reduced.</Gene_Miho_AdvancedAuditory.description>
+  <Gene_Miho_Naked.label>Perfect Body</Gene_Miho_Naked.label>
+  <Gene_Miho_Naked.description>Carriers of this gene have increased social skills and attractiveness when not wearing clothes.</Gene_Miho_Naked.description>
+  <Ears_Arctic_Miho.label>Artikos</Ears_Arctic_Miho.label>
+  <Ears_Arctic_Miho.description>Artikos Mihos can endure cold climates thanks to Bergmann's rule and their small ears. They also have a toxic resistance due to industrialization in the Northern Hemisphere. However, they slightly diminished social skills, as they use more energy for warmth instead of brain function. Though it is still comparable to average humans.</Ears_Arctic_Miho.description>
+  <Ears_Desert_Miho.label>Konis</Ears_Desert_Miho.label>
+  <Ears_Desert_Miho.description>Konis Mihos are exceptional engineers and traders of the desert. They are curious and withstand heat well. However, relying heavily on machines for various tasks has led them to be considered lazier compared to other type of Mihos.</Ears_Desert_Miho.description>
+  <Ears_Highland_Miho.label>Prodromos</Ears_Highland_Miho.label>
+  <Ears_Highland_Miho.description>Prodromos Mihos are extremely aggressive and efficient killers, tailored for controlled battlefields. They genetically require Go-juice.</Ears_Highland_Miho.description>
+  <Ears_Highmate_Miho.label>Porne</Ears_Highmate_Miho.label>
+  <Ears_Highmate_Miho.description>Porne Mihos are designed for "special" services in Glitterworld. They have exceptional social skills and the ability to fascinate others. They are superior in most hospitality situations, but unfortunately, struggle to perform in other fields.</Ears_Highmate_Miho.description>
+  <Gene_CelestialMiho.label>Celestial Fox</Gene_CelestialMiho.label>
+  <Gene_CelestialMiho.description>Foxes with this gene seem to receive the protection of star. Although it has not been verified.</Gene_CelestialMiho.description>
+</LanguageData>

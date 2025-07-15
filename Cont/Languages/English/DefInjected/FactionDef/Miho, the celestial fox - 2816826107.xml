@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_PlayerColony.label>Miho Psycaster</Miho_PlayerColony.label>
+  <Miho_PlayerColony.description>Your own Miho Settlement.</Miho_PlayerColony.description>
+  <Miho_PlayerColony.pawnSingular>colonist</Miho_PlayerColony.pawnSingular>
+  <Miho_PlayerColony.pawnsPlural>colonists</Miho_PlayerColony.pawnsPlural>
+
+  <Miho_PlayerColonyNonMagic.label>Miho Explorers</Miho_PlayerColonyNonMagic.label>
+  <Miho_PlayerColonyNonMagic.description>Your own Miho Settlement.</Miho_PlayerColonyNonMagic.description>
+  <Miho_PlayerColonyNonMagic.pawnSingular>colonist</Miho_PlayerColonyNonMagic.pawnSingular>
+  <Miho_PlayerColonyNonMagic.pawnsPlural>colonists</Miho_PlayerColonyNonMagic.pawnsPlural>
+  
+  <Miho_Faction_Megacorp.label>Miho Satrapies</Miho_Faction_Megacorp.label>
+  <Miho_Faction_Megacorp.description>The forgotten empire of a giant fox company somewhere in the galaxy. The reason they're saving money is to make an offering to the being granting them intelligence.</Miho_Faction_Megacorp.description>
+  <Miho_Faction_Megacorp.pawnSingular>Miho</Miho_Faction_Megacorp.pawnSingular>
+  <Miho_Faction_Megacorp.pawnsPlural>Miho</Miho_Faction_Megacorp.pawnsPlural>
+  <Miho_Faction_Megacorp.leaderTitle>satrap</Miho_Faction_Megacorp.leaderTitle>
+  <Miho_Faction_Supremacist.label>Miho Supremacists</Miho_Faction_Supremacist.label>
+  <Miho_Faction_Supremacist.description>A group of fox soldiers with narcisstic tendencies. They claim mankind to be uncivilized and should be their pet like animals.</Miho_Faction_Supremacist.description>
+  <Miho_Faction_Supremacist.pawnSingular>Miho</Miho_Faction_Supremacist.pawnSingular>
+  <Miho_Faction_Supremacist.pawnsPlural>Miho</Miho_Faction_Supremacist.pawnsPlural>
+  <Miho_Faction_Supremacist.leaderTitle>general</Miho_Faction_Supremacist.leaderTitle>
+</LanguageData>

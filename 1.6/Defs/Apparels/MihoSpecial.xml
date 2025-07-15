@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ApparelLayerDef>
+    <defName>Miho_Special</defName>
+    <label>Specialwear</label>
+    <drawOrder>999</drawOrder>
+  </ApparelLayerDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Miho_Apparel_Special_Magnifier</defName>
+    <label>미호 매그니파이어</label>
+    <description>더욱 먼 곳을 정확하게 조준할 수 있게 하는 장치입니다. 시력이 나쁜 미호들에게 좋습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialMagnifier/SpecialMagnifier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      <MeleeHitChance>-3</MeleeHitChance>
+      <MeleeDodgeChance>-3</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <apparel>
+      <layers>
+        <li>Miho_Special</li>
+      </layers>
+      <wornGraphicPath>Miho/Apparel/SpecialMagnifier/SpecialMagnifier</wornGraphicPath>
+      <drawData>
+        <dataSouth>
+          <layer>1000</layer>
+        </dataSouth>
+        <scale>0.7</scale>
+      </drawData>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <tags Inherit="False">
+        <li>Gunlink</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_Magnifier_Hediff</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Miho_Magnifier_Hediff</defName>
+    <label>매그니파이어착용</label>
+    <labelNoun>매그니파이어착용</labelNoun>
+    <description>매그니파이어착용.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <stages>
+      <li>
+
+        <capMods>
+
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Miho_Apparel_Special_TacticalAssist</defName>
+    <label>미호 사격보조 컴퓨터</label>
+    <description>탄도계산, 피아식별, 확대기능이 갖추어져 있는 사격보조 장치입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialTacticalAssist/SpecialTacticalAssist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>35</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Persona</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1.5</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+      <MeleeHitChance>-3</MeleeHitChance>
+      <MeleeDodgeChance>-3</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <apparel>
+      <layers>
+        <li>Miho_Special</li>
+      </layers>
+      <wornGraphicPath>Miho/Apparel/SpecialTacticalAssist/SpecialTacticalAssist</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <scale>0.7</scale>
+        <dataSouth>
+          <layer>1000</layer>
+        </dataSouth>
+      </drawData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <tags Inherit="False">
+        <li>Gunlink</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_TacticalAssist_Hediff</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Miho_TacticalAssist_Hediff</defName>
+    <label>사격보조컴퓨터 착용</label>
+    <labelNoun>사격보조컴퓨터 착용</labelNoun>
+    <description>사격보조컴퓨터 착용.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_Special_Glasses</defName>
+    <label>미호 안경</label>
+    <description>갓경입니다. 좆경이라 불러도 좋습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialGlasses/SpecialGlasses</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_Ceramics>25</Miho_Ceramics>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <generateCommonality>0.15</generateCommonality>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>-3</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Miho/Apparel/SpecialGlasses/SpecialGlasses</wornGraphicPath>
+      <drawData>
+				<scale>0.7</scale>
+			</drawData>
+      <parentTagDef>ApparelHead</parentTagDef>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Miho_Special</li>
+      </layers>
+      <tags>
+        <li>MihoGlasses</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_Glasses_Hediff</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Miho_Glasses_Hediff</defName>
+    <label>안경착용</label>
+    <labelNoun>안경착용</labelNoun>
+    <description>안경착용.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Miho_Apparel_Special_Visor</defName>
+    <label>미호 바이저</label>
+    <description>방탄재질의 반투명 바이저 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialVisor/SpecialVisor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <EquipDelay>1</EquipDelay>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-6</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <apparel>
+      <layers>
+        <li>Miho_Special</li>
+      </layers>
+      <wornGraphicPath>Miho/Apparel/SpecialVisor/SpecialVisor</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <scale>0.7</scale>
+        <dataSouth>
+          <layer>1000</layer>
+        </dataSouth>
+      </drawData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <tags Inherit="False">
+        <li>Gunlink</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_Visor_Hediff</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Miho_Visor_Hediff</defName>
+    <label>바이저 착용</label>
+    <labelNoun>바이저 착용</labelNoun>
+    <description>바이저 착용.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Miho_Apparel_Special_Toxmask</defName>
+    <label>미호 방독면</label>
+    <description>화현비단 필터로 더욱 독성 여과 능력이 좋은, 지루한 사이버펑크풍 디자인이 첨가된 방독 마스크 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialToxmask/SpecialToxmask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_Ebony_SilkCloth>60</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Silk</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.03</MoveSpeed>
+      <ToxicEnvironmentResistance>1.8</ToxicEnvironmentResistance>
+
+    </equippedStatOffsets>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Mouth</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/SpecialToxmask/SpecialToxmask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <dataNorth>
+          <layer>-3</layer>
+        </dataNorth>
+        <scale>0.7</scale>
+      </drawData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_Toxmask_Hediff</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Miho_Toxmask_Hediff</defName>
+    <label>방독면착용</label>
+    <labelNoun>방독면착용</labelNoun>
+    <description>방독면착용.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Miho_Apparel_Special_Maid</defName>
+    <label>미호 프렌치 메이드 카츄샤</label>
+    <description>아마 고대 지구의 갈리아 지방에서는 이걸 메이드 머리띠라 불렀을겁니다. 하지만 귀여우니까 봐주죠.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/SpecialMaid/SpecialMaid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_Ebony_SilkCloth>25</Miho_Ebony_SilkCloth>
+
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Miho_ApparelAdvanced</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <CleaningSpeed>1</CleaningSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <layers>
+        <li>Miho_Special</li>
+      </layers>
+      <drawData>
+        <dataSouth>
+          <layer>1000</layer>
+        </dataSouth>
+        <scale>0.7</scale>
+      </drawData>
+      <wornGraphicPath>Miho/Apparel/SpecialMaid/SpecialMaid</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <tags Inherit="False">
+        <li>Gunlink</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+</Defs>

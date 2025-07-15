@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Patch>
+
+<Operation Class="PatchOperationAdd">	
+<xpath>/Defs/ThingDef[defName = "VanometricPowerCell"]/costList</xpath>
+	<value>
+	  <Miho_ExoticMatter>20</Miho_ExoticMatter>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">	
+<xpath>/Defs/ThingSetMakerDef[defName = "MapGen_AncientTempleContents"]/root/options</xpath>
+	<value>
+
+        <li>
+          <chance>0.1</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Miho_ExoticMatter</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		</value>
+</Operation>
+	
+</Patch>

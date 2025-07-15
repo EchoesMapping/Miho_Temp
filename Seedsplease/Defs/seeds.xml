@@ -1,0 +1,31 @@
+<Defs>
+	<ThingDef ParentName="SeedBase">
+		<defName>Miho_Seed_Posflower</defName>
+		<label>posflower seeds</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_PosFlower</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_PosFlower</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Miho_Seed_Ebony</defName>
+		<label>ebony tree seeds</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Ebony_Silk</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Ebony_Silk</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

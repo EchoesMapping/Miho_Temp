@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_OrnatedCaptain</defName>
+    <label>미호 엘텍스 장교복</label>
+    <description>미호 제국의 고위 장교들이 입는 장교복 입니다. 격려 스킬을 사용 할 수 있습니다. 가끔 시장에 풀리는 중고 장교복들은 페티시적인 요소 때문에 인기가 많습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedCaptain/OnSkinOrnatedCaptain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Gold>2</Gold>
+      <Miho_Ebony_SilkCloth>90</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>420</MaxHitPoints>
+	  <WorkToMake>65000</WorkToMake>
+      <Mass>0.3</Mass>
+	  <ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.8</ArmorRating_Heat>
+
+	  <Insulation_Heat>18</Insulation_Heat>
+	  <Insulation_Cold>12</Insulation_Cold>
+
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.20</NegotiationAbility>
+      <SocialImpact>0.40</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+          <PsychicEntropyMax>15</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.25</MeditationFocusGain>
+
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedCaptain/OnSkinOrnatedCaptain</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoRoyal</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+		<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_OrnatedCaptain_Hediff</hediff>
+        <part>Torso</part>
+      </li>
+		</comps>
+		</ThingDef>
+  <HediffDef>
+    <defName>Miho_OrnatedCaptain_Hediff</defName>
+    <label>Arm</label>
+    <labelNoun>Arm</labelNoun>
+    <description>Arm</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+		<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Miho_Ability_Command_Mental</abilityDef>
+      </li>
+		</comps>
+      <stages>
+        <li>
+        <becomeVisible>false</becomeVisible>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Miho_OrnatedCaptain_Hediff_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Miho_OrnatedCaptain_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+      <li>Kind</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>오만해짐</label>
+        <description>이 옷이 안보여? 난 더 많은 특권이 필요해!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_OrnatedMiho</defName>
+    <label>미호 엘텍스 의복 (내조)</label>
+    <description>노동의 여신을 모시는 무녀들의 화현 비단으로 만들어진 고급 전통복 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedMiko/OnSkinOrnatedMiko</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Miho_Ebony_SilkCloth>120</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>6</ComponentIndustrial>
+
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>270</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>0.2</Mass>
+	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.65</ArmorRating_Heat>
+	  <Insulation_Heat>18</Insulation_Heat>
+	  <Insulation_Cold>12</Insulation_Cold>
+
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+
+      <NegotiationAbility>0.10</NegotiationAbility>
+      <SocialImpact>0.30</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+          <PsychicEntropyMax>15</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.25</MeditationFocusGain>
+
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedMiko/OnSkinOrnatedMiko</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoRoyal</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+		<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_OrnatedMiho_Hediff</hediff>
+        <part>Torso</part>
+      </li>
+		</comps>
+		</ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_OrnatedOne</defName>
+    <label>미호 엘텍스 의복 (엔트로피 저장고)</label>
+    <description>악마가닥으로 엔트로피를 저장 할 수 있는. 화현 비단으로 만들어진 고급 전통복 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedOne/OnSkinOrnatedOne</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <DevilstrandCloth>15</DevilstrandCloth>
+      <Miho_Ebony_SilkCloth>120</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>4</ComponentIndustrial>
+
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>270</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>0.2</Mass>
+	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.65</ArmorRating_Heat>
+
+	  <Insulation_Heat>18</Insulation_Heat>
+	  <Insulation_Cold>12</Insulation_Cold>
+
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.10</NegotiationAbility>
+      <SocialImpact>0.30</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+          <PsychicEntropyMax>15</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.5</MeditationFocusGain>
+
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedOne/OnSkinOrnatedOne</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoRoyal</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+		<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_OrnatedOne_Hediff</hediff>
+        <part>Torso</part>
+      </li>
+		</comps>
+		</ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_OrnatedTwo</defName>
+    <label>미호 엘텍스 의복 (아케인 실드)</label>
+    <description>초능력 보호막을 무의식 중으로 투사 가능한. 금사와 화현 비단으로 만들어진 고급 전통복 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedTwo/OnSkinOrnatedTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <Gold>2</Gold>
+      <Miho_Ebony_SilkCloth>120</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>270</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>0.2</Mass>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.65</ArmorRating_Heat>
+
+	  <Insulation_Heat>18</Insulation_Heat>
+	  <Insulation_Cold>12</Insulation_Cold>
+      <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+	  
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.10</NegotiationAbility>
+      <SocialImpact>0.30</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+          <PsychicEntropyMax>15</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.25</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedTwo/OnSkinOrnatedTwo</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoRoyal</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator> 
+		<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Miho_OrnatedTwo_Hediff</hediff>
+        <part>Torso</part>
+      </li>
+	  <li Class="CompProperties_Shield">
+        <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+        <minDrawSize>1.5</minDrawSize>
+        <maxDrawSize>1.8</maxDrawSize>
+        <energyLossPerDamage>0.01</energyLossPerDamage>
+        <energyOnReset>1.6</energyOnReset>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+      </li>
+		</comps>
+		</ThingDef>
+
+  <HediffDef>
+    <defName>Miho_OrnatedMiho_Hediff</defName>
+    <label>Arm</label>
+    <labelNoun>Arm</labelNoun>
+    <description>Arm</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+		<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+      <stages>
+        <li>
+        <becomeVisible>false</becomeVisible>
+        </li>
+      </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>Miho_OrnatedOne_Hediff</defName>
+    <label>Arm</label>
+    <labelNoun>Arm</labelNoun>
+    <description>Arm</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+		<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+      <stages>
+        <li>
+        <becomeVisible>false</becomeVisible>
+        </li>
+      </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>Miho_OrnatedTwo_Hediff</defName>
+    <label>Arm</label>
+    <labelNoun>Arm</labelNoun>
+    <description>Arm</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+		<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+      <stages>
+        <li>
+        <becomeVisible>false</becomeVisible>
+        </li>
+      </stages>
+  </HediffDef>
+  
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_OrnatedNomadic</defName>
+    <label>미호 엘텍스 의복 (북방)</label>
+    <description>북방 미호들이 입던 전통 복장입니다. 트럼보 가죽을 덧대 높은 방호력과 내한성능을 제공하고, 극단적인 옆트임이 있어 기동성이 좋아졌으며, 무엇보다도 엄청 귀엽습니다!</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedNomadic/OnSkinOrnatedNomadic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Leather_Thrumbo>75</Leather_Thrumbo>
+      <Miho_Ebony_SilkCloth>25</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelEltex</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>270</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>0.2</Mass>
+	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.92</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.64</ArmorRating_Heat>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+
+	  <Insulation_Heat>12</Insulation_Heat>
+	  <Insulation_Cold>24</Insulation_Cold>
+
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.10</NegotiationAbility>
+      <SocialImpact>0.30</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>15</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.5</MeditationFocusGain>
+      <MoveSpeed>0.95</MoveSpeed>
+      <MeleeDamageFactor>0.25</MeleeDamageFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedNomadic/OnSkinOrnatedNomadic</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoRoyal</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		</ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Celestial</defName>
+    <label>미호 천상복</label>
+    <description>여우들을 위한 완벽한 엘텍스 의복 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinOrnatedFighter/OnSkinOrnatedFighter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+	</stuffCategories>
+    <costList>
+      <Miho_ExoticMatter>5</Miho_ExoticMatter>
+      <Miho_Ebony_SilkCloth>225</Miho_Ebony_SilkCloth>
+      <ComponentSpacer>15</ComponentSpacer>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Miho_ApparelSorcerees</researchPrerequisite>
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>750</MaxHitPoints>
+	  <WorkToMake>150000</WorkToMake>
+      <Mass>2.0</Mass>
+	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <Insulation_Heat>26</Insulation_Heat>
+	  <Insulation_Cold>55</Insulation_Cold>
+      <EquipDelay>5</EquipDelay>
+      <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.7</EnergyShieldEnergyMax>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.10</NegotiationAbility>
+      <SocialImpact>0.40</SocialImpact>
+      <PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>240</PsychicEntropyMax>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	  <MeditationFocusGain>0.7</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinOrnatedFighter/OnSkinOrnatedFighter</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+        <li>Miho_Under</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoCelestial</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<comps>
+	  <li Class="CompProperties_Shield">
+        <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+        <minDrawSize>1.5</minDrawSize>
+        <maxDrawSize>1.8</maxDrawSize>
+        <energyLossPerDamage>0.01</energyLossPerDamage>
+        <energyOnReset>1.6</energyOnReset>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+      </li>
+		</comps>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+
+    </colorGenerator>  </ThingDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Militia</defName>
+    <label>미호 시큐리티 슈트</label>
+    <description>병사들에게 지원되는 슈트입니다. 완벽하진 않지만, 괜찮은 방호력을 제공합니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinMilitia/OnSkinMilitia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>10</Miho_MilitaryGradeBalisticCeramics>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelAdvanced</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>11000</WorkToMake>
+      <Mass>2.0</Mass>
+	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+	  <Insulation_Heat>12</Insulation_Heat>
+	  <Insulation_Cold>17</Insulation_Cold>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinMilitia/OnSkinMilitia</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>  </ThingDef>
+  
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_PMC</defName>
+    <label>미호 트루퍼 슈트</label>
+    <description>PMC 병사들에게 지원되는 슈트입니다. 어느정도 충격을 분산 시켜줍니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinPMC/OnSkinPMC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_Silk</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>370</MaxHitPoints>
+	  <WorkToMake>33000</WorkToMake>
+      <Mass>3.0</Mass>
+	  <ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <Insulation_Heat>16</Insulation_Heat>
+	  <Insulation_Cold>18</Insulation_Cold>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinPMC/OnSkinPMC</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoPMC</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>  </ThingDef>
+	
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Pariah</defName>
+    <label>미호 퍼라이어 배틀 슈트</label>
+    <description>사용자의 체내 메카나이트로 작동되는 안티-싸이킥 파워 슈트입니다. 근접 전투능력 상승과 완벽한 사용자 보호를 추구합니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinPariahSuitNew/OnSkinPariah</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
+      <Miho_Ebony_SilkCloth>300</Miho_Ebony_SilkCloth>
+      <ComponentSpacer>8</ComponentSpacer>
+
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelAssassin</researchPrerequisite> 
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>600</MaxHitPoints>
+	  <WorkToMake>118000</WorkToMake>
+      <Mass>2.75</Mass>
+	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.33</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+	  <Insulation_Heat>26</Insulation_Heat>
+	  <Insulation_Cold>55</Insulation_Cold>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+          <MoveSpeed>1.1</MoveSpeed>
+          <RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+          <InjuryHealingFactor>2</InjuryHealingFactor>
+	      <PsychicSensitivity>-0.25</PsychicSensitivity>
+          <MeleeDamageFactor>0.5</MeleeDamageFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinPariahSuitNew/OnSkinPariah</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>MihoPMC</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>  </ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Simple</defName>
+    <label>미호 평상복</label>
+    <description>미호들의 전통 복장 입니다. 고대 지구의 어느 반도국가의 여성복과 닮았습니다. 아동복으로도 입을수 있습니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinSimpleNew/OnSkinSimple</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelBasic</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <WorkToMake>5000</WorkToMake>
+      <Mass>0.6</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinSimpleNew/OnSkinSimple</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoCommonNecessary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+  
+
+  	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Hoodie</defName>
+    <label>미호 후드</label>
+    <description>따뜻한 후드 입니다. 아랫도리는 어딨냐고요? 몰라...</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinHoodieNew/OnSkinHoodie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelBasic</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>6000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.24</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>6</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinHoodieNew/OnSkinHoodie</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoCommonNecessary</li>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(255,255,255)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>  </ThingDef>
+
+
+  	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Shirt</defName>
+    <label>미호 셔츠</label>
+    <description>시원한 셔츠 입니다. 아랫도리는 어딨냐고요? 몰라...</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinShirt/OnSkinShirt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelBasic</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <WorkToMake>5000</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.16</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>4</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinShirt/OnSkinShirt</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoCommonNecessary</li>
+        <li>MihoMilitia</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Regular</defName>
+    <label>미호 표준 정장</label>
+    <description>미호들의 표준 정장 입니다. 사석에서나 공식적인 석상에서나, 어디서든 편하게 입을 수 있는 옷 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinRegular/OnSkinRegular</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelAdvanced</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>140</MaxHitPoints>
+	  <WorkToMake>10000</WorkToMake>
+      <Mass>0.75</Mass>
+      <StuffEffectMultiplierArmor>0.23</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>6</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinRegular/OnSkinRegular</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoCommonNecessary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Miho_Apparel_OnSkin_Maid</defName>
+    <label>미호 프렌치 메이드복</label>
+    <description>아마 고대 지구의 갈리아 지방에서는 이걸 메이드복이라 불렀을겁니다. 하지만 귀여우니까 봐주죠.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinMaid/OnSkinMaid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costList>
+      <Miho_Ebony_SilkCloth>50</Miho_Ebony_SilkCloth>
+    </costList>
+    <thingCategories>
+      <li>Miho_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Miho_ApparelAdvanced</researchPrerequisite> 
+
+      <recipeUsers Inherit="false">
+	          <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>180</MaxHitPoints>
+	  <WorkToMake>25000</WorkToMake>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>6</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinMaid/OnSkinMaid</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoMaid</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+</Defs>

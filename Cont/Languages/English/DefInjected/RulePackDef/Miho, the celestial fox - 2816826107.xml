@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerIdeo_Miho.rulePack.rulesStrings.0>r_ideoName->Miho Code of Law</NamerIdeo_Miho.rulePack.rulesStrings.0>
+  <NamerIdeo_Miho.rulePack.rulesStrings.1>r_ideoName->Code of Miho</NamerIdeo_Miho.rulePack.rulesStrings.1>
+  <NamerIdeo_Miho.rulePack.rulesStrings.2>r_ideoName->Celestial Temple Law</NamerIdeo_Miho.rulePack.rulesStrings.2>
+  <NamerIdeo_Miho.rulePack.rulesStrings.3>r_ideoName->Fox Common Law</NamerIdeo_Miho.rulePack.rulesStrings.3>
+  <NamerIdeo_Miho.rulePack.rulesStrings.4>r_ideoName->Fox Law</NamerIdeo_Miho.rulePack.rulesStrings.4>
+  <NamerIdeo_Miho.rulePack.rulesStrings.5>r_ideoName->Vulpes Law</NamerIdeo_Miho.rulePack.rulesStrings.5>
+  <NamerIdeo_Miho.rulePack.rulesStrings.6>r_ideoName->Stellar Law</NamerIdeo_Miho.rulePack.rulesStrings.6>
+  <NamerIdeo_Miho.rulePack.rulesStrings.7>r_ideoAdjective->Miho</NamerIdeo_Miho.rulePack.rulesStrings.7>
+  <NamerIdeo_Miho.rulePack.rulesStrings.8>r_memberName->Vulpes</NamerIdeo_Miho.rulePack.rulesStrings.8>
+  <NamerFaction_Miho.rulePack.rulesStrings.0>r_name(p=4)->[empire] of [ofThing] </NamerFaction_Miho.rulePack.rulesStrings.0>
+  <NamerFaction_Miho.rulePack.rulesStrings.1>r_name(p=3)->[ofThing] [empire]</NamerFaction_Miho.rulePack.rulesStrings.1>
+  <NamerFaction_Miho.rulePack.rulesStrings.2>r_name->Silverfox [empire]</NamerFaction_Miho.rulePack.rulesStrings.2>
+  <NamerFaction_Miho.rulePack.rulesStrings.3>r_name->Monotail [empire]</NamerFaction_Miho.rulePack.rulesStrings.3>
+  <NamerFaction_Miho.rulePack.rulesStrings.4>r_name->Urocyon [empire]</NamerFaction_Miho.rulePack.rulesStrings.4>
+  <NamerFaction_Miho.rulePack.rulesStrings.5>r_name->Fennec [empire]</NamerFaction_Miho.rulePack.rulesStrings.5>
+  <NamerFaction_Miho.rulePack.rulesStrings.6>r_name->Inari [empire]</NamerFaction_Miho.rulePack.rulesStrings.6>
+  <NamerFaction_Miho.rulePack.rulesStrings.7>r_name->Blacktail [empire]</NamerFaction_Miho.rulePack.rulesStrings.7>
+  <NamerFaction_Miho.rulePack.rulesStrings.8>r_name->Kitsune [empire]</NamerFaction_Miho.rulePack.rulesStrings.8>
+  <NamerFaction_Miho.rulePack.rulesStrings.9>r_name->Yeo-E [empire]</NamerFaction_Miho.rulePack.rulesStrings.9>
+  <NamerFaction_Miho.rulePack.rulesStrings.10>r_name->Redfox [empire]</NamerFaction_Miho.rulePack.rulesStrings.10>
+  <NamerFaction_Miho.rulePack.rulesStrings.11>r_name->Hoppou [empire]</NamerFaction_Miho.rulePack.rulesStrings.11>
+  <NamerFaction_Miho.rulePack.rulesStrings.12>r_name->[Color] [empire]</NamerFaction_Miho.rulePack.rulesStrings.12>
+  <NamerFaction_Miho.rulePack.rulesStrings.13>empire(p=4)->Dominion</NamerFaction_Miho.rulePack.rulesStrings.13>
+  <NamerFaction_Miho.rulePack.rulesStrings.14>empire->General Governorate</NamerFaction_Miho.rulePack.rulesStrings.14>
+  <NamerFaction_Miho.rulePack.rulesStrings.15>empire->Protectorate</NamerFaction_Miho.rulePack.rulesStrings.15>
+  <NamerFaction_Miho.rulePack.rulesStrings.16>empire->Warlord</NamerFaction_Miho.rulePack.rulesStrings.16>
+  <NamerFaction_Miho.rulePack.rulesStrings.17>empire->Kingdom</NamerFaction_Miho.rulePack.rulesStrings.17>
+  <NamerFaction_Miho.rulePack.rulesStrings.18>ofThing(p=4)->Celestial</NamerFaction_Miho.rulePack.rulesStrings.18>
+  <NamerFaction_Miho.rulePack.rulesStrings.19>ofThing->Stellar</NamerFaction_Miho.rulePack.rulesStrings.19>
+  <NamerFaction_Miho.rulePack.rulesStrings.20>ofThing->Mandate of Heaven</NamerFaction_Miho.rulePack.rulesStrings.20>
+  <NamerFaction_Miho.rulePack.rulesStrings.21>ofThing->Fox</NamerFaction_Miho.rulePack.rulesStrings.21>
+  <NamerFaction_Miho.rulePack.rulesStrings.22>ofThing->Twinkle</NamerFaction_Miho.rulePack.rulesStrings.22>
+  <NamerFaction_Miho.rulePack.rulesStrings.23>ofThing->Sparkle</NamerFaction_Miho.rulePack.rulesStrings.23>
+  <NamerSettlement_Miho.rulePack.rulesStrings.0>r_name(p=12)->[townname_wordgen]</NamerSettlement_Miho.rulePack.rulesStrings.0>
+  <NamerSettlement_Miho.rulePack.rulesStrings.1>r_name(p=4)->[townname_combo]</NamerSettlement_Miho.rulePack.rulesStrings.1>
+  <NamerSettlement_Miho.rulePack.rulesStrings.2>r_name->[townname_near]</NamerSettlement_Miho.rulePack.rulesStrings.2>
+  <NamerSettlement_Miho.rulePack.rulesStrings.3>topicalnoun->[Vegetable]</NamerSettlement_Miho.rulePack.rulesStrings.3>
+  <NamerSettlement_Miho.rulePack.rulesStrings.4>topicalnoun->[Game]</NamerSettlement_Miho.rulePack.rulesStrings.4>
+  <NamerSettlement_Miho.rulePack.rulesStrings.5>topicalnoun->[Color]</NamerSettlement_Miho.rulePack.rulesStrings.5>
+  <NamerSettlement_Miho.rulePack.rulesStrings.6>topicalnoun->[BodyPart]</NamerSettlement_Miho.rulePack.rulesStrings.6>
+  <NamerSettlement_Miho.rulePack.rulesStrings.7>townname_combo->[topicalnoun] [TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.7>
+  <NamerSettlement_Miho.rulePack.rulesStrings.8>townname_combo->[topicalnoun] [Community] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.8>
+  <NamerSettlement_Miho.rulePack.rulesStrings.9>townname_combo->[topicalnoun]'s [TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.9>
+  <NamerSettlement_Miho.rulePack.rulesStrings.10>townname_combo->[topicalnoun]'s [Community] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.10>
+  <NamerSettlement_Miho.rulePack.rulesStrings.11>townname_combo(p=2)->[concept_positive]'s [TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.11>
+  <NamerSettlement_Miho.rulePack.rulesStrings.12>townname_combo(p=2)->[concept_positive] [TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.12>
+  <NamerSettlement_Miho.rulePack.rulesStrings.13>townname_combo(p=2)->[concept_positive] [Community] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.13>
+  <NamerSettlement_Miho.rulePack.rulesStrings.14>townname_combo(p=3)->[Character]'s [TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.14>
+  <NamerSettlement_Miho.rulePack.rulesStrings.15>townname_combo(p=3)->[Character]'s [Community] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.15>
+  <NamerSettlement_Miho.rulePack.rulesStrings.16>townname_near->In front of [TerrainFeature]'s [nearnameinitial] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.16>
+  <NamerSettlement_Miho.rulePack.rulesStrings.17>townname_near->Behind the [TerrainFeature]'s [nearnameinitial] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.17>
+  <NamerSettlement_Miho.rulePack.rulesStrings.18>townname_near->Upper attitude of [TerrainFeature]'s [nearnameinitial] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.18>
+  <NamerSettlement_Miho.rulePack.rulesStrings.19>nearnameinitial->[Community]</NamerSettlement_Miho.rulePack.rulesStrings.19>
+  <NamerSettlement_Miho.rulePack.rulesStrings.20>townname_wordgen(p=0.5)->[MihoWeird][MihoWeirdtwo] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.20>
+  <NamerSettlement_Miho.rulePack.rulesStrings.21>townname_wordgen(p=0.5)->[MihoWeird][MihoWeirdtwo][MihoWeirdthree] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.21>
+  <NamerSettlement_Miho.rulePack.rulesStrings.22>townname_wordgen(p=0.5)->[MihoWeird] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.22>
+  <NamerSettlement_Miho.rulePack.rulesStrings.23>townname_wordgen->[TerrainFeature] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.23>
+  <NamerSettlement_Miho.rulePack.rulesStrings.24>townname_wordgen->[topicalnoun] [Mihotownend]</NamerSettlement_Miho.rulePack.rulesStrings.24>
+  <NamerSettlement_Miho.rulePack.rulesStrings.25>MihoWeird->Aww</NamerSettlement_Miho.rulePack.rulesStrings.25>
+  <NamerSettlement_Miho.rulePack.rulesStrings.26>MihoWeird->Ttu-Bbang</NamerSettlement_Miho.rulePack.rulesStrings.26>
+  <NamerSettlement_Miho.rulePack.rulesStrings.27>MihoWeird->Yelp</NamerSettlement_Miho.rulePack.rulesStrings.27>
+  <NamerSettlement_Miho.rulePack.rulesStrings.28>MihoWeirdtwo->Aww</NamerSettlement_Miho.rulePack.rulesStrings.28>
+  <NamerSettlement_Miho.rulePack.rulesStrings.29>MihoWeirdtwo->Ttu-Bbang</NamerSettlement_Miho.rulePack.rulesStrings.29>
+  <NamerSettlement_Miho.rulePack.rulesStrings.30>MihoWeirdtwo->Yelp</NamerSettlement_Miho.rulePack.rulesStrings.30>
+  <NamerSettlement_Miho.rulePack.rulesStrings.31>MihoWeirdthree->Aww</NamerSettlement_Miho.rulePack.rulesStrings.31>
+  <NamerSettlement_Miho.rulePack.rulesStrings.32>MihoWeirdthree->Ttu-Bbang</NamerSettlement_Miho.rulePack.rulesStrings.32>
+  <NamerSettlement_Miho.rulePack.rulesStrings.33>MihoWeirdthree->Yelp</NamerSettlement_Miho.rulePack.rulesStrings.33>
+  <NamerSettlement_Miho.rulePack.rulesStrings.34>Mihotownend->Laboratory</NamerSettlement_Miho.rulePack.rulesStrings.34>
+  <NamerSettlement_Miho.rulePack.rulesStrings.35>Mihotownend->Fox Village</NamerSettlement_Miho.rulePack.rulesStrings.35>
+  <NamerSettlement_Miho.rulePack.rulesStrings.36>Mihotownend->Fox Hole</NamerSettlement_Miho.rulePack.rulesStrings.36>
+  <NamerSettlement_Miho.rulePack.rulesStrings.37>Mihotownend->Exploration Station</NamerSettlement_Miho.rulePack.rulesStrings.37>
+  <NamerSettlement_Miho.rulePack.rulesStrings.38>Mihotownend->Laboratory</NamerSettlement_Miho.rulePack.rulesStrings.38>
+  <NamerSettlement_Miho.rulePack.rulesStrings.39>Mihotownend->Plantation</NamerSettlement_Miho.rulePack.rulesStrings.39>
+  <NamerSettlement_Miho.rulePack.rulesStrings.40>Mihotownend->Mine</NamerSettlement_Miho.rulePack.rulesStrings.40>
+  <NamerSettlement_Miho.rulePack.rulesStrings.41>Mihotownend->Industrial District</NamerSettlement_Miho.rulePack.rulesStrings.41>
+  <NamerSettlement_Miho.rulePack.rulesStrings.42>Mihotownend->Tofu Factory</NamerSettlement_Miho.rulePack.rulesStrings.42>
+  <NamerSettlement_Miho.rulePack.rulesStrings.43>Mihotownend->Logistics Hub</NamerSettlement_Miho.rulePack.rulesStrings.43>
+  <NamerSettlement_Miho.rulePack.rulesStrings.44>Mihotownend->Rocket Launch Site</NamerSettlement_Miho.rulePack.rulesStrings.44>
+  <NamerSettlement_Miho.rulePack.rulesStrings.45>Mihotownend->Armored Base</NamerSettlement_Miho.rulePack.rulesStrings.45>
+  <NamerSettlement_Miho.rulePack.rulesStrings.46>Mihotownend->Home Guard Fortress</NamerSettlement_Miho.rulePack.rulesStrings.46>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.0>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</LeaderTitleMaker_Miho.rulePack.rulesStrings.0>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.1>cultureLeaderAdjective->Shiny</LeaderTitleMaker_Miho.rulePack.rulesStrings.1>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.2>cultureLeaderAdjective->Brilliant</LeaderTitleMaker_Miho.rulePack.rulesStrings.2>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.3>cultureLeaderNoun->Naranim</LeaderTitleMaker_Miho.rulePack.rulesStrings.3>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.4>cultureLeaderNoun->Hangi</LeaderTitleMaker_Miho.rulePack.rulesStrings.4>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.5>cultureLeaderNoun->U'raha</LeaderTitleMaker_Miho.rulePack.rulesStrings.5>
+  <LeaderTitleMaker_Miho.rulePack.rulesStrings.6>cultureLeaderNoun->Gon'gish</LeaderTitleMaker_Miho.rulePack.rulesStrings.6>
+  <NamerDeityMiho.rulePack.rulesStrings.0>r_deityName(p=3)->Star</NamerDeityMiho.rulePack.rulesStrings.0>
+  <NamerDeityMiho.rulePack.rulesStrings.1>r_deityName(p=3)->Star</NamerDeityMiho.rulePack.rulesStrings.1>
+  <NamerDeityMiho.rulePack.rulesStrings.2>r_deityName->Sun</NamerDeityMiho.rulePack.rulesStrings.2>
+  <NamerDeityMiho.rulePack.rulesStrings.3>r_deityName->Star</NamerDeityMiho.rulePack.rulesStrings.3>
+  <NamerDeityMiho.rulePack.rulesStrings.4>r_deityName->Mr. Sun</NamerDeityMiho.rulePack.rulesStrings.4>
+  <NamerDeityMiho.rulePack.rulesStrings.5>r_deityName->Blue Sun</NamerDeityMiho.rulePack.rulesStrings.5>
+  <NamerDeityMiho.rulePack.rulesStrings.6>r_deityName->Crimson Sun</NamerDeityMiho.rulePack.rulesStrings.6>
+  <NamerDeityMiho.rulePack.rulesStrings.7>r_deityName->Yellow Sun</NamerDeityMiho.rulePack.rulesStrings.7>
+  <NamerDeityMiho.rulePack.rulesStrings.8>r_deityName->Blue Star</NamerDeityMiho.rulePack.rulesStrings.8>
+  <NamerDeityMiho.rulePack.rulesStrings.9>r_deityName->Crimson Star</NamerDeityMiho.rulePack.rulesStrings.9>
+  <NamerDeityMiho.rulePack.rulesStrings.10>r_deityName->Yellow Star</NamerDeityMiho.rulePack.rulesStrings.10>
+  <DietyTypeMakerMiho.rulePack.rulesStrings.0>r_deityType->Creator of [all]</DietyTypeMakerMiho.rulePack.rulesStrings.0>
+  <DietyTypeMakerMiho.rulePack.rulesStrings.1>r_deityType->[adj] God</DietyTypeMakerMiho.rulePack.rulesStrings.1>
+ 	<DietyTypeMakerMiho.rulePack.rulesStrings.2>all->fox </DietyTypeMakerMiho.rulePack.rulesStrings.2>
+ 	<DietyTypeMakerMiho.rulePack.rulesStrings.3>all->clever canines </DietyTypeMakerMiho.rulePack.rulesStrings.3>
+
+ 	<DietyTypeMakerMiho.rulePack.rulesStrings.4>adj->shining </DietyTypeMakerMiho.rulePack.rulesStrings.4>
+ 	<DietyTypeMakerMiho.rulePack.rulesStrings.5>adj->transcendental </DietyTypeMakerMiho.rulePack.rulesStrings.5>
+ 	<DietyTypeMakerMiho.rulePack.rulesStrings.6>adj->brilliant </DietyTypeMakerMiho.rulePack.rulesStrings.6>
+
+</LanguageData>

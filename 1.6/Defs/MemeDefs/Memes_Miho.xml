@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Structure-->
+
+  <MemeDef>
+    <defName>Miho_MihoicCodeofLaw</defName>
+    <label>미호 율령제</label>
+    <description>가장 보편적인 미호들의 법치.</description>
+    <category>Structure</category>
+    <iconPath>Icon/Ideo/Ideo</iconPath>
+    <deityNameMakerOverride>NamerDeityMiho</deityNameMakerOverride>
+    <deityTypeMakerOverride>DietyTypeMakerMiho</deityTypeMakerOverride>
+    <impact>0</impact>
+    <worshipRoomLabel>신단</worshipRoomLabel>
+    <deityCount>1</deityCount>
+    <symbolPackOverride>true</symbolPackOverride>
+
+    <generalRules>
+      <rulesStrings>
+  <!--
+        <li>memeLeaderNoun->하나비</li>
+        <li>memeLeaderNoun->두나</li>
+        <li>memeLeaderNoun->서이미</li>
+        <li>memeLeaderNoun->너리</li>
+        <li>memeLeaderNoun->다스리</li>
+        <li>memeLeaderNoun->여리</li>
+        <li>memeLeaderNoun->일곱미</li>
+        <li>memeLeaderNoun->팔미</li>
+        <li>memeLeaderNoun->구미</li>
+-->
+        <li>memeLeaderNoun->총재</li>
+
+        <li>memeMoralist->태양사</li>
+        <li>memeMoralist->유타</li>
+        <li>memeMoralist->심방</li>
+        <li>memeMoralist->신내림이</li>
+
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>episode(tag=meme_Miho_MihoicCodeofLaw)  ->저 계집들이 제노휴먼이 아니라고? 마치 음침한 펭귄놈들이 인간이라는 것 보다 웃긴 소리같군.\n\n...\n\n항성에게 축복받은 여우들의 성간 봉건제국, 여우들은 그 은혜를 갚기위해 기약없는 탐사를 떠납니다...</li>
+          <li>episode(tag=meme_Miho_MihoicCodeofLaw)  ->아무래도 인간놈들을 애완동물로 삼아버리는게 좋겠어. 딱히 복수의 영역은 아니야! 그냥 너희들이 귀여울 뿐이라고.\n\n...\n\n항성에게 축복받은 여우들의 성간 봉건제국, 여우들은 그 은혜를 갚기위해 기약없는 탐사를 떠납니다...</li>
+          <li>episode(tag=meme_Miho_MihoicCodeofLaw)  ->하드웨어는 인간인데, 소프트웨어는 완전 여우야.\n\n...\n\n항성에게 축복받은 여우들의 성간 봉건제국, 여우들은 그 은혜를 갚기위해 기약없는 탐사를 떠납니다...</li>
+
+        </rulesStrings>
+      </rules>
+      <patterns>
+        <li>
+          <def>Miho_IdeoStoryPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>Miho_MihoicCodeofLaw</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li><ideoName>미호 율령제</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>미호율</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>천상 신전법</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>여우 보통법</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>여우법</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>불페스법</ideoName><adjective>미호</adjective><member>여우과</member></li>
+      <li><ideoName>항성법</ideoName><adjective>미호</adjective><member>여우과</member></li>
+    </symbolPacks>
+    <requireOne>
+      <li>
+        <li>Scarification_Horrible</li>
+      </li>
+      <li>
+        <li>Slavery_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_AlienSlavery_Acceptable</li>
+      </li>
+      <li>
+        <li>Cannibalism_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_EatingAliens_Acceptable</li>
+      </li>
+      <li>
+        <li>HAR_AlienDating_Acceptable</li>
+      </li>
+      <li>
+        <li>HAR_AlienRaces_Standard</li>
+      </li>
+      <li>
+        <li>Bonding_Disapproved</li>
+      </li>
+    </requireOne>
+  </MemeDef>
+
+  <IdeoStoryPatternDef>
+    <defName>Miho_IdeoStoryPattern</defName>
+    <segments>
+      <li>episode</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+    </rules>
+  </IdeoStoryPatternDef>
+
+  <IdeoIconDef>
+    <defName>Miho_IdeoIcon</defName>
+    <iconPath>Icon/Ideo/Ideo</iconPath>
+    <memes>
+      <li>Miho_MihoicCodeofLaw</li>
+    </memes>
+  </IdeoIconDef>
+
+  <RulePackDef>
+    <defName>NamerDeityMiho</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName(p=3)->광휘</li>
+        <li>r_deityName(p=3)->별</li>
+
+        <li>r_deityName->태양</li>
+        <li>r_deityName->별</li>
+        <li>r_deityName->햇님</li>
+
+        <li>r_deityName->푸른 태양</li>
+        <li>r_deityName->붉은 태양</li>
+        <li>r_deityName->샛노란 태양</li>
+
+        <li>r_deityName->푸른 별</li>
+        <li>r_deityName->붉은 별</li>
+        <li>r_deityName->샛노란 별</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>DietyTypeMakerMiho</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->[all]들의 창조자</li>
+        <li>r_deityType->[adj] 신</li>
+
+        <li>all->여우</li>
+        <li>all->영리한 개과</li>
+
+        <li>adj->빛나는</li>
+        <li>adj->초월적인</li>
+        <li>adj->광휘의</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

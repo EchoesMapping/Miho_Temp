@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="NECShipBase">
+    <defName>MihoSRTSKaminari</defName>
+    <label>카미나리급 건쉽</label>
+    <description>미호들의 카미나리급 건쉽은 다수의 메카나이트 연소 엔진을 가동하여 보급과 전투를 책임집니다.
+
+Passenger cap: 1 - 8
+
+--Military--
+  Bombs: 32/16
+  Accuracy: Good
+  Build: Wide
+----------------------------
+Speed: Normal
+Fuel cap: 4,000
+Fuel efficiency: Normal
+----------------------------
+Cargo cap: 3,000kg
+Internal power plant: 5,000w</description>
+    <graphicData>
+      <texPath>Kaminari</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(11,11)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <WorkToBuild>32000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Mass>20</Mass>
+      <Beauty>75</Beauty>
+    </statBases>
+    <costList>
+      <Steel>500</Steel>
+      <Plasteel>500</Plasteel>
+      <Miho_MilitaryGradeBalisticCeramics>2000</Miho_MilitaryGradeBalisticCeramics>
+      <RawPosFlower>1000</RawPosFlower>
+      <Miho_HeatCeramics>500</Miho_HeatCeramics>
+      <Miho_Ebony_SilkCloth>500</Miho_Ebony_SilkCloth>
+      <Miho_PlasmaSample>8</Miho_PlasmaSample>
+      <ComponentIndustrial>30</ComponentIndustrial>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>2</restEffectiveness>
+        <massCapacity>4000</massCapacity>
+      </li>
+      <li Class="SRTS.CompProperties_LaunchableSRTS">
+        <travelSpeed>5.5</travelSpeed>
+        <fuelPerTile>6</fuelPerTile>
+        <minPassengers>1</minPassengers>
+        <maxPassengers>8</maxPassengers>
+		    <spaceFaring>true</spaceFaring>
+		    <shuttleBayLanding>true</shuttleBayLanding>
+      </li>
+      <li Class="SRTS.CompProperties_BombsAway">
+        <numberBombs>32</numberBombs>
+        <precisionBombingNumBombs>16</precisionBombingNumBombs>
+        <radiusOfDrop>5</radiusOfDrop>
+        <speed>1</speed>
+        <distanceBetweenDrops>1</distanceBetweenDrops>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>4000</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>4000</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>RawPosFlower</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-5000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>18</glowRadius>
+        <glowColor>(217,217,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Research_SRTSMkII</li>
+      <li>Miho_HeavyFactory</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <uiIconScale>0.30</uiIconScale>
+    <designationCategory>MihoBuilding</designationCategory>
+
+    <killedLeavings>
+      <ChunkSlagSteel>12</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+</Defs>

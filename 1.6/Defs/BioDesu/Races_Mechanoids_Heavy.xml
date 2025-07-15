@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MihoLightMechanoid" ParentName="BaseMechanoid" Abstract="True">
+    <statBases>
+      <MoveSpeed>5.4</MoveSpeed>
+      <ControlTakingTime>18</ControlTakingTime>
+      <MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <mechWeightClass>Light</mechWeightClass>
+    </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+      <Miho_MilitaryGradeBalisticCeramics>20</Miho_MilitaryGradeBalisticCeramics>
+    </butcherProducts>
+  </ThingDef>
+
+  <!-- Tunneler -->
+  <ThingDef ParentName="MihoLightMechanoid">
+    <defName>Miho_Mech_Sapsal</defName>
+    <label>다각 경전차 (정찰형)</label>
+    <description>정찰, 진지구축, 위험환경 제거에 적합한 삽살급 다각 경전차 입니다.</description>
+    <fillPercent>0.55</fillPercent>
+
+    <statBases>
+      <MoveSpeed>5.6</MoveSpeed>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <BandwidthCost>3</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+        <PlantWorkSpeed>0.75</PlantWorkSpeed>
+      <CaravanRidingSpeedFactor>1.65</CaravanRidingSpeedFactor>
+
+    </statBases>
+    <race>
+      <body>Pikeman</body>
+      <baseBodySize>2.4</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0.2</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+      <mechEnabledWorkTypes>
+          <li>Firefighter</li>
+          <li>Hauling</li>
+      </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+          <Hauling>4</Hauling>
+        </mechWorkTypePriorities>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.6</chanceFactor>
+      </li>
+    </tools>
+
+  </ThingDef>
+  <!-- Tunneler -->
+  <ThingDef ParentName="MihoLightMechanoid">
+    <defName>Miho_Mech_SapsalPsy</defName>
+    <label>다각 경전차 (초능력 지원)</label>
+    <description>정찰, 진지구축, 위험환경 제거에 적합한 삽살급 다각 경전차 입니다.</description>
+    <fillPercent>0.55</fillPercent>
+
+    <statBases>
+      <MoveSpeed>5.6</MoveSpeed>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <BandwidthCost>3</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+        <PlantWorkSpeed>0.75</PlantWorkSpeed>
+      <CaravanRidingSpeedFactor>1.65</CaravanRidingSpeedFactor>
+
+    </statBases>
+    <race>
+      <body>Pikeman</body>
+      <baseBodySize>2.4</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+          <soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerDelayTicks>120</bulletStaggerDelayTicks>
+      <bulletStaggerSpeedFactor>0.2</bulletStaggerSpeedFactor>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
+        <mechEnabledWorkTypes>
+          <li>Doctor</li>
+          <li>Firefighter</li>
+        </mechEnabledWorkTypes>
+    </race>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.6</chanceFactor>
+      </li>
+    </tools>
+
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_Sapsal</defName>
+    <label>다각 경전차 (정찰형)</label>
+    <race>Miho_Mech_Sapsal</race>
+    <combatPower>275</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalRecon/SapsalRecon</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+      <li>SmokepopMech</li>
+    </abilities>
+      <weaponTags>
+        <li>MihoSapsal</li>
+      </weaponTags>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_SapsalPsy</defName>
+    <label>다각 경전차 (초능력 지원)</label>
+    <race>Miho_Mech_SapsalPsy</race>
+    <combatPower>275</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalPsy/SapsalPsy</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/SapsalPsy/SapsalPsy</texPath>
+            <maskPath>NewMech/SapsalRecon/Mask/SapsalRecon</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+      <li>Miho_Ability_Dump</li>
+      <li>Miho_Ability_MechHeal</li>
+      <li>Miho_Ability_MechHackingSlow</li>
+
+    </abilities>
+
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  
+  <ThingDef ParentName="LightMechanoidGunRanged">
+    <defName>Miho_MechWeapon_Machinegun</defName>
+    <label>미호 다각전차용 중기관총</label>
+    <description>7.7mm 탄을 사용하는 다각전차용 중기관총 입니다.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>NewMech/SapsalRecon/SapsalReconGun/SapsalReconGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawOffset>(0,1,0)</drawOffset>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <altitudeLayer>Pawn</altitudeLayer>
+
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.18</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.52</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MihoSapsal</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RiflePrecision_Proj</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>Miho_SevenSevenRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+  <AbilityDef>
+    <defName>Miho_Ability_Dump</defName>
+    <label>신경열 받기</label>
+    <description>신경열을 싸이베이스형 다각 전차에 옮겨 냉각을 시킵니다.</description>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <iconPath>Icon/Abilities/Mech/MihoDump</iconPath>
+    <stunTargetWhileCasting>False</stunTargetWhileCasting>
+    <showPsycastEffects>True</showPsycastEffects>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <showWhenDrafted>true</showWhenDrafted>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>2</uiOrder>
+    <warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <statBases>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>15</range>
+      <warmupTime>3.0</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <onlyTargetColonists>true</onlyTargetColonists>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Miho_EntropyDump_High</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <applicableToMechs>False</applicableToMechs>
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+    <AbilityDef>
+    <defName>Miho_Ability_MechHackingSlow</defName>
+    <label>뉴로해킹 (의식 좀먹기)</label>
+    <description>인공지능의 의식을 좀먹어 전반적인 의식 수준을 내립니다.</description>
+        <iconPath>Icon/Abilities/HackSlow</iconPath>
+        <writeCombatLog>True</writeCombatLog>
+        <cooldownTicksRange>15000</cooldownTicksRange>
+        <charges>4</charges>
+        <verbProperties>
+		    <verbClass>Verb_CastAbility</verbClass>
+
+            <warmupTime>6</warmupTime>
+            <range>49.9</range>
+            <targetParams>
+              <canTargetSelf>False</canTargetSelf>
+              <canTargetLocations>True</canTargetLocations>
+              <canTargetAnimals>False</canTargetAnimals>
+              <canTargetPawns>True</canTargetPawns>
+        <canTargetHumans>false</canTargetHumans>
+
+              <canTargetMechs>True</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+		    <li Class="CompProperties_AbilityLaunchProjectile">
+                <projectileDef>Miho_NeuroSlow_Proj</projectileDef>
+            </li>
+        </comps>
+    </AbilityDef>
+  <AbilityDef>
+    <defName>Miho_Ability_MechHeal</defName>
+    <label>치유의 손길</label>
+    <description>병을 낫게하고 상처를 아물게 해주는 치유의 손길을 발산합니다.</description>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <iconPath>Icon/Abilities/Mech/MihoHeal</iconPath>
+    <stunTargetWhileCasting>False</stunTargetWhileCasting>
+    <showPsycastEffects>True</showPsycastEffects>
+    <cooldownTicksRange>180000</cooldownTicksRange>
+
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <showWhenDrafted>true</showWhenDrafted>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>2</uiOrder>
+    <warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <statBases>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <onlyTargetColonists>true</onlyTargetColonists>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Miho_Heal_Hediff</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <onlyBrain>True</onlyBrain>
+        <psychic>False</psychic>
+        <applicableToMechs>False</applicableToMechs>
+        <goodwillImpact>5</goodwillImpact>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>WordOfJoy</interactionDef>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.6~0.8</tendQualityRange>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_Sapsal</defName>
+    <label>다각 경전차 (정찰형) 제작</label>
+    <description>다각 경전차 (정찰형) 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_Sapsal>1</Miho_Mech_Sapsal>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_Sapsal</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_GuardDrone</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_SapsalPsy</defName>
+    <label>다각 경전차 (초능력 지원) 제작</label>
+    <description>다각 경전차 (초능력 지원) 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MilitaryGradeBalisticCeramics</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PsychicAmplifier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_SapsalPsy>1</Miho_Mech_SapsalPsy>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_Sapsal</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_CommandDrone</researchPrerequisite>
+  </RecipeDef>
+</Defs>

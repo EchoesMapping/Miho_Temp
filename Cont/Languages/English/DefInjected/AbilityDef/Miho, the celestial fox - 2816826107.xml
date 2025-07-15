@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Miho_Ability_Jump.label>Jump</Miho_Ability_Jump.label>
+  <Miho_Ability_Jump.description>Leap far using strengthened Mechanite muscles.</Miho_Ability_Jump.description>
+  <Miho_Ability_Jump.verbProperties.label>jump</Miho_Ability_Jump.verbProperties.label>
+  <Miho_Ability_StunTalisman.label>Talisman of Unconsciousness</Miho_Ability_StunTalisman.label>
+  <Miho_Ability_StunTalisman.description>Throw a talisman that temporarily stuns the enemy.</Miho_Ability_StunTalisman.description>
+  <Miho_Ability_Hawk.label>Hunting Hawk</Miho_Ability_Hawk.label>
+  <Miho_Ability_Hawk.description>Release a hunting hawk that will persistently engage the enemy.</Miho_Ability_Hawk.description>
+  <Miho_Ability_Ensnare.label>Hunting Net</Miho_Ability_Ensnare.label>
+  <Miho_Ability_Ensnare.description>Shoot out a Mechanite net to slow down the target. If the target is already slow, it will incapacitate them.</Miho_Ability_Ensnare.description>
+  <Miho_Ability_Fireball_Small.label>Foxember</Miho_Ability_Fireball_Small.label>
+  <Miho_Ability_Fireball_Small.description>Summon a small fox fire with enough destructive power to kill a person. It would be more accurate to say it gathers energy rather than summons it.</Miho_Ability_Fireball_Small.description>
+  <Miho_Ability_Fireball.label>Foxfire</Miho_Ability_Fireball.label>
+  <Miho_Ability_Fireball.description>Summon a foxfire with powerful destructive power. It would be more accurate to say it gathers energy rather than summons it.</Miho_Ability_Fireball.description>
+  <Miho_Ability_Fireball_Adept.label>Foxfire Arrows</Miho_Ability_Fireball_Adept.label>
+  <Miho_Ability_Fireball_Adept.description>Shoot a fox fire arrow with excellent penetration power over a long distance.</Miho_Ability_Fireball_Adept.description>
+  <Miho_Ability_PredatoryGaze.label>Thunder Javelin</Miho_Ability_PredatoryGaze.label>
+  <Miho_Ability_PredatoryGaze.description>There is no shield in the whole universe that can deflect a Mechanite javelin charged with powerful electricity.</Miho_Ability_PredatoryGaze.description>
+  <Miho_Ability_Starfall.label>Fan of Knives</Miho_Ability_Starfall.label>
+  <Miho_Ability_Starfall.description>Form nearby mechanites into countless deadly monomolecular blades and send them flying around you.</Miho_Ability_Starfall.description>
+  <Miho_Ability_Love.label>Tail of Love</Miho_Ability_Love.label>
+  <Miho_Ability_Love.description>Wave your tail around and make two pawns fall in love.\n"It works. Really!"</Miho_Ability_Love.description>
+  <Miho_Ability_Serenity.label>Tail of Serenity</Miho_Ability_Serenity.label>
+  <Miho_Ability_Serenity.description>It halts madness! Foxes can't tolerate it, haha.</Miho_Ability_Serenity.description>
+  <Miho_Ability_Inspiration.label>Tail of Happiness</Miho_Ability_Inspiration.label>
+  <Miho_Ability_Inspiration.description>It bestows happiness. Don’t ask how.</Miho_Ability_Inspiration.description>
+  <Miho_Ability_Defence.label>White Armor Warrior</Miho_Ability_Defence.label>
+  <Miho_Ability_Defence.description>Imbue the caster's body with the spirit of a white armored warrior who takes hits on their behalf.</Miho_Ability_Defence.description>
+  <Miho_Ability_Powerstrike.label>Single Strike</Miho_Ability_Powerstrike.label>
+  <Miho_Ability_Powerstrike.description>A true warrior needs will and patience. Cut in half!</Miho_Ability_Powerstrike.description>
+  <Miho_Ability_Shield.label>Fox Shield</Miho_Ability_Shield.label>
+  <Miho_Ability_Shield.description>A type of interception protect gear that launches Mechanite to intercept low-momentum projectiles.</Miho_Ability_Shield.description>
+  <Miho_Ability_BerserkPulse.label>Lion's Roar</Miho_Ability_BerserkPulse.label>
+  <Miho_Ability_BerserkPulse.description>Terrifies everything around.</Miho_Ability_BerserkPulse.description>
+  <Miho_Ability_Heal.label>Healing Touch</Miho_Ability_Heal.label>
+  <Miho_Ability_Heal.description>Emit a healing touch that cures diseases and heals wounds.</Miho_Ability_Heal.description>
+  <Miho_Ability_Spiritualize.label>Spiritualization</Miho_Ability_Spiritualize.label>
+  <Miho_Ability_Spiritualize.description>The caster becomes a Mechanite-psychic conduit to relieve the neural heat stress of nearby casters.</Miho_Ability_Spiritualize.description>
+  <Miho_Ability_Spawn_Fox.label>Summon Carrying Fox</Miho_Ability_Spawn_Fox.label>
+  <Miho_Ability_Spawn_Fox.description>Summon a small helper fox to carry the settlement's luggage.</Miho_Ability_Spawn_Fox.description>
+  <Miho_Ability_Spawn_Butterfly.label>Summon Blade Butterflies</Miho_Ability_Spawn_Butterfly.label>
+  <Miho_Ability_Spawn_Butterfly.description>Summon a swarm of butterflies with razor-sharp wings.</Miho_Ability_Spawn_Butterfly.description>
+  <Miho_Ability_Spawn_Turret.label>Summon Fox Fire Brazier</Miho_Ability_Spawn_Turret.label>
+  <Miho_Ability_Spawn_Turret.description>Summon a brazier that launches fox fire.</Miho_Ability_Spawn_Turret.description>
+  <Miho_Ability_Skip.label>Reassembly Leap</Miho_Ability_Skip.label>
+  <Miho_Ability_Skip.description>A skill that enables teleportation to a specific location.</Miho_Ability_Skip.description>
+  <Miho_Ability_Spawn_Abomi.label>Summon Mechanite Abomination</Miho_Ability_Spawn_Abomi.label>
+  <Miho_Ability_Spawn_Abomi.description>Summon a terrifying war machine.</Miho_Ability_Spawn_Abomi.description>
+  <Miho_Ability_Sandevistan.label>Bullet Time</Miho_Ability_Sandevistan.label>
+  <Miho_Ability_Sandevistan.description>A cyberpunk-style cognitive enhancement device. It seems quite advanced.</Miho_Ability_Sandevistan.description>
+  <Miho_Ability_Repair.label>Field Repair</Miho_Ability_Repair.label>
+  <Miho_Ability_Repair.description>Instantly repair Mechanites without any penalties.</Miho_Ability_Repair.description>
+  <Miho_Ability_Armor.label>Mechanite Hardened Armor</Miho_Ability_Armor.label>
+  <Miho_Ability_Armor.description>Harden the Mechanite within the drone to enhance its armor.</Miho_Ability_Armor.description>
+  <Miho_Ability_Accuracy.label>Holographic Artillery</Miho_Ability_Accuracy.label>
+  <Miho_Ability_Accuracy.description>Introduce a three-dimensional targeting system to achieve higher accuracy.</Miho_Ability_Accuracy.description>
+  <Miho_Ability_Overclock.label>Overclock</Miho_Ability_Overclock.label>
+  <Miho_Ability_Overclock.description>"Power overwhelming!" Boost the Mechanite's consciousness.</Miho_Ability_Overclock.description>
+  <Miho_Ability_BulletHell.label>Bullet Hell</Miho_Ability_BulletHell.label>
+  <Miho_Ability_BulletHell.description>Drastically increase the reload speed to create a relentless barrage.</Miho_Ability_BulletHell.description>
+  <Miho_Ability_HackingSlow.label>Neuro Hacking (Consciousness Devour)</Miho_Ability_HackingSlow.label>
+  <Miho_Ability_HackingSlow.description>Devour the AI's consciousness to reduce its overall awareness.</Miho_Ability_HackingSlow.description>
+  <Miho_Ability_HackingKill.label>Neuro Hacking (Heat Explosion)</Miho_Ability_HackingKill.label>
+  <Miho_Ability_HackingKill.description>Draw a massive amount of energy from an unknown source.</Miho_Ability_HackingKill.description>
+  <Miho_Ability_SpawnGenerator.label>Borrow Energy</Miho_Ability_SpawnGenerator.label>
+  <Miho_Ability_SpawnGenerator.description>Borrow a massive amount of energy from an unknown source.</Miho_Ability_SpawnGenerator.description>
+  <Miho_Ability_HealMedic.label>Healing Touch (Medic Armor)</Miho_Ability_HealMedic.label>
+  <Miho_Ability_HealMedic.description>Emit a healing touch that cures diseases and heals wounds.</Miho_Ability_HealMedic.description>
+  <Miho_MechAbility_High_Jump.label>High-Speed Flight</Miho_MechAbility_High_Jump.label>
+  <Miho_MechAbility_High_Jump.description>Use internal heat to emit steam and achieve high-speed flight.</Miho_MechAbility_High_Jump.description>
+  <Miho_MechSmoke.label>Deploy Smoke</Miho_MechSmoke.label>
+  <Miho_MechSmoke.description>Deploy a smoke bomb.</Miho_MechSmoke.description>
+  <Miho_MechSmokeGrenade.label>Deploy Smoke Grenade</Miho_MechSmokeGrenade.label>
+  <Miho_MechSmokeGrenade.description>Deploy a smoke grenade.</Miho_MechSmokeGrenade.description>
+  <Miho_MechThermobaricGrenade.label>Thermobaric Bomb</Miho_MechThermobaricGrenade.label>
+  <Miho_MechThermobaricGrenade.description>Launch a thermobaric bomb against large structures.</Miho_MechThermobaricGrenade.description>
+  <Miho_MechPlasmaSpray.label>Plasma Spray</Miho_MechPlasmaSpray.label>
+  <Miho_MechPlasmaSpray.description>Spray superheated plasma at close range.</Miho_MechPlasmaSpray.description>
+  <Miho_MechATMissile.label>Anti-Mecha Plasma Missile</Miho_MechATMissile.label>
+  <Miho_MechATMissile.description>Launch an anti-Mecha plasma missile.</Miho_MechATMissile.description>
+  <Miho_Ability_Dump.label>Neural Heat transfer</Miho_Ability_Dump.label>
+  <Miho_Ability_Dump.description>Transfer neural heat to a cyber-based polygonal tank for cooling.</Miho_Ability_Dump.description>
+  <Miho_Ability_MechHeal.label>Touch of Healing</Miho_Ability_MechHeal.label>
+  <Miho_Ability_MechHeal.description>Emit a touch of healing that cures diseases and heals wounds.</Miho_Ability_MechHeal.description>
+  <Miho_MechSatchel.label>Structure Demolition Bomb</Miho_MechSatchel.label>
+  <Miho_MechSatchel.description>Launch a structure demolition bomb.</Miho_MechSatchel.description>
+  <Miho_MechFlame.label>Flame Bomb</Miho_MechFlame.label>
+  <Miho_MechFlame.description>Deploy a flame bomb.</Miho_MechFlame.description>
+  <Miho_Ability_HighmateSeduce.label>Seduce</Miho_Ability_HighmateSeduce.label>
+  <Miho_Ability_HighmateSeduce.description>Enhance work efficiency and mood for a one quarter. Just imagine what kind of it is...</Miho_Ability_HighmateSeduce.description>
+  
+  <Miho_Ability_Sunlamp.label>Foxlamp</Miho_Ability_Sunlamp.label>
+  <Miho_Ability_Sunlamp.description>Summon a magic lamp that provides warm heat and enough light for crops to grow.</Miho_Ability_Sunlamp.description>
+  <Miho_Ability_Sunlamp.verbProperties.label>foxlamp</Miho_Ability_Sunlamp.verbProperties.label>
+  
+  <Miho_Ability_HotFireball.label>Hot Foxfire</Miho_Ability_HotFireball.label>
+  <Miho_Ability_HotFireball.description>Summons a plasma foxfire with powerful destructive power. Handle with care!!!</Miho_Ability_HotFireball.description>
+  <Miho_Ability_HotFireball.verbProperties.label>hot foxfire</Miho_Ability_HotFireball.verbProperties.label>
+  
+  <Miho_Ability_Polaris.label>Hot Firespew</Miho_Ability_Polaris.label>
+  <Miho_Ability_Polaris.description>It breathes out a fan of plasma foxfire with powerful destructive power. It smells delicious.</Miho_Ability_Polaris.description>
+  <Miho_Ability_Polaris.verbProperties.label>hot firespew</Miho_Ability_Polaris.verbProperties.label>
+  
+  <Miho_Ability_HeatArmor.label>Heatarmor</Miho_Ability_HeatArmor.label>
+  <Miho_Ability_HeatArmor.description>Surrounds the target with a barrier of heat, protecting the target and enhancing its melee attack power.</Miho_Ability_HeatArmor.description>
+  <Miho_Ability_HeatArmor.verbProperties.label>heatarmor</Miho_Ability_HeatArmor.verbProperties.label>]
+  
+  <Miho_Ability_MakeSteel.label>Metalweave (Steel)</Miho_Ability_MakeSteel.label>
+  <Miho_Ability_MakeSteel.description>Metalweaving 225 steels. It starts out as a hot metal lump, but as it cools, it becomes solid steel.</Miho_Ability_MakeSteel.description>
+  <Miho_Ability_MakeSteel.verbProperties.label>metalweave</Miho_Ability_MakeSteel.verbProperties.label>
+  <Miho_Ability_MakePlasteel.label>Metalweave (Plasteel)</Miho_Ability_MakePlasteel.label>
+  <Miho_Ability_MakePlasteel.description>Metalweaving 75 plasteels. It starts out as a hot metal lump, but as it cools, it becomes solid steel.</Miho_Ability_MakePlasteel.description>
+  <Miho_Ability_MakePlasteel.verbProperties.label>metalweave</Miho_Ability_MakePlasteel.verbProperties.label>
+  
+  <Miho_Ability_MakeGold.label>Metalweave (Gold)</Miho_Ability_MakeGold.label>
+  <Miho_Ability_MakeGold.description>Metalweaving 75 golds. It starts out as a hot metal lump, but as it cools, it becomes solid steel.</Miho_Ability_MakeGold.description>
+  <Miho_Ability_MakeGold.verbProperties.label>metalweave</Miho_Ability_MakeGold.verbProperties.label>
+</LanguageData>

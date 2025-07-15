@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DoBillsMakeApparel_Miho_TableMachining.label>make equipment</DoBillsMakeApparel_Miho_TableMachining.label>
+  <DoBillsMakeApparel_Miho_TableMachining.verb>make</DoBillsMakeApparel_Miho_TableMachining.verb>
+  <DoBillsMakeApparel_Miho_TableMachining.gerund>making</DoBillsMakeApparel_Miho_TableMachining.gerund>
+  <DoBillsMake_Miho_CelestialForge.label>synthesizing celestial scales</DoBillsMake_Miho_CelestialForge.label>
+  <DoBillsMake_Miho_CelestialForge.verb>make</DoBillsMake_Miho_CelestialForge.verb>
+  <DoBillsMake_Miho_CelestialForge.gerund>making</DoBillsMake_Miho_CelestialForge.gerund>
+  <DoBillsMake_Miho_ShaftFurnace.label>crafting ceramic</DoBillsMake_Miho_ShaftFurnace.label>
+  <DoBillsMake_Miho_ShaftFurnace.verb>make</DoBillsMake_Miho_ShaftFurnace.verb>
+  <DoBillsMake_Miho_ShaftFurnace.gerund>making</DoBillsMake_Miho_ShaftFurnace.gerund>
+  <DoBillsMake_Miho_MechFactory.label>make miho mechanoid</DoBillsMake_Miho_MechFactory.label>
+  <DoBillsMake_Miho_MechFactory.verb>work at</DoBillsMake_Miho_MechFactory.verb>
+  <DoBillsMake_Miho_MechFactory.gerund>working at</DoBillsMake_Miho_MechFactory.gerund>
+</LanguageData>

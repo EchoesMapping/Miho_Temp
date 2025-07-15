@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  	<ThingCategoryDef>
+		<defName>AmmoMiho47x285mm</defName>
+		<label>47x285mm mihoic anti-tank shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberAutocannonLarge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Miho47x285mm</defName>
+		<label>47x285mm anti-tank shell</label>
+		<ammoTypes>
+			<Ammo_Miho47x285mm_HE>Bullet_Miho47x285mm_HE</Ammo_Miho47x285mm_HE>
+			<Ammo_Miho47x285mm_AP>Bullet_Miho47x285mm_AP</Ammo_Miho47x285mm_AP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="AmmoMiho47x285mmBase" ParentName="HeavyAmmoBase" Abstract="True">
+		<description>Large caliber cartridge used by autocannons and anti-aircraft cannons.</description>
+		<statBases>
+			<Mass>1.4</Mass>
+			<Bulk>3.98</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoMiho47x285mm</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoMiho47x285mmBase">
+		<defName>Ammo_Miho47x285mm_HE</defName>
+		<label>47x285mm Mihoic anti-tank shell cartridge (HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Bofors/HE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>22.21</MarketValue>
+		</statBases>
+		<ammoClass>ExplosiveAP</ammoClass>
+		<cookOffProjectile>Bullet_Miho47x285mm_HE</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoMiho47x285mmBase">
+		<defName>Ammo_Miho47x285mm_AP</defName>
+		<label>47x285mm Mihoic anti-tank shell cartridge (APHE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Bofors/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>8.57</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_Miho47x285mm_AP</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="BaseMiho47x285mmBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>155</speed>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMiho47x285mmBullet">
+		<defName>Bullet_Miho47x285mm_HE</defName>
+		<label>47x285mm Mihoic anti-tank bullet (HE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>195</damageAmountBase>
+			<armorPenetrationSharp>25</armorPenetrationSharp>
+			<armorPenetrationBlunt>8555.440</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>117</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMiho47x285mmBullet">
+		<defName>Bullet_Miho47x285mm_AP</defName>
+		<label>47x285mm Mihoic anti-tank bullet (APHE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>122</damageAmountBase>
+			<armorPenetrationSharp>57</armorPenetrationSharp>
+			<armorPenetrationBlunt>8555.440</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Miho47x285mm_HE</defName>
+		<label>make 47x285mm Miho (HE) cartridge x25</label>
+		<description>Craft 25 47x285mm Miho (HE) cartridges.</description>
+		<jobString>Making 47x285mm Miho (HE) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>108</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>33</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Miho47x285mm_HE>25</Ammo_Miho47x285mm_HE>
+		</products>
+		<workAmount>24000</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Miho47x285mm_AP</defName>
+		<label>make 47x285mm Miho (APHE) cartridge x25</label>
+		<description>Craft 25 47x285mm Miho (APHE) cartridges.</description>
+		<jobString>Making 47x285mm Miho (APHE) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>108</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Miho47x285mm_AP>25</Ammo_Miho47x285mm_AP>
+		</products>
+		<workAmount>10800</workAmount>
+	</RecipeDef>
+	
+	
+	<ThingCategoryDef>
+		<defName>AmmoPlasmaCellMihoHeavy</defName>
+		<label>Plasma Heavy Power Cell</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaLarge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PlasmaCellMihoHeavy</defName>
+		<label>Plasma Heavy Power Cell</label>
+		<ammoTypes>
+			<Ammo_PlasmaCellMihoHeavy>Bullet_PlasmaCellMihoHeavy</Ammo_PlasmaCellMihoHeavy>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_PlasmaCellMihoHeavy</defName>
+		<label>Star-Seed</label>
+		<description>Plasma containment power cell optimized for heavy weapons</description>
+		<statBases>
+			<Mass>1.5</Mass>
+			<Bulk>2.55</Bulk>
+			<MarketValue>2.52</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<!-- Plasma ammo can't be handloaded, and the containment cell must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoPlasmaCellMihoHeavy</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Heavy</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Plasma</ammoClass>
+		<comps>
+			<!-- Arbitarily defined cookoff explosive stats; represents a plasma containment system failing -->
+			  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>135</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.5</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			  </li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>12</Fragment_Large>
+					<Fragment_Small>20</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PlasmaCellMihoHeavy</defName>
+		<label>Plasma Bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>200</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>36</damageAmountBase>
+			<explosionRadius>1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<secondaryDamage>
+				<li>
+					<def>Flame_Secondary</def>
+					<amount>85</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_PlasmaCellMihoHeavy</defName>
+		<label>make Plasma Heavy Power Cells</label>
+		<description>Craft 25 shots' worth of Plasma Heavy Power Cells.</description>
+		<jobString>Making Plasma Heavy Power Cells.</jobString>
+		<workAmount>6800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PlasmaCellMihoHeavy>25</Ammo_PlasmaCellMihoHeavy>
+		</products>
+	</RecipeDef>
+
+</Defs>

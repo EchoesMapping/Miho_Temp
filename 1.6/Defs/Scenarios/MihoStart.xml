@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<ScenarioDef>
+	<defName>Miho_Start</defName>
+	<label>한 꼬리 혜성을 위하여.</label>	
+		<description>이 외로운 마법사는 과연 어떤 결말을 맞게 될까요.</description>
+		<scenario>
+		<summary>한 여우의 삶의 전환점.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>Miho_PlayerColony</factionDef>
+		</playerFaction>
+    <surfaceLayer>
+      <def>SurfaceLayerFixed</def>
+      <tag>Surface</tag>
+      <layer>Surface</layer>
+      <settingsDef>Surface</settingsDef>
+      <hide>true</hide>
+      <connections>
+        <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+          <zoomMode>ZoomOut</zoomMode>
+        </Orbit>
+      </connections>
+    </surfaceLayer>
+		<parts>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <visible>false</visible>
+          <method>DropPods</method>
+			</li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>1</pawnChoiceCount>
+          <customSummary>한명의 마법사 미호로 시작합니다.</customSummary>
+          <overrideKinds>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <pawnKind>Miho_PlayerColonist</pawnKind>
+            </li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>15</count>
+        </li>
+
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Miho_PositiveFlower_Pipe</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Miho_Weapon_EltexB</thingDef>
+				<count>1</count>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>325</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Miho_Ceramics</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>WoodLog</thingDef>
+				<count>160</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>14</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>275</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>30</count>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TextBook</thingDef>
+          <count>1</count>
+          <quality>Excellent</quality>
+        </li>
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Drone</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_BasicFactory</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Weapon</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_ApparelBasic</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Machining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BiofuelRefining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Silk</project>
+        </li>
+
+		</parts>
+		
+	</scenario>
+</ScenarioDef>
+
+
+<ScenarioDef>
+	<defName>Miho_Start_Three</defName>
+	<label>개척자 세 여우들.</label>	
+		<description>이 세마리의 귀여운 개척자 여우들은 변방계를 물 보듯 보고있습니다. 빨리 혼쭐내줍시다.</description>
+		<scenario>
+		<summary>세 여우들의 삶의 전환점.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>Miho_PlayerColonyNonMagic</factionDef>
+		</playerFaction>
+    <surfaceLayer>
+      <def>SurfaceLayerFixed</def>
+      <tag>Surface</tag>
+      <layer>Surface</layer>
+      <settingsDef>Surface</settingsDef>
+      <hide>true</hide>
+      <connections>
+        <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+          <zoomMode>ZoomOut</zoomMode>
+        </Orbit>
+      </connections>
+    </surfaceLayer>
+		<parts>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <visible>false</visible>
+          <method>DropPods</method>
+			</li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>3</pawnChoiceCount>
+          <customSummary>세명의 비능력자 미호로 시작합니다.</customSummary>
+          <overrideKinds>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <pawnKind>Miho_PlayerColonistNonMagic</pawnKind>
+            </li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <count>3</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>VanometricPowerCell</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Miho_PositiveFlower_Tea</thingDef>
+				<count>200</count>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentSpacer</thingDef>
+          <count>1</count>
+        </li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Miho_Weapon_Shotgun</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Miho_Weapon_Pistol</thingDef>
+				<count>1</count>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Weapon_PowerHammer</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Apparel_Hat_Militia</thingDef>
+          <stuff>Miho_MilitaryGradeBalisticCeramics</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Apparel_Middle_Militia</thingDef>
+          <stuff>Miho_MilitaryGradeBalisticCeramics</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Chemfuel</thingDef>
+          <count>150</count>
+        </li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>325</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Miho_Ceramics</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>WoodLog</thingDef>
+				<count>160</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>14</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>275</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>10</count>
+			</li>
+			
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Drone</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_BasicFactory</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Weapon</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_ApparelBasic</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Machining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BiofuelRefining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_HeavyFactory</project>
+        </li>
+		</parts>
+		
+	</scenario>
+</ScenarioDef>
+</Defs>

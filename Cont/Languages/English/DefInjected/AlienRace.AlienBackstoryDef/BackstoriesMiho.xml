@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Miho_Adult_LiaisonOfficer.title>Miho External Liaison Officer</Miho_Adult_LiaisonOfficer.title>
+	<Miho_Adult_LiaisonOfficer.titleShort>External Liaison</Miho_Adult_LiaisonOfficer.titleShort>
+	<Miho_Adult_LiaisonOfficer.baseDesc>[PAWN_nameDef] was an external contact. {PAWN_pronoun} supplied {PAWN_possessive} faction with various important supplies and information from outside.</Miho_Adult_LiaisonOfficer.baseDesc>
+
+	<Miho_Adult_PMCInfantry.title>Miho PMC soldier</Miho_Adult_PMCInfantry.title>
+	<Miho_Adult_PMCInfantry.titleShort>PMC soldier</Miho_Adult_PMCInfantry.titleShort>
+	<Miho_Adult_PMCInfantry.baseDesc>[PAWN_nameDef] was a minor in the Private Military Company. {PAWN_pronoun} was usually dispatched to carry out frontier missions.</Miho_Adult_PMCInfantry.baseDesc>
+
+	<Miho_Adult_PMCSapper.title>Miho PMC Engineer</Miho_Adult_PMCSapper.title>
+	<Miho_Adult_PMCSapper.titleShort>PMC Engineer</Miho_Adult_PMCSapper.titleShort>
+	<Miho_Adult_PMCSapper.baseDesc>[PAWN_nameDef] was an engineer in the Private Military Company. {PAWN_pronoun} was in charge of management and planting explosives with supernatural powers. That's dangerous.</Miho_Adult_PMCSapper.baseDesc>
+
+	<Miho_Adult_PMCSharpshooter.title>Miho PMC special shooter</Miho_Adult_PMCSharpshooter.title>
+	<Miho_Adult_PMCSharpshooter.titleShort>PMC special shooter</Miho_Adult_PMCSharpshooter.titleShort>
+	<Miho_Adult_PMCSharpshooter.baseDesc>Maybe [PAWN_nameDef] just had a lot of luck or very good eyesight. {PAWN_pronoun} showed off {PAWN_possessive} skills in the sniper squad.</Miho_Adult_PMCSharpshooter.baseDesc>
+
+	<Miho_Adult_HamburgerCook.title>Miho Hamburger Cook</Miho_Adult_HamburgerCook.title>
+	<Miho_Adult_HamburgerCook.titleShort>Hamburger Cook</Miho_Adult_HamburgerCook.titleShort>
+	<Miho_Adult_HamburgerCook.baseDesc>[PAWN_nameDef] was the hamburger cook until the delivery of human meat patties.</Miho_Adult_HamburgerCook.baseDesc>
+
+	<Miho_Adult_SushiCook.title>Miho Sushi Master</Miho_Adult_SushiCook.title>
+	<Miho_Adult_SushiCook.titleShort>Sushi Master</Miho_Adult_SushiCook.titleShort>
+	<Miho_Adult_SushiCook.baseDesc>[PAWN_nameDef] was a chef who used to make sushi at a conveyor belt sushi restaurant.
+ {PAWN_possessive} teachers instructions was to touch the rice grains until {PAWN_pronoun} knew the number of grains {PAWN_possessive} was holding. While continuously preparing sushi, {PAWN_pronoun} reached the point where {PAWN_pronoun} could determine the weight of each piece of sushi with an error of no more than 0.1g. Celebrities from all around the world adored her sushi and people lined up every day to taste it. Then one day... A large-scale food poisoning incident occurred at the store where {PAWN_nameDef} was working. The store went bankrupt after being sued by a customer who fell ill due to food poisoning. [PAWN_nameDef] then wandered from place to place and eventually became involved in the frontier development project.</Miho_Adult_SushiCook.baseDesc>
+
+	<Miho_Adult_VirtualIdol.title>Miho Virtual Idol</Miho_Adult_VirtualIdol.title>
+	<Miho_Adult_VirtualIdol.titleShort>Virtual Idol</Miho_Adult_VirtualIdol.titleShort>
+	<Miho_Adult_VirtualIdol.baseDesc>{PAWN_nameDef} was a virtual idol before arriving on the rimworld. {PAWN_nameDef} used a nerdy avatar with glasses but {PAWN_possessive} unique voice didn't suit the avatar. {PAWN_pronoun} was greatly loved by the public. The day before a game festival, {PAWN_nameDef} informed her fans that an NFT fan signing event would be held. On the day of the event {PAWN_nameDef} left the house in excitement but never returned. A fan who imagined {PAWN_possessive} usual avatar went mad when they saw {PAWN_possessive} real face. [PAWN_nameDef] was then abducted without knowing why and fell unconscious.</Miho_Adult_VirtualIdol.baseDesc>
+
+	<Miho_Adult_LowAssassin.title>Miho Lower Class Assassin</Miho_Adult_LowAssassin.title>
+	<Miho_Adult_LowAssassin.titleShort>Lower Class Assassin</Miho_Adult_LowAssassin.titleShort>
+	<Miho_Adult_LowAssassin.baseDesc>[PAWN_nameDef]	was a low-class assassin who killed assassination targets by seducing them. {PAWN_pronoun} tried to execute an assassination on the rimworld using {PAWN_possessive} specialty, but the shuttle {PAWN_pronoun} was riding was hit by anti-aircraft fire and crashed. Thats how {PAWN_pronoun} ended up living on the rimworld.</Miho_Adult_LowAssassin.baseDesc>
+
+	<Miho_Adult_MilitaryCooker.title>Miho Military Cook</Miho_Adult_MilitaryCooker.title>
+	<Miho_Adult_MilitaryCooker.titleShort>Military Cook</Miho_Adult_MilitaryCooker.titleShort>
+	<Miho_Adult_MilitaryCooker.baseDesc>[PAWN_nameDef] was a cook that served unsavory  meals at the military base.</Miho_Adult_MilitaryCooker.baseDesc>
+
+	<Miho_Adult_Surgeon.title>Miho Surgeon</Miho_Adult_Surgeon.title>
+	<Miho_Adult_Surgeon.titleShort>Surgeon</Miho_Adult_Surgeon.titleShort>
+	<Miho_Adult_Surgeon.baseDesc>[PAWN_nameDef] has caused too many medical accidents. {PAWN_pronoun} was kidnapped by the victims with a grudge and sent to the rimworld.</Miho_Adult_Surgeon.baseDesc>
+
+	<Miho_Adult_SurrogateSurgeon.title>Miho Acting Doctor</Miho_Adult_SurrogateSurgeon.title>
+	<Miho_Adult_SurrogateSurgeon.titleShort>Acting Doctor</Miho_Adult_SurrogateSurgeon.titleShort>
+	<Miho_Adult_SurrogateSurgeon.baseDesc>{PAWN_nameDef} was just a salesperson, but after a surgery as surrogate surgeon {PAWN_pronoun} realized what {PAWN_possessive} true calling is. After that {PAWN_pronoun} performed 1382 surgeries so far.</Miho_Adult_SurrogateSurgeon.baseDesc>
+
+	<Miho_Adult_Nurse.title>Miho Nurse</Miho_Adult_Nurse.title>
+	<Miho_Adult_Nurse.titleShort>Nurse</Miho_Adult_Nurse.titleShort>
+	<Miho_Adult_Nurse.baseDesc>[PAWN_nameDef] is a nurse. Thanks to the unique professional culture of nurses, she learned how to walk a tightrope well.</Miho_Adult_Nurse.baseDesc>
+
+	<Miho_Adult_Massager.title>Miho Masseuse</Miho_Adult_Massager.title>
+	<Miho_Adult_Massager.titleShort>Masseuse</Miho_Adult_Massager.titleShort>
+	<Miho_Adult_Massager.baseDesc>"It's no naughty massage at all! Just go down one floor to find the naughty ones!"</Miho_Adult_Massager.baseDesc>
+
+	<Miho_Adult_SpecialMassager.title>"Special" Masseuse</Miho_Adult_SpecialMassager.title>
+	<Miho_Adult_SpecialMassager.titleShort>Masseuse</Miho_Adult_SpecialMassager.titleShort>
+	<Miho_Adult_SpecialMassager.baseDesc>[PAWN_nameDef] was a worker at an illegal massage business. It was a massage salon but in reality it was no different from a brothel. One day whe {PAWN_pronoun} was caressing {PAWN_possessive} customer's whole body, drunk with cash stuck in {PAWN_possessive} underwear, the police raided the business. [PAWN_nameDef] calmly escaped from the scene through a hidden exit. While leaving {PAWN_pronoun} put on the customers baggy pants but didn't notice the bag of white powder sticking out of it's pockets. [PAWN_nameDef] unknowingly stole it and thought {PAWN_pronoun} was going home safely. But later {PAWN_pronoun} was arrested after a drug-sniffing dog, which had been following the police, picked up the scent of the drugs. That's how [PAWN_nameDef] was arrested and blamed for the entire drug smuggling business {PAWN_pronoun} was never a part of.</Miho_Adult_SpecialMassager.baseDesc>
+
+	<Miho_Adult_Academician.title>Miho University Student</Miho_Adult_Academician.title>
+	<Miho_Adult_Academician.titleShort>University Student</Miho_Adult_Academician.titleShort>
+	<Miho_Adult_Academician.baseDesc>[PAWN_nameDef] has devoted decades of {PAWN_possessive} life to the study of mankind in order to obtain {PAWN_possessive} degree.</Miho_Adult_Academician.baseDesc>
+
+	<Miho_Adult_Forge.title>Miho Furnace Formulator</Miho_Adult_Forge.title>
+	<Miho_Adult_Forge.titleShort>Blast Furnace Formulator</Miho_Adult_Forge.titleShort>
+	<Miho_Adult_Forge.baseDesc>[PAWN_nameDef] was the manager responsible for the furnace's formulation. {PAWN_pronoun} is now unemployed because {PAWN_possessive} blast furnace exploded after {PAWN_pronoun} watered {PAWN_possessive} compound for money.</Miho_Adult_Forge.baseDesc>
+
+	<Miho_Adult_Gunsmith.title>Miho Gunsmith</Miho_Adult_Gunsmith.title>
+	<Miho_Adult_Gunsmith.titleShort>Gunsmith</Miho_Adult_Gunsmith.titleShort>
+	<Miho_Adult_Gunsmith.baseDesc>[PAWN_nameDef] was a gun fanatic. {PAWN_pronoun} opened a gun shop but realized that 95 percent of {PAWN_possessive} customers were just boring hobby shooters. After that {PAWN_pronoun} headed to the rimworld where true gun fanatics live.</Miho_Adult_Gunsmith.baseDesc>
+
+	<Miho_Adult_Calligrapher.title>Miho Calligrapher</Miho_Adult_Calligrapher.title>
+	<Miho_Adult_Calligrapher.titleShort>Calligrapher</Miho_Adult_Calligrapher.titleShort>
+	<Miho_Adult_Calligrapher.baseDesc>[PAWN_nameDef] is a calligrapher. So {PAWN_pronoun} had to come to the rimworld!</Miho_Adult_Calligrapher.baseDesc>
+
+	<Miho_Adult_Miner.title>Miho Mining Manager</Miho_Adult_Miner.title>
+	<Miho_Adult_Miner.titleShort>Mining Manager</Miho_Adult_Miner.titleShort>
+	<Miho_Adult_Miner.baseDesc>[PAWN_nameDef] loves to dig, so {PAWN_pronoun} became a mining manager. No, really. She also enjoys hanging out with the workers.</Miho_Adult_Miner.baseDesc>
+
+	<Miho_Adult_Plantation.title>Miho Florist</Miho_Adult_Plantation.title>
+	<Miho_Adult_Plantation.titleShort>Florist</Miho_Adult_Plantation.titleShort>
+	<Miho_Adult_Plantation.baseDesc>[PAWN_nameDef] grew and sold flowers, but was exiled to the rimworld due to the rebellion of flowers with self-awareness.</Miho_Adult_Plantation.baseDesc>
+
+	<Miho_Adult_Privateer.title>Miho Privateer</Miho_Adult_Privateer.title>
+	<Miho_Adult_Privateer.titleShort>Privateer</Miho_Adult_Privateer.titleShort>
+	<Miho_Adult_Privateer.baseDesc>[PAWN_nameDef] was a member of a jolly pirate crew primarily engaged for human trafficking. Not very pleasant.</Miho_Adult_Privateer.baseDesc>
+
+	<Miho_Adult_BrutalPsyker.title>Miho Killer Psyker</Miho_Adult_BrutalPsyker.title>
+	<Miho_Adult_BrutalPsyker.titleShort>Killer Psyker</Miho_Adult_BrutalPsyker.titleShort>
+	<Miho_Adult_BrutalPsyker.baseDesc>[PAWN_nameDef] was a famous magic-killer and worshipped as a god by the tribesmen. But {PAWN_pronoun} came here to hide from a famous bounty hunter.</Miho_Adult_BrutalPsyker.baseDesc>
+
+	<Miho_Adult_Battlemage.title>Miho Battle Mage</Miho_Adult_Battlemage.title>
+	<Miho_Adult_Battlemage.titleShort>Battle Mage</Miho_Adult_Battlemage.titleShort>
+	<Miho_Adult_Battlemage.baseDesc>[PAWN_nameDef] is a specially trained battle mage. Because {PAWN_pronoun} was raised as living tactical weapons, {PAWN_pronoun} has low social skills.</Miho_Adult_Battlemage.baseDesc>
+
+	<Miho_Adult_Engi.title>Miho Engineer</Miho_Adult_Engi.title>
+	<Miho_Adult_Engi.titleShort>Engineer</Miho_Adult_Engi.titleShort>
+	<Miho_Adult_Engi.baseDesc>[PAWN_nameDef] likes machines. As much as {PAWN_pronoun} loves machines, they do lack aesthetic.</Miho_Adult_Engi.baseDesc>
+
+	<Miho_Adult_EngiTwo.title>Miho Machine Lover</Miho_Adult_EngiTwo.title>
+	<Miho_Adult_EngiTwo.titleShort>Machine Lover</Miho_Adult_EngiTwo.titleShort>
+	<Miho_Adult_EngiTwo.baseDesc>[PAWN_nameDef] loves machines. {PAWN_pronoun} was even married to one before.</Miho_Adult_EngiTwo.baseDesc>
+
+	<Miho_Adult_Ronin.title>Miho Ronin</Miho_Adult_Ronin.title>
+	<Miho_Adult_Ronin.titleShort>Ronin</Miho_Adult_Ronin.titleShort>
+	<Miho_Adult_Ronin.baseDesc>[PAWN_nameDef] is a famous warrior. Maybe it's to maintain {PAWN_possessive} image or {PAWN_pronoun} is simply not good at speaking but {PAWN_pronoun} doesn't talk much.</Miho_Adult_Ronin.baseDesc>
+
+	<Miho_Adult_Cute.title>Miho Pet Fox</Miho_Adult_Cute.title>
+	<Miho_Adult_Cute.titleShort>Pet Fox</Miho_Adult_Cute.titleShort>
+	<Miho_Adult_Cute.baseDesc>[PAWN_nameDef] is a poor fox who was sold to a dirty otaku. {PAWN_pronoun} had to cook, clean, offer {PAWN_possessive}... well... Anyway, {PAWN_pronoun} got tired of this life and fled far away.</Miho_Adult_Cute.baseDesc>
+
+	<Miho_Adult_Waifu.title>Miho Yamato Nadeshiko</Miho_Adult_Waifu.title>
+	<Miho_Adult_Waifu.titleShort>Yamato Nadeshiko</Miho_Adult_Waifu.titleShort>
+	<Miho_Adult_Waifu.baseDesc>"I want to be hugged by Maman, the cute fox." - Deos Epilope V (Starlord of the A-62 system heading to the North Star)</Miho_Adult_Waifu.baseDesc>
+
+	<Miho_Unique_Shoot.title>Stupid Miho</Miho_Unique_Shoot.title>
+	<Miho_Unique_Shoot.titleShort>Stupid Miho</Miho_Unique_Shoot.titleShort>
+	<Miho_Unique_Shoot.baseDesc>[PAWN_nameDef] is a bit silly.</Miho_Unique_Shoot.baseDesc>
+
+</LanguageData>
+
+
+
+

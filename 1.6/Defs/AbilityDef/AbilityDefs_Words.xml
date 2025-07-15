@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef Name="MihoWordOfBase" ParentName="MihoPsycastBase" Abstract="True">
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <warmupMote>Mote_WarmupWordOf</warmupMote>
+        <warmupSound>Psycast_WordOf_Warmup</warmupSound>
+        <category>WordOf</category>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <comps>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>WordOfApply</fleckDef>
+                <sound>Psycast_WordOf_Effect</sound>
+            </li>
+        </comps>
+        <verbProperties>
+            <drawAimPie>False</drawAimPie>
+            <range>-1</range>
+            <targetParams>
+                <canTargetBuildings>False</canTargetBuildings>
+                <neverTargetHostileFaction>True</neverTargetHostileFaction>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <!--Miho_Ability_Love-->
+    <AbilityDef ParentName="MihoWordOfBase">
+        <defName>Miho_Ability_Love</defName>
+        <label>유혹의 꼬리침</label>
+        <description>두 사람을 이어줍니다. 정말로요!</description>
+        <iconPath>Icon/Abilities/MihoLove</iconPath>
+        <hotKey>Misc12</hotKey>
+        <statBases>
+            <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+            <Ability_Duration>8000</Ability_Duration>
+        </statBases>
+        <groupDef>Miho_Word</groupDef>
+
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetSelf>True</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityWordOfLove">
+                <destination>Selected</destination>
+                <psychic>True</psychic>
+                <applicableToMechs>False</applicableToMechs>
+            </li>
+            <li Class="CompProperties_AbilitySocialInteraction">
+                <interactionDef>WordOfLove</interactionDef>
+            </li>
+        </comps>
+    </AbilityDef>
+    <!--Miho_Ability_Powerstrike-->
+    <AbilityDef ParentName="MihoWordOfBase">
+        <defName>Miho_Ability_Powerstrike</defName>
+        <label>일도 양단</label>
+        <description>진정한 무사에게 필요한 것은 의지와 기다림 입니다. 반갈죽!</description>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <iconPath>Icon/Abilities/MihoPowerstrike</iconPath>
+        <hotKey>Misc12</hotKey>
+        <statBases>
+            <Ability_EntropyGain>75</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.1</Ability_PsyfocusCost>            <!-- Minimum cost -->
+        </statBases>
+        <groupDef>Miho_WordPowerstrike</groupDef>
+
+        <verbProperties>
+            <warmupTime>0.5</warmupTime>
+            <range>9.9</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Miho_Powerstrike_Hediff</hediffDef>
+                <onlyBrain>True</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+    <!--Miho_Ability_Defence-->
+    <AbilityDef ParentName="MihoWordOfBase">
+        <defName>Miho_Ability_Defence</defName>
+        <label>하얀 갑옷의 무사</label>
+        <description>시전자 대신 데미지를 흡수해주는 하얀 갑옷의 무사의 혼령을 시전자의 몸에 깃들게 합니다.</description>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <iconPath>Icon/Abilities/Defence</iconPath>
+        <hotKey>Misc12</hotKey>
+        <statBases>
+            <Ability_EntropyGain>150</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.15</Ability_PsyfocusCost>            <!-- Minimum cost -->
+        </statBases>
+        <groupDef>Miho_Word</groupDef>
+
+        <verbProperties>
+            <warmupTime>0.5</warmupTime>
+            <range>9.9</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Miho_Defence_Hediff</hediffDef>
+                <onlyBrain>True</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+    <!--Miho_Ability_Serenity-->
+    <AbilityDef ParentName="MihoWordOfBase">
+        <defName>Miho_Ability_Serenity</defName>
+        <label>평온의 꼬리침</label>
+        <description>정신이상을 멈춰줍니다! 여우는 못참지 ㅋㅋ</description>
+        <iconPath>Icon/Abilities/MihoSerenity</iconPath>
+        <hotKey>Misc12</hotKey>
+        <statBases>
+            <Ability_PsyfocusCost>0.5</Ability_PsyfocusCost>            <!-- Minimum cost -->
+            <Ability_Duration>246</Ability_Duration>
+        </statBases>
+        <groupDef>Miho_Word</groupDef>
+
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetAnimals>False</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityStopMentalState">
+                <exceptions>
+                    <li>Jailbreaker</li>
+                </exceptions>
+                <psyfocusCostForMinor>0.5</psyfocusCostForMinor>
+                <psyfocusCostForMajor>0.65</psyfocusCostForMajor>
+                <psyfocusCostForExtreme>0.8</psyfocusCostForExtreme>
+            </li>
+            <li Class="CompProperties_AbilitySocialInteraction">
+                <interactionDef>WordOfSerenity</interactionDef>
+                <canApplyToMentallyBroken>True</canApplyToMentallyBroken>
+            </li>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>PsychicComa</hediffDef>
+                <durationMultiplier>PsychicSensitivity</durationMultiplier>
+            </li>
+        </comps>
+    </AbilityDef>
+    <!--Miho_Ability_Inspiration-->
+    <AbilityDef ParentName="MihoWordOfBase">
+        <defName>Miho_Ability_Inspiration</defName>
+        <label>즐거움의 꼬리침</label>
+        <description>행복을 선사해줍니다. 어떻게 선사해주는진 알려들지 마세요.</description>
+        <iconPath>Icon/Abilities/MihoJoy</iconPath>
+        <hotKey>Misc12</hotKey>
+        <statBases>
+            <Ability_PsyfocusCost>0.5</Ability_PsyfocusCost>
+            <Ability_Duration>5000</Ability_Duration>
+        </statBases>
+        <groupDef>Miho_Word</groupDef>
+
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <onlyTargetColonists>True</onlyTargetColonists>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Joyfuzz</hediffDef>
+                <durationMultiplier>PsychicSensitivity</durationMultiplier>
+                <onlyBrain>True</onlyBrain>
+                <psychic>True</psychic>
+                <applicableToMechs>False</applicableToMechs>
+                <goodwillImpact>5</goodwillImpact>
+            </li>
+            <li Class="CompProperties_AbilitySocialInteraction">
+                <interactionDef>WordOfJoy</interactionDef>
+            </li>
+        </comps>
+    </AbilityDef>
+        <!--Miho_Ability_Spiritualize-->
+        <AbilityDef ParentName="MihoWordOfBase">
+            <defName>Miho_Ability_Spiritualize</defName>
+            <label>영성화</label>
+            <description>시전자 본인이 메카나이트-초능력 전달체가 되어 주변 시전자들의 신경열 스트레스를 해소시켜 줍니다.</description>
+            <jobDef>CastAbilityOnThing</jobDef>
+            <targetRequired>False</targetRequired>
+            <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+            <stunTargetWhileCasting>True</stunTargetWhileCasting>
+            <showPsycastEffects>False</showPsycastEffects>
+            <iconPath>Icon/Abilities/Spiritual</iconPath>
+            <hotKey>Misc12</hotKey>
+            <statBases>
+                <Ability_PsyfocusCost>0.25</Ability_PsyfocusCost>            <!-- Minimum cost -->
+                <Ability_EntropyGain>300</Ability_EntropyGain>
+                <Ability_Duration>300</Ability_Duration>
+            </statBases>
+            <groupDef>Miho_Word</groupDef>
+            <verbProperties>
+                <warmupTime>0.5</warmupTime>
+                <range>9.9</range>
+                <drawAimPie>False</drawAimPie>
+                <requireLineOfSight>False</requireLineOfSight>
+                <targetParams>
+                    <canTargetSelf>true</canTargetSelf>
+                    <canTargetPawns>false</canTargetPawns>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetHumans>false</canTargetHumans>
+                    <canTargetMechs>false</canTargetMechs>
+                </targetParams>
+            </verbProperties>
+            <comps>
+                <li Class="CompProperties_AbilityGiveHediff">
+                    <compClass>CompAbilityEffect_GiveHediff</compClass>
+                    <hediffDef>Miho_Spiritualize_Hediff</hediffDef>
+                    <onlyBrain>True</onlyBrain>
+                    <onlyApplyToSelf>True</onlyApplyToSelf>
+                    <replaceExisting>true</replaceExisting>
+                </li>
+            </comps>
+        </AbilityDef>
+</Defs>

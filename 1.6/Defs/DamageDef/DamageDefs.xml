@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombHawk</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an explosion.</deathMessage>
+        <hediff>Miho_HawkInjury_Hediff</hediff>
+        <hediffSolid>Miho_HawkInjury_Hediff</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>50</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.10</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+        <plantDamageFactor>0</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>Miho_MagicBomb_Blast</explosionCellFleck>
+        <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+        <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+        <soundExplosion>Miho_BlastImpact</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+        <additionalHediffs>
+            <li>
+                <hediff>Miho_Hawk_Hediff</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+                <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBomb</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an explosion.</deathMessage>
+        <hediff>Shredded</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>50</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.50</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0.5</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>Miho_MagicBomb_Blast</explosionCellFleck>
+        <explosionColorCenter>(1, 0.8, 0.8)</explosionColorCenter>
+        <explosionColorEdge>(1, 0.8, 0.8)</explosionColorEdge>
+        <soundExplosion>Miho_BlastImpact</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombBatto</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an cut.</deathMessage>
+        <hediff>Shredded</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>50</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.10</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0.5</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>Miho_Fragment_Blast</explosionCellFleck>
+        <explosionColorCenter>(1, 0.8, 0.8)</explosionColorCenter>
+        <explosionColorEdge>(1, 0.8, 0.8)</explosionColorEdge>
+        <soundExplosion>Miho_None</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombBig</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an explosion.</deathMessage>
+        <hediff>Shredded</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>50</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.10</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>Miho_MagicBomb_Blast</explosionCellFleck>
+        <explosionColorCenter>(1, 0.8, 0.8)</explosionColorCenter>
+        <explosionColorEdge>(1, 0.8, 0.8)</explosionColorEdge>
+        <soundExplosion>Miho_BlastImpact</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombEMP</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has been beamed to death.</deathMessage>
+        <hediff>Burn</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Blunt</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>6</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.80</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0.2</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastEMP</explosionCellFleck>
+        <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+        <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+        <soundExplosion>Explosion_EMP</soundExplosion>
+        <combatLogRules>Damage_EMP</combatLogRules>
+        <additionalHediffs>
+            <li>
+                <hediff>Miho_Thunder_Hediff</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+                <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombGaze</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has been beamed to death.</deathMessage>
+        <hediff>Burn</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Blunt</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>6</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.80</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0.2</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastEMP</explosionCellFleck>
+        <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+        <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+        <soundExplosion>Explosion_EMP</soundExplosion>
+        <combatLogRules>Damage_EMP</combatLogRules>
+        <additionalHediffs>
+            <li>
+                <hediff>Miho_Gaze_Hediff</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+                <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Miho_MagicBombAnalysis</defName>
+        <label>mechanite-arcane</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has been beamed to death.</deathMessage>
+        <hediff>Burn</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Blunt</armorCategory>
+        <minDamageToFragment>100</minDamageToFragment>
+        <defaultDamage>10</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.80</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>0.2</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastEMP</explosionCellFleck>
+        <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+        <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+        <soundExplosion>Explosion_EMP</soundExplosion>
+        <combatLogRules>Damage_EMP</combatLogRules>
+        <additionalHediffs>
+            <li>
+                <hediff>Miho_Analysis_Hediff</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+                <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+</Defs>

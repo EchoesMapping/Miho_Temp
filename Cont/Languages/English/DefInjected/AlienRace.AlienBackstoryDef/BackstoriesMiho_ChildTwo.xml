@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Miho_Child_FoxTwo.title>ordinary fox</Miho_Child_FoxTwo.title>
+	<Miho_Child_FoxTwo.titleShort>ordinary fox</Miho_Child_FoxTwo.titleShort>
+	<Miho_Child_FoxTwo.baseDesc>[PAWN_nameDef] was just a normal fox in the city of Miho. {PAWN_pronoun} attended a mediocre school and acquired mediocre knowledge.</Miho_Child_FoxTwo.baseDesc>
+
+	<Miho_Child_RuralTwo.title>country fox</Miho_Child_RuralTwo.title>
+	<Miho_Child_RuralTwo.titleShort>country fox</Miho_Child_RuralTwo.titleShort>
+	<Miho_Child_RuralTwo.baseDesc>[PAWN_nameDef] was a fox living happy days in the countryside. {PAWN_pronoun} took care of animals, grew plants, walked in the forest and had happy days.</Miho_Child_RuralTwo.baseDesc>
+
+	<Miho_Child_HuntFoxTwo.title>hunting fox</Miho_Child_HuntFoxTwo.title>
+	<Miho_Child_HuntFoxTwo.titleShort>hunting fox</Miho_Child_HuntFoxTwo.titleShort>
+	<Miho_Child_HuntFoxTwo.baseDesc>[PAWN_nameDef] was an amazing hunter. No one knows what is so amazing about {PAWN_objective}.</Miho_Child_HuntFoxTwo.baseDesc>
+
+	<Miho_Child_OrphanTwo.title>abandoned fox</Miho_Child_OrphanTwo.title>
+	<Miho_Child_OrphanTwo.titleShort>abandoned fox</Miho_Child_OrphanTwo.titleShort>
+	<Miho_Child_OrphanTwo.baseDesc>[PAWN_nameDef] has been abandoned by {PAWN_possessive} parents or lost them. Even though {PAWN_pronoun} went through a lot of hardships {PAWN_pronoun} is still alive and well.</Miho_Child_OrphanTwo.baseDesc>
+
+	<Miho_Child_GiftedTwo.title>genius</Miho_Child_GiftedTwo.title>
+	<Miho_Child_GiftedTwo.titleShort>genius</Miho_Child_GiftedTwo.titleShort>
+	<Miho_Child_GiftedTwo.baseDesc>[PAWN_nameDef] was a fox with high intellectual abilities. {PAWN_pronoun} often looked for adult company because {PAWN_pronoun} couldn't properly talk to her friends.</Miho_Child_GiftedTwo.baseDesc>
+
+	<Miho_Child_DesertTwo.title>desert fox</Miho_Child_DesertTwo.title>
+	<Miho_Child_DesertTwo.titleShort>desert fox</Miho_Child_DesertTwo.titleShort>
+	<Miho_Child_DesertTwo.baseDesc>[PAWN_nameDef] was literally a desert fox. {PAWN_pronoun} can tolerate heat very well.</Miho_Child_DesertTwo.baseDesc>
+
+	<Miho_Child_BraveTwo.title>brave fox</Miho_Child_BraveTwo.title>
+	<Miho_Child_BraveTwo.titleShort>brave fox</Miho_Child_BraveTwo.titleShort>
+	<Miho_Child_BraveTwo.baseDesc>[PAWN_nameDef] was a brave fox. {PAWN_pronoun} was so brave that {PAWN_pronoun} had no friends.</Miho_Child_BraveTwo.baseDesc>
+
+</LanguageData>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+ <ThingDef ParentName="BaseMihoicGun">
+    <defName>MihoVEF_Weapon_Minigun</defName>
+    <label>미호 데졸레이터</label>
+    <description>중갑을 입었든 경갑을 입었든, 사이좋게 증발시켜 버립니다.</description>
+    <graphicData>
+		<texPath>Things/WeaponSpecial/Desolator</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.65</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+		<WorkToMake>215500</WorkToMake>
+		<Mass>65</Mass>
+			<AccuracyTouch>0.12</AccuracyTouch>
+			<AccuracyShort>0.12</AccuracyShort>
+			<AccuracyMedium>0.24</AccuracyMedium>
+			<AccuracyLong>0.24</AccuracyLong>
+			<RangedWeapon_Cooldown>3.55</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<ComponentSpacer>21</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+	<techLevel>Industrial</techLevel>
+    <weaponTags Inherit="False">
+	<li>MihoBulgasal</li>
+    </weaponTags>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MihoVEF_Weapon_RifleMinigun_Proj</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+
+        <range>12.9</range>
+        <burstShotCount>4</burstShotCount>
+		<forcedMissRadius>2</forcedMissRadius> 
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Miho_PlasmaFlamer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+    </tools>
+ </ThingDef>
+ 
+  <ThingDef ParentName="BaseBullet">
+    <defName>MihoVEF_Weapon_RifleMinigun_Proj</defName>
+    <label>plasma shot</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/MihoRoundPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>0.78</drawSize>
+
+    </graphicData>
+    <projectile>
+      <damageDef>MihoPlasma</damageDef>
+	  <explosionRadius>1.5</explosionRadius>
+	  <flyOverhead>false</flyOverhead>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>32</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

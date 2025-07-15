@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionLanguages.RaceLanguageDef>
+		<defName>MihoLanguages</defName>
+		<label>천상어</label>
+		<description>폴리글로시 체계와 헤테로글로시 체계로 나누어진 여우들의 언어 입니다. 상당히 애정결핍적인 느낌이 없지않아 있습니다.</description>
+		<nameMaker>MihoLanguage</nameMaker>
+		<learningDifficulty>1</learningDifficulty>
+	</FactionLanguages.RaceLanguageDef>
+</Defs>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Miho_PositiveFlower_Juice</defName>
+    <label>태양화 탕약</label>
+    <description>고농축된 메카나이트 성분이 들어있는 탕약 입니다. 마시면 빠르게 신경열을 가라앉게 만들어 줍니다.</description>
+    <descriptionHyperlinks>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/MihoPotion</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>53</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Miho_PositiveFlower_Juice_High</hediffDef>
+          <severity>0.5</severity>
+          <toleranceChemical>Miho_PositiveFlower_Juice</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+          <offset>0.2</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Miho_Silk</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <RawPosFlower>50</RawPosFlower>
+      <Miho_Ebony_Mulberry>20</Miho_Ebony_Mulberry>
+
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Miho_PositiveFlower_Juice</chemical>
+        <addictiveness>0.026</addictiveness>
+        <existingAddictionSeverityOffset>0.2</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>200</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>Miho_PositiveFlower_Juice_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>탕약의 효과</label>
+    <labelNoun>탕약의 효과</labelNoun>
+    <description>탕약의 효능 : 맛없다</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-28</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <PsychicEntropyRecoveryRate>48</PsychicEntropyRecoveryRate>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Miho_EntropyDump_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>신경열 떠넘기기</label>
+    <labelNoun>신경열 떠넘기기</labelNoun>
+    <description>신경열 떠넘기기</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-48</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <PsychicEntropyRecoveryRate>24</PsychicEntropyRecoveryRate>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ChemicalDef>
+    <defName>Miho_PositiveFlower_Juice</defName>
+    <label>태양화 위험약물</label>
+    <addictionHediff>Miho_PositiveFlower_Juice_Addiction</addictionHediff>
+		<generateAddictionGenes>false</generateAddictionGenes>
+
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Miho_PositiveFlower_Juice</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>태양화 위험약물</label>
+    <description>태양화 위험약물에 중독되면 그에대한 부작용을 방지하기 위해 지속적으로 태양화 위험약물을 투여 받아야 합니다.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>Miho_PositiveFlower_Juice_Addiction</defName>
+    <label>태양화 위험약물 중독</label>
+    <description>태양화 위험약물에 중독되었습니다.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Chemical_Miho_PositiveFlower_Juice</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.045</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <painFactor>3</painFactor>
+        <restFallFactorOffset>0.3</restFallFactorOffset>
+        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.50</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Miho_PositiveFlower_Juice_Withdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Miho_PositiveFlower_Juice_Addiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>태양화 위험약물 결핍</label>
+        <description>머리가 깨질듯이 아파... 그뿐이야...</description>
+        <baseMoodEffect>-22</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>Miho_PositiveFlower_Juice_Tolerance</defName>
+    <label>태양화 위험약물 허용치</label>
+    <description>태양화 위험약물</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Miho_PositiveFlower_Juice</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageModerate</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.45, 99999)</li>
+            <li>(0.5, 120)</li>
+            <li>(1, 90)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+  <!-- Tea addiction -->
+  
+  <ChemicalDef>
+    <defName>Miho_PositiveFlower_Tea</defName>
+    <label>태양화 경약물</label>
+    <addictionHediff>Miho_PositiveFlower_Tea_Addiction</addictionHediff>
+    <canBinge>true</canBinge>
+		<generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Miho_PositiveFlower_Tea</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>태양화 경약물</label>
+    <description>미호가 동물적 감각을 지니지 않기 위해 태양화로 만든 약물을 주기적으로 복용해야 합니다.</description>
+    <fallPerDay>1</fallPerDay>
+    <listPriority>40</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="AddictionBase">
+    <defName>Miho_PositiveFlower_Tea_Addiction</defName>
+    <label>태양화 경약물 중독</label>
+    <description>태양화를 이용한 경약물에 딱히 휘험한 상황에 처하진 않습니다. 단지 특유의 꽃내음이 그리워질 뿐이죠.</description>
+    <minSeverity>0.001</minSeverity>
+
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Chemical_Miho_PositiveFlower_Tea</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.002</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Miho_PositiveFlower_Tea_Withdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Miho_PositiveFlower_Tea_Addiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>태양화 결핍</label>
+        <description>그 꽃내음이 그리워.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>Miho_PositiveFlower_Tea_Tolerance</defName>
+    <label>태양화 경약물 허용치</label>
+    <description>태양화 경약물</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Miho_PositiveFlower_Tea</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

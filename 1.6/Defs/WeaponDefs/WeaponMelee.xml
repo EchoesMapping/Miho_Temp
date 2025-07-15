@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_PowerClaw</defName>
+		<label>미호 파워클로</label>
+    <techLevel>Industrial</techLevel>
+		<description>3개의 날과 1개의 송곳으로 이루어진 미호용 파워클로 입니다. 정원사들에게 인기가 많다고 합니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/MihoPowerClaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>MihoAssassinMelee</li>
+    </weaponTags>
+    <costList>
+      <Miho_Ebony_SilkCloth>40</Miho_Ebony_SilkCloth>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.2</PlantWorkSpeed>
+			<MeleeHitChance>2</MeleeHitChance>	
+		</equippedStatOffsets>
+    <costStuffCount>90</costStuffCount>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.7</armorPenetration>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_PowerHammer</defName>
+		<label>미호 파워해머</label>
+    <techLevel>Industrial</techLevel>
+		<description>미호들이 쓰는 개조된 착암기 입니다. 건물을 철거할때나 채굴을 할때 좋습니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/MihoJackHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+
+		</graphicData>
+    <weaponTags>
+      <li>MihoAssassinMelee</li>
+    </weaponTags>
+    <costList>
+      <Miho_Ceramics>60</Miho_Ceramics>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+	 	<equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+
+			<MiningSpeed>0.75</MiningSpeed>
+     	  <SmoothingSpeed>0.5</SmoothingSpeed>
+
+		</equippedStatOffsets>
+    <costStuffCount>60</costStuffCount>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>2</power>
+        <armorPenetration>0.14</armorPenetration>
+        <cooldownTime>0.3</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Miho_HeavyFactory</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_RingedBlade</defName>
+		<label>미호 환도</label>
+    <techLevel>Medieval</techLevel>
+		<description>적을 다져버리는데 좋은 큰 환도 입니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/MihoRingedBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>MihoLargeBlade</li>
+    </weaponTags>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+			<ButcheryFleshSpeed>0.25</ButcheryFleshSpeed>
+
+		</equippedStatOffsets>
+    <costStuffCount>100</costStuffCount>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <ComponentIndustrial>2</ComponentIndustrial>
+
+    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <armorPenetration>0.14</armorPenetration>
+        <cooldownTime>1.67</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Miho_Weapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+
+      </recipeUsers>
+    </recipeMaker>
+		<comps>
+			<li Class="SYS.CompProperties_Sheath">
+				<sheathOnlyGraphicData>
+					<texPath>Things/WeaponMelee/MihoRingedBlade_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
+					<texPath>Things/WeaponMelee/MihoRingedBlade_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+
+				</fullGraphicData>
+				<drawPosition>Side</drawPosition>
+				<northOffset>
+					<position>(0.2,0,-0.2)</position>
+					<angle>0</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,0,-0.2)</position>
+					<angle>0</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0,-0.3,-0.2)</position>
+					<angle>220</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0,0,-0.2)</position>
+					<angle>-220</angle>
+				</westOffset>
+			</li>
+		</comps>
+	</ThingDef>
+	
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_Tachi</defName>
+		<label>미호 대태도</label>
+    <techLevel>Medieval</techLevel>
+		<description>거대한 외날검 입니다. 고대 지구의 무사들이 즐겨 썼다 합니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/MihoTachi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+	<li>MihoMarineMelee</li>
+      <li>MihoLargeBlade</li>
+    </weaponTags>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.28</MoveSpeed>
+      <MeleeDodgeChance>2</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <costStuffCount>120</costStuffCount>
+		<statBases>
+			<WorkToMake>33000</WorkToMake>
+			<Mass>3.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <Miho_Ebony_SilkCloth>25</Miho_Ebony_SilkCloth>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <armorPenetration>0.18</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.75</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Miho_HeavyWeapon</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+				<Artistic>4</Artistic>
+			</skillRequirements>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+	<comps>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.15,-1,0.05)</position>
+					<angle>315</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,1,0.35)</position>
+					<angle>-315</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.05,0.8,0.08)</position>
+					<angle>-125</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.05,-0.8,0.08)</position>
+					<angle>125</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_Sheath">		
+				<sheathOnlyGraphicData>
+					<texPath>Things/WeaponMelee/MihoTachi_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
+					<texPath>Things/WeaponMelee/MihoTachi_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
+				<northOffset>
+					<position>(0,1,-0.12)</position>
+					<angle>200</angle>
+				</northOffset>
+				<southOffset>
+					<position>(0,-1,-0.11)</position>
+					<angle>40</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.25,0.5,-0.08)</position>
+					<angle>20</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.25,0.5,-0.08)</position>
+					<angle>-20</angle>
+				</westOffset>
+			</li>
+		</comps>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Miho_Weapon_Sappertool</defName>
+    <label>미호 자차</label>
+    <description>보통 '사쓰마타'라 불리는 장대형 무기는 비교적 힘이 약한 미호들이 인류를 효율적으로 제압하기 위해 만들어 졌습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponMelee/MihoSappertool</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>MihoLargeBlade</li>
+    </weaponTags>
+
+    <costStuffCount>125</costStuffCount>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>6</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+
+    </stuffCategories>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <armorPenetration>0.1</armorPenetration>
+
+        <cooldownTime>2.4</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>3</amount>
+            <chance>0.15</chance>
+
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<equippedStatOffsets>
+
+      <MoveSpeed>-0.24</MoveSpeed>
+      <MeleeDodgeChance>5</MeleeDodgeChance>
+      <SuppressionPower>0.1</SuppressionPower>
+
+		</equippedStatOffsets>
+    <recipeMaker>
+      <recipeUsers Inherit="False"> 
+      </recipeUsers>
+      <skillRequirements>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>Miho_Weapon_PlasmaTachi</defName>
+		<label>미호 플라즈마 대태도</label>
+    <techLevel>Spacer</techLevel>
+		<description>플라즈마가 방출되는 개량된 거대한 외날검 입니다. 이 검의 절단력은 고대 지구의 제트스트림 전사의 검의 절단력과 맞먹습니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/MihoPlasmaTachi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>	    
+
+		</graphicData>
+    <weaponTags>
+	<li>MihoMarineMelee</li>
+    </weaponTags>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.28</MoveSpeed>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>88000</WorkToMake>
+			<Mass>3.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+    <costList>
+      <Miho_MilitaryGradeBalisticCeramics>120</Miho_MilitaryGradeBalisticCeramics>
+      <Gold>10</Gold>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>8</ComponentIndustrial>
+	  </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Miho_CutPlasma</li>
+        </capacities>
+        <power>31</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>8</amount>
+            <chance>0.6</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Miho_CutPlasma</li>
+        </capacities>
+        <power>26</power>
+        <armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>8</amount>
+            <chance>0.4</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Miho_PlasmaWeapon</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+	 <li MayRequire="mihoaddon.fortifiedoutremer">Miho_Factory</li>
+
+      </recipeUsers>
+    </recipeMaker>
+	<comps>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.15,-1,0.05)</position>
+					<angle>315</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,1,0.35)</position>
+					<angle>-315</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.05,0.8,0.08)</position>
+					<angle>-125</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.05,-0.8,0.08)</position>
+					<angle>125</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_Sheath">		
+				<fullGraphicData>
+					<texPath>Things/WeaponMelee/MihoPlasmaTachi_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
+				<northOffset>
+					<position>(0,1,-0.12)</position>
+					<angle>200</angle>
+				</northOffset>
+				<southOffset>
+					<position>(0,-1,-0.11)</position>
+					<angle>40</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.25,0.5,-0.08)</position>
+					<angle>20</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.25,0.5,-0.08)</position>
+					<angle>-20</angle>
+				</westOffset>
+			</li>
+		</comps>
+	</ThingDef>
+	
+
+
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_EltexB</defName>
+    <label>엘텍스 법봉 (B)</label>
+    <techLevel>Medieval</techLevel>
+		<description>신경열 회복에 최적화된 싸이킥 법봉 입니다.</description>
+		<graphicData>
+      <texPath>Things/WeaponRanged/HazeGuider</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>MihoMagi</li>
+    </weaponTags>
+		<statBases>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <ComponentIndustrial>4</ComponentIndustrial>
+
+    </costList>
+    <equippedStatOffsets>
+      <PsychicEntropyRecoveryRate>3.75</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>25</PsychicEntropyMax>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_EltexA</defName>
+    <label>엘텍스 법봉 (A)</label>
+    <techLevel>Medieval</techLevel>
+		<description>신경열 저장에 최적화된 싸이킥 법봉 입니다.</description>
+		<graphicData>
+      <texPath>Things/WeaponRanged/CrystalBarrage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>MihoMagi</li>
+    </weaponTags>
+		<statBases>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <ComponentIndustrial>4</ComponentIndustrial>
+
+    </costList>
+    <equippedStatOffsets>
+      <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>150</PsychicEntropyMax>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Miho_Weapon_EltexAxe</defName>
+    <label>엘텍스 대부월</label>
+    <techLevel>Medieval</techLevel>
+		<description>근접 성능이 좋은 엘텍스 무기입니다.</description>
+		<graphicData>
+      <texPath>Things/WeaponMelee/MihoSlayer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>MihoMagi</li>
+    </weaponTags>
+		<statBases>
+			<WorkToMake>180000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+    <costList>
+      <Gold>10</Gold>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <PsychicEntropyRecoveryRate>2.75</PsychicEntropyRecoveryRate>
+      <PsychicEntropyMax>25</PsychicEntropyMax>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>29</power>
+        <armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Miho_Persona</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+	 <li>Miho_TableMachining</li>
+
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+</Defs>

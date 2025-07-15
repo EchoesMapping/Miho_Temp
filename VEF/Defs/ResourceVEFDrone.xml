@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Miho_HivetoCleaner</defName>
+    <label>청소 드론 제작</label>
+    <description>청소 드론을 제작합니다.</description>
+    <jobString>청소 드론 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workAmount>5500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MechCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>Miho_MechCore</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechItemCleaner>1</Miho_MechItemCleaner>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Miho_Drone</researchPrerequisite>
+
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Miho_HivetoLogi</defName>
+    <label>로지 드론 제작</label>
+    <description>로지 드론을 제작합니다.</description>
+    <jobString>로지 드론 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workAmount>10000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MechCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>Miho_MechCore</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechItemLogi>1</Miho_MechItemLogi>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Miho_Drone</researchPrerequisite>
+
+	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Miho_HivetoSecurity</defName>
+    <label>수호 드론 제작</label>
+    <description>수호 드론을 제작합니다.</description>
+    <jobString>수호 드론 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workAmount>10000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_Ceramics</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MechCore</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_Ceramics</li>
+        <li>Miho_MechCore</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechItemSecurity>1</Miho_MechItemSecurity>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Miho_GuardDrone</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Miho_HivetoLight</defName>
+    <label>경장갑 견마 드론 제작</label>
+    <description>경장갑 견마 드론을 제작합니다.</description>
+    <jobString>경장갑 견마 드론 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workAmount>55000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_DroneLeg</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MechCore</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_DroneChassis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_DroneLeg</li>
+        <li>Miho_MechCore</li>
+        <li>Miho_DroneChassis</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechItemLight>1</Miho_MechItemLight>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Miho_LightWarDrone</researchPrerequisite>
+  </RecipeDef>
+  
+
+  <RecipeDef>
+    <defName>Miho_HivetoHeavy</defName>
+    <label>중장갑 견마 드론 제작</label>
+    <description>중장갑 견마 드론을 제작합니다.</description>
+    <jobString>중장갑 견마 드론 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workAmount>100000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_DroneLeg</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_MechCore</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_DroneChassis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Miho_DroneArmor</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Miho_DroneLeg</li>
+        <li>Miho_MechCore</li>
+        <li>Miho_DroneChassis</li>
+        <li>Miho_DroneArmor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Miho_MechItemHeavy>1</Miho_MechItemHeavy>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Miho_HeavyWarDrone</researchPrerequisite>
+  </RecipeDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechItemCleaner</defName>
+    <label>청소 드론 완제품</label>
+    <description>완제품 청소 드론 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechUndeployed/Cleaner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.5</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>610</MarketValue>
+      <Mass>16</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechItemLogi</defName>
+    <label>로지 드론 완제품</label>
+    <description>완제품 로지 드론 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechUndeployed/Logi</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>2.8</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>850</MarketValue>
+      <Mass>80</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechItemLight</defName>
+    <label>경장갑 견마 드론 완제품</label>
+    <description>완제품 견마 드론 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechUndeployed/Sapsal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>3.2</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>4400</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechItemHeavy</defName>
+    <label>중장갑 견마 드론 완제품</label>
+    <description>완제품 견마 드론 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechUndeployed/Bulgasal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>3.2</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>10500</MarketValue>
+      <Mass>300</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Miho_MechItemSecurity</defName>
+    <label>수호 드론 완제품</label>
+    <description>완제품 수호 드론 입니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoMechUndeployed/Security</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.5</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1200</MarketValue>
+      <Mass>65</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

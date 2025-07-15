@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Anti-Empire intro quest. -->
+  <QuestScriptDef>
+    <defName>Intro_MihoScav</defName>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>4~8</expireDaysRange>
+    <defaultChallengeRating>1</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->쏘지마시발</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->한 바보같은 여우가 통신을 걸었습니다. 자초지종을 들어보니 술김에 탈영을 했다가 주변에 있는 제국군들을 화나게 한 모양입니다. 살려달라고 하긴 하는데 들어줄까요?</li>
+
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetWalkInSpot" />
+
+        <li Class="QuestNode_Set">
+          <name>raidPoints</name>
+          <value>$points</value>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+        
+        <!-- Get asker -->
+        <li Class="QuestNode_GeneratePawn">
+          <kindDef>Miho_Unique_DontShootMe</kindDef>
+          <storeAs>asker</storeAs>
+          <faction>Miho_Faction_Megacorp</faction>
+          <forbidAnyTitle>True</forbidAnyTitle>
+        </li>
+        
+        <!-- Empire becomes hostile -->
+        <li Class="QuestNode_ChangeFactionGoodwill">
+          <faction>Empire</faction>
+          <change>-100</change>
+          <canSendLetter>false</canSendLetter>
+          <canSendMessage>false</canSendMessage>
+          <ensureHostile>true</ensureHostile>
+          <reason>AcceptedDeserter</reason>
+        </li>
+        
+        <!-- Spawn joiner -->
+        <li Class="QuestNode_PawnsArrive">
+          <pawns>$asker</pawns>
+          <walkInSpot>$walkInSpot</walkInSpot>
+          <joinPlayer>true</joinPlayer>
+          <customLetterText TKey="LetterLabelAskerBecameHostile">{BASETEXT}\n\nBecause you accepted [asker_nameDef], [asker_factionName] has become hostile.\n\nThe loyalty squad that is hunting [asker_objective] will arrive soon.</customLetterText>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+        
+        <!-- Raid -->
+        <li Class="QuestNode_Set">
+          <name>raidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+        </li>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$raidDelayTicks</delayTicks>
+          <node Class="QuestNode_SubScript">
+            <def>Util_Raid</def>
+            <prefix>raid</prefix>
+            <parms>
+              <inSignal>$inSignal</inSignal>
+              <map>$map</map>
+              <enemyFaction>Empire</enemyFaction>
+              <points>$raidPoints</points>
+              <walkInSpot>$walkInSpot</walkInSpot>
+              <customLetterLabel TKey="LetterLabelLoyaltySquad">{BASELABEL}: 화난 제국군</customLetterLabel>
+              <customLetterText TKey="LetterTextLoyaltySquad">적들이 옵니다.
+              </customLetterText>
+            </parms>
+          </node>
+        </li>
+
+      </nodes>
+    </root>
+    
+  </QuestScriptDef>
+
+  <IncidentDef ParentName="GiveQuestBase">
+    <defName>GiveQuest_Intro_MihoScav</defName>
+    <label>미호 탈영병</label>
+    <questScriptDef>Intro_MihoScav</questScriptDef>
+    <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
+  </IncidentDef>
+</Defs>
