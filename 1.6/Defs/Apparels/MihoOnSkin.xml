@@ -818,7 +818,6 @@
       <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
       <Miho_Ebony_SilkCloth>300</Miho_Ebony_SilkCloth>
       <ComponentSpacer>8</ComponentSpacer>
-
     </costList>
     <thingCategories>
       <li>Miho_Apparel</li>
@@ -842,7 +841,7 @@
     </statBases>
     <equippedStatOffsets>
           <MoveSpeed>1.1</MoveSpeed>
-          <RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+          <RangedCooldownFactor>-0.1</RangedCooldownFactor>
           <InjuryHealingFactor>2</InjuryHealingFactor>
 	      <PsychicSensitivity>-0.25</PsychicSensitivity>
           <MeleeDamageFactor>0.5</MeleeDamageFactor>

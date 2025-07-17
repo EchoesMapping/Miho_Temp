@@ -1308,7 +1308,6 @@
 			<ComponentSpacer>2</ComponentSpacer>
 			<Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
 			<Plasteel>25</Plasteel>
-
 		</costList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -1332,7 +1331,6 @@
 			<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
 			<PsychicSensitivity>-0.25</PsychicSensitivity>
 			<ToxicEnvironmentResistance>1.8</ToxicEnvironmentResistance>
-
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
