@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Miho, the celestial fox(unstable)</name>
-	<author>Outremer,Fortified_Home,Liquid</author>
+	<author>Outremer,Fortified_Home</author>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>miho.fortifiedoutremer.unstable</packageId>
+	<packageId>miho.fortifiedoutremer</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">Icon/mihomodicon</modIconPath>
 	<description>Wow! Fluffy Foxes!</description>
 	<modDependencies>
@@ -13,6 +13,18 @@
 			<packageId>erdelf.humanoidalienraces</packageId>
 			<displayName>HumanoidAlienRaces</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ludeon.rimworld.royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+		<li>
+			<packageId>ludeon.rimworld.ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
 		</li>
 	</modDependencies>
 	<loadAfter>
