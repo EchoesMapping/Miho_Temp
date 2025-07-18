@@ -10,7 +10,7 @@
     <graphicData>
 			<texPath>Things/Building/MihoShaftFurnace/MihoShaftFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(9.9,9.9)</drawSize>
+			<drawSize>(5.9,5.9)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -34,12 +34,12 @@
       <Flammability>1.0</Flammability>
       <Cleanliness>-2</Cleanliness>
     </statBases>
-    <size>(5,5)</size>
+    <size>(3,3)</size>
     <designationCategory>MihoBuilding</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <recipes>

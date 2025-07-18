@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  
 
-
-  <AlienRace.RaceSettings>
+<AlienRace.RaceSettings>
     <defName>Miho_Settings</defName>
-    <pawnKindSettings>
+     <pawnKindSettings>
+            
+			<startingColonists>
+				<li>
+				<pawnKindEntries>
+					<li>
+                    <kindDefs>
+                        <li>Miho_PlayerColonistNonMagic</li>
+                    </kindDefs>
+                    <chance>100.0</chance>
+					</li>			
+				</pawnKindEntries>
+					<factionDefs>
+						<li>Miho_PlayerColonyNonMagic</li> 
 
-      <startingColonists>
-        <li>
-          <pawnKindEntries>
-            <li>
-              <kindDefs>
-                <li>Miho_PlayerColonistNonMagic</li>
-              </kindDefs>
-              <chance>100.0</chance>
-            </li>
-          </pawnKindEntries>
-          <factionDefs>
-            <li>Miho_PlayerColonyNonMagic</li>
+					</factionDefs>
+				</li>
+				<li>
+				<pawnKindEntries>
+					<li>
+                    <kindDefs>
+                        <li>Miho_PlayerColonist</li>
+                    </kindDefs>
+                    <chance>100.0</chance>
+					</li>			
+				</pawnKindEntries>
+					<factionDefs>
+						<li>Miho_PlayerColony</li> 
 
-          </factionDefs>
-        </li>
-        <li>
-          <pawnKindEntries>
-            <li>
-              <kindDefs>
-                <li>Miho_PlayerColonist</li>
-              </kindDefs>
-              <chance>100.0</chance>
-            </li>
-          </pawnKindEntries>
-          <factionDefs>
-            <li>Miho_PlayerColony</li>
-
-          </factionDefs>
-        </li>
-      </startingColonists>
-      <alienslavekinds>
-        <li>
-          <kindDefs>
-            <li>Miho_Slave</li>
-          </kindDefs>
-          <chance>100.0</chance>
-        </li>
-      </alienslavekinds>
-      <alienrefugeekinds>        <!-- pawnkinds listed here will show up as chased refugees for the event -->
-        <li>
-          <kindDefs>
-            <li>Miho_Refugee</li>
-          </kindDefs>
-          <chance>15.0</chance>
-        </li>
-      </alienrefugeekinds>
-      <alienwandererkinds>        <!-- pawnkinds listed here will show up as wanders that join your colony for the event -->
-        <li>
-          <pawnKindEntries>
-            <li>
-              <kindDefs>
-                <li>Miho_PlayerColonistNonMagic</li>
-              </kindDefs>
-              <chance>100.0</chance>
-            </li>
-          </pawnKindEntries>
-          <factionDefs>
-            <li>Miho_Faction_Megacorp</li>
-          </factionDefs>
-        </li>
-      </alienwandererkinds>
-    </pawnKindSettings>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienslavekinds>
+                <li>
+                    <kindDefs>
+                        <li>Miho_Slave</li>
+                    </kindDefs>
+                    <chance>100.0</chance>
+                </li>
+            </alienslavekinds>
+            <alienrefugeekinds> <!-- pawnkinds listed here will show up as chased refugees for the event -->
+                <li>
+                    <kindDefs>
+                        <li>Miho_Refugee</li>
+                    </kindDefs>
+                    <chance>15.0</chance>
+                </li>
+            </alienrefugeekinds>
+            <alienwandererkinds> <!-- pawnkinds listed here will show up as wanders that join your colony for the event -->
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+								<li>Miho_PlayerColonistNonMagic</li>
+                            </kindDefs>
+                            <chance>100.0</chance>
+                        </li>
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>Miho_Faction_Megacorp</li> 
+                    </factionDefs>
+                </li>
+            </alienwandererkinds>
+        </pawnKindSettings>
   </AlienRace.RaceSettings>
-  <ThingDef Name="MihoPawn" ParentName="BasePawn" Abstract="True">
+<ThingDef Name="MihoPawn" ParentName="BasePawn" Abstract="True">
     <!-- 에일리언레이스셋팅 -->
-    <statBases>
+	<statBases>
       <Mass>60</Mass>
 
       <!--스펙설정(일반)-->
-      <MarketValue>1500</MarketValue>
-      <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
-      <CarryingCapacity>45</CarryingCapacity>
-      <GlobalLearningFactor>0.25</GlobalLearningFactor>
-      <PsychicSensitivity>1</PsychicSensitivity>
-      <RestRateMultiplier>0.98</RestRateMultiplier>
+	  <MarketValue>1500</MarketValue>
+	  <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
+	  <CarryingCapacity>45</CarryingCapacity>
+	  <GlobalLearningFactor>0.25</GlobalLearningFactor>
+	  <PsychicSensitivity>1</PsychicSensitivity>
+	  <RestRateMultiplier>0.98</RestRateMultiplier>
       <ImmunityGainSpeed>0.98</ImmunityGainSpeed>
-      <!--스펙(일)-->
-      <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
-      <ForagedNutritionPerDay>1</ForagedNutritionPerDay>
-      <NegotiationAbility>1.0</NegotiationAbility>
-      <SocialImpact>1.0</SocialImpact>
-      <TradePriceImprovement>1.0</TradePriceImprovement>
+	  <!--스펙(일)-->
+	  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+	  <ForagedNutritionPerDay>1</ForagedNutritionPerDay>
+	  <NegotiationAbility>1.0</NegotiationAbility>
+	  <SocialImpact>1.0</SocialImpact>
+	  <TradePriceImprovement>1.0</TradePriceImprovement>
       <LeatherAmount>25</LeatherAmount>
       <Flammability>1</Flammability>
-      <PainShockThreshold>0.75</PainShockThreshold>
+	  <PainShockThreshold>0.75</PainShockThreshold>
       <ComfyTemperatureMin>18</ComfyTemperatureMin>
       <ComfyTemperatureMax>31</ComfyTemperatureMax>
-      <ToxicResistance>-1</ToxicResistance>      <!-- 직접 독성민감도 -->
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0</ToxicEnvironmentResistance>      <!-- 환경 독성민감도 -->
-      <!--스펙설정(전투)-->
-      <MoveSpeed>4.5</MoveSpeed>
-      <AimingDelayFactor>0.8</AimingDelayFactor>
-      <MeleeDodgeChance>2</MeleeDodgeChance>
-      <MeleeHitChance>2</MeleeHitChance>
+			<ToxicResistance>-1</ToxicResistance><!-- 직접 독성민감도 -->
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0</ToxicEnvironmentResistance><!-- 환경 독성민감도 -->
+	  <!--스펙설정(전투)-->
+	  <MoveSpeed>4.5</MoveSpeed>
+	  <AimingDelayFactor>0.8</AimingDelayFactor>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>
       <ArmorRating_Heat>0.5</ArmorRating_Heat>
 
     </statBases>
-    <tools>
+        <tools>
       <li>
         <label>Left Punch</label>
         <capacities>
@@ -156,18 +156,18 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>750</lifeExpectancy>
       <leatherDef>Leather_Fox</leatherDef>
-      <fleshType>Normal</fleshType>
+	  <fleshType>Normal</fleshType>
       <!-- 
 	  <nameCategory>HumanStandard</nameCategory>
       -->
       <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
-      <nameGenerator>NamerPersonMiho</nameGenerator>
+	  <nameGenerator>NamerPersonMiho</nameGenerator>
       <nameGeneratorFemale>NamerPersonMiho</nameGeneratorFemale>
       <!-- 
 	  <body>Human</body>
       -->
-      <body>Human</body>
-      <bloodDef>Filth_Blood</bloodDef>
+	  <body>Human</body>
+      <bloodDef>Filth_Blood</bloodDef>	
       <meatColor>(219, 105, 82)</meatColor>
       <baseBodySize>0.95</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
@@ -207,7 +207,7 @@
           <minAge>18</minAge>
         </li>
       </lifeStageAges>
-
+	  
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -217,20 +217,20 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>          <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
-          <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>          <!-- End exclude -->
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-          <li>(14,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-          <li>(16,100)</li>
-          <li>(50,100)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+    <li>(14,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+		  <li>(16,100)</li>
+		  <li>(50,100)</li>
 
-          <li>(55,96)</li>
+		  <li>(55,96)</li>
           <li>(250,0)</li>
         </points>
       </ageGenerationCurve>
@@ -241,7 +241,7 @@
       </hediffGiverSets>
     </race>
     <recipes>
-      <li>InstallArchotechEye</li>
+       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
       <li>InstallArchotechLeg</li>
       <li>InstallPowerClaw</li>
@@ -280,329 +280,329 @@
         <requiresImprisonment>true</requiresImprisonment>
       </li>
     </comps>
-  </ThingDef>
+</ThingDef>
 
 
-  <AlienRace.ThingDef_AlienRace Name="MihoMihoPawn" ParentName="MihoPawn">
+<AlienRace.ThingDef_AlienRace Name="MihoMihoPawn" ParentName="MihoPawn">
     <defName>Alien_Miho</defName>
     <label>미호</label>
     <description>오디너리를 비롯한 많은 미호 종들의 공통조상은 인간이 아니라 붉은 여우로 추정됩니다. 당연히 자연 진화는 아니고 초월적인 무언가에 의해 지성화(Uplift) 당한걸로 추정됩니다. 인간처럼 생겼지만 인간이 아니라는 이야기 입니다. 그들의 몸에는 체내 메카나이트와 연동되는 일조량에 따라 초능력의 강도가 정해지는 안개꽃 기관이 있습니다. 이 기관덕에 여우들은 태양과 에너지를 숭상합니다.</description>
     <!-- 에일리언레이스셋팅 -->
-    <comps />
-    <alienRace>
-      <graphicPaths>
-        <!-- This tells the game to look in the folder MODFOLER/Textures/Things/Pawn/Heads/ for Images -->
-        <!-- -->
-        <head>
-          <path>Miho/HeadBlank/Normal</path>
-          <headtypeGraphics>
-            <Male_AverageNormal>Miho/HeadBlank/Normal</Male_AverageNormal>
-            <Female_AverageNormal>Miho/HeadBlank/Normal</Female_AverageNormal>
-            <Ghoul_Normal MayRequire="Ludeon.RimWorld.Anomaly">Miho/HeadBlank/Normal</Ghoul_Normal>
-          </headtypeGraphics>
-        </head>
-        <body>
-          <path>Miho/Body/Naked_Thin</path>
-
-          <extendedGraphics>
-            <BodyType For="Thin">
-              <path>Miho/Body/Naked_Thin</path>
-              <extendedGraphics>
-                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Thin</Hediff>
-              </extendedGraphics>
-            </BodyType>
-            <BodyType For="Female">
-              <path>Miho/Body/Naked_Female</path>
-              <extendedGraphics>
-                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Female</Hediff>
-              </extendedGraphics>
-            </BodyType>
-            <BodyType For="Child">
-              <path>Miho/Body/Naked_Child</path>
-              <extendedGraphics>
-                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
-              </extendedGraphics>
-            </BodyType>
-            <BodyType For="Baby">
-              <path>Miho/Body/Naked_Child</path>
-              <extendedGraphics>
-                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
-              </extendedGraphics>
-            </BodyType>
-          </extendedGraphics>
-        </body>
-        <skeleton>Miho/HeadSkull/Dessicated_Thin</skeleton>
-        <skull>Miho/HeadSkull/Normal</skull>
-
-        <!-- -->
-      </graphicPaths>
-      <generalSettings>
-        <reproduction>
-          <maleFertilityAgeFactor>
-            <points>
+				<comps />
+	<alienRace>
+        <graphicPaths>
+			<!-- This tells the game to look in the folder MODFOLER/Textures/Things/Pawn/Heads/ for Images -->
+            <!-- -->
+                <head>
+                 <path>Miho/HeadBlank/Normal</path>
+                 <headtypeGraphics>
+                  <Male_AverageNormal>Miho/HeadBlank/Normal</Male_AverageNormal>
+                  <Female_AverageNormal>Miho/HeadBlank/Normal</Female_AverageNormal>
+                  <Ghoul_Normal MayRequire="Ludeon.RimWorld.Anomaly">Miho/HeadBlank/Normal</Ghoul_Normal>
+                </headtypeGraphics>
+                </head>				
+					<body>
+						<path>Miho/Body/Naked_Thin</path>
+						
+						<extendedGraphics>
+							<BodyType For="Thin">
+								<path>Miho/Body/Naked_Thin</path>
+								<extendedGraphics>
+									<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Thin</Hediff>
+								</extendedGraphics>
+							</BodyType>
+							<BodyType For="Female">
+								<path>Miho/Body/Naked_Female</path>
+								<extendedGraphics>
+									<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Female</Hediff>
+								</extendedGraphics>
+							</BodyType>
+							<BodyType For="Child">
+								<path>Miho/Body/Naked_Child</path>
+								<extendedGraphics>
+									<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
+								</extendedGraphics>
+							</BodyType>
+							<BodyType For="Baby">
+								<path>Miho/Body/Naked_Child</path>
+								<extendedGraphics>
+									<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
+								</extendedGraphics>
+							</BodyType>
+						</extendedGraphics>
+					</body>
+                <skeleton>Miho/HeadSkull/Dessicated_Thin</skeleton>
+                <skull>Miho/HeadSkull/Normal</skull>
+            
+			<!-- -->
+        </graphicPaths>
+        <generalSettings>
+		    <reproduction>
+            <maleFertilityAgeFactor>
+             <points>
               <li>(14, 0)</li>
               <li>(18, 1)</li>
               <li>(90, 1)</li>
               <li>(1000, 0)</li>
-            </points>
-          </maleFertilityAgeFactor>
-          <femaleFertilityAgeFactor>
-            <points>
+             </points>
+            </maleFertilityAgeFactor>
+            <femaleFertilityAgeFactor>
+             <points>
               <li>(14, 0)</li>
               <li>(18, 1)</li>
               <li>(90, 1)</li>
               <li>(1000, 0)</li>
-            </points>
-          </femaleFertilityAgeFactor>
-        </reproduction>
-        <humanRecipeImport>true</humanRecipeImport>
-        <maleGenderProbability>0.3</maleGenderProbability>
-        <immuneToAge>true</immuneToAge>
-        <maxDamageForSocialfight>8</maxDamageForSocialfight>
-        <immuneToXenophobia>true</immuneToXenophobia>
-        <additionalTraits>0</additionalTraits>
-        <growthAges>
-          <li>5</li>
-          <li>9</li>
-          <li>12</li>
-        </growthAges>
+             </points>
+            </femaleFertilityAgeFactor>
+            </reproduction>
+            <humanRecipeImport>true</humanRecipeImport>
+            <maleGenderProbability>0.3</maleGenderProbability>
+            <immuneToAge>true</immuneToAge>
+			<maxDamageForSocialfight>8</maxDamageForSocialfight>
+            <immuneToXenophobia>true</immuneToXenophobia>
+		    <additionalTraits>0</additionalTraits>
+            <growthAges>
+               <li>5</li>
+               <li>9</li>
+               <li>12</li>
+            </growthAges>
 
-        <!-- 
+			<!-- 
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>-->
-        <forcedRaceTraitEntries>
+            <forcedRaceTraitEntries>
 
-        </forcedRaceTraitEntries>
-        <lovinIntervalHoursFromAge>
-          <points>
-            <li>(10, 1.5)</li>
-            <li>(40, 1.5)</li>
-            <li>(70, 2)</li>
-            <li>(100, 2.25)</li>
-            <li>(1000, 3)</li>
-          </points>
-        </lovinIntervalHoursFromAge>
+            </forcedRaceTraitEntries>
+            <lovinIntervalHoursFromAge>
+             <points>
+             <li>(10, 1.5)</li>
+             <li>(40, 1.5)</li>
+             <li>(70, 2)</li>
+             <li>(100, 2.25)</li>
+             <li>(1000, 3)</li>
+             </points>
+            </lovinIntervalHoursFromAge>
+				
+				<chemicalSettings>
+					<li>
+						<chemical>Miho_PositiveFlower_Tea</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediffDef>Miho_Elegans_Hediff</hediffDef>
+								<chance>1</chance>
+                                <severity>0.075</severity>
+								<doToGeneratedPawnIfAddicted>false</doToGeneratedPawnIfAddicted>
+							</li>
+						</reactions>
+					</li>
+					<li>
+						<chemical>Miho_PositiveFlower_Tea</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediffDef>Miho_PositiveFlower_Tea_Addiction</hediffDef>
+								<chance>1</chance>
+                                <severity>1</severity>
+								<doToGeneratedPawnIfAddicted>false</doToGeneratedPawnIfAddicted>
+							</li>
+						</reactions>
+					</li>		
+				</chemicalSettings>
+				
+            <alienPartGenerator>
+				<!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
+                <headTypes Inherit="False">
+                    <li>Male_AverageNormal</li>
+                    <li>Female_AverageNormal</li>
+                    <li  MayRequire="Ludeon.RimWorld.Anomaly">Ghoul_Normal</li>
 
-        <chemicalSettings>
-          <li>
-            <chemical>Miho_PositiveFlower_Tea</chemical>
-            <reactions>
-              <li Class="IngestionOutcomeDoer_GiveHediff">
-                <hediffDef>Miho_Elegans_Hediff</hediffDef>
-                <chance>1</chance>
-                <severity>0.075</severity>
-                <doToGeneratedPawnIfAddicted>false</doToGeneratedPawnIfAddicted>
-              </li>
-            </reactions>
-          </li>
-          <li>
-            <chemical>Miho_PositiveFlower_Tea</chemical>
-            <reactions>
-              <li Class="IngestionOutcomeDoer_GiveHediff">
-                <hediffDef>Miho_PositiveFlower_Tea_Addiction</hediffDef>
-                <chance>1</chance>
-                <severity>1</severity>
-                <doToGeneratedPawnIfAddicted>false</doToGeneratedPawnIfAddicted>
-              </li>
-            </reactions>
-          </li>
-        </chemicalSettings>
+                </headTypes>
+				<!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
+                <bodyTypes>
+                    <li>Female</li>
+                    <li>Thin</li>
 
-        <alienPartGenerator>
-          <!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
-          <headTypes Inherit="False">
-            <li>Male_AverageNormal</li>
-            <li>Female_AverageNormal</li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">Ghoul_Normal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li><!-- test -->
+  					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li><!-- test -->
+                </bodyTypes>
 
-          </headTypes>
-          <!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
-          <bodyTypes>
-            <li>Female</li>
-            <li>Thin</li>
-
-            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>            <!-- test -->
-            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>            <!-- test -->
-          </bodyTypes>
-
-          <!-- 피부 프리셋색상 설정 -->
-
-
-          <colorChannels>
+            <!-- 피부 프리셋색상 설정 --> 
+			
+			
+					<colorChannels>
+					<li>
+						<name>mask</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(1,1,1,1)</only>
+								</li>
+							</options>
+						</first>				
+					</li>
+  <li>
+    <name>skin</name>
+    <first Class="AlienRace.ColorGenerator_SkinColorMelanin">
+      <minMelanin>0</minMelanin>
+      <maxMelanin>0.08</maxMelanin>
+    </first>
+  </li>
+					</colorChannels>
+				<headOffset>(0, 0.0)</headOffset>
+				<headOffsetDirectional>
+					<north>
+						<offset>(0, -0.09)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+						</bodyTypes>
+					</north>
+					<south>
+						<offset>(0, -0.05)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+						</bodyTypes>
+					</south>
+					<east>
+						<offset>(-0.06, -0.08)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
+						</bodyTypes>
+					</east>
+					<west>
+						<offset>(0.06, -0.08)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+						</bodyTypes>
+					</west>
+				</headOffsetDirectional>
+			<customDrawSize>(1.0, 1.0)</customDrawSize>
+			<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+		    <customPortraitHeadDrawSize>(0.75, 0.75)</customPortraitHeadDrawSize>
+			<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+				<borderScale>1</borderScale>
+			<atlasScale>3</atlasScale>
+            <bodyAddons>
+			
             <li>
-              <name>mask</name>
-              <first Class="ColorGenerator_Options">
-                <options>
-                  <li>
-                    <weight>5</weight>
-                    <only>RGBA(1,1,1,1)</only>
-                  </li>
-                </options>
-              </first>
-            </li>
-            <li>
-              <name>skin</name>
-              <first Class="AlienRace.ColorGenerator_SkinColorMelanin">
-                <minMelanin>0</minMelanin>
-                <maxMelanin>0.08</maxMelanin>
-              </first>
-            </li>
-          </colorChannels>
-          <headOffset>(0, 0.0)</headOffset>
-          <headOffsetDirectional>
-            <north>
-              <offset>(0, -0.09)</offset>
-              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-                <Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-              </bodyTypes>
-            </north>
-            <south>
-              <offset>(0, -0.05)</offset>
-              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-                <Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-              </bodyTypes>
-            </south>
-            <east>
-              <offset>(-0.06, -0.08)</offset>
-              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-                <Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
-              </bodyTypes>
-            </east>
-            <west>
-              <offset>(0.06, -0.08)</offset>
-              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-                <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
-              </bodyTypes>
-            </west>
-          </headOffsetDirectional>
-          <customDrawSize>(1.0, 1.0)</customDrawSize>
-          <customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
-          <customPortraitHeadDrawSize>(0.75, 0.75)</customPortraitHeadDrawSize>
-          <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-          <borderScale>1</borderScale>
-          <atlasScale>3</atlasScale>
-          <bodyAddons>
+				<path>Miho/Blank</path>
+				<drawSize>0.94</drawSize>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <inFrontOfBody>false</inFrontOfBody>
+				<defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
 
-            <li>
-              <path>Miho/Blank</path>
-              <drawSize>0.94</drawSize>
-              <colorChannel>hair</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-              <inFrontOfBody>false</inFrontOfBody>
-              <defaultOffset>Tail</defaultOffset>
-              <shaderType>Cutout</shaderType>
-
-              <offsets>
+                <offsets>
                 <south>
-                  <bodyTypes>
-                    <Thin>(-0.415,0.2)</Thin>
-                    <Female>(-0.415,0.2)</Female>
-                    <Child>(-0.415,0.2)</Child>
-                    <Baby>(-0.415,0.2)</Baby>
-                    <Male>(-0.415,0.2)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.188</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.415,0.2)</Thin>
+                                    <Female>(-0.415,0.2)</Female>
+                                    <Child>(-0.415,0.2)</Child>
+                                    <Baby>(-0.415,0.2)</Baby>
+                                    <Male>(-0.415,0.2)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.188</layerOffset>
                 </south>
                 <north>
-                  <bodyTypes>
-                    <Thin>(-0.01,0.55)</Thin>
-                    <Female>(-0.01,0.55)</Female>
-                    <Child>(-0.01,0.55)</Child>
-                    <Baby>(-0.01,0.55)</Baby>
-                    <Male>(-0.01,0.55)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.272</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.01,0.55)</Thin>
+                                    <Female>(-0.01,0.55)</Female>
+                                    <Child>(-0.01,0.55)</Child>
+                                    <Baby>(-0.01,0.55)</Baby>
+                                    <Male>(-0.01,0.55)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.272</layerOffset>
                 </north>
 
                 <east>
-                  <bodyTypes>
-                    <Thin>(-0.435,0.18)</Thin>
-                    <Female>(-0.435,0.18)</Female>
-                    <Child>(-0.4,0.2)</Child>
-                    <Baby>(-0.4,0.2)</Baby>
-                    <Male>(-0.435,0.18)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.188</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.435,0.18)</Thin>
+                                    <Female>(-0.435,0.18)</Female>
+                                    <Child>(-0.4,0.2)</Child>
+                                    <Baby>(-0.4,0.2)</Baby>
+                                    <Male>(-0.435,0.18)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.188</layerOffset>
                 </east>
-              </offsets>
-              <extendedGraphics>
-                <Gene For="Ears_Arctic_Miho">Miho/Addon/TailArctic/Tail</Gene>
-                <Gene For="Ears_Desert_Miho">Miho/Addon/TailDesert/Tail</Gene>
-                <Gene For="Gene_CelestialMiho">Miho/Addon/Tail/Tail</Gene>
-              </extendedGraphics>
-              <conditions>
-                <Drafted>false</Drafted>
-              </conditions>
+                </offsets>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/TailArctic/Tail</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/TailDesert/Tail</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/Tail/Tail</Gene>
+						</extendedGraphics>
+						<conditions>
+                         <Drafted>false</Drafted>                   					
+						 </conditions>
             </li>
 
-            <li>
-              <path>Miho/Addon/TailMoving/TailMoving</path>
-              <drawSize>0.94</drawSize>
-              <colorChannel>hair</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-              <inFrontOfBody>false</inFrontOfBody>
-              <defaultOffset>Tail</defaultOffset>
-              <shaderType>Cutout</shaderType>
-              <offsets>
+       <li>
+				<path>Miho/Addon/TailMoving/TailMoving</path>
+				<drawSize>0.94</drawSize>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <inFrontOfBody>false</inFrontOfBody>
+				<defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
 
                 <south>
-                  <bodyTypes>
-                    <Thin>(-0.415,0.2)</Thin>
-                    <Female>(-0.415,0.2)</Female>
-                    <Child>(-0.415,0.2)</Child>
-                    <Baby>(-0.415,0.2)</Baby>
-                    <Male>(-0.415,0.2)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.188</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.415,0.2)</Thin>
+                                    <Female>(-0.415,0.2)</Female>
+                                    <Child>(-0.415,0.2)</Child>
+                                    <Baby>(-0.415,0.2)</Baby>
+                                    <Male>(-0.415,0.2)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.188</layerOffset>
                 </south>
 
                 <north>
-                  <bodyTypes>
-                    <Thin>(-0.01,0.55)</Thin>
-                    <Female>(-0.01,0.55)</Female>
-                    <Child>(-0.01,0.55)</Child>
-                    <Baby>(-0.01,0.55)</Baby>
-                    <Male>(-0.01,0.55)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.272</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.01,0.55)</Thin>
+                                    <Female>(-0.01,0.55)</Female>
+                                    <Child>(-0.01,0.55)</Child>
+                                    <Baby>(-0.01,0.55)</Baby>
+                                    <Male>(-0.01,0.55)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.272</layerOffset>
                 </north>
 
                 <east>
-                  <bodyTypes>
-                    <Thin>(-0.435,0.18)</Thin>
-                    <Female>(-0.435,0.18)</Female>
-                    <Child>(-0.4,0.2)</Child>
-                    <Baby>(-0.4,0.2)</Baby>
-                    <Male>(-0.435,0.18)</Male>
-                  </bodyTypes>
-                  <offset>(0,0)</offset>
-                  <layerOffset>0.188</layerOffset>
+                                    <bodyTypes>
+                                    <Thin>(-0.435,0.18)</Thin>
+                                    <Female>(-0.435,0.18)</Female>
+                                    <Child>(-0.4,0.2)</Child>
+                                    <Baby>(-0.4,0.2)</Baby>
+                                    <Male>(-0.435,0.18)</Male>
+                                    </bodyTypes>
+									<offset>(0,0)</offset>
+									<layerOffset>0.188</layerOffset>
                 </east>
-              </offsets>
-              <extendedGraphics>
-                <Gene For="Ears_Arctic_Miho">Miho/Addon/TailMovingArctic/TailMoving</Gene>
-                <Gene For="Ears_Desert_Miho">Miho/Addon/TailMovingDesert/TailMoving</Gene>
-                <Gene For="Gene_CelestialMiho">Miho/Addon/TailMoving/TailMoving</Gene>
-              </extendedGraphics>
-
-              <conditions>
-                <Drafted>true</Drafted>
-              </conditions>
+                </offsets>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/TailMovingArctic/TailMoving</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/TailMovingDesert/TailMoving</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/TailMoving/TailMoving</Gene>
+						</extendedGraphics>
+						
+						<conditions>
+                         <Drafted>true</Drafted>                   
+						</conditions>
             </li>
-
-            <li>
-              <path>Miho/Addon/Hair/Hair</path>
+			
+			<li>
+				<path>Miho/Addon/Hair/Hair</path>
               <inFrontOfBody>false</inFrontOfBody>
               <layerInvert>false</layerInvert>
-              <colorChannel>hair</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-              <shaderType>Cutout</shaderType>
-              <alignWithHead>true</alignWithHead>
-              <angle>0</angle>
+			  <colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
 
               <offsets>
                 <north>
@@ -615,7 +615,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.326</layerOffset>
@@ -627,7 +627,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.326</layerOffset>
@@ -639,22 +639,29 @@
                     <Child>(0.03,0.041)</Child>
                     <Baby>(0.03,0.041)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
               </offsets>
-            </li>
-
-            <li>
-              <path>Miho/Addon/HairBack/HairBack</path>
+						<conditions>
+						  <Apparel>
+								<hiddenUnderApparelTag>
+									<li>MihoHair</li>
+								</hiddenUnderApparelTag>
+						  </Apparel>
+						</conditions>
+			</li>
+			
+			<li>
+				<path>Miho/Addon/HairBack/HairBack</path>
               <inFrontOfBody>false</inFrontOfBody>
               <layerInvert>false</layerInvert>
-              <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 
-              <colorChannel>hair</colorChannel>
-              <shaderType>Cutout</shaderType>
-              <alignWithHead>true</alignWithHead>
-              <angle>0</angle>
+				<colorChannel>hair</colorChannel>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
               <offsets>
                 <north>
                   <layerOffset>-0.77</layerOffset>
@@ -666,7 +673,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.3</layerOffset>
@@ -678,7 +685,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-1</layerOffset>
@@ -690,7 +697,7 @@
                     <Child>(0.03,0.041)</Child>
                     <Baby>(0.03,0.041)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-1</layerOffset>
@@ -702,21 +709,158 @@
                     <Child>(-0.03,0.065)</Child>
                     <Baby>(-0.03,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-            </li>
+						<conditions>
+						  <Apparel>
+								<hiddenUnderApparelTag>
+									<li>MihoHair</li>
+								</hiddenUnderApparelTag>
+						  </Apparel>
+						</conditions>
+						
+			</li>	
+			
+			<li>
+				<path>Miho/Addon/Hair/Hair</path>
+              <inFrontOfBody>false</inFrontOfBody>
+              <layerInvert>false</layerInvert>
+			  <colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 
-            <li>
-              <path>Miho/Addon/EarRight/Ear</path>
-              <inFrontOfBody>true</inFrontOfBody>
-              <colorChannel>hair</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+
+              <offsets>
+                <north>
+                  <layerOffset>-0.326</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </north>
+                <south>
+                  <layerOffset>-0.326</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </south>
+                <east>
+                  <layerOffset>-0.326</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,-0.001)</Thin>
+                    <Female>(0,-0.001)</Female>
+                    <Male>(0,-0.001)</Male>
+
+                    <Child>(0.03,0.041)</Child>
+                    <Baby>(0.03,0.041)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </east>
+              </offsets>
+						<conditions>
+                           <Posture>
+                             <drawnStanding>false</drawnStanding>
+                             <drawnLaying>true</drawnLaying>
+                             <drawnInBed>true</drawnInBed>
+                           </Posture> 
+						</conditions>
+			</li>
+			
+			<li>
+				<path>Miho/Addon/HairBack/HairBack</path>
+              <inFrontOfBody>false</inFrontOfBody>
+              <layerInvert>false</layerInvert>
+			  <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+
+				<colorChannel>hair</colorChannel>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+              <offsets>
+                <north>
+                  <layerOffset>-0.77</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </north>
+                <south>
+                  <layerOffset>-0.3</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </south>
+                <east>
+                  <layerOffset>-1</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0.03,0.041)</Child>
+                    <Baby>(0.03,0.041)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </east>
+                <west>
+                  <layerOffset>-1</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(-0.03,0.065)</Child>
+                    <Baby>(-0.03,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </west>
+              </offsets>
+						<conditions>
+                           <Posture>
+                             <drawnStanding>false</drawnStanding>
+                             <drawnLaying>true</drawnLaying>
+                             <drawnInBed>true</drawnInBed>
+                           </Posture> 
+						</conditions>
+			</li>	
+			
+			<li>
+				<path>Miho/Addon/EarRight/Ear</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
               <drawSize>1.07</drawSize>
 
-              <shaderType>Cutout</shaderType>
-              <alignWithHead>true</alignWithHead>
-              <angle>0</angle>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
               <offsets>
                 <north>
                   <layerOffset>-0.275</layerOffset>
@@ -728,7 +872,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.271</layerOffset>
@@ -740,7 +884,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.325</layerOffset>
@@ -752,7 +896,7 @@
                     <Child>(0.01,0.035)</Child>
                     <Baby>(0.01,0.035)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-0.2</layerOffset>
@@ -764,36 +908,37 @@
                     <Child>(-0.022,0.065)</Child>
                     <Baby>(-0.022,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-              <extendedGraphics>
-                <Gene For="Ears_Arctic_Miho">Miho/Addon/EarRightArctic/Ear</Gene>
-                <Gene For="Ears_Desert_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
-                <Gene For="Gene_CelestialMiho">Miho/Addon/EarRight/Ear</Gene>
-              </extendedGraphics>
-              <conditions>
-                <BodyPart>
-                  <bodyPart>Ear</bodyPart>
-                  <bodyPartLabel>left ear</bodyPartLabel>
-                </BodyPart>
-                <Apparel>
-                  <hiddenUnderApparelTag>
-                    <li>MihoEars</li>
-                  </hiddenUnderApparelTag>
-                </Apparel>
-              </conditions>
-            </li>
-            <li>
-              <path>Miho/Addon/EarLeft/Ear</path>
-              <inFrontOfBody>true</inFrontOfBody>
-              <colorChannel>hair</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarRightArctic/Ear</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/EarRight/Ear</Gene>
+						</extendedGraphics>
+						<conditions>
+                          <BodyPart>
+						    <bodyPart>Ear</bodyPart>
+                            <bodyPartLabel>left ear</bodyPartLabel>
+                          </BodyPart>
+						  <Apparel>
+								<hiddenUnderApparelTag>
+									<li>MihoEars</li>
+								</hiddenUnderApparelTag>
+						  </Apparel>
+						</conditions>
+			</li>	
+			<li>
+				<path>Miho/Addon/EarRight/Ear</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
               <drawSize>1.07</drawSize>
 
-              <shaderType>Cutout</shaderType>
-              <alignWithHead>true</alignWithHead>
-              <angle>0</angle>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
               <offsets>
                 <north>
                   <layerOffset>-0.275</layerOffset>
@@ -805,7 +950,84 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
+                </north>
+                <south>
+                  <layerOffset>-0.271</layerOffset>
+                  <bodyTypes>
+                    <Thin>(-0,-0.0)</Thin>
+                    <Female>(-0,-0.0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </south>
+                <east>
+                  <layerOffset>-0.325</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0.0,-0.01)</Thin>
+                    <Female>(0.0,-0.01)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0.01,0.035)</Child>
+                    <Baby>(0.01,0.035)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </east>
+                <west>
+                  <layerOffset>-0.2</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(-0.022,0.065)</Child>
+                    <Baby>(-0.022,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </west>
+              </offsets>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarRightArctic/Ear</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/EarRight/Ear</Gene>
+						</extendedGraphics>
+						<conditions>
+                          <BodyPart>
+						    <bodyPart>Ear</bodyPart>
+                            <bodyPartLabel>left ear</bodyPartLabel>
+                          </BodyPart>
+                           <Posture>
+                             <drawnStanding>false</drawnStanding>
+                             <drawnLaying>true</drawnLaying>
+                             <drawnInBed>true</drawnInBed>
+                           </Posture> 
+						</conditions>
+			</li>	
+			<li>
+				<path>Miho/Addon/EarLeft/Ear</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+              <drawSize>1.07</drawSize>
+
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+              <offsets>
+                <north>
+                  <layerOffset>-0.275</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.271</layerOffset>
@@ -817,7 +1039,7 @@
                     <Child>(0,0.065)</Child>
                     <Baby>(0,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.25</layerOffset>
@@ -829,7 +1051,7 @@
                     <Child>(-0.03,0.065)</Child>
                     <Baby>(-0.03,0.065)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-0.325</layerOffset>
@@ -841,31 +1063,109 @@
                     <Child>(0.02,0.035)</Child>
                     <Baby>(0.02,0.035)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-              <extendedGraphics>
-                <Gene For="Ears_Arctic_Miho">Miho/Addon/EarLeftArctic/Ear</Gene>
-                <Gene For="Ears_Desert_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
-                <Gene For="Gene_CelestialMiho">Miho/Addon/EarLeft/Ear</Gene>
-              </extendedGraphics>
-              <conditions>
-                <BodyPart>
-                  <bodyPart>Ear</bodyPart>
-                  <bodyPartLabel>right ear</bodyPartLabel>
-                </BodyPart>
-                <Apparel>
-                  <hiddenUnderApparelTag>
-                    <li>MihoEars</li>
-                  </hiddenUnderApparelTag>
-                </Apparel>
-              </conditions>
-            </li>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarLeftArctic/Ear</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/EarLeft/Ear</Gene>
+						</extendedGraphics>
+						<conditions>
+                          <BodyPart>
+						    <bodyPart>Ear</bodyPart>
+                            <bodyPartLabel>right ear</bodyPartLabel>
+                          </BodyPart>
+					     <Apparel>
+								<hiddenUnderApparelTag>
+									<li>MihoEars</li>
+								</hiddenUnderApparelTag>
+						  </Apparel>
+						</conditions>
+			</li>		
+			<li>
+				<path>Miho/Addon/EarLeft/Ear</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>hair</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+              <drawSize>1.07</drawSize>
+			  <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+              <offsets>
+                <north>
+                  <layerOffset>-0.275</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </north>
+                <south>
+                  <layerOffset>-0.271</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,-0.0)</Thin>
+                    <Female>(0,-0.0)</Female>
+                    <Male>(0,0)</Male>
+
+                    <Child>(0,0.065)</Child>
+                    <Baby>(0,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </south>
+                <east>
+                  <layerOffset>-0.25</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                    <Female>(0,-0.01)</Female>
+                    <Male>(0,-0.01)</Male>
+
+                    <Child>(-0.03,0.065)</Child>
+                    <Baby>(-0.03,0.065)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </east>
+                <west>
+                  <layerOffset>-0.325</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,-0.01)</Thin>
+                    <Female>(0,-0.01)</Female>
+                    <Male>(0,-0.01)</Male>
+
+                    <Child>(0.02,0.035)</Child>
+                    <Baby>(0.02,0.035)</Baby>
+                  </bodyTypes>
+				  <offset>(0,0)</offset>
+                </west>
+              </offsets>
+						<extendedGraphics>
+							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarLeftArctic/Ear</Gene>
+							<Gene For="Ears_Desert_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
+							<Gene For="Gene_CelestialMiho">Miho/Addon/EarLeft/Ear</Gene>
+						</extendedGraphics>
+						<conditions>
+                          <BodyPart>
+						    <bodyPart>Ear</bodyPart>
+                            <bodyPartLabel>right ear</bodyPartLabel>
+                          </BodyPart>
+                           <Posture>
+                             <drawnStanding>false</drawnStanding>
+                             <drawnLaying>true</drawnLaying>
+                             <drawnInBed>true</drawnInBed>
+                           </Posture> 
+						</conditions>
+			</li>		
+			
             <li>
               <path>Miho/Head/Head</path>
               <shaderType>Cutout</shaderType>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
               <inFrontOfBody>false</inFrontOfBody>
               <layerInvert>false</layerInvert>
               <colorChannel>skin</colorChannel>
@@ -882,7 +1182,7 @@
                     <Child>(0,-0.028)</Child>
                     <Baby>(0,-0.028)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.325</layerOffset>
@@ -894,7 +1194,7 @@
                     <Child>(0,0.055)</Child>
                     <Baby>(0,0.055)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.325</layerOffset>
@@ -906,7 +1206,7 @@
                     <Child>(0.03,0.04)</Child>
                     <Baby>(0.03,0.04)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-0.325</layerOffset>
@@ -918,51 +1218,51 @@
                     <Child>(0.03,0.04)</Child>
                     <Baby>(0.03,0.04)</Baby>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-              <extendedGraphics>
-                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/HeadGhoul/Head</Hediff>
-                <BodyType For="Baby">Miho/HeadBaby/Head</BodyType>
-                <BodyType For="Child">Miho/HeadBaby/Head</BodyType>
-                <BodyType For="Female">
-                  <path>Miho/Head/Head</path>
-                  <extendedGraphics>
-                    <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
-                    <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
-                    <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
-                    <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
-                  </extendedGraphics>
-                </BodyType>
-                <BodyType For="Thin">
-                  <path>Miho/Head/Head</path>
-                  <extendedGraphics>
-                    <Gender For="Female">
-                      <extendedGraphics>
-                        <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
-                        <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
-                        <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
-                        <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
-                      </extendedGraphics>
-                    </Gender>
-                    <Gender For="Male">
-                      <extendedGraphics>
-                        <Gene For="Ears_Arctic_Miho">Miho/HeadArcticMale/Head</Gene>
-                        <Gene For="Ears_Desert_Miho">Miho/HeadDesertMale/Head</Gene>
-                        <Gene For="Ears_Highland_Miho">Miho/HeadHighlandMale/Head</Gene>
-                        <Gene For="Ears_Highmate_Miho">Miho/HeadHighmateMale/Head</Gene>
-                        <Gene For="Gene_CelestialMiho">Miho/HeadMale/Head</Gene>
+						<extendedGraphics>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/HeadGhoul/Head</Hediff>
+							<BodyType For="Baby">Miho/HeadBaby/Head</BodyType>
+							<BodyType For="Child">Miho/HeadBaby/Head</BodyType>
+							<BodyType For="Female">
+							  <path>Miho/Head/Head</path>
+							  <extendedGraphics>
+                                 <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
+                                 <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
+                                 <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
+                                 <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
+                              </extendedGraphics>
+							</BodyType>
+							<BodyType For="Thin">
+							  <path>Miho/Head/Head</path>
+							  <extendedGraphics>
+							    <Gender For="Female">
+							     <extendedGraphics>
+                                    <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
+                                    <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
+                                    <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
+                                    <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
+                                 </extendedGraphics>
+							    </Gender>
+							    <Gender For="Male">
+							     <extendedGraphics>
+                                    <Gene For="Ears_Arctic_Miho">Miho/HeadArcticMale/Head</Gene>
+                                    <Gene For="Ears_Desert_Miho">Miho/HeadDesertMale/Head</Gene>
+                                    <Gene For="Ears_Highland_Miho">Miho/HeadHighlandMale/Head</Gene>
+                                    <Gene For="Ears_Highmate_Miho">Miho/HeadHighmateMale/Head</Gene>
+							        <Gene For="Gene_CelestialMiho">Miho/HeadMale/Head</Gene>
 
-                      </extendedGraphics>
-                    </Gender>
-                  </extendedGraphics>
-                </BodyType>
-              </extendedGraphics>
-              <conditions>
-                <BodyPart>
-                  <bodyPart>Head</bodyPart>
-                </BodyPart>
-              </conditions>
+                                 </extendedGraphics>
+							    </Gender>
+						      </extendedGraphics> 
+							</BodyType>
+						</extendedGraphics>
+						<conditions>
+                          <BodyPart>
+						    <bodyPart>Head</bodyPart>
+                          </BodyPart>
+						</conditions>
             </li>
 
             <li>
@@ -973,7 +1273,7 @@
               <layerInvert>false</layerInvert>
               <colorChannel>mask</colorChannel>
               <alignWithHead>false</alignWithHead>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 
               <angle>0</angle>
               <offsets>
@@ -987,7 +1287,7 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.305</layerOffset>
@@ -999,7 +1299,7 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.305</layerOffset>
@@ -1011,7 +1311,7 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-0.305</layerOffset>
@@ -1023,42 +1323,42 @@
                     <Male>(0.0,-0.0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-              <extendedGraphics>
-                <BodyType For="Female">
-                  <path>Miho/Blank</path>
-                  <extendedGraphics>
-                    <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Female</Hediff>
-                    <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Female</Gene>
-                  </extendedGraphics>
-                </BodyType>
-                <BodyType For="Thin">
-                  <path>Miho/Blank</path>
-                  <extendedGraphics>
-                    <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Thin</Hediff>
-                    <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Thin</Gene>
-                  </extendedGraphics>
-                </BodyType>
-                <BodyType For="Child">
-                  <path>Miho/Body/Naked_Child</path>
-                  <extendedGraphics>
-                    <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
-                  </extendedGraphics>
-                </BodyType>
-              </extendedGraphics>
-
+						<extendedGraphics>
+							<BodyType For="Female">
+							  <path>Miho/Blank</path>
+							  <extendedGraphics>
+					     		 <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Female</Hediff>
+                                 <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Female</Gene>
+                              </extendedGraphics>
+							</BodyType>
+							<BodyType For="Thin">
+							  <path>Miho/Blank</path>
+							  <extendedGraphics>
+			   					 <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Thin</Hediff>
+                                 <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Thin</Gene>
+                              </extendedGraphics>
+							</BodyType>
+							<BodyType For="Child">
+							  <path>Miho/Body/Naked_Child</path>
+							  <extendedGraphics>
+			   					 <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Child</Hediff>
+                              </extendedGraphics>
+							</BodyType>
+						      </extendedGraphics> 
+							  
             </li>
-            <li>
-              <path>Miho/Blank</path>
+			<li>
+				<path>Miho/Blank</path>
               <inFrontOfBody>false</inFrontOfBody>
               <layerInvert>false</layerInvert>
-              <colorChannel>mask</colorChannel>
-              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-              <shaderType>Cutout</shaderType>
-              <alignWithHead>true</alignWithHead>
-              <angle>0</angle>
+			  <colorChannel>mask</colorChannel>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
               <offsets>
                 <north>
                   <layerOffset>-0.8</layerOffset>
@@ -1070,7 +1370,7 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.324</layerOffset>
@@ -1082,7 +1382,7 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.345</layerOffset>
@@ -1094,17 +1394,17 @@
                     <Male>(0,0)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
               </offsets>
+			  
+  <extendedGraphics>
+    <Hediff For="Miho_Glasses_Hediff">Miho/Apparel/SpecialGlasses/SpecialGlasses</Hediff>
+    <Hediff For="Miho_EltexCaptain_Hediff">Miho/Apparel/HeadHatCaptain/HeadHatCaptain</Hediff>
 
-              <extendedGraphics>
-                <Hediff For="Miho_Glasses_Hediff">Miho/Apparel/SpecialGlasses/SpecialGlasses</Hediff>
-                <Hediff For="Miho_EltexCaptain_Hediff">Miho/Apparel/HeadHatCaptain/HeadHatCaptain</Hediff>
-
-                <Hediff For="Miho_Toxmask_Hediff">Miho/Apparel/SpecialToxmask/SpecialToxmask</Hediff>
-              </extendedGraphics>
-            </li>
+    <Hediff For="Miho_Toxmask_Hediff">Miho/Apparel/SpecialToxmask/SpecialToxmask</Hediff>
+  </extendedGraphics>
+			 </li>
             <li>
               <drawSize>0.95</drawSize>
               <path>Miho/Blank</path>
@@ -1124,7 +1424,7 @@
                     <Baby>(0,0)</Baby>
                     <Male>(0,0)</Male>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </north>
                 <south>
                   <layerOffset>-0.6</layerOffset>
@@ -1135,7 +1435,7 @@
                     <Baby>(0,0)</Baby>
                     <Male>(0,0)</Male>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </south>
                 <east>
                   <layerOffset>-0.28</layerOffset>
@@ -1146,7 +1446,7 @@
                     <Baby>(0,0)</Baby>
                     <Male>(0,0)</Male>
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </east>
                 <west>
                   <layerOffset>-0.28</layerOffset>
@@ -1158,22 +1458,22 @@
                     <Male>(0.01,-0.01)</Male>
 
                   </bodyTypes>
-                  <offset>(0,0)</offset>
+				  <offset>(0,0)</offset>
                 </west>
               </offsets>
-              <extendedGraphics>
-                <Hediff For="Miho_OrnatedOne_Hediff">Miho/Apparel/OnSkinOrnatedOne/Arm/Arm</Hediff>
-                <Hediff For="Miho_OrnatedTwo_Hediff">Miho/Apparel/OnSkinOrnatedTwo/Arm/Arm</Hediff>
-                <Hediff For="Miho_OrnatedCaptain_Hediff">Miho/Apparel/OnSkinOrnatedCaptain/Arm/Arm</Hediff>
-                <Hediff For="Miho_OrnatedMiho_Hediff">Miho/Apparel/OnSkinOrnatedMiko/Arm/Arm</Hediff>
+  <extendedGraphics>
+    <Hediff For="Miho_OrnatedOne_Hediff">Miho/Apparel/OnSkinOrnatedOne/Arm/Arm</Hediff>
+    <Hediff For="Miho_OrnatedTwo_Hediff">Miho/Apparel/OnSkinOrnatedTwo/Arm/Arm</Hediff>
+    <Hediff For="Miho_OrnatedCaptain_Hediff">Miho/Apparel/OnSkinOrnatedCaptain/Arm/Arm</Hediff>
+    <Hediff For="Miho_OrnatedMiho_Hediff">Miho/Apparel/OnSkinOrnatedMiko/Arm/Arm</Hediff>
 
 
-              </extendedGraphics>
-
+  </extendedGraphics>
+  
             </li>
-          </bodyAddons>
-        </alienPartGenerator>
-        <!--<chemicalSettings>
+            </bodyAddons>
+            </alienPartGenerator>
+            <!--<chemicalSettings>
 			
                 <li>
                     <chemical>Smokeleaf</chemical>
@@ -1190,269 +1490,272 @@
                 </li>
 			
             </chemicalSettings>-->
-      </generalSettings>
-      <relationSettings>
-        <relationChanceModifierChild>1</relationChanceModifierChild>
-        <relationChanceModifierExLover>1</relationChanceModifierExLover>
-        <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
-        <relationChanceModifierFiance>1</relationChanceModifierFiance>
-        <relationChanceModifierLover>1</relationChanceModifierLover>
-        <relationChanceModifierParent>1</relationChanceModifierParent>
-        <relationChanceModifierSibling>1</relationChanceModifierSibling>
-        <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
-      </relationSettings>
+        </generalSettings>
+        <relationSettings>
+            <relationChanceModifierChild>1</relationChanceModifierChild>
+            <relationChanceModifierExLover>1</relationChanceModifierExLover>
+            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+            <relationChanceModifierFiance>1</relationChanceModifierFiance>
+            <relationChanceModifierLover>1</relationChanceModifierLover>
+            <relationChanceModifierParent>1</relationChanceModifierParent>
+            <relationChanceModifierSibling>1</relationChanceModifierSibling>
+            <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+        </relationSettings>
+		
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
 
-      <styleSettings>
-        <li>
-          <key>HairDef</key>
-          <value>
-            <hasStyle>false</hasStyle>
-          </value>
-        </li>
-        <li>
-          <key>BeardDef</key>
-          <value>
-            <hasStyle>false</hasStyle>
-          </value>
-        </li>
-        <li>
-          <key>TattooDef</key>
-          <value>
-            <hasStyle>false</hasStyle>
-          </value>
-        </li>
-      </styleSettings>
+		 
+				
+		<thoughtSettings>
 
+            <replacerList>
 
-
-      <thoughtSettings>
-
-        <replacerList>
-
-          <li>
-            <original>KilledMyBondedAnimal</original>
-            <replacer>MihoKilledMyBondedAnimal</replacer>
-          </li>
-          <li>
-            <original>Nuzzled</original>
-            <replacer>MihoNuzzled</replacer>
-          </li>
-          <li>
-            <original>NotMihoAteInariZushi</original>
-            <replacer>MihoAteInariZushi</replacer>
-          </li>
-        </replacerList>
-        <cannotReceiveThoughts>
-          <li>NotBondedAnimalMaster</li>
-          <li>BondedAnimalMaster</li>
-          <li>KilledColonyAnimal</li>
-          <li>SoldMyBondedAnimalMood</li>
-          <li>SoldMyBondedAnimal</li>
-          <li>BondedAnimalBanished</li>
-          <li>BondedAnimalLost</li>
-          <li>BondedAnimalReleased</li>
-          <li>BondedAnimalDied</li>
-
-
-        </cannotReceiveThoughts>
-        <restrictedThoughts>
-          <li>MihoNotBondedAnimalMaster</li>
-          <li>MihoBondedAnimalMaster</li>
-
-        </restrictedThoughts>
-
-      </thoughtSettings>
+			<li>
+						<original>KilledMyBondedAnimal</original>
+						<replacer>MihoKilledMyBondedAnimal</replacer>
+			</li>
+			<li>
+						<original>Nuzzled</original>
+						<replacer>MihoNuzzled</replacer>
+			</li>
+			<li>
+						<original>NotMihoAteInariZushi</original>
+						<replacer>MihoAteInariZushi</replacer>
+			</li>
+            </replacerList>
+			<cannotReceiveThoughts>
+			<li>NotBondedAnimalMaster</li>
+			<li>BondedAnimalMaster</li>
+			<li>KilledColonyAnimal</li>
+			<li>SoldMyBondedAnimalMood</li>
+			<li>SoldMyBondedAnimal</li>
+			<li>BondedAnimalBanished</li>
+			<li>BondedAnimalLost</li>
+			<li>BondedAnimalReleased</li>
+			<li>BondedAnimalDied</li>
 
 
-      <raceRestriction>
-        <blackEndoCategories>
-          <li>BodyType</li>
+			</cannotReceiveThoughts>
+			<restrictedThoughts>
+			<li>MihoNotBondedAnimalMaster</li>
+			<li>MihoBondedAnimalMaster</li>
 
-          <li>Headbone</li>
-          <li>Head</li>
-          <li>Jaw</li>
-        </blackEndoCategories>
+			</restrictedThoughts>
 
-        <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
+		</thoughtSettings>
+		
+		
+        <raceRestriction>
+<blackEndoCategories>
+                    <li>BodyType</li>
+                    
+                    <li>Headbone</li>
+                    <li>Head</li>
+                    <li>Jaw</li>
+</blackEndoCategories>
 
-        <geneList>
-          <li>Ears_Arctic_Miho</li>
-          <li>Ears_Desert_Miho</li>
-          <li>Gene_CelestialMiho</li>
-        </geneList>
-        <xenotypeList>
-          <li>Xeno_CelestialMiho</li>
-          <li>Xeno_CelestialMiho_Arctic</li>
-          <li>Xeno_CelestialMiho_Desert</li>
-          <li>Xeno_CelestialMiho_Highland</li>
-          <li>Xeno_CelestialMiho_Highmate</li>
+<onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
 
+<geneList>
+  <li>Ears_Arctic_Miho</li>
+  <li>Ears_Desert_Miho</li>
+  <li>Gene_CelestialMiho</li>
+</geneList>
+<xenotypeList>
+                    <li>Xeno_CelestialMiho</li>
+                    <li>Xeno_CelestialMiho_Arctic</li>
+                    <li>Xeno_CelestialMiho_Desert</li>
+                    <li>Xeno_CelestialMiho_Highland</li>
+                    <li>Xeno_CelestialMiho_Highmate</li>
 
-        </xenotypeList>
-        <blackGeneList>
-          <li>Furskin</li>
-        </blackGeneList>
-        <blackGeneTags>
-          <li>Nose</li>
-          <li>Ears</li>
-          <li>Voice</li>
-          <li>Headbone</li>
-          <li>Jaw</li>
-        </blackGeneTags>
+					
+</xenotypeList>
+    <blackGeneList>
+                    <li>Furskin</li>
+    </blackGeneList>
+<blackGeneTags>
+  <li>Nose</li>
+  <li>Ears</li>
+  <li>Voice</li>
+  <li>Headbone</li>
+  <li>Jaw</li>
+</blackGeneTags>
 
-        <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
-        <apparelList>
-          <li>Miho_Apparel_Under_Tribal</li>
-          <li>Miho_Apparel_Under_TribalTwo</li>
+		<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+		<apparelList>
+		<li>Miho_Apparel_Under_Tribal</li>
+		<li>Miho_Apparel_Under_TribalTwo</li>
 
-          <li>Miho_Apparel_Under_Industrial</li>
-          <li>Miho_Apparel_Under_IndustrialBlack</li>
-          <li>Miho_Apparel_Under_IndustrialStripe</li>
+		<li>Miho_Apparel_Under_Industrial</li>
+		<li>Miho_Apparel_Under_IndustrialBlack</li>
+		<li>Miho_Apparel_Under_IndustrialStripe</li>
 
+		
+		<li>Miho_Apparel_OnSkin_PMC</li>
+		<li>Miho_Apparel_Under_EltexOne</li>
+		<li>Miho_Apparel_Under_TribalEltex</li>
 
-          <li>Miho_Apparel_OnSkin_PMC</li>
-          <li>Miho_Apparel_Under_EltexOne</li>
-          <li>Miho_Apparel_Under_TribalEltex</li>
+		<li>Miho_Apparel_Under_Armor</li>
+		
+		<li>Miho_Apparel_Under_EltexTalisman</li>
 
-          <li>Miho_Apparel_Under_Armor</li>
+		<li>Miho_Apparel_OnSkin_OrnatedOne</li>
+		<li>Miho_Apparel_OnSkin_OrnatedTwo</li>
+		<li>Miho_Apparel_OnSkin_OrnatedNomadic</li>
 
-          <li>Miho_Apparel_Under_EltexTalisman</li>
-
-          <li>Miho_Apparel_OnSkin_OrnatedOne</li>
-          <li>Miho_Apparel_OnSkin_OrnatedTwo</li>
-          <li>Miho_Apparel_OnSkin_OrnatedNomadic</li>
-
-
-          <li>Miho_Apparel_OnSkin_Militia</li>
-          <li>Miho_Apparel_OnSkin_Simple</li>
-          <li>Miho_Apparel_OnSkin_Hoodie</li>
-          <li>Miho_Apparel_OnSkin_Pariah</li>
-          <li>Miho_Apparel_OnSkin_Regular</li>
-          <li>Miho_Apparel_OnSkin_Shirt</li>
-          <li>Miho_Apparel_OnSkin_OrnatedMiho</li>
-
-          <li>Miho_Apparel_OnSkin_Celestial</li>
-
-
-
-          <li>Miho_Apparel_Middle_Militia</li>
-          <li>Miho_Apparel_Middle_Militia_Tan</li>
-          <li>Miho_Apparel_Middle_MilitiaVest</li>
-          <li>Miho_Apparel_Middle_Powered</li>
-          <li>Miho_Apparel_Middle_PoweredWorker</li>
-          <li>Miho_Apparel_Middle_MilitiaMedic</li>
-          <li>Miho_Apparel_Middle_PoweredMechanitor</li>
-
-
-          <li>Miho_Apparel_Shell_Winter</li>
-          <li>Miho_Apparel_Shell_Sorceress</li>
-          <li>Miho_Apparel_Shell_Padding</li>
-          <li>Miho_Apparel_Shell_PMC</li>
+		
+		<li>Miho_Apparel_OnSkin_Militia</li>
+		<li>Miho_Apparel_OnSkin_Simple</li>
+		<li>Miho_Apparel_OnSkin_Hoodie</li>
+		<li>Miho_Apparel_OnSkin_Pariah</li>
+		<li>Miho_Apparel_OnSkin_Regular</li>
+		<li>Miho_Apparel_OnSkin_Shirt</li>
+		<li>Miho_Apparel_OnSkin_OrnatedMiho</li>
+		
+		<li>Miho_Apparel_OnSkin_Celestial</li>
 
 
-          <li>Miho_Apparel_Hat_Winter</li>
-          <li>Miho_Apparel_Mask_Eltex</li>
-          <li>Miho_Apparel_Hat_Militia</li>
-          <li>Miho_Apparel_Hat_MilitiaEar</li>
-          <li>Miho_Apparel_Hat_MilitiaMedic</li>
-          <li>Miho_Apparel_Hat_MilitiaVegi</li>
 
-          <li>Miho_Apparel_Hat_PMC</li>
-          <li>Miho_Apparel_Hat_Worker</li>
-          <li>Miho_Apparel_Hat_ShooterCap</li>
-          <li>Miho_Apparel_Hat_MilitiaShoot</li>
+		<li>Miho_Apparel_Middle_Militia</li>
+		<li>Miho_Apparel_Middle_Militia_Tan</li>
+		<li>Miho_Apparel_Middle_MilitiaVest</li>
+		<li>Miho_Apparel_Middle_Powered</li>
+		<li>Miho_Apparel_Middle_PoweredWorker</li>
+		<li>Miho_Apparel_Middle_MilitiaMedic</li>
+		<li>Miho_Apparel_Middle_PoweredMechanitor</li>
 
 
-          <li>Miho_Apparel_Hat_Pariah</li>
-
-          <li>Miho_Apparel_Special_Magnifier</li>
-          <li>Miho_Apparel_Special_TacticalAssist</li>
-          <li>Miho_Apparel_Special_Glasses</li>
-          <li>Miho_Apparel_Special_Visor</li>
-          <li>Miho_Apparel_Special_Toxmask</li>
-
-          <li>Miho_Apparel_OnSkin_OrnatedCaptain</li>
-          <li>Miho_Apparel_Hat_EltexCaptain</li>
-          <li>Miho_Apparel_Hat_Sorceress</li>
+		<li>Miho_Apparel_Shell_Winter</li>
+		<li>Miho_Apparel_Shell_Sorceress</li>
+		<li>Miho_Apparel_Shell_Padding</li>
+		<li>Miho_Apparel_Shell_PMC</li>
 
 
-          <li>Miho_Apparel_OnSkin_Maid</li>
-          <li>Miho_Apparel_Special_Maid</li>
-          <!-- Seasonal -->
+		<li>Miho_Apparel_Hat_Winter</li>
+		<li>Miho_Apparel_Mask_Eltex</li>
+		<li>Miho_Apparel_Hat_Militia</li>
+		<li>Miho_Apparel_Hat_MilitiaEar</li>
+		<li>Miho_Apparel_Hat_MilitiaMedic</li>
+		<li>Miho_Apparel_Hat_MilitiaVegi</li>
 
-          <li>Miho_Apparel_Under_SeasonalSanta</li>
-          <!-- Astromancy -->
+		<li>Miho_Apparel_Hat_PMC</li>
+		<li>Miho_Apparel_Hat_Worker</li>
+		<li>Miho_Apparel_Hat_ShooterCap</li>
+		<li>Miho_Apparel_Hat_MilitiaShoot</li>
 
-          <li MayRequire="miho.astromance">MihoAstro_Apparel_OnSkin_MaleficSister</li>
 
-          <li MayRequire="miho.astromance">MihoAstro_Apparel_Hat_MaleficSister</li>
-          <li MayRequire="miho.astromance">MihoAstro_Apparel_Hat_MaleficSisterEar</li>
+		<li>Miho_Apparel_Hat_Pariah</li>
+
+		<li>Miho_Apparel_Special_Magnifier</li>
+		<li>Miho_Apparel_Special_TacticalAssist</li>
+		<li>Miho_Apparel_Special_Glasses</li>
+		<li>Miho_Apparel_Special_Visor</li>
+		<li>Miho_Apparel_Special_Toxmask</li>
+
+		<li>Miho_Apparel_OnSkin_OrnatedCaptain</li>
+		<li>Miho_Apparel_Hat_EltexCaptain</li>
+		<li>Miho_Apparel_Hat_Sorceress</li>
+
+
+		<li>Miho_Apparel_OnSkin_Maid</li>
+		<li>Miho_Apparel_Special_Maid</li>
+        <!-- Seasonal -->
+
+		<li>Miho_Apparel_Under_SeasonalSanta</li>
+        <!-- Astromancy -->
+		 
+		<li MayRequire="miho.astromance">MihoAstro_Apparel_OnSkin_MaleficSister</li>
+		
+		<li MayRequire="miho.astromance">MihoAstro_Apparel_Hat_MaleficSister</li>
+		<li MayRequire="miho.astromance">MihoAstro_Apparel_Hat_MaleficSisterEar</li>
+        <!-- Vacsuits -->
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Miho_Apparel_OnSkin_Vacsuit</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Miho_Apparel_Hat_Vacsuit</li>
 
         </apparelList>
+		
+            <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
 
-        <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
-
-        <weaponList>
-          <li>Miho_Weapon_EltexA</li>
-          <li>Miho_Weapon_EltexB</li>
-          <li>Miho_Weapon_EltexAxe</li>
-          <li>Miho_Weapon_ShotgunPsychic</li>
-          <li>Miho_Weapon_RiflePsychic</li>
+		<weaponList>
+		<li>Miho_Weapon_EltexA</li>
+		<li>Miho_Weapon_EltexB</li>
+		<li>Miho_Weapon_EltexAxe</li>
+		<li>Miho_Weapon_ShotgunPsychic</li>
+		<li>Miho_Weapon_RiflePsychic</li>
 
 
+		
+		</weaponList>
+			
+		<whiteApparelList>
 
-        </weaponList>
+		</whiteApparelList>
+            <researchList>
+                <li>
+                    <projects> <!-- list the defname of any project that Only this race can reseach -->
+                    </projects>
+                    <apparelList> <!-- list the defname of any apparel that this race requires to wear to reseach -->
+                    </apparelList>
+                </li>
+            </researchList>
+            <onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
 
-        <whiteApparelList>
-
-        </whiteApparelList>
-        <researchList>
-          <li>
-            <projects>              <!-- list the defname of any project that Only this race can reseach -->
-            </projects>
-            <apparelList>              <!-- list the defname of any apparel that this race requires to wear to reseach -->
-            </apparelList>
-          </li>
-        </researchList>
-        <onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
-
-        <recipeList>          <!-- list the defname of any recipie that Only this race can do -->
-          <li>Miho_ComponentIndustrial</li>
-          <li>Miho_ComponentSpacer</li>
-        </recipeList>
-      </raceRestriction>
+            <recipeList> <!-- list the defname of any recipie that Only this race can do -->
+		<li>Miho_ComponentIndustrial</li>
+		<li>Miho_ComponentSpacer</li>
+            </recipeList>
+        </raceRestriction>
     </alienRace>
-    <statBases>
+	<statBases>
       <!--스펙설정(일반)-->
-      <MarketValue>1500</MarketValue>
-      <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
-      <CarryingCapacity>42</CarryingCapacity>
-      <GlobalLearningFactor>0.25</GlobalLearningFactor>
-      <PsychicSensitivity>1</PsychicSensitivity>
-      <RestRateMultiplier>0.98</RestRateMultiplier>
+	  <MarketValue>1500</MarketValue>
+	  <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
+	  <CarryingCapacity>42</CarryingCapacity>
+	  <GlobalLearningFactor>0.25</GlobalLearningFactor>
+	  <PsychicSensitivity>1</PsychicSensitivity>
+	  <RestRateMultiplier>0.98</RestRateMultiplier>
       <ImmunityGainSpeed>0.98</ImmunityGainSpeed>
-      <LearningRateFactor>1.5</LearningRateFactor>
-      <!--스펙(일)-->
-      <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
-      <ForagedNutritionPerDay>0</ForagedNutritionPerDay>
-      <NegotiationAbility>1.0</NegotiationAbility>
-      <SocialImpact>1.0</SocialImpact>
-      <TradePriceImprovement>1.0</TradePriceImprovement>
+	  <LearningRateFactor>1.5</LearningRateFactor>
+	  <!--스펙(일)-->
+	  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+	  <ForagedNutritionPerDay>0</ForagedNutritionPerDay>
+	  <NegotiationAbility>1.0</NegotiationAbility>
+	  <SocialImpact>1.0</SocialImpact>
+	  <TradePriceImprovement>1.0</TradePriceImprovement>
       <LeatherAmount>25</LeatherAmount>
       <Flammability>1</Flammability>
-      <PainShockThreshold>0.75</PainShockThreshold>
+	  <PainShockThreshold>0.75</PainShockThreshold>
       <ComfyTemperatureMin>20</ComfyTemperatureMin>
       <ComfyTemperatureMax>31</ComfyTemperatureMax>
-      <!--스펙설정(전투)-->
-      <MoveSpeed>4.1</MoveSpeed>
-      <AimingDelayFactor>0.9</AimingDelayFactor>
-      <MeleeDodgeChance>2</MeleeDodgeChance>
-      <MeleeHitChance>3</MeleeHitChance>
+	  <!--스펙설정(전투)-->
+	  <MoveSpeed>4.1</MoveSpeed>
+	  <AimingDelayFactor>0.9</AimingDelayFactor>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MeleeHitChance>3</MeleeHitChance>
       <ArmorRating_Heat>0.5</ArmorRating_Heat>
       <PsychicEntropyRecoveryRate>-1</PsychicEntropyRecoveryRate>
 
     </statBases>
-    <tools>
+        <tools>
       <li>
         <label>Left Punch</label>
         <capacities>
@@ -1505,24 +1808,24 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>1000</lifeExpectancy>
       <leatherDef>Leather_Fox</leatherDef>
-      <fleshType>Normal</fleshType>
+	  <fleshType>Normal</fleshType>
       <!-- 
 	  <nameCategory>HumanStandard</nameCategory>
       -->
-      <nameGenerator>NamerPersonMiho</nameGenerator>
+	  <nameGenerator>NamerPersonMiho</nameGenerator>
       <nameGeneratorFemale>NamerPersonMiho</nameGeneratorFemale>
       <!-- 
 	  <body>Human</body>
       -->
-      <body>Human</body>
-      <bloodDef>Filth_Blood</bloodDef>
+	  <body>Human</body>
+      <bloodDef>Filth_Blood</bloodDef>	
       <meatColor>(219, 105, 82)</meatColor>
       <baseBodySize>0.9</baseBodySize>
       <baseHealthScale>0.85</baseHealthScale>
       <baseHungerRate>1.0</baseHungerRate>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>18</gestationPeriodDays>
-
+	  
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -1532,24 +1835,24 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>          <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
-          <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>          <!-- End exclude -->
-          <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-          <li>(14,0)</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-          <li>(16,100)</li>
-          <li>(35,100)</li>
-          <li>(50,30)</li>
-          <li>(70,18)</li>
-          <li>(80,10)</li>
-          <li>(90,3)</li>
-          <li>(100,0)</li>
-        </points>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+    <li>(14,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+    <li>(16,100)</li>
+    <li>(35,100)</li>
+    <li>(50,30)</li>
+    <li>(70,18)</li>
+    <li>(80,10)</li>
+    <li>(90,3)</li>
+    <li>(100,0)</li>
+       </points>
       </ageGenerationCurve>
       <hediffGiverSets>
         <li>OrganicStandard</li>
@@ -1558,7 +1861,7 @@
       <renderTree>Humanlike</renderTree>
     </race>
     <recipes>
-      <li>InstallArchotechEye</li>
+       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
       <li>InstallArchotechLeg</li>
       <li>InstallPowerClaw</li>
@@ -1585,57 +1888,57 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
-
+	  
       <li MayRequire="mihotattoo.outremer">Miho_Tattooing</li>
 
-
+	
     </recipes>
-    <damageMultipliers>
-      <li>
-        <damageDef>Miho_MagicBomb</damageDef>
-        <multiplier>0</multiplier>
-      </li>
-      <li>
-        <damageDef>Miho_MagicBombBatto</damageDef>
-        <multiplier>0</multiplier>
-      </li>
-      <li>
-        <damageDef>Miho_MagicBombEMP</damageDef>
-        <multiplier>0</multiplier>
-      </li>
-      <li>
-        <damageDef>Flame</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>Burn</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>MihoPlasma</damageDef>
-        <multiplier>0.75</multiplier>
-      </li>
-    </damageMultipliers>
-  </AlienRace.ThingDef_AlienRace>
+		<damageMultipliers>
+			<li>
+				<damageDef>Miho_MagicBomb</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Miho_MagicBombBatto</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Miho_MagicBombEMP</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>MihoPlasma</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+		</damageMultipliers>
+</AlienRace.ThingDef_AlienRace>
 
-  <HediffDef Name="Miho_Hidden_Hediff_Base" Abstract="True">
-    <hediffClass>HediffWithComps</hediffClass>
-    <description>히든 헤디프</description>
-    <defaultLabelColor>(0.392, 0.678, 0.737)</defaultLabelColor>
-    <scenarioCanAdd>false</scenarioCanAdd>
-    <minSeverity>0</minSeverity>
-    <maxSeverity>1</maxSeverity>
-    <initialSeverity>1</initialSeverity>
-    <isBad>false</isBad>
-    <alwaysAllowMothballCached>true</alwaysAllowMothballCached>
-    <alwaysAllowMothball>true</alwaysAllowMothball>
-  </HediffDef>
-
-  <HediffDef ParentName="Miho_Hidden_Hediff_Base">
-    <defName>Miho_Tail_Hediff</defName>
-    <description>Tail</description>
-    <label>Tail</label>
-    <minSeverity>0.01</minSeverity>
+	<HediffDef Name="Miho_Hidden_Hediff_Base" Abstract="True"> 
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>히든 헤디프</description>
+		<defaultLabelColor>(0.392, 0.678, 0.737)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+<alwaysAllowMothball>true</alwaysAllowMothball>
+	</HediffDef> 
+	
+	<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Tail_Hediff</defName>
+		<description>Tail</description>
+		<label>Tail</label>
+		<minSeverity>0.01</minSeverity>
 
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
@@ -1671,7 +1974,7 @@
         </statOffsets>
       </li>
     </stages>
-  </HediffDef>
+	</HediffDef>
 
   <ThoughtDef>
     <defName>Miho_Tail_Thought</defName>
@@ -1681,7 +1984,7 @@
     <stages>
       <li>
         <visible>false</visible>
-      </li>
+      </li>   
       <li>
         <visible>false</visible>
       </li>
@@ -1689,20 +1992,20 @@
         <label>신남</label>
         <description>신나는 일 투성이야! 내 적성을 찾은거 같아. (꼬리를 흔듬)</description>
         <baseMoodEffect>4</baseMoodEffect>
-      </li>
+      </li>   
     </stages>
   </ThoughtDef>
+  
 
-
-  <HediffDef ParentName="Miho_Hidden_Hediff_Base">
-    <defName>Miho_Hidden_Hediff</defName>
-    <description>Hidden</description>
-    <label>Hidden</label>
+	<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Hidden_Hediff</defName>
+		<description>Hidden</description>
+		<label>Hidden</label>
     <comps>
     </comps>
-
-  </HediffDef>
-
+  
+	</HediffDef>
+	
 
   <ThingDef ParentName="BaseFilth">
     <defName>Miho_Hair_Filth</defName>
@@ -1722,12 +2025,12 @@
       <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
     </filth>
   </ThingDef>
-
-  <HediffDef ParentName="Miho_Hidden_Hediff_Base">
-    <defName>Miho_Ear_Hediff</defName>
-    <description>large ears</description>
-    <label>large ears</label>
-    <minSeverity>0.01</minSeverity>
+  
+	<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_Ear_Hediff</defName>
+		<description>large ears</description>
+		<label>large ears</label>
+		<minSeverity>0.01</minSeverity>
 
     <comps>
     </comps>
@@ -1736,17 +2039,17 @@
         <becomeVisible>false</becomeVisible>
         <capMods>
         </capMods>
-        <statOffsets>
-        </statOffsets>
+			<statOffsets>
+			</statOffsets>
       </li>
     </stages>
-  </HediffDef>
+	</HediffDef>
 
-  <HediffDef ParentName="Miho_Hidden_Hediff_Base">
-    <defName>Miho_DontShootMe_Hediff</defName>
-    <description>쏘지마시발</description>
-    <label>쏘지마시발</label>
-    <minSeverity>0.01</minSeverity>
+	<HediffDef ParentName="Miho_Hidden_Hediff_Base">
+		<defName>Miho_DontShootMe_Hediff</defName>
+		<description>쏘지마시발</description>
+		<label>쏘지마시발</label>
+		<minSeverity>0.01</minSeverity>
 
     <comps>
     </comps>
@@ -1757,8 +2060,8 @@
         <becomeVisible>false</becomeVisible>
       </li>
     </stages>
-  </HediffDef>
-
+	</HediffDef>
+	
   <LifeStageDef ParentName="HumanlikeAdolescent">
     <defName>MiholikeBaby</defName>
     <label>baby</label>
@@ -1768,8 +2071,8 @@
     <voxPitch>1.6</voxPitch>
     <headSizeFactor>0.5</headSizeFactor>
     <eyeSizeFactor>0.7</eyeSizeFactor>
-    <foodMaxFactor>0.625</foodMaxFactor>    <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
-    <hungerRateFactor>0.125</hungerRateFactor>    <!-- consumes 2x maxFood per day -->
+    <foodMaxFactor>0.625</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
+    <hungerRateFactor>0.125</hungerRateFactor> <!-- consumes 2x maxFood per day -->
     <healthScaleFactor>0.2</healthScaleFactor>
     <marketValueFactor>0.5</marketValueFactor>
     <meleeDamageFactor>0.5</meleeDamageFactor>
@@ -1778,12 +2081,12 @@
     <naturalWakeThresholdOverride>1.0</naturalWakeThresholdOverride>
     <alwaysDowned>true</alwaysDowned>
     <claimable>true</claimable>
-    <involuntarySleepIsNegativeEvent>false</involuntarySleepIsNegativeEvent>    <!-- Babies just fall asleep randomly and they're cool with it. -->
+    <involuntarySleepIsNegativeEvent>false</involuntarySleepIsNegativeEvent> <!-- Babies just fall asleep randomly and they're cool with it. -->
     <thinkTreeMainOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBaby</thinkTreeMainOverride>
     <thinkTreeConstantOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBabyConstant</thinkTreeConstantOverride>
-    <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>    <!-- Babies have crying/giggling fits instead of mental breaks. -->
+    <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks> <!-- Babies have crying/giggling fits instead of mental breaks. -->
     <canSleepWhileHeld>true</canSleepWhileHeld>
-    <canVoluntarilySleep>false</canVoluntarilySleep>    <!-- Babies fall asleep randomly when they're tired. -->
+    <canVoluntarilySleep>false</canVoluntarilySleep> <!-- Babies fall asleep randomly when they're tired. -->
     <canSleepWhenStarving>false</canSleepWhenStarving>
     <canInitiateSocialInteraction>false</canInitiateSocialInteraction>
     <customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
@@ -1791,8 +2094,8 @@
       <MoveSpeed>0.2</MoveSpeed>
     </statFactors>
     <statOffsets>
-      <ComfyTemperatureMin>-46</ComfyTemperatureMin>      <!--should map to -30C-->
-      <ComfyTemperatureMax>4</ComfyTemperatureMax>      <!--should map to 30C-->
+      <ComfyTemperatureMin>-46</ComfyTemperatureMin><!--should map to -30C-->
+      <ComfyTemperatureMax>4</ComfyTemperatureMax><!--should map to 30C-->
     </statOffsets>
     <involuntarySleepMTBDaysFromRest>
       <points>
@@ -1817,7 +2120,7 @@
     <headSizeFactor>0.75</headSizeFactor>
     <eyeSizeFactor>0.85</eyeSizeFactor>
     <healthScaleFactor>0.5</healthScaleFactor>
-    <foodMaxFactor>2.286</foodMaxFactor>    <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.8 -->
+    <foodMaxFactor>2.286</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.8 -->
     <hungerRateFactor>0.8</hungerRateFactor>
     <marketValueFactor>0.9</marketValueFactor>
     <meleeDamageFactor>0.7</meleeDamageFactor>
@@ -1827,34 +2130,34 @@
     <statFactors>
       <MoveSpeed>0.75</MoveSpeed>
     </statFactors>
-    <silhouetteGraphicData>
-      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.35</drawSize>
-    </silhouetteGraphicData>
+		<silhouetteGraphicData>
+			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.35</drawSize>
+		</silhouetteGraphicData>
   </LifeStageDef>
-
+  
   <LifeStageDef ParentName="LifeStageHumanlikeChild">
     <defName>MiholikePreTeenager</defName>
     <label>preteen</label>
     <bodySizeFactor>0.58</bodySizeFactor>
     <bodyWidth>1.2</bodyWidth>
     <healthScaleFactor>0.7</healthScaleFactor>
-    <foodMaxFactor>1.552</foodMaxFactor>    <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.9 -->
+    <foodMaxFactor>1.552</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.9 -->
     <hungerRateFactor>0.9</hungerRateFactor>
     <marketValueFactor>0.95</marketValueFactor>
     <meleeDamageFactor>0.725</meleeDamageFactor>
     <statFactors>
       <MoveSpeed>0.85</MoveSpeed>
     </statFactors>
-    <silhouetteGraphicData>
-      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.58</drawSize>
-    </silhouetteGraphicData>
+		<silhouetteGraphicData>
+			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.58</drawSize>
+		</silhouetteGraphicData>
   </LifeStageDef>
 
-
+  
   <LifeStageDef ParentName="HumanlikeAdolescent">
     <defName>MiholikeTeenager</defName>
     <label>teenager</label>
@@ -1867,20 +2170,20 @@
     <bodyWidth>1.35</bodyWidth>
     <headSizeFactor>1</headSizeFactor>
 
-    <foodMaxFactor>1.25</foodMaxFactor>    <!-- bodySizeFactor * foodMaxFactor = maxFood = 1.0 -->
+    <foodMaxFactor>1.25</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 1.0 -->
     <meleeDamageFactor>0.75</meleeDamageFactor>
     <equipmentDrawDistanceFactor>0.65</equipmentDrawDistanceFactor>
     <sittingOffset>0.23</sittingOffset>
     <statFactors>
       <MoveSpeed>0.95</MoveSpeed>
     </statFactors>
-    <silhouetteGraphicData>
-      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.8</drawSize>
-    </silhouetteGraphicData>
+		<silhouetteGraphicData>
+			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</silhouetteGraphicData>
   </LifeStageDef>
-
+  
   <ThoughtDef>
     <defName>MihoNuzzled</defName>
     <durationDays>1</durationDays>
@@ -1898,10 +2201,10 @@
       </li>
     </stages>
   </ThoughtDef>
+  
 
 
-
-
+  
   <ThoughtDef>
     <defName>MihoKilledMyBondedAnimal</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
@@ -1915,8 +2218,8 @@
       </li>
     </stages>
   </ThoughtDef>
-
-
+  
+  
   <ThoughtDef>
     <defName>MihoBondedAnimalMaster</defName>
     <thoughtClass>Thought_BondedAnimalMaster</thoughtClass>
@@ -1938,7 +2241,7 @@
       </li>
     </stages>
   </ThoughtDef>
-
+  
   <ThoughtDef>
     <defName>MihoNotBondedAnimalMaster</defName>
     <thoughtClass>Thought_NotBondedAnimalMaster</thoughtClass>
@@ -1960,7 +2263,7 @@
       </li>
     </stages>
   </ThoughtDef>
-
+  
   <ThoughtDef>
     <defName>MihoAteInariZushi</defName>
     <durationDays>1</durationDays>

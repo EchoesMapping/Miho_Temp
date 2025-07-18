@@ -8,14 +8,14 @@
     <graphicData>
 			<texPath>Things/Building/MihoDroneFactory/MihoDroneFactory</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(9.9,9.9)</drawSize>
+			<drawSize>(5.9,5.9)</drawSize>
       <shadowData>
-        <volume>(5, 5, 5)</volume>
+        <volume>(3, 3, 3)</volume>
       </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Icon/MihoDroneFactory</uiIconPath>
     <uiIconScale>1</uiIconScale>
-    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <recipes>
       <li>Miho_Mech_Sapsal</li>
 	 <li>Miho_Mech_SapsalPsy</li>
@@ -38,7 +38,7 @@
       <Mass>25</Mass>
       <Flammability>0.5</Flammability>
     </statBases>
-    <size>(5,5)</size>
+    <size>(3,3)</size>
     <designationCategory>MihoBuilding</designationCategory>
 
     <costList>

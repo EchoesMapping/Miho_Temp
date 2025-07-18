@@ -8,7 +8,7 @@
 		<writeCombatLog>True</writeCombatLog>
 		<groupDef>Miho_Thunder</groupDef>
 		<statBases>
-			<Ability_EntropyGain>450</Ability_EntropyGain>
+			<Ability_EntropyGain>425</Ability_EntropyGain>
 			<Ability_PsyfocusCost>0.25</Ability_PsyfocusCost>
 		</statBases>
 		<verbProperties>

@@ -140,9 +140,6 @@
     <weaponTags>
       <li>MihoCataphract</li>
     </weaponTags>
-	    <abilities>
-      <li>Miho_MechFlame</li>
-    </abilities>
     <isGoodBreacher>false</isGoodBreacher>
 
     <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
@@ -304,7 +301,7 @@
         <defaultProjectile>Miho_MechWeapon_Rocket_Proj</defaultProjectile>
         <warmupTime>8.5</warmupTime>
         <range>55</range>
-       <minRange>19.9</minRange>
+       <minRange>14.9</minRange>
         <requireLineOfSight>false</requireLineOfSight>
 
         <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
@@ -386,7 +383,7 @@
       <AccuracyShort>0.01</AccuracyShort>
       <AccuracyMedium>0.06</AccuracyMedium>
       <AccuracyLong>0.08</AccuracyLong>
-      <RangedWeapon_Cooldown>20</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>12.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>MihoCataphractClu</li>
@@ -404,9 +401,9 @@
         <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-				<warmupTime>20</warmupTime>
+				<warmupTime>22.5</warmupTime>
 				<range>100</range>
-                <minRange>55</minRange>
+                <minRange>28.9</minRange>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
 				<soundCast>Miho_Rocket</soundCast>
@@ -483,54 +480,6 @@
 		</projectile>
 	</ThingDef>
   
-  <ThingDef ParentName="BaseGrenadeProjectile">
-    <defName>Miho_MechSatchel_Proj</defName>
-    <label>satchel</label>
-    <thingClass>Projectile_Explosive</thingClass>
-
-    <graphicData>
-      <texPath>Things/Projectile/MihoSatchel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	    <drawSize>1</drawSize>
-    </graphicData>
-		<projectile>
-			<damageDef>MihoGunshotDemo</damageDef>
-			<damageAmountBase>188</damageAmountBase>
-			<armorPenetrationBase>0.01</armorPenetrationBase>
-			<stoppingPower>20</stoppingPower>
-			<speed>8</speed>
-			<explosionRadius>6.9</explosionRadius>
-			<flyOverhead>false</flyOverhead>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-      <explosionDelay>600</explosionDelay>
-      <screenShakeFactor>4</screenShakeFactor>
-
-		</projectile>
-  </ThingDef>
-  <AbilityDef>
-    <defName>Miho_MechSatchel</defName>
-    <label>구조물 파괴 폭발물</label>
-    <description>대구조물 폭탄을 발사합니다.</description>
-    <iconPath>Things/Projectile/MihoSatchel</iconPath>
-    <cooldownTicksRange>3000</cooldownTicksRange>
-    <displayOrder>200</displayOrder>
-    <aiCanUse>true</aiCanUse>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>7.9</range>
-      <warmupTime>0.75</warmupTime>
-      <soundCast>Shot_IncendiaryLauncher</soundCast>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityLaunchProjectile">
-        <projectileDef>Miho_MechSatchel_Proj</projectileDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-  
   <RecipeDef ParentName="MediumMechanoidRecipe">
     <defName>Miho_Mech_CataphractRocket</defName>
     <label>다각 공병전차 (다연장 로켓 포대) 제작</label>
@@ -566,7 +515,7 @@
             <li>Miho_MilitaryGradeBalisticCeramics</li>
           </thingDefs>
         </filter>
-        <count>225</count>
+        <count>150</count>
       </li>
       <li>
         <filter>
@@ -574,7 +523,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>60</count>
+        <count>45</count>
       </li>
       <li>
         <filter>
@@ -640,7 +589,7 @@
             <li>Miho_MilitaryGradeBalisticCeramics</li>
           </thingDefs>
         </filter>
-        <count>225</count>
+        <count>150</count>
       </li>
       <li>
         <filter>
@@ -648,7 +597,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>75</count>
+        <count>60</count>
       </li>
       <li>
         <filter>
@@ -670,28 +619,5 @@
 
   </RecipeDef>
   
-
-  <AbilityDef>
-    <defName>Miho_MechFlame</defName>
-    <label>화염탄</label>
-    <description>화염탄을 발사합니다.</description>
-    <iconPath>Things/Projectile/MihoSatchel</iconPath>
-    <cooldownTicksRange>3000</cooldownTicksRange>
-    <displayOrder>200</displayOrder>
-    <aiCanUse>true</aiCanUse>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>199.9</range>
-       <minRange>30.9</minRange>
-
-      <warmupTime>3</warmupTime>
-      <soundCast>Shot_IncendiaryLauncher</soundCast>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityLaunchProjectile">
-        <projectileDef>Bullet_IncendiaryLauncher</projectileDef>
-      </li>
-    </comps>
-  </AbilityDef>
   
 </Defs>

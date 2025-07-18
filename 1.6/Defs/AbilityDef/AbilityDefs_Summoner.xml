@@ -413,7 +413,7 @@
     <writeCombatLog>True</writeCombatLog>
     <groupDef>Miho_Abomi</groupDef>
     <statBases>
-      <Ability_EntropyGain>600</Ability_EntropyGain>
+      <Ability_EntropyGain>525</Ability_EntropyGain>
       <Ability_PsyfocusCost>0.5</Ability_PsyfocusCost>
     </statBases>
     <verbProperties>

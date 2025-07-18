@@ -5,7 +5,7 @@
     <label>체내 메카나이트 골라내기</label>
     <description>첨단 장비로 고깃속에 있는 메카나이트 결정들을 골라냅니다.</description>
     <jobString>결정 골라내는 중.</jobString>
-    <workAmount>400</workAmount>
+    <workAmount>375</workAmount>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
@@ -31,7 +31,7 @@
       </disallowedCategories>
     </fixedIngredientFilter>
     <products>
-      <RawPosFlower_Dust>20</RawPosFlower_Dust>
+      <RawPosFlower_Dust>40</RawPosFlower_Dust>
     </products>
   </RecipeDef>
   

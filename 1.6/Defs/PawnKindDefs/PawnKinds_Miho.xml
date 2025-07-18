@@ -72,10 +72,6 @@
       <min>350</min>
       <max>1400</max>
     </apparelMoney>
-    <weaponMoney>
-      <min>280</min>
-      <max>950</max>
-    </weaponMoney>
     <weaponTags>
     </weaponTags>
     <techHediffsMoney>
@@ -141,6 +137,10 @@
         <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
       </xenotypeChances>
     </xenotypeSet>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
@@ -188,6 +188,10 @@
       <min>5000</min>
       <max>9000</max>
     </apparelMoney>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
@@ -220,6 +224,10 @@
       <min>3000</min>
       <max>6000</max>
     </apparelMoney>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
     <xenotypeSet>
       <xenotypeChances>
         <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
@@ -291,6 +299,10 @@
         <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
       </xenotypeChances>
     </xenotypeSet>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
@@ -329,6 +341,10 @@
     <apparelTags>
       <li>MihoCommonNecessary</li>
     </apparelTags>
+    <weaponMoney>
+      <min>280</min>
+      <max>950</max>
+    </weaponMoney>
     <xenotypeSet>
       <xenotypeChances>
         <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.66</Xeno_CelestialMiho>
