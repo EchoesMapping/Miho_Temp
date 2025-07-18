@@ -1406,7 +1406,6 @@
 		</comps>
 		<stages>
 			<li>
-
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -1416,4 +1415,79 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<ThingDef ParentName="HatMakeableBase" >
+		<defName>Miho_Apparel_Hat_Vacsuit</defName>
+		<label>미호 진공 방호복 헬멧</label>
+		<description>귀가 매력포인트 입니다.</description>
+		<possessionCount>1</possessionCount>
+		<generateAllowChance>0</generateAllowChance>
+		<graphicData>
+			<texPath>Miho/Apparel/HeadHatVacsuit/HeadHatVacsuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.66</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.66</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<VacuumResistance>0.69</VacuumResistance>
+		</equippedStatOffsets>
+		<smeltable>true</smeltable>
+		<apparel>
+			<drawData>
+				<scale>0.7</scale>
+			</drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Miho/Apparel/HeadHatVacsuit/HeadHatVacsuit</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MihoSailor</li>
+				<li>MihoEars</li>
+				<li>MihoHair</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+		</tradeTags>
+		<thingSetMakerTags>
+		</thingSetMakerTags>
+		<thingCategories Inherit="false">
+			<li>Miho_Headgear</li>
+		</thingCategories>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Miho_MilitaryGradeBalisticCeramics>30</Miho_MilitaryGradeBalisticCeramics>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OrbitalTech</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>237</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

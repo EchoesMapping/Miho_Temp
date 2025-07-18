@@ -1226,4 +1226,79 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
+  <ThingDef ParentName="ApparelBase">
+    <defName>Miho_Apparel_OnSkin_Vacsuit</defName>
+    <label>미호 진공 방호복</label>
+    <description>세일러 하이레그 바디슈트 입니다.</description>
+    <graphicData>
+      <texPath>Miho/Apparel/OnSkinVacsuit/OnSkinVacsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>56000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>7</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.66</ArmorRating_Heat>
+      <Insulation_Cold>90</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance>0.32</VacuumResistance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <smeltable>true</smeltable>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Miho/Apparel/OnSkinVacsuit/OnSkinVacsuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>MihoSailor</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <thingSetMakerTags>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Miho_MilitaryGradeBalisticCeramics>50</Miho_MilitaryGradeBalisticCeramics>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>OrbitalTech</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <displayPriority>235</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>Miho_TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
 </Defs>
