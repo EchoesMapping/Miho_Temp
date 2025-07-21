@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ColorDef ParentName="UniqueWeaponColorBase">
+    <defName>Miho_UniqueWeapon_Plasma</defName>
+    <label>plasma orange</label>
+    <color>(229, 177, 80)</color>
+    <randomlyPickable>false</randomlyPickable>
+  </ColorDef>
+
+  <ColorDef ParentName="UniqueWeaponColorBase">
+    <defName>Miho_UniqueWeapon_Foxfire</defName>
+    <label>fox violet</label>
+    <color>(99, 90, 114)</color>
+    <randomlyPickable>false</randomlyPickable>
+  </ColorDef>
+
+  <WeaponCategoryDef>
+    <defName>Miho_BulletFiring</defName>
+  </WeaponCategoryDef>
+
+  <WeaponTraitDef>
+    <defName>Miho_PlasmaRounds</defName>
+    <label>플라즈마탄</label>
+    <description>높은 에너지를 저장하고 있는 전지를 발사해 플라즈마 폭발을 일으킵니다.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Miho_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+      <li>Color</li>
+    </exclusionTags>
+    <forcedColor>Miho_UniqueWeapon_Plasma</forcedColor>
+    <damageDefOverride>MihoPlasma</damageDefOverride>
+    <statOffsets>
+      <MarketValue>100</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>태양의</li>
+      <li>뜨거운</li>
+      <li>증발시키는</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef>
+    <defName>Miho_FoxfireRounds</defName>
+    <label>메카나이트-아케인탄</label>
+    <description>여우들의 마법이 담긴 메카나이트 탄환을 발사합니다.</description>
+    <commonality>0.75</commonality>
+    <weaponCategory>Miho_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+      <li>Color</li>
+    </exclusionTags>
+    <forcedColor>Miho_UniqueWeapon_Foxfire</forcedColor>
+    <damageDefOverride>Miho_MagicBombEMP</damageDefOverride>
+	<extraDamages>
+					<li>
+						<def>EMP</def>
+						<amount>3</amount>
+						<chance>0.15</chance>
+					</li>
+					<li>
+						<def>Stun</def>
+						<amount>3</amount>
+						<chance>0.1</chance>
+					</li>
+	</extraDamages>
+    <statOffsets>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.25</RangedWeapon_ArmorPenetrationMultiplier>
+      <MarketValue>110</MarketValue>
+    </statOffsets>
+    <statFactors>
+      <AccuracyTouch>1.05</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+    </statFactors>
+    <traitAdjectives>
+      <li>여우의</li>
+      <li>요정의</li>
+      <li>마법의</li>
+      <li>초능력</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponTraitDef>
+    <defName>Miho_UraniumRounds</defName>
+    <label>열화우라늄탄</label>
+    <description>여우들의 소이탄이 아니라 열화우라늄을 발사하도록 개조되었습니다.</description>
+    <commonality>0.75</commonality>
+    <weaponCategory>Miho_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+      <li>Color</li>
+    </exclusionTags>
+    <forcedColor>UniqueWeapon_Gray</forcedColor>
+    <damageDefOverride>Bullet</damageDefOverride>
+    <statOffsets>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.2</RangedWeapon_ArmorPenetrationMultiplier>
+      <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+      <MarketValue>80</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>물리적</li>
+      <li>충격적</li>
+      <li>물리</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef>
+    <defName>Miho_APFSDSRounds</defName>
+    <label>날개안정분리소이탄</label>
+    <description>물리적 타격력이 줄어드는 대신, 압도적인 관통력과 사거리, 장거리 명중률을 얻은 탄 입니다.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Miho_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+      <li>Color</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.25</RangedWeapon_ArmorPenetrationMultiplier>
+      <RangedWeapon_RangeMultiplier>0.25</RangedWeapon_RangeMultiplier>
+      <RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+      <MarketValue>110</MarketValue>
+    </statOffsets>
+    <statFactors>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1.1</AccuracyLong>
+    </statFactors>
+    <traitAdjectives>
+      <li>날개달린</li>
+      <li>꿰뚫는</li>
+      <li>안정적인</li>
+      <li>멀리가는</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <ThingDef ParentName="MihoWeapon_RifleOld">
+    <defName>Miho_Weapon_RifleOld_Unique</defName>
+    <label>유니크 미호 대물저격총</label>
+    <description>커스텀 파츠가 장착된 변방계에서 얼마 생산되지 않은 희귀한 13.7mm 대물저격총 입니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedOdyssey/RifleHeavy</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <drawSize>1.14</drawSize>
+
+    </graphicData>
+    <statBases Inherit="False">
+      <WorkToMake>48000</WorkToMake>
+      <Mass>7.5</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs Inherit="False">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleOld_Unique_Proj</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>49.9</range>
+        <minRange>1.9</minRange>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <soundCast>Miho_KineticRifleBolt</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+    <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" /> <!-- Props are populated by traits -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Miho_BulletFiring</li>
+          <li>Gun</li>
+          <li>Scoped</li>
+          <li>Rifle</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>대장갑 소총</li>
+          <li>중형 소총</li>
+          <li>대물저격총</li>
+          <li>머리날리개</li>
+          <li>깡통따개</li>
+          <li>초대형 사냥총</li>
+          <li>두통치료제</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0.15</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <weaponTags Inherit="False" >
+      <li>MihoPMCInfantrySniper</li>
+    </weaponTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_Weapon_RifleOld_Unique_Proj</defName>
+    <label>AMR bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MuzzleFlash_Smoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+</Defs>

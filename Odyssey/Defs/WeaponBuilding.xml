@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BuildingBase" Name="Miho_ShipCannon"  Abstract="True"> 
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/MihoStonecutter/MihoShipgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1,1.1)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+	  <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>    
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>12500</WorkToBuild>
+      <Mass>200</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.55</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretTopDrawSize>4</turretTopDrawSize>
+      <turretTopOffset>(0, 0)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+      <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <designationCategory>MihoBuilding</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>    
+    <uiIconScale>0.95</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="Miho_ShipCannon">
+    <defName>Miho_Turret_ShipGun</defName>
+    <label>미호 재래식 함포</label>
+    <description>47mm 탄을 사용하는 소형 체인건 함포 입니다. 일정 주기마다 포신을 교체해줘야 합니다. 중력반응판 위에만 설치 가능합니다.</description>
+    <uiIconPath>NewMech/Bulgasal/BulgasalGun/BulgasalShipgun</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
+    </statBases>
+    <costList>
+      <Steel>225</Steel>
+      <Chemfuel>75</Chemfuel>
+      <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
+      <GravlitePanel>10</GravlitePanel>
+      <ReinforcedBarrel>1</ReinforcedBarrel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ReinforcedBarrel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>60</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.1667</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <atomicFueling>true</atomicFueling>
+        <fuelMultiplier>60</fuelMultiplier>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>    
+	  </comps>
+    <building>
+      <turretGunDef>Miho_BuildingWeapon_ShipGun</turretGunDef>
+      <turretBurstCooldownTime>0.75</turretBurstCooldownTime>
+      <turretBurstWarmupTime>2.25</turretBurstWarmupTime>
+    </building>
+    <researchPrerequisites>
+      <li>Miho_HeavyPlasma</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Miho_BuildingWeapon_ShipGun</defName>
+    <label>미호 재래식 함포</label>
+    <description>미호 재래식 함포</description>
+    <graphicData>
+      <texPath>NewMech/Bulgasal/BulgasalGun/BulgasalShipgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.32</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <defaultProjectile>Miho_BuildingWeapon_ShipGun_Proj</defaultProjectile>
+        <warmupTime>0.88</warmupTime>
+        <range>45</range>
+        <minRange>1.9</minRange>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Miho_KineticCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_BuildingWeapon_ShipGun_Proj</defName>
+    <label>shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>1.8</drawSize>
+
+    </graphicData>
+    <projectile>
+      <damageDef>MihoGunshot</damageDef>
+	  <explosionRadius>1</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+
+      <damageAmountBase>49</damageAmountBase>
+      <armorPenetrationBase>0.49</armorPenetrationBase>
+      <speed>48</speed>
+    </projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_BigMuzzleFlash_Smoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+</Defs>

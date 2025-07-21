@@ -158,7 +158,6 @@
     </scenario>
   </ScenarioDef>
 
-
   <ScenarioDef>
     <defName>Miho_Start_Three</defName>
     <label>개척자 세 여우들.</label>

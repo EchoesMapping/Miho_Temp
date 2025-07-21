@@ -7,6 +7,6 @@
 		<li IfModActive="Owlchemist.SeedsPleaseLite">SeedspleaseTranslation</li>
         <li IfModActive="mihotattoo.outremer">Tattoo</li>
 		<li IfModActive="DimonSever000.FactionLanguages">RimLanguages</li>
-
+        <li IfModActive="Ludeon.RimWorld.Odyssey">Odyssey</li>
     </v1.6>
 </loadFolders>

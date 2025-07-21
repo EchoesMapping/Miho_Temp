@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef ParentName="BaseMihoPlayerPawnKind">
+    <defName>Miho_PlayerColonistCrewMember</defName>
+    <label>Miho Crew Member</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>Miho_GravshipCrew</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>MihoUrban</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+    <apparelTags>
+	  <li>MihoCommonNecessary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Miho_Apparel_OnSkin_Vacsuit</li>
+      <li>Miho_Apparel_Special_Toxmask</li>
+
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Miho_Under</apparelLayer>
+        <requiredTag>MihoCommon</requiredTag>
+        <stuff>Cloth</stuff>
+      </li>
+    </specificApparelRequirements>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>1200</min>
+      <max>1950</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<maxGenerationAge>55</maxGenerationAge>
+
+  </PawnKindDef>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>Miho_GravshipCrew</defName>
+    <label>미호 탐험가</label>
+    <description>Your own Miho gravship.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Miho_PlayerColonistCrewMember</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedCultures><li>MihoCultures</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icon/Faction/PlayerMiho</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <settlementNameMaker>NamerSettlement_Miho</settlementNameMaker>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	<colorSpectrum>
+		  <li>(1, 1, 1)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Miho_TheGravship</defName>
+    <label>중력부양선 (미호)</label>
+    <description>으아앙!!! 끄아아앙!!! 당신의 사랑스러운 여우들이 메카노이드들을 화나게 한 것 같습니다!</description>
+    <scenario>
+      <summary>메카노이드들에게 쫒기는 세 여우들.</summary>
+      <playerFaction>
+        <factionDef>Miho_GravshipCrew</factionDef>
+      </playerFaction>
+      <parts Inherit="False">
+        
+        <!-- Layers -->
+        <li Class="ScenPart_PlanetLayer">
+          <def>PlanetLayerFixed</def>
+          <tag>Orbit</tag>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomIn</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+        
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>미친 저질 변태 살인 메카노이드들이 몇시간 내로 올겁니다!!! 으앙!!!</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>3</pawnChoiceCount>
+          <customSummary>세명의 미호로 시작합니다.</customSummary>
+          <overrideKinds>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <pawnKind>Miho_PlayerColonistCrewMember</pawnKind>
+            </li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Xeno_CelestialMiho</xenotype>
+              <count>3</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+          </xenotypeCounts>
+        </li>
+
+        <li Class="ScenPart_ForcedMap">
+          <def>ForcedMap</def>
+          <mapGenerator>OrbitalRelay</mapGenerator>
+          <layerDef>Orbit</layerDef>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Gravship</method>
+        </li>
+
+        <li Class="ScenPart_PursuingMechanoids">
+          <def>PursuingMechanoids</def>
+        </li>
+
+        <li Class="ScenPart_DisableQuest">
+          <def>DisableQuest</def>
+          <questDef>MechanoidSignal</questDef>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BasicGravtech</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Drone</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_BasicFactory</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Weapon</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_ApparelBasic</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Machining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BiofuelRefining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_HeavyFactory</project>
+        </li>
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Chemfuel</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Weapon_RifleCQB</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Weapon_PowerHammer</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Weapon_RingedBlade</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_Apparel_Middle_Militia</thingDef>
+          <stuff>Miho_MilitaryGradeBalisticCeramics</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>250</count>
+        </li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Miho_Apparel_Hat_Vacsuit</thingDef>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Miho_Turret_ShipGun</thingDef>
+				<count>1</count>
+			</li>
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Silver</thingDef>
+          <count>250</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>250</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>GravlitePanel</thingDef>
+          <count>400</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Miho_PositiveFlower_Tea</thingDef>
+				<count>200</count>
+			</li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

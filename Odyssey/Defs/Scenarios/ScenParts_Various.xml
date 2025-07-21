@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 
+
+  <ScenPartDef>
+    <defName>MihoSpaceship</defName>
+    <label>MihoSpaceship</label>
+    <category>Misc</category>
+    <scenPartClass>MihoSpaceship.ScenPart_MihoSpaceshipGeneration</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+  
+  <SketchResolverDef>
+    <defName>MihoSpaceship</defName>
+    <isRoot>true</isRoot>
+    <resolver Class="MihoSpaceship.SketchResolver_MihoSpaceship" />
+  </SketchResolverDef>
+    -->
+
+</Defs>
