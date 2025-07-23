@@ -349,15 +349,14 @@
   <ThingDef ParentName="BaseBullet">
     <defName>Miho_MechATMissile_Proj</defName>
     <label>plasma AM missile</label>
-		<thingClass>TorgueMiho.Projectile_Torgue_Rocket</thingClass>
-
+		<thingClass>MihoLib.Projectile_Homing_Explosive</thingClass>
     <graphicData>
       <texPath>Things/Projectile/MihoRocket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <drawSize>3</drawSize>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-		<projectile>
+		<projectile Class="MihoLib.HomingProjectileProperties">
 			<damageDef>MihoPlasma</damageDef>
 			<damageAmountBase>102</damageAmountBase>
 			<armorPenetrationBase>0.8</armorPenetrationBase>
@@ -368,20 +367,13 @@
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
       <screenShakeFactor>1.5</screenShakeFactor>
+      <proximityFuseRange>2</proximityFuseRange>
+      <destroyTicksAfterLosingTrack>0~2</destroyTicksAfterLosingTrack>
 		</projectile>
     <comps>
-      <li Class="Monotail.CompProperties_HomingMissileMiho">
-        <destinationOffsetRadius>0.1</destinationOffsetRadius>
-        <initialOffsetRadius>1</initialOffsetRadius>
-        <inertiaFactor>0.6</inertiaFactor>
-      </li>
 			<li Class="CompProperties_ProjectileEffecter">
 				<effecterDef>Miho_BigMuzzleFlash_RocketSmoke</effecterDef>
 			</li>
     </comps>
   </ThingDef>
- 
-
-
-	
 </Defs>
