@@ -20,6 +20,7 @@
         <canTargetSelf>False</canTargetSelf>
         <canTargetLocations>True</canTargetLocations>
         <canTargetAnimals>False</canTargetAnimals>
+        <canTargetBuildings>False</canTargetBuildings>
         <canTargetPawns>False</canTargetPawns>
         <canTargetMechs>False</canTargetMechs>
       </targetParams>
@@ -265,6 +266,7 @@
       <targetParams>
         <canTargetSelf>False</canTargetSelf>
         <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>False</canTargetBuildings>
         <canTargetAnimals>False</canTargetAnimals>
         <canTargetPawns>False</canTargetPawns>
         <canTargetMechs>False</canTargetMechs>
@@ -408,6 +410,7 @@
         <canTargetSelf>False</canTargetSelf>
         <canTargetLocations>True</canTargetLocations>
         <canTargetAnimals>False</canTargetAnimals>
+        <canTargetBuildings>False</canTargetBuildings>
         <canTargetPawns>False</canTargetPawns>
         <canTargetMechs>False</canTargetMechs>
       </targetParams>
@@ -549,6 +552,7 @@
       <targetParams>
         <canTargetSelf>False</canTargetSelf>
         <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>False</canTargetBuildings>
         <canTargetAnimals>False</canTargetAnimals>
         <canTargetPawns>False</canTargetPawns>
         <canTargetMechs>False</canTargetMechs>

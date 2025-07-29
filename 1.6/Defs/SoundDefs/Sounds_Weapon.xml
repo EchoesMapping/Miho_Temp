@@ -586,4 +586,32 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+  <SoundDef>
+    <defName>Miho_KineticRifleBolt</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoSevenSevenRifleBolt</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>22</min><max>30</max></volumeRange>
+        <pitchRange>0.6~0.7</pitchRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NewGun/MihoKineticCannon</clipPath>
+          </li>
+        </grains>      
+        <volumeRange><min>35</min><max>45</max></volumeRange>
+        <pitchRange>0.72~0.85</pitchRange>
+      </li>
+    </subSounds>
+	
+  </SoundDef>
 </Defs>

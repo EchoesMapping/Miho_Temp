@@ -41,5 +41,97 @@
 
     </operations>
   </Operation>
-  
+
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ludeon.RimWorld.Odyssey</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/PawnKindDef[@Name="MihoBase"]/xenotypeSet</xpath>
+      <value>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.62</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.18</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Voidborn MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Voidborn>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+      </value>
+    </match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ludeon.RimWorld.Odyssey</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/PawnKindDef[defName="Miho_Colonist"]/xenotypeSet</xpath>
+      <value>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.62</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.18</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Voidborn MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Voidborn>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+      </value>
+    </match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ludeon.RimWorld.Odyssey</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/PawnKindDef[@Name="MihoMilBase"]/xenotypeSet</xpath>
+      <value>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.64</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.18</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.04</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Voidborn MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Voidborn>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+      </value>
+    </match>
+	</Operation>
 </Patch>

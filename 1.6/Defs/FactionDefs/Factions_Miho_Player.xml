@@ -28,7 +28,9 @@
 	<backstoryFilters>
       <li>
         <categories>
-          <li>Outlander</li>
+			<li>MihoUrban</li>
+			<li>MihoPioneer</li>
+			<li>MihoMagi</li>
         </categories>
       </li>
     </backstoryFilters>
@@ -91,7 +93,9 @@
 	<backstoryFilters>
       <li>
         <categories>
-          <li>Outlander</li>
+			<li>MihoUrban</li>
+			<li>MihoPioneer</li>
+			<li>MihoMagi</li>
         </categories>
       </li>
     </backstoryFilters>

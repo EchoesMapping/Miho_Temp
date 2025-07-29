@@ -69,7 +69,7 @@
       <Steel>125</Steel>
       <WoodLog>60</WoodLog>
       <Chemfuel>60</Chemfuel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Mannable">
@@ -190,9 +190,9 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
     </statBases>
     <costList>
-      <Steel>75</Steel>
+      <Steel>60</Steel>
 
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
 
     </costList>
@@ -268,6 +268,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>1.5</warmupTime>
         <range>200</range>
+        <minRange>9.9</minRange>
         <burstShotCount>1</burstShotCount>
         <soundCast>Miho_ATRocket</soundCast>
         <muzzleFlashScale>16</muzzleFlashScale>
@@ -287,20 +288,22 @@
 
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingClass>TorgueMiho.Projectile_Torgue_Rocket</thingClass>
-		<projectile Class="TorgueMiho.TorgueProjectileProps">
-			<speed>27</speed>
+		<thingClass>MihoLib.Projectile_Homing_Explosive</thingClass>
+		<projectile Class="MihoLib.HomingProjectileProperties">
 			<damageDef>MihoGunshot</damageDef>
-			<damageAmountBase>45</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<damageAmountBase>54</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<stoppingPower>20</stoppingPower>
+			<speed>24</speed>
 			<explosionRadius>2.5</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+            <screenShakeFactor>1.5</screenShakeFactor>
+            <proximityFuseRange>2</proximityFuseRange>
+            <destroyTicksAfterLosingTrack>0~2</destroyTicksAfterLosingTrack>
 		</projectile>
     <comps>
-      <li Class="Monotail.CompProperties_HomingMissileMiho">
-        <destinationOffsetRadius>0.1</destinationOffsetRadius>
-        <initialOffsetRadius>1</initialOffsetRadius>
-        <inertiaFactor>0.6</inertiaFactor>
-      </li>
 			<li Class="CompProperties_ProjectileEffecter">
 				<effecterDef>Miho_BigMuzzleFlash_RocketSmoke</effecterDef>
 			</li>
@@ -344,15 +347,15 @@
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
-    <stackLimit>10</stackLimit>
+    <stackLimit>25</stackLimit>
     <costList>
 	<ComponentIndustrial>1</ComponentIndustrial>
-     <Chemfuel>60</Chemfuel>
+     <Chemfuel>35</Chemfuel>
       <Steel>30</Steel>
     </costList>
     <projectileWhenLoaded>Miho_Missile_Proj</projectileWhenLoaded>
     <statBases>
-      <WorkToMake>400</WorkToMake>
+      <WorkToMake>120</WorkToMake>
       <MaxHitPoints>45</MaxHitPoints>
       <MarketValue>10.5</MarketValue>
       <Mass>4</Mass>
@@ -405,7 +408,7 @@
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
-    <stackLimit>10</stackLimit>
+    <stackLimit>25</stackLimit>
     <costList>
 	<ComponentIndustrial>1</ComponentIndustrial>
      <Uranium>10</Uranium>
@@ -413,7 +416,7 @@
     </costList>
     <projectileWhenLoaded>Miho_MechATMissile_Proj</projectileWhenLoaded>
     <statBases>
-      <WorkToMake>750</WorkToMake>
+      <WorkToMake>150</WorkToMake>
       <MaxHitPoints>45</MaxHitPoints>
       <MarketValue>48</MarketValue>
       <Mass>5</Mass>
@@ -459,13 +462,13 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>48000</WorkToMake>
+      <WorkToMake>32000</WorkToMake>
       <Mass>8.8</Mass>
     </statBases>
     <costList>
-      <WoodLog>60</WoodLog>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <WoodLog>45</WoodLog>
+      <Steel>45</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
       <Miho_Missile>3</Miho_Missile>
     </costList>
@@ -564,10 +567,10 @@
 		</graphicData>
 		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
 		<projectile Class="MihoLib.ProjectileProperties_fragment">
-			<speed>60</speed>
+			<speed>54</speed>
 			<damageDef>MihoGunshot</damageDef>
-			<damageAmountBase>45</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<damageAmountBase>56</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<explosionRadius>2.5</explosionRadius>
 		</projectile>
 		<comps>

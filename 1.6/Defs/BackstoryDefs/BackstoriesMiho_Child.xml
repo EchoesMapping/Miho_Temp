@@ -25,6 +25,7 @@
 				<defName Degree="-2">Beauty</defName>
 			</li>
 		</disallowedTraitsChance>
+       <requiresSpawnCategory>true</requiresSpawnCategory>
 		<forcedTraitsChance>
 			<li>
 				<options>
@@ -37,7 +38,6 @@
 			</li>
 		</forcedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
 		<forcedHediffs>
 			<li>Miho_Elegans_Hediff</li>
 			<li>Miho_Tail_Hediff</li>
@@ -72,7 +72,6 @@
 			</li>
 		</forcedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
 		<forcedHediffs>
 			<li>Miho_Elegans_Hediff</li>
 			<li>Miho_Tail_Hediff</li>

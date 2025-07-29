@@ -431,7 +431,7 @@
       <ThingDef>Miho_Mech_Clibanar</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_HeavyWarBattery</researchPrerequisite>
-    <gestationCycles>6</gestationCycles>
+    <gestationCycles>5</gestationCycles>
 
   </RecipeDef>
 </Defs>

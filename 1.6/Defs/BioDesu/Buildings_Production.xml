@@ -20,6 +20,8 @@
       <li>Miho_Mech_Sapsal</li>
 	 <li>Miho_Mech_SapsalPsy</li>
       <li>Miho_Mech_DesertSphex</li>
+      <li>Miho_Mech_DesertSphexExplosion</li>
+
       <li>Miho_Mech_Bulgasal</li>
       <li>Miho_Mech_BulgasalGrenade</li>
       <li>Miho_Mech_CataphractRocket</li>
@@ -34,7 +36,7 @@
     </recipes>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
-      <WorkToBuild>8000</WorkToBuild>
+      <WorkToBuild>10000</WorkToBuild>
       <Mass>25</Mass>
       <Flammability>0.5</Flammability>
     </statBases>
@@ -44,7 +46,7 @@
     <costList>
       <Miho_Ceramics>300</Miho_Ceramics>
       <Steel>75</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>8</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
 
     </costList>
@@ -114,8 +116,8 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1000</basePowerConsumption>
-        <idlePowerDraw>50</idlePowerDraw>
+        <basePowerConsumption>1600</basePowerConsumption>
+        <idlePowerDraw>100</idlePowerDraw>
       </li>
     </comps>
   </ThingDef>

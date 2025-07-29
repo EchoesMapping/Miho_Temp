@@ -48,7 +48,6 @@
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
-        <scale>0.7</scale>
       </drawData>
       <renderSkipFlags>
         <li>None</li>
@@ -151,7 +150,6 @@
         <li>None</li>
       </renderSkipFlags>
       <drawData>
-        <scale>0.7</scale>
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
@@ -229,6 +227,7 @@
     </costList>
     <recipeMaker>
       <recipeUsers Inherit="false">
+        <li>Miho_TableMachining</li>
       </recipeUsers>
     </recipeMaker>
     <thingCategories>
@@ -246,9 +245,6 @@
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Miho/Apparel/SpecialGlasses/SpecialGlasses</wornGraphicPath>
-      <drawData>
-				<scale>0.7</scale>
-			</drawData>
       <parentTagDef>ApparelHead</parentTagDef>
       <bodyPartGroups>
         <li>Eyes</li>
@@ -305,7 +301,7 @@
         <capMods>
           <li>
             <capacity>Sight</capacity>
-            <offset>0.1</offset>
+            <offset>0.05</offset>
           </li>
         </capMods>
       </li>
@@ -354,7 +350,6 @@
         <li>None</li>
       </renderSkipFlags>
       <drawData>
-        <scale>0.7</scale>
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
@@ -442,9 +437,8 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.03</MoveSpeed>
       <ToxicEnvironmentResistance>1.8</ToxicEnvironmentResistance>
-
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.66</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -459,7 +453,6 @@
         <dataNorth>
           <layer>-3</layer>
         </dataNorth>
-        <scale>0.7</scale>
       </drawData>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <layers>
@@ -549,7 +542,6 @@
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
-        <scale>0.7</scale>
       </drawData>
       <wornGraphicPath>Miho/Apparel/SpecialMaid/SpecialMaid</wornGraphicPath>
       <renderSkipFlags>

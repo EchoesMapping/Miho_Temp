@@ -34,7 +34,6 @@
         <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
       </xenotypeChances>
     </xenotypeSet>
-
     <useFactionXenotypes>false</useFactionXenotypes>
 
     <styleItemTags>
@@ -860,6 +859,26 @@
         <range>5~15</range>
       </li>
     </skills>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.45</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.08</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0.12</Xeno_CelestialMiho_Desert>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.02</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.33</Xeno_CelestialMiho_Highmate>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
 

@@ -206,6 +206,10 @@
           <def>HumanlikeAdult</def>
           <minAge>18</minAge>
         </li>
+		<li>
+		  <def>HumanlikeChild</def>
+		  <minAge>99999999</minAge>
+		</li>
       </lifeStageAges>
 	  
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -366,7 +370,12 @@
                <li>9</li>
                <li>12</li>
             </growthAges>
-
+			<raceGenes>
+				<li>
+					<defName>Gene_CelestialMiho</defName>
+					<chance>100</chance>
+				</li>
+			</raceGenes>
 			<!-- 
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>-->
             <forcedRaceTraitEntries>
@@ -531,6 +540,7 @@
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/TailArctic/Tail</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/TailDesert/Tail</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/Tail/Tail</Gene>
+							<Gene For="AptitudeTerrible_Animals">Miho/Addon/Tail/Tail</Gene>
 						</extendedGraphics>
 						<conditions>
                          <Drafted>false</Drafted>                   					
@@ -587,6 +597,8 @@
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/TailMovingArctic/TailMoving</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/TailMovingDesert/TailMoving</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/TailMoving/TailMoving</Gene>
+							<Gene For="AptitudeTerrible_Animals">Miho/Addon/TailMoving/TailMoving</Gene>
+
 						</extendedGraphics>
 						
 						<conditions>
@@ -914,6 +926,7 @@
 						<extendedGraphics>
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarRightArctic/Ear</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
+							<Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/EarRight/Ear</Gene>
 						</extendedGraphics>
 						<conditions>
@@ -992,6 +1005,7 @@
 						<extendedGraphics>
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarRightArctic/Ear</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
+							<Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/Addon/EarRightDesert/Ear</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/EarRight/Ear</Gene>
 						</extendedGraphics>
 						<conditions>
@@ -1069,6 +1083,7 @@
 						<extendedGraphics>
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarLeftArctic/Ear</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
+							<Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/EarLeft/Ear</Gene>
 						</extendedGraphics>
 						<conditions>
@@ -1147,6 +1162,7 @@
 						<extendedGraphics>
 							<Gene For="Ears_Arctic_Miho">Miho/Addon/EarLeftArctic/Ear</Gene>
 							<Gene For="Ears_Desert_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
+							<Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/Addon/EarLeftDesert/Ear</Gene>
 							<Gene For="Gene_CelestialMiho">Miho/Addon/EarLeft/Ear</Gene>
 						</extendedGraphics>
 						<conditions>
@@ -1228,6 +1244,7 @@
 							<BodyType For="Female">
 							  <path>Miho/Head/Head</path>
 							  <extendedGraphics>
+                                 <Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/HeadVoid/Head</Gene>
                                  <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
                                  <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
                                  <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
@@ -1239,6 +1256,7 @@
 							  <extendedGraphics>
 							    <Gender For="Female">
 							     <extendedGraphics>
+                                    <Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/HeadVoid/Head</Gene>
                                     <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
                                     <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
                                     <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
@@ -1247,12 +1265,12 @@
 							    </Gender>
 							    <Gender For="Male">
 							     <extendedGraphics>
+                                    <Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/HeadVoidMale/Head</Gene>
                                     <Gene For="Ears_Arctic_Miho">Miho/HeadArcticMale/Head</Gene>
                                     <Gene For="Ears_Desert_Miho">Miho/HeadDesertMale/Head</Gene>
                                     <Gene For="Ears_Highland_Miho">Miho/HeadHighlandMale/Head</Gene>
                                     <Gene For="Ears_Highmate_Miho">Miho/HeadHighmateMale/Head</Gene>
 							        <Gene For="Gene_CelestialMiho">Miho/HeadMale/Head</Gene>
-
                                  </extendedGraphics>
 							    </Gender>
 						      </extendedGraphics> 
@@ -1331,6 +1349,7 @@
 							  <path>Miho/Blank</path>
 							  <extendedGraphics>
 					     		 <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Female</Hediff>
+                                 <Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/BodyVoid/Naked_Female</Gene>
                                  <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Female</Gene>
                               </extendedGraphics>
 							</BodyType>
@@ -1338,6 +1357,7 @@
 							  <path>Miho/Blank</path>
 							  <extendedGraphics>
 			   					 <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/BodyGhoul/Naked_Thin</Hediff>
+                                 <Gene MayRequire="ludeon.rimworld.odyssey" For="Ears_Voidborn_Miho">Miho/BodyVoid/Naked_Thin</Gene>
                                  <Gene For="Ears_Desert_Miho">Miho/BodyTanned/Naked_Thin</Gene>
                               </extendedGraphics>
 							</BodyType>
@@ -1578,7 +1598,11 @@
 <geneList>
   <li>Ears_Arctic_Miho</li>
   <li>Ears_Desert_Miho</li>
+  <li>Ears_Highland_Miho</li>
+  <li>Ears_Highmate_Miho</li>
   <li>Gene_CelestialMiho</li>
+  <li MayRequire="Ludeon.RimWorld.Odyssey">Ears_Voidborn_Miho</li>
+
 </geneList>
 <xenotypeList>
                     <li>Xeno_CelestialMiho</li>
@@ -1586,6 +1610,7 @@
                     <li>Xeno_CelestialMiho_Desert</li>
                     <li>Xeno_CelestialMiho_Highland</li>
                     <li>Xeno_CelestialMiho_Highmate</li>
+    	        	<li MayRequire="Ludeon.RimWorld.Odyssey">Xeno_CelestialMiho_Voidborn</li>
 
 					
 </xenotypeList>
@@ -2196,6 +2221,11 @@
     <stages>
       <li>
         <label>애교받음</label>
+        <description>나보다 나을게 없는 이런 하등한것이 귀엽다는 이유 하나만으로 인간들에게 사랑받는다고? 난 용납안돼.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>더 애교받음</label>
         <description>나보다 나을게 없는 이런 하등한것이 귀엽다는 이유 하나만으로 인간들에게 사랑받는다고? 난 용납안돼.</description>
         <baseMoodEffect>-1</baseMoodEffect>
       </li>

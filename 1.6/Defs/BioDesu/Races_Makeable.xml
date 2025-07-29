@@ -223,6 +223,8 @@
       <Miho_Mech_HeavyMechCore>1</Miho_Mech_HeavyMechCore>
     </products>
     <researchPrerequisite>Miho_MechCore</researchPrerequisite>
+    <gestationCycles>1</gestationCycles>
+
   </RecipeDef>
 
   <ThingDef ParentName="MihoLightMechanoid">
@@ -381,6 +383,8 @@
       <Miho_Mech_HeavyRocketCore>1</Miho_Mech_HeavyRocketCore>
     </products>
     <researchPrerequisite>Miho_Persona</researchPrerequisite>
+    <gestationCycles>3</gestationCycles>
+
   </RecipeDef>
   
 </Defs>

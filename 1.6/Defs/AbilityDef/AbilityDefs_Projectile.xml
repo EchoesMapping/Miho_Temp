@@ -938,7 +938,7 @@
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
         <interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
         <interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
-        <hitPoints>550</hitPoints>
+        <hitPoints>500</hitPoints>
         <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
         <color>(0.4, 0.4, 0.4)</color>
         <chargeDurationTicks>15000</chargeDurationTicks>

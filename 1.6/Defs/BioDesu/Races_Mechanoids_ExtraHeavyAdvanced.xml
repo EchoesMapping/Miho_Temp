@@ -294,7 +294,7 @@
       <ThingDef>Miho_Mech_Balbari</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_HeavyPlasma</researchPrerequisite>
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>3</gestationCycles>
 
   </RecipeDef>
 
@@ -376,4 +376,8 @@
 			</li>
     </comps>
   </ThingDef>
+ 
+
+
+	
 </Defs>

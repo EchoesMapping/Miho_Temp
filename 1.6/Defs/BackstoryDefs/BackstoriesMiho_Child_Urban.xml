@@ -22,7 +22,6 @@
   </li>
 </forcedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
 		<forcedHediffs>
 			<li>Miho_Tail_Hediff</li>
 		    <li>Miho_Elegans_Hediff</li>

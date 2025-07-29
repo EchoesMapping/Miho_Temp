@@ -676,7 +676,7 @@
       <ThingDef>Miho_Mech_Bulgasal</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_LightWarDrone</researchPrerequisite>
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>3</gestationCycles>
 
   </RecipeDef>
   
@@ -732,7 +732,7 @@
     <descriptionHyperlinks>
       <ThingDef>Miho_Mech_Bulgasal</ThingDef>
     </descriptionHyperlinks>
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>3</gestationCycles>
 
   </RecipeDef>
   
@@ -789,7 +789,7 @@
       <ThingDef>Miho_Mech_BulgasalGrenade</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_LightWarDrone</researchPrerequisite>
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>3</gestationCycles>
 
   </RecipeDef>
   

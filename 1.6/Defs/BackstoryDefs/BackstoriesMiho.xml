@@ -10,13 +10,12 @@
     <defName Degree="-2">Beauty</defName>
   </li>
 </disallowedTraitsChance>
-
+<requiresSpawnCategory>true</requiresSpawnCategory>
 		<forcedHediffs>
 			<li MayRequire="mihotattoo.outremer">Miho_TattooPrepare</li>
 		</forcedHediffs>
 		<bodyTypeMale>Thin</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
-	</AlienRace.AlienBackstoryDef>
+</AlienRace.AlienBackstoryDef>
 
   <AlienRace.AlienBackstoryDef ParentName="Miho_BaseBackstory">
     <defName>Miho_Adult_LiaisonOfficer</defName>

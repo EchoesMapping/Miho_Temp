@@ -359,6 +359,7 @@
       <IncomingDamageFactor>-0.1</IncomingDamageFactor>
       <MeditationFocusGain>0.25</MeditationFocusGain>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -847,7 +848,7 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>1.1</MoveSpeed>
-      <RangedCooldownFactor>-0.1</RangedCooldownFactor>
+      <RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
       <InjuryHealingFactor>2</InjuryHealingFactor>
       <PsychicSensitivity>-0.25</PsychicSensitivity>
       <MeleeDamageFactor>0.5</MeleeDamageFactor>
@@ -1224,4 +1225,5 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+
 </Defs>

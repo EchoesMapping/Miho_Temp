@@ -35,13 +35,13 @@
     <label>오니솝터 (농업용)</label>
     <description>농업에 적합한 팔과 커터가 달린 스펙스급 오니솝터 입니다.</description>
     <statBases>
-      <MoveSpeed>7</MoveSpeed>
-      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <MoveSpeed>7.2</MoveSpeed>
+      <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
       <BandwidthCost>2</BandwidthCost>
       <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
 	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
-        <PlantWorkSpeed>1.05</PlantWorkSpeed>
+        <PlantWorkSpeed>1.0</PlantWorkSpeed>
     </statBases>
     <race>
       <body>Mech_Agrihand</body>
@@ -135,8 +135,7 @@
     <charges>2</charges>
     <cooldownTicksRange>60000</cooldownTicksRange><!-- 24h -->
     <verbProperties>
-      <range>30</range>
-      <minRange>6</minRange>
+      <range>14</range>
       <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
       <requireLineOfSight>false</requireLineOfSight>
       <flightEffecterDef>JumpMechFlightEffect</flightEffecterDef>
@@ -147,6 +146,154 @@
     <jobDef>CastJump</jobDef>
   </AbilityDef>
 
+
+  <!-- Tunneler2 -->
+  <ThingDef ParentName="MihoOrniMechanoid">
+    <defName>Miho_Mech_DesertSphexExplosion</defName>
+    <label>오니솝터 (자폭공격용)</label>
+    <description>농업에 적합한 팔과 커터가 달렸었던 스펙스급 오니솝터 입니다. 폭탄을 달기 위해 굉장히 경량화 되었습니다.</description>
+    <statBases>
+      <MoveSpeed>7.6</MoveSpeed>
+      <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+	  <WastepacksPerRecharge>0</WastepacksPerRecharge>
+        <PlantWorkSpeed>1.0</PlantWorkSpeed>
+    </statBases>
+    <race>
+      <body>Mech_Agrihand</body>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>0.9</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+            <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+        <li>
+          <def>Miho_MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+            <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+      </lifeStageAges>
+        <mechEnabledWorkTypes>
+        </mechEnabledWorkTypes>
+        <mechWorkTypePriorities>
+        </mechWorkTypePriorities>
+    </race>
+    <tools>
+        <li>
+          <label>right blade</label>
+          <capacities>
+            <li>Cut</li>
+            <li>Stab</li>
+          </capacities>
+          <power>21</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+          <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+    </tools>
+
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Miho_Mech_DesertSphexExplosion</defName>
+    <label>오니솝터 (자폭공격용)</label>
+    <race>Miho_Mech_DesertSphexExplosion</race>
+    <combatPower>200</combatPower>
+
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Sphex/Sphex</texPath>
+            <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>NewMech/Sphex/Sphex</texPath>
+            <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+    <abilities>
+      <li>Miho_MechAbility_High_JumpExplosion</li>
+    </abilities>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+  <AbilityDef ParentName="LongJumpMech">
+    <defName>Miho_MechAbility_High_JumpExplosion</defName>
+    <label>마지막 고속 고공 비행</label>
+    <description>차체 안에 있는 열을 이용해 증기를 발사하여 고속으로 날아간 후, 본체에 내장된 폭약과 함깨 사라집니다.</description>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <charges>1</charges>
+    <cooldownTicksRange>60000</cooldownTicksRange><!-- 24h -->
+    <verbProperties>
+      <range>14</range>
+      <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
+      <requireLineOfSight>false</requireLineOfSight>
+      <flightEffecterDef>JumpMechFlightEffect</flightEffecterDef>
+      <flyWithCarriedThing>true</flyWithCarriedThing>
+      <soundLanding>JumpMechLand</soundLanding>
+      <soundCast Inherit="False" />
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Miho_MechAbility_High_JumpExplosion_Proj</projectileDef>
+      </li>
+    </comps>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_MechAbility_High_JumpExplosion_Proj</defName>
+    <label>explosion</label>
+    <thingClass>Projectile_Explosive</thingClass>
+
+    <graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>0.05</drawSize>
+    </graphicData>
+		<projectile>
+			<damageDef>MihoGunshot</damageDef>
+			<damageAmountBase>155</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<stoppingPower>7</stoppingPower>
+			<speed>22</speed>
+			<explosionRadius>3.1</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_BigMuzzleFlash_RocketSmoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
   <RecipeDef ParentName="MediumMechanoidRecipe">
     <defName>Miho_Mech_DesertSphex</defName>
     <label>오니솝터 제작</label>
@@ -184,9 +331,50 @@
       <ThingDef>Miho_Mech_DesertSphex</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_Drone</researchPrerequisite>
+    <gestationCycles>1</gestationCycles>
+
   </RecipeDef>
   
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Miho_Mech_DesertSphexExplosion</defName>
+    <label>오니솝터(자폭용) 제작</label>
+    <description>오니솝터 제작.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Shell_HighExplosive</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Miho_Mech_DesertSphex>1</Miho_Mech_DesertSphex>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Miho_Mech_DesertSphex</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>Miho_Drone</researchPrerequisite>
+    <gestationCycles>1</gestationCycles>
 
+  </RecipeDef>
 <!--
     <ThingDef ParentName="MihoOrniMechanoid">
       <defName>Miho_Mech_Kampe</defName>

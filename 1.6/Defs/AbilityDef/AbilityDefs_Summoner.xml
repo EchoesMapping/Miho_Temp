@@ -227,7 +227,7 @@
   <AbilityDef ParentName="MihoPsycastBase">
     <defName>Miho_Ability_Spawn_Turret</defName>
     <label>나약의 창 소환</label>
-    <aiCanUse>true</aiCanUse>
+    <aiCanUse>false</aiCanUse>
     <description>적을 약화시키는 자동포탑을 소환합니다.</description>
     <iconPath>Icon/Abilities/MihoTurret</iconPath>
     <writeCombatLog>True</writeCombatLog>
@@ -243,7 +243,6 @@
         <canTargetSelf>False</canTargetSelf>
         <canTargetLocations>True</canTargetLocations>
         <canTargetBuildings>false</canTargetBuildings>
-
         <canTargetAnimals>False</canTargetAnimals>
         <canTargetPawns>False</canTargetPawns>
         <canTargetMechs>False</canTargetMechs>

@@ -43,9 +43,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
@@ -122,9 +120,7 @@
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<layers>
 				<li>Miho_Special</li>
 			</layers>
@@ -235,9 +231,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -305,9 +299,7 @@
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -651,9 +643,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -736,9 +726,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -819,9 +807,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -908,9 +894,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -994,9 +978,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1079,9 +1061,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1161,9 +1141,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1254,9 +1232,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>FullHead</li>
 				<li>Eyes</li>
@@ -1351,9 +1327,7 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			<drawData>
-				<scale>0.72</scale>
-			</drawData>
+			 
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -1406,6 +1380,7 @@
 		</comps>
 		<stages>
 			<li>
+
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -1415,5 +1390,4 @@
 			</li>
 		</stages>
 	</HediffDef>
-
 </Defs>

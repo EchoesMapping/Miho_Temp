@@ -32,12 +32,9 @@
       <li>Gene_CelestialMiho</li>
       <li>AptitudeStrong_Social</li>
       <li>AptitudeTerrible_Animals</li>
-
-	  
-
-
     </genes>
   </XenotypeDef>
+  
   <XenotypeDef>
     <defName>Xeno_CelestialMiho_Arctic</defName>
     <label>아르티코스 미호</label>
@@ -48,7 +45,7 @@
     <nameMaker>NamerPersonMiho</nameMaker>
     <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
     <chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+	<factionlessGenerationWeight>0</factionlessGenerationWeight>
 
     <genes>
       <li>Skin_SheerWhite</li>
@@ -158,41 +155,32 @@
     <nameMaker>NamerPersonMiho</nameMaker>
     <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
     <chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+	<factionlessGenerationWeight>0</factionlessGenerationWeight>
 
     <genes>
       <li>Skin_SheerWhite</li>
-
-	
       <li>Beauty_Beautiful</li>
       <li>Hair_Miho_Sky</li>
-	  
       <li>Hair_Miho_Pink</li>
       <li>Hair_Grayless</li>
-
       <li>Gene_Miho_AdvancedAuditory</li>
-
       <li>WoundHealing_Slow</li>
-
       <li>Libido_High</li>
       <li>Gene_CelestialMiho</li>
       <li>Ears_Highmate_Miho</li>
-	 
       <li>Gene_Miho_Naked</li>
-
       <li>Mood_Sanguine</li>
       <li>KindInstinct</li>
       <li>Delicate</li>
+      <li>MeleeDamage_Weak</li>
       <li>AptitudeRemarkable_Social</li>
       <li>AptitudeStrong_Artistic</li>
-
+	  <li>AptitudeStrong_Medicine</li>
       <li>AptitudePoor_Mining</li>
       <li>AptitudePoor_Construction</li>
       <li>AptitudeTerrible_Animals</li>
-
       <li>AptitudeTerrible_Shooting</li>
       <li>AptitudeTerrible_Melee</li>
-
     </genes>
   </XenotypeDef>
   
@@ -351,12 +339,10 @@
     <defName>Ears_Highmate_Miho</defName>
     <label>포르네</label>
     <description>번화계의 "특별한" 서비스 용도로 설계된 포르네들은 굉장한 사회적 능력과 상대를 매혹시키는 초능력을 가지고 있습니다. 대부분의 접대 상황에서는 엄청난 재능을 보여주지만, 안타깝게도 다른 분야에서는 쉽게 활약하지 못합니다.</description>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>-1</biostatMet>
     <biostatCpx>2</biostatCpx>
 
     <iconPath>Icon/GeneXeno/Love_Ears</iconPath>
-    <statOffsets>
-    </statOffsets>
     <abilities>
       <li>Miho_Ability_HighmateSeduce</li>
     </abilities>

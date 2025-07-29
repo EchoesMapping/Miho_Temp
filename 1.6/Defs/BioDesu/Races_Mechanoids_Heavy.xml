@@ -477,6 +477,7 @@
       <ThingDef>Miho_Mech_Sapsal</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_GuardDrone</researchPrerequisite>
+    <gestationCycles>2</gestationCycles>
   </RecipeDef>
   
   <RecipeDef ParentName="MediumMechanoidRecipe">
@@ -524,5 +525,7 @@
       <ThingDef>Miho_Mech_Sapsal</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_CommandDrone</researchPrerequisite>
+    <gestationCycles>2</gestationCycles>
+
   </RecipeDef>
 </Defs>
