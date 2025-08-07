@@ -37,10 +37,8 @@
   <Miho_Mech_HeavyMechCore.description>Make Large Mechanite Core.</Miho_Mech_HeavyMechCore.description>
   <Miho_Mech_DesertSphex.label>Making Onisopter</Miho_Mech_DesertSphex.label>
   <Miho_Mech_DesertSphex.description>Make Onisopter.</Miho_Mech_DesertSphex.description>
-  <!--
   <Miho_Mech_Kampe.label>Making Recycling Bot</Miho_Mech_Kampe.label>
   <Miho_Mech_Kampe.description>Make Recycling Bot.</Miho_Mech_Kampe.description>
-   -->
   <Miho_Mech_Bulgasal.label>Making Multi Legged Heavy Tank (Anti-Tank)</Miho_Mech_Bulgasal.label>
   <Miho_Mech_Bulgasal.description>Make Multi Legged Heavy Tank (Anti-Tank).</Miho_Mech_Bulgasal.description>
   <Miho_Mech_BulgasalSiege.label>Making Multi Legged Heavy Tank (Siege)</Miho_Mech_BulgasalSiege.label>

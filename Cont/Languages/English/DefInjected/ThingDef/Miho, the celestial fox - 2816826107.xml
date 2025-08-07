@@ -60,10 +60,8 @@
   <RawPosFlower_Dust.label>Helianto Powder</RawPosFlower_Dust.label>
   <RawPosFlower_Dust.description>Pure powder made from concentrated mechanites in sunflower petals. Easier to store.</RawPosFlower_Dust.description>
   <Miho_Hair_Filth.label>Miho fur</Miho_Hair_Filth.label>
-  <!-- 
   <Miho_CeramicsPaste.label>Miho Ceramic Dough</Miho_CeramicsPaste.label>
   <Miho_CeramicsPaste.description>Raw material for ceramics, well mixed with various elements.</Miho_CeramicsPaste.description>
-  -->
   <Miho_Ceramics.label>Miho Ceramic</Miho_Ceramics.label>
   <Miho_Ceramics.description>Durable pottery.</Miho_Ceramics.description>
   <Miho_MilitaryGradeBalisticCeramics.label>Miho Military Ballistic Ceramics</Miho_MilitaryGradeBalisticCeramics.label>
@@ -78,15 +76,15 @@
   <Miho_InariZushi.description>Sushi lunchbox favored by foxes. Made using alternative tofu.</Miho_InariZushi.description>
   <Miho_DummyWeapon_DO_NOT_SPAWN.label>psychic abilities</Miho_DummyWeapon_DO_NOT_SPAWN.label>
   <Miho_DummyWeapon_DO_NOT_SPAWN.description>Only here so that the battle log doesn't break when someone is hit by a psychic ability.</Miho_DummyWeapon_DO_NOT_SPAWN.description>
-  <Miho_Ability_Starfall_Proj.label>Knife</Miho_Ability_Starfall_Proj.label>
-  <Miho_Ability_Starfall_Proj.label>Knife</Miho_Ability_Starfall_Proj.label>
+  <Miho_Ability_FanofKnives_Proj.label>Knife</Miho_Ability_FanofKnives_Proj.label>
+  <Miho_Ability_FanofKnives_ProjProj.label>Knife</Miho_Ability_FanofKnives_ProjProj.label>
   <Miho_Hawk_Proj.label>Hawk</Miho_Hawk_Proj.label>
   <Miho_Ensnare_Proj.label>Ensnare</Miho_Ensnare_Proj.label>
   <Miho_Fireball_Small_Proj.label>fireball</Miho_Fireball_Small_Proj.label>
   <Miho_Fireball_Proj.label>fireball</Miho_Fireball_Proj.label>
   <Miho_Fireball_Adept_Proj.label>fire arrow</Miho_Fireball_Adept_Proj.label>
-  <Miho_Fireball_Adept_Proj.label>javelin</Miho_Fireball_Adept_Proj.label>
-  <Miho_PredatoryGaze_Proj.label>javelin</Miho_PredatoryGaze_Proj.label>
+  <Miho_Fireball_Adept_ProjProj.label>javelin</Miho_Fireball_Adept_ProjProj.label>
+  <Miho_Thunder_Proj.label>javelin</Miho_Thunder_Proj.label>
   <Miho_TalismanStun_Proj.label>Talisman</Miho_TalismanStun_Proj.label>
   <Miho_FanofKnives_Proj.label>knife</Miho_FanofKnives_Proj.label>
   <Miho_Butterfly_Portal_Dummy.label>Blade Butterfly Portal Dummy</Miho_Butterfly_Portal_Dummy.label>
@@ -99,8 +97,8 @@
   <Miho_ButterflyHaze_Portal.description>Blade Butterfly Portal.</Miho_ButterflyHaze_Portal.description>
   <Miho_Fox_Portal.label>Carrying Fox Portal</Miho_Fox_Portal.label>
   <Miho_Fox_Portal.description>Carrying Fox Portal.</Miho_Fox_Portal.description>
-  <Miho_Abomi_Portal.label>Mechanite Abomination Portal</Miho_Abomi_Portal.label>
-  <Miho_Abomi_Portal.description>Mechanite Abomination Portal.</Miho_Abomi_Portal.description>
+  <Miho_Thrumbo_Portal.label>Mechanite Abomination Portal</Miho_Thrumbo_Portal.label>
+  <Miho_Thrumbo_Portal.description>Mechanite Abomination Portal.</Miho_Thrumbo_Portal.description>
   <Miho_Turret_Flame.label>Foxfire Furnace</Miho_Turret_Flame.label>
   <Miho_Turret_Flame.description>A turret that looks like a furnace.</Miho_Turret_Flame.description>
   <Miho_TurretGun_Flame_Proj.label>fireball</Miho_TurretGun_Flame_Proj.label>
@@ -117,15 +115,15 @@
   <Miho_Fox.tools.0.label>left claw</Miho_Fox.tools.0.label>
   <Miho_Fox.tools.1.label>right claw</Miho_Fox.tools.1.label>
   <Miho_Fox.tools.3.label>head</Miho_Fox.tools.3.label>
-  <Miho_Abomi.label>Mechanite Abomination</Miho_Abomi.label>
-  <Miho_Abomi.description>A hideously mutated secret weapon. Take a good look at it...</Miho_Abomi.description>
-  <Miho_Abomi.tools.0.label>tentacles</Miho_Abomi.tools.0.label>
-  <Miho_Abomi.tools.1.label>head</Miho_Abomi.tools.1.label>
+  <Miho_Thrumbo.label>Mechanite Abomination</Miho_Thrumbo.label>
+  <Miho_Thrumbo.description>A hideously mutated secret weapon. Take a good look at it...</Miho_Thrumbo.description>
+  <Miho_Thrumbo.tools.0.label>tentacles</Miho_Thrumbo.tools.0.label>
+  <Miho_Thrumbo.tools.1.label>head</Miho_Thrumbo.tools.1.label>
   <Filth_MihoMechanite.label>Mechanite Crystal</Filth_MihoMechanite.label>
   <Miho_BulletShieldPsychic.label>Fox Shield</Miho_BulletShieldPsychic.label>
   <Miho_Butterfly_Spawn_Proj.label>MihoSpawner</Miho_Butterfly_Spawn_Proj.label>
   <Miho_Fox_Spawn_Proj.label>MihoSpawner</Miho_Fox_Spawn_Proj.label>
-  <Miho_Abomi_Spawn_Proj.label>MihoSpawner</Miho_Abomi_Spawn_Proj.label>
+  <Miho_Thrumbo_Spawn_Proj.label>MihoSpawner</Miho_Thrumbo_Spawn_Proj.label>
   <Miho_Turret_Spawn_Proj.label>MihoSpawner</Miho_Turret_Spawn_Proj.label>
   <Miho_NeuroSlow_Proj.label>NeuroSlow</Miho_NeuroSlow_Proj.label>
   <Miho_NeuroKill_Proj.label>NeuroKill</Miho_NeuroKill_Proj.label>
@@ -247,11 +245,9 @@
   <Miho_Mech_DesertSphex.label>Ornithopter (Agricultural)</Miho_Mech_DesertSphex.label>
   <Miho_Mech_DesertSphex.description>Sphex-class Onisopter, with arms and cutters suitable for agriculture.</Miho_Mech_DesertSphex.description>
   <Miho_Mech_DesertSphex.tools.0.label>right blade</Miho_Mech_DesertSphex.tools.0.label>
-  <!-- 
   <Miho_Mech_Kampe.label>Recycle Bot</Miho_Mech_Kampe.label>
   <Miho_Mech_Kampe.description>A recycling bot named 'Kampe' made to encourage recycling. It collects trash while cleaning and turns it into valuable resources.</Miho_Mech_Kampe.description>
   <Miho_Mech_Kampe.tools.0.label>head</Miho_Mech_Kampe.tools.0.label>
-  -->
   <Miho_Mech_Bulgasal.label>Multi Legged Heavy Tank</Miho_Mech_Bulgasal.label>
   <Miho_Mech_Bulgasal.description>Bulgasahl-class Multi Legged Heavy Tank for combat.</Miho_Mech_Bulgasal.description>
   <Miho_Mech_Bulgasal.tools.0.label>front left leg</Miho_Mech_Bulgasal.tools.0.label>
@@ -270,7 +266,7 @@
   <Miho_MechWeapon_PlasmaHowitzer.label>Miho Plasma Howitzer (Multi Legged Tank)</Miho_MechWeapon_PlasmaHowitzer.label>
   <Miho_MechWeapon_PlasmaHowitzer.description>A siege howitzer using 80mm plasma shells. Though it has a long cooling process, it boasts firepower commensurate with it.</Miho_MechWeapon_PlasmaHowitzer.description>
   <Miho_MechWeapon_PlasmaHowitzer_Proj.label>plasma</Miho_MechWeapon_PlasmaHowitzer_Proj.label>
-  <Miho_MechWeapon_PlasmaHowitzer_Proj.label>plasma</Miho_MechWeapon_PlasmaHowitzer_Proj.label>
+  <Miho_MechWeapon_PlasmaHowitzer_ProjProj.label>plasma</Miho_MechWeapon_PlasmaHowitzer_ProjProj.label>
   <Miho_MechWeapon_Heavygrenade.label>Miho Grenade Cannon (Multi Legged Tank)</Miho_MechWeapon_Heavygrenade.label>
   <Miho_MechWeapon_Heavygrenade.description>A turret-mounted rapid-fire grenade launcher using 57mm grenades. It can deal with anything except heavy armor.</Miho_MechWeapon_Heavygrenade.description>
   <Miho_MechWeapon_Heavygrenade_Proj.label>grenade</Miho_MechWeapon_Heavygrenade_Proj.label>
@@ -314,7 +310,7 @@
   <Miho_MechWeapon_CluRocket.label>Miho Multiple Rocket Launcher (Multi Legged Tank/Cluster)</Miho_MechWeapon_CluRocket.label>
   <Miho_MechWeapon_CluRocket.description>A multiple launch system using 57mm rockets. It spreads clusters capable of penetrating light armor. Has a range of 200 tiles.</Miho_MechWeapon_CluRocket.description>
   <Miho_MechWeapon_CluRocket_Proj.label>cluster rocket</Miho_MechWeapon_CluRocket_Proj.label>
-  <Miho_MechWeapon_CluRocket_Proj.label>fragment</Miho_MechWeapon_CluRocket_Proj.label>
+  <Miho_MechWeapon_CluRocket_ProjProj.label>fragment</Miho_MechWeapon_CluRocket_ProjProj.label>
   <Miho_MechSatchel_Proj.label>satchel</Miho_MechSatchel_Proj.label>
 
   <Miho_Turret_Machinegun.label>Miho Heavy Machine Gun</Miho_Turret_Machinegun.label>
@@ -396,7 +392,7 @@
   <Miho_Weapon_RifleGrenade.tools.0.label>stock</Miho_Weapon_RifleGrenade.tools.0.label>
   <Miho_Weapon_RifleGrenade.tools.1.label>barrel</Miho_Weapon_RifleGrenade.tools.1.label>
   <Miho_Weapon_RifleGrenade_Proj.label>grenade</Miho_Weapon_RifleGrenade_Proj.label>
-  <Miho_Weapon_RifleGrenade_Proj.label>fragment</Miho_Weapon_RifleGrenade_Proj.label>
+  <Miho_Weapon_RifleGrenade_ProjProj.label>fragment</Miho_Weapon_RifleGrenade_ProjProj.label>
   <Miho_Weapon_Shotgun.label>Miho Hunting Shotgun</Miho_Weapon_Shotgun.label>
   <Miho_Weapon_Shotgun.description>A precise shotgun suitable for hunting. As always, it's illegal to hunt a specific kind (well-dressed, relatively civilized) of Homo sapiens without permission.</Miho_Weapon_Shotgun.description>
   <Miho_Weapon_Shotgun.tools.0.label>stock</Miho_Weapon_Shotgun.tools.0.label>

@@ -16,9 +16,11 @@
 	<categoryTag>Mihoic</categoryTag>
 	<listOrderPriority>30</listOrderPriority>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>false</canSiege>
-    <canStageAttacks>true</canStageAttacks>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<humanlikeFaction>true</humanlikeFaction>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
     <leaderTitle>대장</leaderTitle>
 	<settlementGenerationWeight>0.5</settlementGenerationWeight>
 
@@ -78,39 +80,51 @@
 	<raidLootMaker>MihoRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
 			<points>
-				<li>(500, 100)</li>
-				<li>(1000, 150)</li>
+				<li>(0, 100)</li>
+				<li>(1000, 200)</li>
 				<li>(2000, 500)</li>
-				<li>(2001, 10000)</li>
+				<li>(10000, 10000)</li>
 			</points>
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
       <li>
         <kindDef>Combat</kindDef>
-        <commonality>5</commonality>
+        <commonality>10</commonality>
         <options>
-
 		  <Miho_Soldier_Militia>600</Miho_Soldier_Militia>
 		  <Miho_Soldier_Marksman>900</Miho_Soldier_Marksman>
 		  <Miho_Soldier_MarksmanEar>550</Miho_Soldier_MarksmanEar>
 		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
 		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
-
-
+		  <Miho_Soldier_Firepower>25</Miho_Soldier_Firepower>
+		  <Miho_Soldier_Medic>25</Miho_Soldier_Medic>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
+        <options>
+		  <Miho_Soldier_Militia>600</Miho_Soldier_Militia>
+		  <Miho_Soldier_Marksman>900</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>550</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_TacticalMagi>100</Miho_Soldier_TacticalMagi>
+		  <Miho_Soldier_MilitiaCaptain>30</Miho_Soldier_MilitiaCaptain>
 		  <Miho_Soldier_Firepower>75</Miho_Soldier_Firepower>
 		  <Miho_Soldier_Medic>75</Miho_Soldier_Medic>
-
-
 		  <Miho_Mech_Sapsal>15</Miho_Mech_Sapsal>
 		  <Miho_Mech_BulgasalGrenade>5</Miho_Mech_BulgasalGrenade>
-
 		  <Miho_Mech_CataphractRocket>7</Miho_Mech_CataphractRocket>
-
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
         <options>
 		  <Miho_Soldier_Militia>400</Miho_Soldier_Militia>
 		  <Miho_Soldier_MilitiaMelee>180</Miho_Soldier_MilitiaMelee>
@@ -136,6 +150,9 @@
       <li>
         <kindDef>Combat</kindDef>
         <commonality>15</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
         <options>
 		  <Miho_Soldier_Militia>400</Miho_Soldier_Militia>
 		  <Miho_Soldier_MilitiaMelee>180</Miho_Soldier_MilitiaMelee>
@@ -157,7 +174,10 @@
       </li>
 	  <li>
         <kindDef>Combat</kindDef>		
-        <commonality>30</commonality>
+        <commonality>25</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
         <options>
 		  <Miho_Soldier_Marksman>990</Miho_Soldier_Marksman>
 		  <Miho_Soldier_MarksmanEar>600</Miho_Soldier_MarksmanEar>
@@ -179,7 +199,10 @@
       </li>
       <li>
         <kindDef>Combat</kindDef>
-        <commonality>20</commonality>
+        <commonality>15</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
         <options>
 		  <Miho_Soldier_PMC_InfantryBasic>65</Miho_Soldier_PMC_InfantryBasic>
 
@@ -196,6 +219,9 @@
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
+		<disallowedStrategies>
+				<li>Siege</li>
+		</disallowedStrategies>
         <options>
 		  <Miho_Soldier_PMC_InfantryBasic>65</Miho_Soldier_PMC_InfantryBasic>
 		  <Miho_Mech_BulgasalGrenade>3</Miho_Mech_BulgasalGrenade>
@@ -222,7 +248,7 @@
       </li>
 	  <li>
       <kindDef>Trader</kindDef>
-	  <commonality>1</commonality>
+	  <commonality>0</commonality>
         <traders>
           <Miho_Trader>1</Miho_Trader>  <!--Miho_Trader-->
         </traders>
@@ -238,10 +264,17 @@
 	  <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Miho_Colonist>100</Miho_Colonist>
           <Miho_Leader>1</Miho_Leader>
-		  <Miho_Soldier_Militia>300</Miho_Soldier_Militia>
-        </options>
+          <Miho_Colonist>10</Miho_Colonist>
+		  <Miho_Soldier_Militia>10</Miho_Soldier_Militia>
+		  <Miho_Soldier_Marksman>15</Miho_Soldier_Marksman>
+		  <Miho_Soldier_MarksmanEar>15</Miho_Soldier_MarksmanEar>
+		  <Miho_Soldier_MilitiaCaptain>2</Miho_Soldier_MilitiaCaptain>
+		  <Miho_Soldier_MilitiaMelee>15</Miho_Soldier_MilitiaMelee>
+		  <Miho_Soldier_PMC_InfantryBasic>10</Miho_Soldier_PMC_InfantryBasic>
+
+		  <Miho_Soldier_Medic>2</Miho_Soldier_Medic>
+		  </options>
       </li>
     </pawnGroupMakers>
 		<raidCommonalityFromPointsCurve>

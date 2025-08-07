@@ -12,6 +12,46 @@
 		<parent>Miho_Apparel</parent>
 	</ThingCategoryDef>
 
+	<ThingDef ParentName="ApparelNoQualityBase" Name="HatMakeableNoQualityBase" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+	</ThingDef>
+
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Miho_Apparel_Hat_Winter</defName>
 		<label>미호 비니</label>
@@ -43,7 +83,9 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
@@ -86,7 +128,7 @@
 		</colorGenerator>
 	</ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatMakeableNoQualityBase">
 		<defName>Miho_Apparel_Mask_Eltex</defName>
 		<label>미호 엘텍스 마스크</label>
 		<description>흑단 목재로 만들어진 초능력 증진 마스크 입니다.</description>
@@ -120,7 +162,9 @@
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<layers>
 				<li>Miho_Special</li>
 			</layers>
@@ -231,7 +275,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -299,7 +345,9 @@
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -643,7 +691,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -726,7 +776,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -807,7 +859,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -894,7 +948,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -978,7 +1034,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1061,7 +1119,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1141,7 +1201,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -1191,7 +1253,6 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
 			<Plasteel>25</Plasteel>
-
 		</costList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -1202,11 +1263,10 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>25000</WorkToMake>
 			<Mass>2</Mass>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-
-			<StuffEffectMultiplierArmor>1.12</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
 			<Insulation_Heat>4</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
@@ -1232,7 +1292,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>FullHead</li>
 				<li>Eyes</li>
@@ -1281,10 +1343,9 @@
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Miho_MilitaryGradeBalisticCeramics>25</Miho_MilitaryGradeBalisticCeramics>
 			<Plasteel>25</Plasteel>
-
 		</costList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -1294,21 +1355,22 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
-			<WorkToMake>50000</WorkToMake>
+			<WorkToMake>45000</WorkToMake>
 			<Mass>1</Mass>
-			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
 			<Insulation_Heat>4</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.68</VacuumResistance>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.6</MoveSpeed>
 			<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
-			<PsychicSensitivity>-0.25</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>-1</PsychicEntropyRecoveryRate>
 			<ToxicEnvironmentResistance>1.8</ToxicEnvironmentResistance>
-
 		</equippedStatOffsets>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -1327,7 +1389,9 @@
 			</options>
 		</colorGenerator>
 		<apparel>
-			 
+			<drawData>
+				<scale>0.97</scale>
+			</drawData>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -1380,7 +1444,6 @@
 		</comps>
 		<stages>
 			<li>
-
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>

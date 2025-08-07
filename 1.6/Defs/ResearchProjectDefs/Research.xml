@@ -6,8 +6,7 @@
 	<!-- ==================== 현대연구  ========================= -->
 	<!-- ==================== 미래연구  ========================= -->
 	
-	
-	
+
 
 	<ResearchProjectDef>
 		<tab>Miho_ResearchTab</tab>
@@ -65,6 +64,10 @@
 		<defName>Miho_MechHack</defName>
 		<label>메카나이트 해킹</label>
 		<description>눈에 보이지 않을정도로 조그만 메카노이드들을 해킹할 수 있는 기술을 배웁니다. 바이러스 같은것도 생체 메카나이트로 볼 수 있겠죠. 이 기술의 주 목적은 미호들의 초능력 혈청을 변형시키는 것 입니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>2500</baseCost>
     <prerequisites>
       <li>Miho_HeavyFactory</li>
@@ -91,6 +94,10 @@
 		<defName>Miho_MechCore</defName>
 		<label>대형 메카나이트 코어</label>
 		<description>완벽한 메카나이트 순환이 가능한 코어를 제작할 수 있는 기술을 개발합니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>4000</baseCost>
     <prerequisites>
       <li>Miho_HeavyFactory</li>
@@ -118,6 +125,10 @@
 		<defName>Miho_Persona</defName>
 		<label>조화객관환원이론</label>
 		<description>기계장치에 양자적 영혼을 심어줄수있는 기술을 배웁니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>12000</baseCost>
     <prerequisites>
       <li>Miho_MechHack</li>
@@ -144,6 +155,10 @@
 		<defName>Miho_Celestial</defName>
 		<label>초월질량엮기</label>
 		<description>페르소나 AI에게 도움받는 대형 합금 생산소 입니다. 중성자별의 핵과 이종물질을 합금하여 만드는 "천상비늘"을 제작 할 수 있게 됩니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>20000</baseCost>
     <prerequisites>
       <li>Miho_Persona</li>
@@ -228,6 +243,7 @@
       <li>StandardMechtech</li>
       <li>Mortars</li>
     </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>4</researchViewX>
 		<researchViewY>3</researchViewY>
@@ -248,6 +264,10 @@
 		<defName>Miho_CommandDrone</defName>
 		<label>싸이베이스 드론</label>
 		<description>초능력과 접목된 메카노이드들을 개발 할 수 있는 기술입니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>4000</baseCost>
     <prerequisites>
       <li>Miho_Persona</li>
@@ -276,6 +296,7 @@
 		<defName>Miho_HeavyWarDrone</defName>
 		<label>미호 대형 전쟁 메카노이드</label>
 		<description>경전차 대용의 메카노이드를 개발합니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<baseCost>6000</baseCost>
     <prerequisites>
       <li>Miho_LightWarDrone</li>
@@ -302,10 +323,10 @@
 		<defName>Miho_HeavyWarBattery</defName>
 		<label>메카노이드 중형 포대</label>
 		<description>집속탄 포대를 장착한 메카노이드를 개발합니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<baseCost>6000</baseCost>
     <prerequisites>
       <li>Miho_HeavyWarDrone</li>
-
     </prerequisites>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>7</researchViewX>
@@ -328,6 +349,10 @@
 		<label>보병 합동 작전</label>
 		<description>효과적인 전술 체계를 개발합니다.</description>
 		<baseCost>4000</baseCost>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
     <prerequisites>
       <li>Miho_HeavyWarDrone</li>
       <li>Miho_PlasmaWeapon</li>
@@ -429,6 +454,10 @@
 		<defName>Miho_PlasmaWeapon</defName>
 		<label>미호 플라즈마 무기</label>
 		<description>플라즈마상태의 원소를 이용하는 미호들의 무기를 제작 할 수 있습니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>2500</baseCost>
     <prerequisites>
       <li>Miho_HeavyWeapon</li>
@@ -527,6 +556,8 @@
 		<defName>Miho_ApparelEltex</defName>
 		<label>미호 엘텍스 의복</label>
 		<description>초능력치의 한계를 높혀주는 엘텍스 의복을 제작할 수 있습니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+
 		<baseCost>2500</baseCost>
         <prerequisites>
            <li>Miho_ApparelAdvanced</li>
@@ -552,6 +583,10 @@
 		<defName>Miho_ApparelAssassin</defName>
 		<label>미호 암살자 의복</label>
 		<description>신체 능력을 강화시킬수 있는 암살자 의복을 제작할 수 있습니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>3000</baseCost>
         <prerequisites>
            <li>Miho_ApparelEltex</li>
@@ -579,6 +614,10 @@
 		<defName>Miho_ApparelSorcerees</defName>
 		<label>미호 마법사 의복</label>
 		<description>메카나이트-마법 능력을 강화시킬수 있는 마법사 의복을 제작할 수 있습니다.</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<baseCost>6000</baseCost>
         <prerequisites>
            <li>Miho_ApparelAssassin</li>

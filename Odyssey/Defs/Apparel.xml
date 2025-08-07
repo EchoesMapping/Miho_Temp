@@ -100,7 +100,7 @@
       <ArmorRating_Heat>0.72</ArmorRating_Heat>
       <Insulation_Cold>6</Insulation_Cold>
       <Insulation_Heat>4</Insulation_Heat>
-      <EquipDelay>4</EquipDelay>
+      <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
@@ -109,7 +109,7 @@
     <smeltable>true</smeltable>
     <apparel>
 			<drawData>
-				<scale>0.7</scale>
+				<scale>0.95</scale>
 			</drawData>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>

@@ -31,11 +31,11 @@
         <mentalStateGivers>
           <li>
             <mentalState>Wander_Psychotic</mentalState>
-            <mtbDays>5.5</mtbDays>
+            <mtbDays>7.5</mtbDays>
           </li>
           <li>
             <mentalState>Slaughterer</mentalState>
-            <mtbDays>8.5</mtbDays>
+            <mtbDays>15</mtbDays>
           </li>
         </mentalStateGivers>
         <statOffsets>
@@ -127,7 +127,7 @@
       <li>
         <label>양기가 넘침</label>
         <description>양기가 넘쳐. 부담스럽긴 하지만. 진정으로 사람이 된 것 같아.</description>
-        <baseMoodEffect>1</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>   
     </stages>
   </ThoughtDef>
@@ -224,11 +224,10 @@
     </comps>
       <stages>
         <li>
-          <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>0.2</offset>
+              <offset>0.1</offset>
             </li>
 
           </capMods>

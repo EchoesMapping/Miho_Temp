@@ -1028,10 +1028,10 @@
     </graphicData>
     <statBases>
       <Mass>8.5</Mass>
-      <AccuracyTouch>0.1</AccuracyTouch>
-      <AccuracyShort>0.15</AccuracyShort>
-      <AccuracyMedium>0.21</AccuracyMedium>
-      <AccuracyLong>0.15</AccuracyLong>
+      <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.2</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
     </statBases>
     <verbs>
       <li>
@@ -1042,9 +1042,9 @@
         <soundCast>Miho_DefenceRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <burstShotCount>7</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <defaultCooldownTime>7</defaultCooldownTime>
+        <defaultCooldownTime>10</defaultCooldownTime>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>

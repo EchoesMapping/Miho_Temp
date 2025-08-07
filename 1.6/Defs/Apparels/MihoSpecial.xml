@@ -7,7 +7,7 @@
     <drawOrder>999</drawOrder>
   </ApparelLayerDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+  <ThingDef ParentName="HatMakeableNoQualityBase">
     <defName>Miho_Apparel_Special_Magnifier</defName>
     <label>미호 매그니파이어</label>
     <description>더욱 먼 곳을 정확하게 조준할 수 있게 하는 장치입니다. 시력이 나쁜 미호들에게 좋습니다.</description>
@@ -48,6 +48,7 @@
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
+				<scale>0.95</scale>
       </drawData>
       <renderSkipFlags>
         <li>None</li>
@@ -109,7 +110,7 @@
   </HediffDef>
 
 
-  <ThingDef ParentName="HatMakeableBase">
+  <ThingDef ParentName="HatMakeableNoQualityBase">
     <defName>Miho_Apparel_Special_TacticalAssist</defName>
     <label>미호 사격보조 컴퓨터</label>
     <description>탄도계산, 피아식별, 확대기능이 갖추어져 있는 사격보조 장치입니다.</description>
@@ -150,6 +151,7 @@
         <li>None</li>
       </renderSkipFlags>
       <drawData>
+				<scale>0.95</scale>
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
@@ -212,7 +214,7 @@
     </stages>
   </HediffDef>
 
-  <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="HatMakeableNoQualityBase">
     <defName>Miho_Apparel_Special_Glasses</defName>
     <label>미호 안경</label>
     <description>갓경입니다. 좆경이라 불러도 좋습니다.</description>
@@ -245,6 +247,9 @@
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Miho/Apparel/SpecialGlasses/SpecialGlasses</wornGraphicPath>
+      <drawData>
+				<scale>0.95</scale>
+			</drawData>
       <parentTagDef>ApparelHead</parentTagDef>
       <bodyPartGroups>
         <li>Eyes</li>
@@ -350,6 +355,7 @@
         <li>None</li>
       </renderSkipFlags>
       <drawData>
+				<scale>0.95</scale>
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
@@ -453,6 +459,7 @@
         <dataNorth>
           <layer>-3</layer>
         </dataNorth>
+				<scale>0.95</scale>
       </drawData>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <layers>
@@ -542,6 +549,7 @@
         <dataSouth>
           <layer>1000</layer>
         </dataSouth>
+				<scale>0.95</scale>
       </drawData>
       <wornGraphicPath>Miho/Apparel/SpecialMaid/SpecialMaid</wornGraphicPath>
       <renderSkipFlags>

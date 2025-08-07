@@ -5,12 +5,10 @@
   <Miho_Fox.label>miho carrying fox</Miho_Fox.label>
   <Miho_Fox.lifeStages.0.label>red fox puppy</Miho_Fox.lifeStages.0.label>
   <Miho_Fox.lifeStages.0.labelPlural>red fox puppies</Miho_Fox.lifeStages.0.labelPlural>
-  <Miho_Abomi.label>Mechanite abomination</Miho_Abomi.label>
+  <Miho_Thrumbo.label>Mechanite abomination</Miho_Thrumbo.label>
   <Miho_Mech_HeavyMechCore.label>miho large mechanite core</Miho_Mech_HeavyMechCore.label>
   <Miho_Mech_DesertSphex.label>Irnithopter (Agricultural)</Miho_Mech_DesertSphex.label>
-  <!--
   <Miho_Mech_Kampe.label>Recycle Bot</Miho_Mech_Kampe.label>
-  -->
   <Miho_Mech_Bulgasal.label>Multi Legged Heavy Tank (Anti-Tank)</Miho_Mech_Bulgasal.label>
   <Miho_Mech_BulgasalSiege.label>Multi Legged Heavy Tank (Siege)</Miho_Mech_BulgasalSiege.label>
   <Miho_Mech_BulgasalGrenade.label>Multi Legged Heavy Tank (Grenade)</Miho_Mech_BulgasalGrenade.label>

@@ -15,10 +15,10 @@
   <Miho_Ability_Fireball.description>Summon a foxfire with powerful destructive power. It would be more accurate to say it gathers energy rather than summons it.</Miho_Ability_Fireball.description>
   <Miho_Ability_Fireball_Adept.label>Foxfire Arrows</Miho_Ability_Fireball_Adept.label>
   <Miho_Ability_Fireball_Adept.description>Shoot a fox fire arrow with excellent penetration power over a long distance.</Miho_Ability_Fireball_Adept.description>
-  <Miho_Ability_PredatoryGaze.label>Thunder Javelin</Miho_Ability_PredatoryGaze.label>
-  <Miho_Ability_PredatoryGaze.description>There is no shield in the whole universe that can deflect a Mechanite javelin charged with powerful electricity.</Miho_Ability_PredatoryGaze.description>
-  <Miho_Ability_Starfall.label>Fan of Knives</Miho_Ability_Starfall.label>
-  <Miho_Ability_Starfall.description>Form nearby mechanites into countless deadly monomolecular blades and send them flying around you.</Miho_Ability_Starfall.description>
+  <Miho_Ability_Thunder.label>Thunder Javelin</Miho_Ability_Thunder.label>
+  <Miho_Ability_Thunder.description>There is no shield in the whole universe that can deflect a Mechanite javelin charged with powerful electricity.</Miho_Ability_Thunder.description>
+  <Miho_Ability_FanofKnives.label>Fan of Knives</Miho_Ability_FanofKnives.label>
+  <Miho_Ability_FanofKnives.description>Form nearby mechanites into countless deadly monomolecular blades and send them flying around you.</Miho_Ability_FanofKnives.description>
   <Miho_Ability_Love.label>Tail of Love</Miho_Ability_Love.label>
   <Miho_Ability_Love.description>Wave your tail around and make two pawns fall in love.\n"It works. Really!"</Miho_Ability_Love.description>
   <Miho_Ability_Serenity.label>Tail of Serenity</Miho_Ability_Serenity.label>
@@ -45,8 +45,8 @@
   <Miho_Ability_Spawn_Turret.description>Summon a brazier that launches fox fire.</Miho_Ability_Spawn_Turret.description>
   <Miho_Ability_Skip.label>Reassembly Leap</Miho_Ability_Skip.label>
   <Miho_Ability_Skip.description>A skill that enables teleportation to a specific location.</Miho_Ability_Skip.description>
-  <Miho_Ability_Spawn_Abomi.label>Summon Mechanite Abomination</Miho_Ability_Spawn_Abomi.label>
-  <Miho_Ability_Spawn_Abomi.description>Summon a terrifying war machine.</Miho_Ability_Spawn_Abomi.description>
+  <Miho_Ability_Spawn_Thrumbo.label>Summon Mechanite Abomination</Miho_Ability_Spawn_Thrumbo.label>
+  <Miho_Ability_Spawn_Thrumbo.description>Summon a terrifying war machine.</Miho_Ability_Spawn_Thrumbo.description>
   <Miho_Ability_Sandevistan.label>Bullet Time</Miho_Ability_Sandevistan.label>
   <Miho_Ability_Sandevistan.description>A cyberpunk-style cognitive enhancement device. It seems quite advanced.</Miho_Ability_Sandevistan.description>
   <Miho_Ability_Repair.label>Field Repair</Miho_Ability_Repair.label>
@@ -98,9 +98,9 @@
   <Miho_Ability_HotFireball.description>Summons a plasma foxfire with powerful destructive power. Handle with care!!!</Miho_Ability_HotFireball.description>
   <Miho_Ability_HotFireball.verbProperties.label>hot foxfire</Miho_Ability_HotFireball.verbProperties.label>
   
-  <Miho_Ability_Polaris.label>Hot Firespew</Miho_Ability_Polaris.label>
-  <Miho_Ability_Polaris.description>It breathes out a fan of plasma foxfire with powerful destructive power. It smells delicious.</Miho_Ability_Polaris.description>
-  <Miho_Ability_Polaris.verbProperties.label>hot firespew</Miho_Ability_Polaris.verbProperties.label>
+  <Miho_Ability_HotFirespew.label>Hot Firespew</Miho_Ability_HotFirespew.label>
+  <Miho_Ability_HotFirespew.description>It breathes out a fan of plasma foxfire with powerful destructive power. It smells delicious.</Miho_Ability_HotFirespew.description>
+  <Miho_Ability_HotFirespew.verbProperties.label>hot firespew</Miho_Ability_HotFirespew.verbProperties.label>
   
   <Miho_Ability_HeatArmor.label>Heatarmor</Miho_Ability_HeatArmor.label>
   <Miho_Ability_HeatArmor.description>Surrounds the target with a barrier of heat, protecting the target and enhancing its melee attack power.</Miho_Ability_HeatArmor.description>

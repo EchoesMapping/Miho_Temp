@@ -47,6 +47,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
+	  <Beauty>3</Beauty>
     </statBases>
     <equippedStatOffsets>
       <Fertility>-1</Fertility>
@@ -149,6 +150,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
+	  <Beauty>3</Beauty>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.05</SocialImpact>
@@ -228,6 +230,7 @@
       <StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
+	  <Beauty>3</Beauty>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.05</SocialImpact>
@@ -307,6 +310,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <equippedStatOffsets>
           <MoveSpeed>-0.25</MoveSpeed>
@@ -381,6 +385,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -435,6 +440,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <apparel>
       <countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -489,6 +495,7 @@
 	  <Insulation_Cold>2</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <apparel>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -558,6 +565,7 @@
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -614,6 +622,7 @@
 	  <Insulation_Cold>4</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
+	  <Beauty>1</Beauty>
     </statBases>
     <apparel>
       <bodyPartGroups>

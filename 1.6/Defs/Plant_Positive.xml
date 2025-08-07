@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="PlantBase">
+  <ThingDef Name="PosFlowerPlant" ParentName="PlantBase">
     <defName>Plant_PosFlower</defName>
     <label>태양화</label>
     <description>유전자 조작된 식물입니다. 주로 미호들의 초능력을 증진시켜주는 물질을 모으는 신호기 역할을 합니다.</description>
@@ -10,7 +10,7 @@
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
-        <Beauty>14</Beauty>
+        <Beauty>10</Beauty>
       <BeautyOutdoors>10</BeautyOutdoors>
 
     </statBases>
@@ -29,6 +29,56 @@
       <harvestYield>22</harvestYield>
       <sowTags>
         <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growMinGlow>0.3</growMinGlow>
+      <growDays>7.5</growDays>
+      <immatureGraphicPath>Things/Plants/PosFlower</immatureGraphicPath>
+      <visualSizeRange>1.4~1.75</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <wildClusterWeight>70</wildClusterWeight>
+      <wildClusterRadius>4</wildClusterRadius>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PosFlowerPlant">
+    <defName>Plant_PosFlower_Wild</defName>
+     <label>야생 태양화</label>
+    <description>유전자 조작된 식물입니다. 주로 미호들의 초능력을 증진시켜주는 물질을 모으는 신호기 역할을 합니다.</description>
+    <neverMultiSelect>false</neverMultiSelect>
+    <plant>
+      <sowTags Inherit="False">
+      </sowTags>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_PosFlowerPot</defName>
+    <label>태양화</label>
+    <description>유전자 조작된 식물입니다. 주로 미호들의 초능력을 증진시켜주는 물질을 모으는 신호기 역할을 합니다.</description>
+    <altitudeLayer>Item</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+        <Beauty>10</Beauty>
+      <BeautyOutdoors>10</BeautyOutdoors>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/PosFlower</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawPosFlower</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowTags>
         <li>Decorative</li>
       </sowTags>
       <topWindExposure>0.1</topWindExposure>
@@ -44,6 +94,76 @@
     </plant>
   </ThingDef>
 
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_PosMoss_Hydro</defName>
+    <label>여명이끼</label>
+    <description>유전자 조작된 식물입니다. 주로 미호들의 초능력을 증진시켜주는 물질을 모으는 신호기 역할을 합니다. 이 식물은 점도가 높고, 굉장히 역한 맛을 지니고 있어 스토브에서 가루로 가공하여 사용해야 합니다.</description>
+	<altitudeLayer>Item</altitudeLayer>
+
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/PosMoss</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>1</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawPosMoss</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0</topWindExposure>
+      <growMinGlow>0.5</growMinGlow>
+      <growDays>7.5</growDays>
+      <immatureGraphicPath>Things/Plants/PosMoss</immatureGraphicPath>
+      <visualSizeRange>0.6~1.1</visualSizeRange>
+      <wildOrder>0</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <maxMeshCount>1</maxMeshCount>
+
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>RawPosMoss</defName>
+    <label>여명이끼 마리모</label>
+    <description>미호의 초능력을 발현할수있게 도와주는 물질이 응집된 이끼입니다. 이 식물은 점도가 높고, 굉장히 역한 맛을 지니고 있어 스토브에서 가루로 가공하여 사용해야 합니다.</description>
+    <graphicData>
+      <texPath>Things/Items/MihoPosMoss</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>500</stackLimit>
+
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+  
   <ThingDef ParentName="RoughPlantBase">
     <defName>RawPosFlower</defName>
     <label>태양화 꽃잎</label>
@@ -60,7 +180,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
+        <daysToRotStart>60</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

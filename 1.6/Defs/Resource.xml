@@ -74,6 +74,43 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>Miho_FlowertoDust</defName>
+    <label>태양화 가루 변환.</label>
+    <description>가루를 제작합니다.</description>
+    <jobString>가루를 제작중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>125</workAmount>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPosFlower</li>
+            <li>RawPosMoss</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawPosFlower</li>
+        <li>RawPosMoss</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <RawPosFlower_Dust>40</RawPosFlower_Dust>
+    </products>
+    <skillRequirements>
+    </skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
 
   <RecipeDef>
     <defName>Miho_TeatoTea</defName>
@@ -83,7 +120,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>400</workAmount>
+    <workAmount>200</workAmount>
     <recipeUsers>
       <li>FueledStove</li>
       <li>ElectricStove</li>
@@ -104,7 +141,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>RawPosFlower</li>
-            <li>RawPosFlower_Dust</li>
+        <li>RawPosFlower_Dust</li>
 
       </thingDefs>
     </fixedIngredientFilter>
@@ -149,7 +186,7 @@
 			
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>8</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -327,6 +364,7 @@
         <li>Stony</li>
 
       </categories>
+      <isAirtight>true</isAirtight>
       <appearance>Metal</appearance>
       <commonality>0.05</commonality>
       <constructEffect>ConstructMetal</constructEffect>
@@ -366,7 +404,7 @@
       <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+      <SharpDamageMultiplier>1.0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.6</BluntDamageMultiplier>
     </statBases>
     <thingCategories>
@@ -379,6 +417,7 @@
         <li>Metallic</li>
         <li>Stony</li>
       </categories>
+      <isAirtight>true</isAirtight>
       <appearance>Metal</appearance>
       <commonality>0.01</commonality>
       <constructEffect>ConstructMetal</constructEffect>
@@ -432,6 +471,7 @@
         <li>Metallic</li>
         <li>Stony</li>
       </categories>
+      <isAirtight>true</isAirtight>
       <appearance>Metal</appearance>
       <commonality>0.001</commonality>
       <constructEffect>ConstructMetal</constructEffect>

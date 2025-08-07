@@ -117,7 +117,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>미친 저질 변태 살인 메카노이드들이 몇시간 내로 올겁니다!!! 으앙!!!</text>
+          <text>미친 저질 변태 살인 메카노이드들이 몇시간 내로 올겁니다!!! 으앙!!! 챙길건 다 챙겼으니 당장 중력부양선을 발사하세요!!!</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
@@ -126,13 +126,13 @@
           <customSummary>세명의 미호로 시작합니다.</customSummary>
           <overrideKinds>
             <li>
-              <xenotype>Xeno_CelestialMiho</xenotype>
+              <xenotype>Xeno_CelestialMiho_Voidborn</xenotype>
               <pawnKind>Miho_PlayerColonistCrewMember</pawnKind>
             </li>
           </overrideKinds>
           <xenotypeCounts>
             <li>
-              <xenotype>Xeno_CelestialMiho</xenotype>
+              <xenotype>Xeno_CelestialMiho_Voidborn</xenotype>
               <count>3</count>
               <requiredAtStart>false</requiredAtStart>
             </li>
@@ -237,7 +237,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Steel</thingDef>
-          <count>250</count>
+          <count>325</count>
         </li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
@@ -250,23 +250,15 @@
 				<count>1</count>
 			</li>
         <!-- Scatter some things near player start -->
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsNearPlayerStart</def>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
           <count>250</count>
-          <allowRoofed>false</allowRoofed>
         </li>
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsNearPlayerStart</def>
-          <thingDef>Steel</thingDef>
-          <count>250</count>
-          <allowRoofed>false</allowRoofed>
-        </li>
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsNearPlayerStart</def>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
           <thingDef>GravlitePanel</thingDef>
           <count>400</count>
-          <allowRoofed>false</allowRoofed>
         </li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>

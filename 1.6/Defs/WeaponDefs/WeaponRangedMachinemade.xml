@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
   <ThingDef Name="BaseMihoicGun" Abstract="True" ParentName="BaseWeapon">
 		<techLevel>Industrial</techLevel>
 		<smeltable>true</smeltable>
     <thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
   </ThingDef>
-  
-  
 </Defs>

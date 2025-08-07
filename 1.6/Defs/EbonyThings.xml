@@ -142,4 +142,86 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThingDef Name="Miho_Ebony_BonsaiBase" ParentName="BuildingBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.50</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>50</pathCost>
+    <rotatable>false</rotatable>
+    <castEdgeShadows>True</castEdgeShadows>
+    <building>
+      <paintable>false</paintable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <minifiedDef>MinifiedThing</minifiedDef>
+  </ThingDef>
+
+  <ThingDef ParentName="Miho_Ebony_BonsaiBase">
+    <defName>Miho_Ebony_Bonsai</defName>
+    <label>화현 분재</label>
+    <description>굉장히 귀한 취급을 받는 커다란 분재 입니다. 주기적으로 비단을 생산 합니다.</description>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>200000</WorkToBuild>
+      <Beauty>400</Beauty>
+      <Mass>200</Mass>
+
+      <MeditationFocusStrength>0.25</MeditationFocusStrength>
+    </statBases>
+    <costList>
+      <Miho_Ceramics>250</Miho_Ceramics>
+      <WoodLog>1500</WoodLog>
+      <Miho_Ebony_SilkCloth>250</Miho_Ebony_SilkCloth>
+	</costList>
+    <uiIconScale>0.8</uiIconScale>
+    <uiIconOffset>(0, 0.04)</uiIconOffset>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/MihoDroneProd/MihoDroneProd</texPath>
+      <drawSize>(4,4)</drawSize>
+      <drawOffset>(0,0,0.05)</drawOffset>
+      <shadowData>
+        <volume>(1.5, 0.6, 1.5)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.1,0.1,1.9,1.9)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+          <li>Natural</li>
+		  </focusTypes>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Miho_Ebony_SilkCloth</thingToSpawn>
+        <spawnCount>150</spawnCount>
+        <spawnIntervalRange><min>900000</min><max>900000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+    </comps>
+  </ThingDef>
+  
 </Defs>

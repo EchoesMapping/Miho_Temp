@@ -37,6 +37,7 @@
 	  <Insulation_Cold>34</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
+	  <Beauty>3</Beauty>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.05</SocialImpact>

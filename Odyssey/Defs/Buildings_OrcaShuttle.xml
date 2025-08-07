@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Miho_Shuttle</defName>
+		<label>미호 군용 순항 오니솝터</label>
+		<description>경장갑을 갖추고, 로켓 포드가 탑재된 순항 오니솝터 입니다. 기존의 화학연료 대신 아침동안 모인 태양열 에너지로 메카나이트 코어를 가동시켜 금속제 인공근육으로 날갯짓을 합니다. 메카나이트 코어는 친환경적이란 장점이 있지만. 보통 과열되기 쉽고, 식히기는 어려워 순항거리가 짧고, 엔진 과열로 인한 비행 대기 시간이 보통 셔틀에 비해 깁니다.
+		
+주의사항 : 연료량이 15이상이면 로켓 포드가 자동 발사 됩니다!</description>
+		<thingClass>Building_PassengerShuttle</thingClass>
+		<preventDroppingThingsOn>true</preventDroppingThingsOn>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<size>(2,3)</size>
+		<drawHighlight>true</drawHighlight>
+		<highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Military/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+			<shadowData>
+				<volume>(1.3, 1.0, 2.1)</volume>
+				<offset>(-0.1, 0, 0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>NewMech/Shuttlelike/UI/Miho_Transport_Mil_UI</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>36000</WorkToBuild>
+			<Mass>125</Mass>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<tickerType>Normal</tickerType>
+    <designationCategory>MihoBuilding</designationCategory>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Miho_MilitaryGradeBalisticCeramics>200</Miho_MilitaryGradeBalisticCeramics>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Miho_HeavyMechCore>1</Miho_HeavyMechCore>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<killedLeavings>
+			<Miho_MilitaryGradeBalisticCeramics>100</Miho_MilitaryGradeBalisticCeramics>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(2, 0, 0)</interactionCellOffset>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<drawerType>RealtimeOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<forcedCostLeavings>
+			</forcedCostLeavings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_ContentsTransporter</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>Miho_LightWarDrone</li>
+		</researchPrerequisites>
+		<comps>
+            <li Class="CompProperties_TurretGun">
+               <turretDef>Miho_MechWeapon_LightRocketTurret</turretDef>
+               <angleOffset>-0</angleOffset>
+            </li>
+			<li Class="CompProperties_Shuttle">
+				<shipDef>Miho_Shuttle</shipDef>
+			</li>
+			<li Class="CompProperties_Launchable">
+				<fuelPerTile>0</fuelPerTile>
+				<minFuelCost>0</minFuelCost>
+				<skyfallerLeaving>Miho_ShuttleLeaving</skyfallerLeaving>
+				<worldObjectDef>Miho_Shuttle</worldObjectDef>
+				<cooldownTicks>15000</cooldownTicks>
+				<!-- 6 hours -->
+				<fixedLaunchDistanceMax>28</fixedLaunchDistanceMax>
+				<cooldownEndedMessage>{0} is ready to launch again.</cooldownEndedMessage>
+			</li>
+			<li Class="CompProperties_Transporter">
+				<massCapacity>250</massCapacity>
+				<max1PerGroup>true</max1PerGroup>
+				<canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+				<pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+				<pawnExitSound>Shuttle_PawnExit</pawnExitSound>
+				<showMassInInspectString>true</showMassInInspectString>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>125</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>5</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelLabel>Chemfuel</fuelLabel>
+				<fuelGizmoLabel>Chemfuel</fuelGizmoLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<canEjectFuel>true</canEjectFuel>
+			</li>
+			<li Class="CompProperties_AmbientSound">
+				<sound>ShuttleIdle_Ambience</sound>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<uiOrder>2750</uiOrder>
+	</ThingDef>
+
+	<TransportShipDef>
+		<defName>Miho_Shuttle</defName>
+		<label>미호 순항 오니솝터</label>
+		<shipThing>Miho_Shuttle</shipThing>
+		<arrivingSkyfaller>Miho_ShuttleIncoming</arrivingSkyfaller>
+		<leavingSkyfaller>Miho_ShuttleLeaving</leavingSkyfaller>
+		<worldObject>Miho_Shuttle</worldObject>
+		<playerShuttle>true</playerShuttle>
+	</TransportShipDef>
+	
+   <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Miho_MechWeapon_LightRocketTurret</defName>
+    <label>미호 순항 오니솝터 로켓 포드</label>
+    <description>57mm 고폭 로켓이 8발 들어간 포드 입니다.</description>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <graphicData>
+      <texPath>NewMech/SapsalRecon/SapsalReconGun/SapsalReconGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Miho_MechWeapon_LightRocket_Proj</defaultProjectile>
+        <forcedMissRadius>6.6</forcedMissRadius>
+        <range>100</range>
+        <minRange>28.9</minRange>
+        <requireLineOfSight>false</requireLineOfSight>
+        <soundCast>Miho_Rocket</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <defaultCooldownTime>600</defaultCooldownTime>
+        <consumeFuelPerShot>15</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Miho_MechWeapon_LightRocket_Proj</defName>
+    <label>light rocket</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MihoCluRocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+		<projectile>
+			<damageDef>MihoGunshotDemo</damageDef>
+			<damageAmountBase>23</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>80</speed>
+			<explosionRadius>3</explosionRadius>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+            <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_BigMuzzleFlash_RocketSmoke</effecterDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>Miho_Shuttle_Civ</defName>
+		<label>미호 순항 오니솝터</label>
+		<description>셔틀의 대체품인 순항 오니솝터 입니다. 기존의 화학연료 대신 아침동안 모인 태양열 에너지로 메카나이트 코어를 가동시켜 금속제 인공근육으로 날갯짓을 합니다. 메카나이트 코어는 친환경적이란 장점이 있지만. 보통 과열되기 쉽고, 식히기는 어려워 순항거리가 짧고, 엔진 과열로 인한 비행 대기 시간이 보통 셔틀에 비해 깁니다. 아웃도어용 작은 화학연료 발전기 또한 장착되어 있습니다.</description>
+		<thingClass>Building_PassengerShuttle</thingClass>
+		<preventDroppingThingsOn>true</preventDroppingThingsOn>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<size>(2,3)</size>
+		<drawHighlight>true</drawHighlight>
+		<highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+			<shadowData>
+				<volume>(1.3, 1.0, 2.1)</volume>
+				<offset>(-0.1, 0, 0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>NewMech/Shuttlelike/UI/Miho_Transport_UI</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>36000</WorkToBuild>
+			<Mass>125</Mass>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<tickerType>Normal</tickerType>
+    <designationCategory>MihoBuilding</designationCategory>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Steel>75</Steel>
+			<Miho_Ceramics>200</Miho_Ceramics>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<Miho_HeavyMechCore>1</Miho_HeavyMechCore>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<killedLeavings>
+			<Miho_Ceramics>100</Miho_Ceramics>
+			<Plasteel>15</Plasteel>
+			<Steel>35</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(2, 0, 0)</interactionCellOffset>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<drawerType>RealtimeOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<forcedCostLeavings>
+			</forcedCostLeavings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_ContentsTransporter</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>Miho_Drone</li>
+		</researchPrerequisites>
+		<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>6</heatPerSecond>
+      </li>
+			<li Class="CompProperties_Shuttle">
+				<shipDef>Miho_Shuttle_Civ</shipDef>
+			</li>
+			<li Class="CompProperties_Launchable">
+				<fuelPerTile>0</fuelPerTile>
+				<minFuelCost>0</minFuelCost>
+				<skyfallerLeaving>Miho_Shuttle_CivLeaving</skyfallerLeaving>
+				<worldObjectDef>Miho_Shuttle_Civ</worldObjectDef>
+				<cooldownTicks>15000</cooldownTicks>
+				<!-- 6 hours -->
+				<fixedLaunchDistanceMax>28</fixedLaunchDistanceMax>
+				<cooldownEndedMessage>{0} is ready to launch again.</cooldownEndedMessage>
+			</li>
+			<li Class="CompProperties_Transporter">
+				<massCapacity>250</massCapacity>
+				<max1PerGroup>true</max1PerGroup>
+				<canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+				<pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+				<pawnExitSound>Shuttle_PawnExit</pawnExitSound>
+				<showMassInInspectString>true</showMassInInspectString>
+			</li>
+			<li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>4.5</fuelConsumptionRate>
+				<fuelCapacity>35</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>5</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelLabel>Chemfuel</fuelLabel>
+				<fuelGizmoLabel>Chemfuel</fuelGizmoLabel>
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<canEjectFuel>true</canEjectFuel>
+			</li>
+			<li Class="CompProperties_AmbientSound">
+				<sound>ShuttleIdle_Ambience</sound>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<uiOrder>2750</uiOrder>
+	</ThingDef>
+
+	<TransportShipDef>
+		<defName>Miho_Shuttle_Civ</defName>
+		<label>미호 순항 오니솝터</label>
+		<shipThing>Miho_Shuttle_Civ</shipThing>
+		<arrivingSkyfaller>Miho_Shuttle_CivIncoming</arrivingSkyfaller>
+		<leavingSkyfaller>Miho_Shuttle_CivLeaving</leavingSkyfaller>
+		<worldObject>Miho_Shuttle_Civ</worldObject>
+		<playerShuttle>true</playerShuttle>
+	</TransportShipDef>
+	
+</Defs>

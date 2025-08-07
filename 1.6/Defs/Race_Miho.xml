@@ -75,12 +75,12 @@
       <Mass>60</Mass>
 
       <!--스펙설정(일반)-->
-	  <MarketValue>1500</MarketValue>
+	  <MarketValue>1400</MarketValue>
 	  <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
-	  <CarryingCapacity>45</CarryingCapacity>
+	  <CarryingCapacity>50</CarryingCapacity>
 	  <GlobalLearningFactor>0.25</GlobalLearningFactor>
 	  <PsychicSensitivity>1</PsychicSensitivity>
-	  <RestRateMultiplier>0.98</RestRateMultiplier>
+	  <RestRateMultiplier>1</RestRateMultiplier>
       <ImmunityGainSpeed>0.98</ImmunityGainSpeed>
 	  <!--스펙(일)-->
 	  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
@@ -93,8 +93,8 @@
 	  <PainShockThreshold>0.75</PainShockThreshold>
       <ComfyTemperatureMin>18</ComfyTemperatureMin>
       <ComfyTemperatureMax>31</ComfyTemperatureMax>
-			<ToxicResistance>-1</ToxicResistance><!-- 직접 독성민감도 -->
-			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0</ToxicEnvironmentResistance><!-- 환경 독성민감도 -->
+	  <ToxicResistance>-0.2</ToxicResistance><!-- 직접 독성민감도 -->
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0</ToxicEnvironmentResistance><!-- 환경 독성민감도 -->
 	  <!--스펙설정(전투)-->
 	  <MoveSpeed>4.5</MoveSpeed>
 	  <AimingDelayFactor>0.8</AimingDelayFactor>
@@ -171,7 +171,7 @@
       <meatColor>(219, 105, 82)</meatColor>
       <baseBodySize>0.95</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.9</baseHungerRate>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>18</gestationPeriodDays>
       <canBecomeShambler>true</canBecomeShambler>

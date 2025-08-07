@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_Violet</defName>
+    <label>miho fox violet hair</label>
+    <hairColorOverride>(160, 146, 199)</hairColorOverride>
+    <selectionWeight>0.1</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_Miho_SpaceBlonde</defName>
+    <label>miho space blonde hair</label>
+    <hairColorOverride>(247, 224, 208)</hairColorOverride>
+    <selectionWeight>0.15</selectionWeight>
+    <displayOrderInCategory>170</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>Ears_Voidborn_Miho</defName>
+    <label>케노스</label>
+    <description>중력이 없는 공간에서의 생활에 최적화된 미호들 입니다. 유전적으로 개조된 이 미호들은 지상의 미호들보다 부서지기 쉬우며, 우주공간에서의 맬서스주의적인 파멸을 방지하기 위해 불임이지만. 굉장히 높은 수준의 소행성 채굴 능력과 기지 건설 능력, 그리고 깜찍한 아가미를 지니고 있습니다.</description>
+    <iconPath>Icon/GeneXeno/Voidborn_Ears</iconPath>
+    <bodyType>Thin</bodyType>
+    <immuneToVacuumBurns>true</immuneToVacuumBurns>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <statOffsets>
+      <ComfyTemperatureMin>-24</ComfyTemperatureMin>
+	  <ForagedNutritionPerDay>-1</ForagedNutritionPerDay>
+      <VacuumResistance>0.69</VacuumResistance>
+      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+    </statOffsets>
+    <statFactors>
+      <RestFallRateFactor>1.2</RestFallRateFactor>
+    </statFactors>
+  </GeneDef>
+  
+  <XenotypeDef>
+    <defName>Xeno_CelestialMiho_Voidborn</defName>
+    <label>케노스 미호</label>
+    <description>중력이 없는 공간에서의 생활에 최적화된 미호들 입니다. 유전적으로 개조된 이 미호들은 지상의 미호들보다 부서지기 쉬우며, 우주공간에서의 맬서스주의적인 파멸을 방지하기 위해 불임이지만. 굉장히 높은 수준의 소행성 채굴 능력과 기지 건설 능력, 그리고 깜찍한 아가미를 지니고 있습니다.</description>
+    <descriptionShort>중력이 없는 공간에서의 생활에 최적화된 미호들 입니다. 유전적으로 개조된 이 미호들은 지상의 미호들보다 부서지기 쉬우며, 우주공간에서의 맬서스주의적인 파멸을 방지하기 위해 불임이지만. 굉장히 높은 수준의 소행성 채굴 능력과 기지 건설 능력, 그리고 깜찍한 아가미를 지니고 있습니다.</descriptionShort>
+    <iconPath>Icon/GeneXeno/Miho_Voidborn</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonMiho</nameMaker>
+    <nameMakerFemale>NamerPersonMiho</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+	<factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Ears_Voidborn_Miho</li>
+	  
+      <li>Skin_SheerWhite</li>
+      <li>Hair_InkBlack</li>
+      <li>Hair_Miho_SpaceBlonde</li>
+      <li>Hair_Miho_Violet</li>
+
+      <li>Beauty_Pretty</li>
+      <li>Gene_Miho_AdvancedAuditory</li>
+      <li>WoundHealing_Slow</li>
+      <li>Libido_High</li>
+      <li>ElongatedFingers</li>
+      <li>Aggression_DeadCalm</li>
+      <li>Sterile</li>
+      <li>Delicate</li>
+
+      <li>MeleeDamage_Weak</li>
+      <li>CaveDweller</li>
+      <li>Gene_CelestialMiho</li>
+
+      <li>AptitudeStrong_Construction</li>
+	  <li>AptitudeStrong_Mining</li>
+
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Melee</li>
+
+
+    </genes>
+  </XenotypeDef>
+  
+</Defs>

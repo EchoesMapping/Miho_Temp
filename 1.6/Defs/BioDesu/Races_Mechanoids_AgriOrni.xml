@@ -212,7 +212,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>NewMech/Sphex/Sphex</texPath>
+          <texPath>NewMech/Sphex/SphexExp</texPath>
             <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
             <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -224,7 +224,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>NewMech/Sphex/Sphex</texPath>
+          <texPath>NewMech/Sphex/SphexExp</texPath>
             <maskPath>NewMech/Sphex/Mask/Sphex</maskPath>
             <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -366,10 +366,10 @@
       </li>
     </ingredients>
     <products>
-      <Miho_Mech_DesertSphex>1</Miho_Mech_DesertSphex>
+      <Miho_Mech_DesertSphexExplosion>1</Miho_Mech_DesertSphexExplosion>
     </products>
     <descriptionHyperlinks>
-      <ThingDef>Miho_Mech_DesertSphex</ThingDef>
+      <ThingDef>Miho_Mech_DesertSphexExplosion</ThingDef>
     </descriptionHyperlinks>
     <researchPrerequisite>Miho_Drone</researchPrerequisite>
     <gestationCycles>1</gestationCycles>

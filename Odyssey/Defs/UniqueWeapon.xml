@@ -95,8 +95,8 @@
     <forcedColor>UniqueWeapon_Gray</forcedColor>
     <damageDefOverride>Bullet</damageDefOverride>
     <statOffsets>
-      <RangedWeapon_ArmorPenetrationMultiplier>0.2</RangedWeapon_ArmorPenetrationMultiplier>
-      <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.1</RangedWeapon_ArmorPenetrationMultiplier>
+      <RangedWeapon_DamageMultiplier>0.1</RangedWeapon_DamageMultiplier>
       <MarketValue>80</MarketValue>
     </statOffsets>
     <traitAdjectives>
@@ -119,7 +119,7 @@
     <statOffsets>
       <RangedWeapon_ArmorPenetrationMultiplier>0.25</RangedWeapon_ArmorPenetrationMultiplier>
       <RangedWeapon_RangeMultiplier>0.25</RangedWeapon_RangeMultiplier>
-      <RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_DamageMultiplier>-0.25</RangedWeapon_DamageMultiplier>
       <MarketValue>110</MarketValue>
     </statOffsets>
     <statFactors>
@@ -163,7 +163,7 @@
         <defaultProjectile>Miho_Weapon_RifleOld_Unique_Proj</defaultProjectile>
         <warmupTime>3</warmupTime>
         <range>49.9</range>
-        <minRange>1.9</minRange>
+        <minRange>3.9</minRange>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
         <soundCast>Miho_KineticRifleBolt</soundCast>
@@ -171,6 +171,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
     <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
     <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
     <comps Inherit="False">
@@ -202,6 +205,7 @@
           <li>깡통따개</li>
           <li>초대형 사냥총</li>
           <li>두통치료제</li>
+          <li>으앙이의 분노</li>
         </namerLabels>
       </li>
     </comps>
@@ -239,5 +243,91 @@
 				<effecterDef>Miho_MuzzleFlash_Smoke</effecterDef>
 			</li>
 		</comps>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="MihoWeapon_RifleDefence">
+    <defName>Miho_Weapon_RifleDefence_Unique</defName>
+    <label>유니크 미호 단축 경기관총</label>
+    <description>미호 해군의 정예 육전대들이 사용하던 커스텀 단축 경기관총 입니다. 선내같은 좁은 공간에서 사용하기 좋습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRangedOdyssey/RifleNeoCQB</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <drawSize>1.05</drawSize>
+
+    </graphicData>
+    <statBases Inherit="False">
+      <WorkToMake>60000</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.32</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs Inherit="False">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Miho_Weapon_RifleDefence_Proj</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Miho_DefenceRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+    <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" /> <!-- Props are populated by traits -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Gun</li>
+          <li>Sighted</li>
+          <li>Rifle</li>
+          <li>BurstFire</li>
+          <li>LowStoppingPower</li>         
+		  <li>Miho_BulletFiring</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>갈갈이</li>
+          <li>이리</li>
+          <li>캥캥이의 분노</li>
+          <li>단축 기관총</li>
+          <li>정예군 기관총</li>
+          <li>프로토타입 기관총</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0.25</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <weaponTags Inherit="False" >
+      <li>MihoPMCInfantrySniper</li>
+    </weaponTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
   </ThingDef>
 </Defs>

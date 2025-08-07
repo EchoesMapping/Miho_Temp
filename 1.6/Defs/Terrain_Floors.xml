@@ -59,9 +59,11 @@
     <costList>
       <Miho_Ceramics>8</Miho_Ceramics>
       <Silver>10</Silver>
-
     </costList>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
     <researchPrerequisites>
       <li>Miho_HeavyFactory</li>
     </researchPrerequisites>

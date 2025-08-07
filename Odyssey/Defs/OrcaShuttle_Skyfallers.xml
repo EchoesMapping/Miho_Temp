@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>Miho_ShuttleIncoming</defName>
+    <label>Miho Ornithopter (incoming)</label>
+    <thingClass>PassengerShuttleIncoming</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Military/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>Shuttle_Landing</anticipationSound>
+      <anticipationSoundTicks>250</anticipationSoundTicks>
+      <ticksToImpactRange>200~250</ticksToImpactRange>
+      <shadowSize>(3.5,5.5)</shadowSize>
+      <rotationCurve>
+        <points>
+          <li>(0,30)</li>
+          <li>(0.5,5)</li>
+          <li>(0.9,-5)</li>
+          <li>(0.95,0)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0.95,2.5)</li>
+          <li>(1,0)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0.6,0.6)</li>
+          <li>(19.95,19.94)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>Miho_ShuttleLeaving</defName>
+    <label>Miho Ornithopter (leaving)</label>
+    <thingClass>PassengerShuttleLeaving</thingClass>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Military/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <reversed>true</reversed>
+      <anticipationSound>Shuttle_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange>-40~-15</ticksToImpactRange>
+      <moteSpawnTime>0.05</moteSpawnTime>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(3.5,5.5)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+      <rotationCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.01,2)</li>
+          <li>(0.15,2)</li>
+          <li>(0.5,-5)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.29,15)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0,0.000002)</li>
+		  <li>(0.6,0.7)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>Miho_Shuttle_CivIncoming</defName>
+    <label>Miho Ornithopter (incoming)</label>
+    <thingClass>PassengerShuttleIncoming</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>Shuttle_Landing</anticipationSound>
+      <anticipationSoundTicks>250</anticipationSoundTicks>
+      <ticksToImpactRange>200~250</ticksToImpactRange>
+      <shadowSize>(3.5,5.5)</shadowSize>
+      <rotationCurve>
+        <points>
+          <li>(0,30)</li>
+          <li>(0.5,5)</li>
+          <li>(0.9,-5)</li>
+          <li>(0.95,0)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0.95,2.5)</li>
+          <li>(1,0)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0.6,0.6)</li>
+          <li>(19.95,19.94)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>Miho_Shuttle_CivLeaving</defName>
+    <label>Miho Ornithopter (leaving)</label>
+    <thingClass>PassengerShuttleLeaving</thingClass>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+			<texPath>NewMech/Shuttlelike/Miho_Transport</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <reversed>true</reversed>
+      <anticipationSound>Shuttle_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange>-40~-15</ticksToImpactRange>
+      <moteSpawnTime>0.05</moteSpawnTime>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(3.5,5.5)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+      <rotationCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.01,2)</li>
+          <li>(0.15,2)</li>
+          <li>(0.5,-5)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.29,15)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0,0.000002)</li>
+		  <li>(0.6,0.7)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+  
+	<WorldObjectDef ParentName="ShuttleWorldObjectBase">
+		<defName>Miho_Shuttle</defName>
+		<label>Miho Ornithopter</label>
+		<description>A Miho Ornithopter in flight.</description>
+		<expandingIconTexture>NewMech/Shuttlelike/UI/Miho_PassengerShuttle</expandingIconTexture>
+		<expandingIconDrawSize>1</expandingIconDrawSize>
+	</WorldObjectDef>
+  
+	<WorldObjectDef ParentName="ShuttleWorldObjectBase">
+		<defName>Miho_Shuttle_Civ</defName>
+		<label>Miho Ornithopter</label>
+		<description>A Miho Ornithopter in flight.</description>
+		<expandingIconTexture>NewMech/Shuttlelike/UI/Miho_PassengerShuttle</expandingIconTexture>
+		<expandingIconDrawSize>1</expandingIconDrawSize>
+	</WorldObjectDef>
+</Defs>

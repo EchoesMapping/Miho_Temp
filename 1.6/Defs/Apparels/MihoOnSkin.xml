@@ -169,7 +169,6 @@
     </statBases>
     <equippedStatOffsets>
       <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
-
       <NegotiationAbility>0.10</NegotiationAbility>
       <SocialImpact>0.30</SocialImpact>
       <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
@@ -262,10 +261,9 @@
       <NegotiationAbility>0.10</NegotiationAbility>
       <SocialImpact>0.30</SocialImpact>
       <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
-      <PsychicEntropyMax>15</PsychicEntropyMax>
+			<PsychicEntropyMax>255</PsychicEntropyMax>
       <IncomingDamageFactor>-0.1</IncomingDamageFactor>
       <MeditationFocusGain>0.5</MeditationFocusGain>
-
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -403,7 +401,7 @@
         <part>Torso</part>
       </li>
       <li Class="CompProperties_Shield">
-        <startingTicksToReset>36000</startingTicksToReset>        <!-- 10 mins -->
+        <startingTicksToReset>2500</startingTicksToReset>        <!-- 10 mins -->
         <minDrawSize>1.5</minDrawSize>
         <maxDrawSize>1.8</maxDrawSize>
         <energyLossPerDamage>0.01</energyLossPerDamage>
@@ -624,7 +622,7 @@
     </apparel>
     <comps>
       <li Class="CompProperties_Shield">
-        <startingTicksToReset>36000</startingTicksToReset>        <!-- 10 mins -->
+        <startingTicksToReset>2500</startingTicksToReset>        <!-- 10 mins -->
         <minDrawSize>1.5</minDrawSize>
         <maxDrawSize>1.8</maxDrawSize>
         <energyLossPerDamage>0.01</energyLossPerDamage>
@@ -823,8 +821,7 @@
     <costList>
       <Miho_MilitaryGradeBalisticCeramics>75</Miho_MilitaryGradeBalisticCeramics>
       <Miho_Ebony_SilkCloth>300</Miho_Ebony_SilkCloth>
-      <ComponentSpacer>8</ComponentSpacer>
-
+      <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <thingCategories>
       <li>Miho_Apparel</li>
@@ -837,11 +834,11 @@
     </recipeMaker>
     <statBases>
       <MaxHitPoints>600</MaxHitPoints>
-      <WorkToMake>118000</WorkToMake>
+      <WorkToMake>60000</WorkToMake>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
-      <StuffEffectMultiplierArmor>0.33</StuffEffectMultiplierArmor>
-      <ArmorRating_Blunt>1.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
       <Insulation_Heat>26</Insulation_Heat>
       <Insulation_Cold>55</Insulation_Cold>
       <EquipDelay>5</EquipDelay>
@@ -850,7 +847,7 @@
       <MoveSpeed>1.1</MoveSpeed>
       <RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
       <InjuryHealingFactor>2</InjuryHealingFactor>
-      <PsychicSensitivity>-0.25</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>-1</PsychicEntropyRecoveryRate>
       <MeleeDamageFactor>0.5</MeleeDamageFactor>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
@@ -858,10 +855,11 @@
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
-
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Hands</li>
         <li>Legs</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>Miho/Apparel/OnSkinPariahSuitNew/OnSkinPariah</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -913,7 +911,6 @@
     </thingCategories>
     <recipeMaker>
       <researchPrerequisite>Miho_ApparelBasic</researchPrerequisite>
-
       <recipeUsers Inherit="false">
         <li>Miho_TableMachining</li>
       </recipeUsers>

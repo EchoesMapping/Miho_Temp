@@ -103,7 +103,7 @@
       <turretBurstWarmupTime>2.25</turretBurstWarmupTime>
     </building>
     <researchPrerequisites>
-      <li>Miho_HeavyPlasma</li>
+      <li>Miho_LightWarDrone</li>
     </researchPrerequisites>
   </ThingDef>
 
