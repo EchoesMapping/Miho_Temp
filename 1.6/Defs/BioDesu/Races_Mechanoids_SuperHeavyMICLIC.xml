@@ -254,13 +254,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>
-			<li Class="CompProperties_Spawner">
-				<requiresPower>false</requiresPower>
-				<thingToSpawn>Miho_MiclicReady</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange><min>12</min><max>12</max></spawnIntervalRange>
-				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
-				<showMessageIfOwned>false</showMessageIfOwned>
+			<li Class="MihoLib.CompProperties_DoExolosionTick">
+				<explosiveRadius>5</explosiveRadius>
+				<explosiveDamageType>MihoGunshotMiclic</explosiveDamageType>
+				<damageAmountBase>12</damageAmountBase>
+				<doExolosionTickInterval>12</doExolosionTickInterval>
+        <startExplosionTick>30</startExplosionTick>
 			</li>
 		</comps>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -273,109 +272,6 @@
 			<!-- <postExplosionGasType>BlindSmoke</postExplosionGasType> -->
 			</projectile>
 		<tickerType>Normal</tickerType>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>Miho_MiclicReady</defName>
-		<label>험지개척탄</label>
-		<description>펑</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/NullDraw</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<uiIconPath>Things/NullDraw</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>15</pathCost>
-		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
-		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>false</castEdgeShadows>
-		<fillPercent>0</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Beauty>-10</Beauty>
-			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
-		<building>
-			<ai_chillDestination>false</ai_chillDestination>
-			<isInert>true</isInert>
-			<expandHomeArea>false</expandHomeArea>
-		</building>
-		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationHotKey>Misc1</designationHotKey>
-		<comps>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>11</lifespanTicks>
-			</li>
-		</comps>
-		<killedLeavings Inherit="false">
-			<Miho_Miclic>1</Miho_Miclic>
-		</killedLeavings>
-		<tickerType>Normal</tickerType>
-		<tradeability>None</tradeability>
-	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>Miho_Miclic</defName>
-		<label>험지개척탄</label>
-		<description>펑</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/NullDraw</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<uiIconPath>Things/NullDraw</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>15</pathCost>
-		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
-		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>false</castEdgeShadows>
-		<fillPercent>0</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Beauty>-10</Beauty>
-			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
-		<building>
-			<ai_chillDestination>false</ai_chillDestination>
-			<isInert>true</isInert>
-			<expandHomeArea>false</expandHomeArea>
-		</building>
-		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationHotKey>Misc1</designationHotKey>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>5</explosiveRadius>
-				<explosiveDamageType>MihoGunshotMiclic</explosiveDamageType>
-				<damageAmountBase>12</damageAmountBase>
-				<startWickHitPointsPercent>0.99</startWickHitPointsPercent>
-				<wickTicks>1</wickTicks>
-			</li>
-			<li Class="CompProperties_ProximityFuseMiho">
-				<target>Miho_Miclic</target>
-				<radius>0.1</radius>
-			</li>
-		</comps>
-		<tickerType>Normal</tickerType>
-		<tradeability>None</tradeability>
 	</ThingDef>
 	
   <RecipeDef ParentName="MediumMechanoidRecipe">
