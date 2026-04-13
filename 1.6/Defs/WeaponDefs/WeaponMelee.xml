@@ -174,24 +174,20 @@
       <researchPrerequisite>Miho_Weapon</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>Miho_TableMachining</li>
-
       </recipeUsers>
     </recipeMaker>
     <comps>
-      <li Class="SYS.CompProperties_Sheath">
+      <li Class="MihoLib.CompProperties_Sheath">
         <sheathOnlyGraphicData>
           <texPath>Things/WeaponMelee/MihoRingedBlade_Sheath</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-
         </sheathOnlyGraphicData>
         <fullGraphicData>
           <texPath>Things/WeaponMelee/MihoRingedBlade_Full</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-
         </fullGraphicData>
-        <drawPosition>Side</drawPosition>
         <northOffset>
           <position>(0.2,0,-0.2)</position>
           <angle>0</angle>
@@ -208,6 +204,7 @@
           <position>(0,0,-0.2)</position>
           <angle>-220</angle>
         </westOffset>
+        <drawPosition>Side</drawPosition>
       </li>
     </comps>
   </ThingDef>
@@ -284,7 +281,7 @@
       </recipeUsers>
     </recipeMaker>
     <comps>
-      <li Class="SYS.CompProperties_WeaponExtention">
+      <li Class="MihoLib.CompProperties_WeaponExtention">
         <northOffset>
           <position>(0.15,-1,0.05)</position>
           <angle>315</angle>
@@ -302,12 +299,11 @@
           <angle>125</angle>
         </westOffset>
       </li>
-      <li Class="SYS.CompProperties_Sheath">
+      <li Class="MihoLib.CompProperties_Sheath">
         <sheathOnlyGraphicData>
           <texPath>Things/WeaponMelee/MihoTachi_Sheath</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-
         </sheathOnlyGraphicData>
         <fullGraphicData>
           <texPath>Things/WeaponMelee/MihoTachi_Full</texPath>
@@ -408,7 +404,6 @@
     <graphicData>
       <texPath>Things/WeaponMelee/MihoPlasmaTachi</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-
     </graphicData>
     <weaponTags>
       <li>MihoMarineMelee</li>
@@ -487,7 +482,7 @@
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="CompProperties_Biocodable"/>
-      <li Class="SYS.CompProperties_WeaponExtention">
+      <li Class="MihoLib.CompProperties_WeaponExtention">
         <northOffset>
           <position>(0.15,-1,0.05)</position>
           <angle>315</angle>
@@ -505,7 +500,7 @@
           <angle>125</angle>
         </westOffset>
       </li>
-      <li Class="SYS.CompProperties_Sheath">
+      <li Class="MihoLib.CompProperties_Sheath">
         <fullGraphicData>
           <texPath>Things/WeaponMelee/MihoPlasmaTachi_Sheath</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
