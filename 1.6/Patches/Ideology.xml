@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li/requirement[requiredDefs/li="Apparel_Beret"]/requiredDefs</xpath>
+		<value>
+			<li>Miho_Apparel_Hat_EltexCaptain</li>
+		</value>
+	</Operation>
+
+</Patch>
